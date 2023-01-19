@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Zoofari - Zoo & Safari Park Website Template</title>
+    <title>SICBHN</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="{{asset('zoofari/img/favicon.ico')}}" rel="icon" />
+    <link href="zoofari/img/LogoCorredor.png" rel="icon" />
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -51,7 +51,7 @@
         style="width: 3rem; height: 3rem"
         role="status"
       >
-        <span class="sr-only">Loading...</span>
+        <span class="sr-only">Cargando...</span>
       </div>
     </div>
     <!-- Spinner End -->
@@ -62,30 +62,27 @@
         <div class="col-lg-7 px-5 text-start">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-map-marker-alt text-primary me-2"></small>
-            <small>123 Street, New York, USA</small>
+            <small>Guanacaste, Costa Rica</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center py-3">
             <small class="far fa-clock text-primary me-2"></small>
-            <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
+            <small>Lunes a Viernes: 08:00 AM - 12:00 PM</small>
           </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
           <div class="h-100 d-inline-flex align-items-center py-3 me-4">
             <small class="fa fa-phone-alt text-primary me-2"></small>
-            <small>+012 345 6789</small>
+            <small>+(506) 8670-3535</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center">
             <a class="btn btn-sm-square bg-white text-primary me-1" href=""
               ><i class="fab fa-facebook-f"></i
             ></a>
             <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-twitter"></i
-            ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
-              ><i class="fab fa-linkedin-in"></i
+              ><i class="fab fa-instagram"></i
             ></a>
             <a class="btn btn-sm-square bg-white text-primary me-0" href=""
-              ><i class="fab fa-instagram"></i
+              ><i class="fab fa-youtube"></i
             ></a>
           </div>
         </div>
@@ -99,8 +96,8 @@
       data-wow-delay="0.1s"
     >
       <a href="index.html" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon" />
-        <h1 class="m-0 text-primary">Zoofari</h1>
+        <img class="img-fluid me-3" src="zoofari/img/LogoCorredor.png" alt="Icon" />
+        <h1 class="m-0 text-primary">SICBHN</h1>
       </a>
       <button
         type="button"
@@ -112,28 +109,30 @@
       </button>
       <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
-          <a href="index.html" class="nav-item nav-link active">Home</a>
-          <a href="about.html" class="nav-item nav-link">About</a>
-          <a href="service.html" class="nav-item nav-link">Services</a>
+          <a href="{{ url('/') }}" class="nav-item nav-link active">Inicio</a>
+          <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">Voluntariados</a>
+          <a href="{{ url('/campanna') }}" class="nav-item nav-link">Campañas</a>
+          <a href="{{ url('/donaciones') }}" class="nav-item nav-link">Donaciones</a>
           <div class="nav-item dropdown">
-            <a
-              href="#"
+            <a href="#"
               class="nav-link dropdown-toggle"
               data-bs-toggle="dropdown"
-              >Pages</a
+              >Sobre Nosotros</a
             >
             <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-              <a href="animal.html" class="dropdown-item">Our Animals</a>
-              <a href="membership.html" class="dropdown-item">Membership</a>
-              <a href="visiting.html" class="dropdown-item">Visiting Hours</a>
-              <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-              <a href="404.html" class="dropdown-item">404 Page</a>
+              <a href="{{ url('/sobrenosotros') }}" class="dropdown-item">Sobre nosotros</a>
+              <a href="{{ url('/galeria') }}" class="dropdown-item">Galería</a>
+              <a href="{{ url('/horavisita') }}" class="dropdown-item">Horas de visita</a>
+              <a href="{{ url('/documentos') }}" class="dropdown-item">Documentos</a>
             </div>
           </div>
-          <a href="contact.html" class="nav-item nav-link">Contact</a>
+          <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
         </div>
-        <a href="" class="btn btn-primary"
-          >Buy Ticket<i class="fa fa-arrow-right ms-3"></i
+        <a href="" class="btn btn-warning"
+          >Iniciar Sesión<i class="fa fa-right ms-0"></i
+        ></a>
+        <a href="" class="btn btn-success"
+          >Registrarse<i class="fa fa-right ms-0"></i
         ></a>
       </div>
     </nav>
@@ -147,11 +146,11 @@
             class="header-bg h-100 d-flex flex-column justify-content-center p-5"
           >
             <h1 class="display-4 text-light mb-5">
-              Enjoy Wonderful Day With Your Family
+              Corredor Biológico Hojancha-Nandayure
             </h1>
             <div class="d-flex align-items-center pt-4 animated slideInDown">
               <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5"
-                >Read More</a
+                >Más información</a
               >
               <button
                 type="button"
@@ -162,7 +161,7 @@
               >
                 <span></span>
               </button>
-              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Watch Video</h6>
+              <h6 class="text-white m-0 ms-4 d-none d-sm-block">Mirar Video</h6>
             </div>
           </div>
         </div>
@@ -778,49 +777,45 @@
       <div class="container py-5">
         <div class="row g-5">
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Address</h5>
+            <h5 class="text-light mb-4">Más información</h5>
             <p class="mb-2">
-              <i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA
+              <i class="fa fa-map-marker-alt me-3"></i>Guanacaste, Costa Rica
             </p>
             <p class="mb-2">
-              <i class="fa fa-phone-alt me-3"></i>+012 345 67890
+              <i class="fa fa-phone-alt me-3"></i>+(506) 8670-3535
             </p>
             <p class="mb-2">
-              <i class="fa fa-envelope me-3"></i>info@example.com
+              <i class="fa fa-envelope me-3"></i>info.cbhn@gmail.com
             </p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-twitter"></i
-              ></a>
               <a class="btn btn-outline-light btn-social" href=""
                 ><i class="fab fa-facebook-f"></i
               ></a>
               <a class="btn btn-outline-light btn-social" href=""
+              ><i class="fab fa-instagram"></i
+            ></a>
+              <a class="btn btn-outline-light btn-social" href=""
                 ><i class="fab fa-youtube"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
+
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Quick Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <h5 class="text-light mb-4">Enlaces rápidos</h5>
+            <a class="btn btn-link" href="{{ url('/sobrenosotros') }}">Sobre Nosotros</a>
+            <a class="btn btn-link" href="{{ url('/contactos') }}">Contactos</a>
+            <a class="btn btn-link" href="{{ url('/horavisita') }}">Horas de Visita</a>
+            <a class="btn btn-link" href="{{ url('/documentos') }}">Documentos</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Popular Links</h5>
-            <a class="btn btn-link" href="">About Us</a>
-            <a class="btn btn-link" href="">Contact Us</a>
-            <a class="btn btn-link" href="">Our Services</a>
-            <a class="btn btn-link" href="">Terms & Condition</a>
-            <a class="btn btn-link" href="">Support</a>
+            <h5 class="text-light mb-4 ">Enlaces populares</h5>
+            <a class="btn btn-link" href="{{ url('/galeria') }}">Galería</a>
+            <a class="btn btn-link" href="{{ url('/voluntariado') }}">Voluntariados</a>
+            <a class="btn btn-link" href="{{ url('/campanna') }}">Campañas</a>
+            <a class="btn btn-link" href="{{ url('/donaciones') }}">Donaciones</a>
           </div>
           <div class="col-lg-3 col-md-6">
-            <h5 class="text-light mb-4">Newsletter</h5>
+            <h5 class="text-light mb-4 ">El Corredor Biológico te da la bienvenida</h5>
             <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
             <div class="position-relative mx-auto" style="max-width: 400px">
               <input
@@ -842,16 +837,15 @@
         <div class="copyright">
           <div class="row">
             <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-              &copy; <a class="border-bottom" href="#">Your Site Name</a>, All
-              Right Reserved.
+              &copy; <a class="border-bottom" href="#">SICBHN</a>, Todos los derechos reservados.
             </div>
             <div class="col-md-6 text-center text-md-end">
               <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-              Designed By
+              Diseñado por:
               <a class="border-bottom" href="https://htmlcodex.com"
                 >HTML Codex</a
               >
-              <br />Distributed By:
+              <br />Distribuido por:
               <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
             </div>
           </div>
