@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Spica Admin</title>
+  <title>SICBHN ADMIN</title>
   <!-- base:css -->
   <link rel="stylesheet" href="{{asset('spica/vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('spica/vendors/css/vendor.bundle.base.css')}}">
@@ -15,7 +15,7 @@
   <!-- inject:css -->
   <link rel="stylesheet" href="{{asset('spica//css/style.css')}}">
   <!-- endinject -->
-  <link rel="shortcut icon" href="{{asset('spica/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="zoofari/img/LogoCorredor.png" />
 </head>
 <body>
   <div class="container-scroller d-flex">
@@ -23,7 +23,7 @@
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <ul class="nav">
         <li class="nav-item sidebar-category">
-          <p>Navigation</p>
+          <p>Menú administrativo</p>
           <span></span>
         </li>
         <li class="nav-item">
@@ -40,13 +40,13 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <i class="mdi mdi-palette menu-icon"></i>
-            <span class="menu-title">UI Elements</span>
+            <span class="menu-title">Voluntariados</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Tipos de Voluntariados</a></li>
+              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Gestión de Voluntariados</a></li>
             </ul>
           </div>
         </li>
@@ -105,8 +105,9 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://www.bootstrapdash.com/demo/spica/template/">
-            <button class="btn bg-danger btn-sm menu-title">Upgrade to pro</button>
+          <a class="nav-link" href="{{ url('/') }}">
+            <button class="btn btn-warning btn-sm menu-title">Volver al inicio</button>
+
           </a>
         </li>
       </ul>
@@ -120,10 +121,10 @@
             <span class="mdi mdi-menu"></span>
           </button>
           <div class="navbar-brand-wrapper">
-            <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a>
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+            <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a> -->
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="zoofari/img/LogoCorredor.png" alt="logo"/></a>
           </div>
-          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">Welcome back, Brandon Haynes</h4>
+          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">¡Bienvenido de nuevo!</h4>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item">
               <h4 class="mb-0 font-weight-bold d-none d-xl-block">Mar 12, 2019 - Apr 10, 2019</h4>
