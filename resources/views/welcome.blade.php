@@ -334,7 +334,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-2.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-2.png" alt="Icon" />
             <h5 class="mb-3">Car Parking</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -345,7 +345,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-3.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-3.png" alt="Icon" />
             <h5 class="mb-3">Animal Photos</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -356,7 +356,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.5s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-4.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-4.png" alt="Icon" />
             <h5 class="mb-3">Guide Services</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -367,7 +367,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.7s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-5.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-5.png" alt="Icon" />
             <h5 class="mb-3">Food & Beverages</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -378,7 +378,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-6.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-6.png" alt="Icon" />
             <h5 class="mb-3">Zoo Shopping</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -389,7 +389,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-7.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-7.png" alt="Icon" />
             <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -400,7 +400,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.5s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-8.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-8.png" alt="Icon" />
             <h5 class="mb-3">Play Ground</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -411,7 +411,7 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.7s"
           >
-            <img class="img-fluid mb-3" src="img/icon/icon-9.png" alt="Icon" />
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-9.png" alt="Icon" />
             <h5 class="mb-3">Rest House</h5>
             <span
               >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
@@ -453,7 +453,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-1.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-md-1.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -468,7 +468,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-lg-1.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -487,7 +487,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-lg-2.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -502,7 +502,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-2.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-md-2.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -521,7 +521,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-md-3.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-md-3.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -536,7 +536,7 @@
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/animal-lg-3.jpg" alt="" />
                     <div class="animal-text p-4">
                       <p class="text-white small text-uppercase mb-0">Animal</p>
                       <h5 class="text-white mb-0">Elephant</h5>
@@ -716,7 +716,7 @@
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-1.jpg"
+              src="zoofari/img/testimonial-1.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
@@ -733,7 +733,7 @@
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
+              src="zoofari/img/testimonial-2.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
@@ -750,7 +750,7 @@
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-3.jpg"
+              src="zoofari/img/testimonial-3.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
