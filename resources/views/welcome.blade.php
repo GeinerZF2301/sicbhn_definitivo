@@ -128,10 +128,10 @@
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
         </div>
-        <a href="" class="btn btn-warning"
+        <a href="{{ route('login') }}" class="btn btn-warning"
           >Iniciar Sesión<i class="fa fa-right ms-0"></i
         ></a>
-        <a href="" class="btn btn-success"
+        <a href="{{ route('register') }}" class="btn btn-success"
           >Registrarse<i class="fa fa-right ms-0"></i
         ></a>
       </div>

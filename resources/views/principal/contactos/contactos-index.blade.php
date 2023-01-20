@@ -172,9 +172,9 @@
               </div>
               <div class="ms-4">
                 <p class="mb-2">
-                  <span class="text-primary me-2">#</span>Address
+                  <span class="text-primary me-2">#</span>Dirección
                 </p>
-                <h5 class="mb-0">123 Street, New York, USA</h5>
+                <h5 class="mb-0">Barrio Alto del Cementerio, en Hojancha-Guanacaste, Costa Rica</h5>
               </div>
             </div>
           </div>
@@ -185,9 +185,9 @@
               </div>
               <div class="ms-4">
                 <p class="mb-2">
-                  <span class="text-primary me-2">#</span>Call Now
+                  <span class="text-primary me-2">#</span>Número telefónico
                 </p>
-                <h5 class="mb-0">+012 345 6789</h5>
+                <h5 class="mb-0">+(506) 8670-3535</h5>
               </div>
             </div>
           </div>
@@ -198,17 +198,17 @@
               </div>
               <div class="ms-4">
                 <p class="mb-2">
-                  <span class="text-primary me-2">#</span>Mail Now
+                  <span class="text-primary me-2">#</span>Correo Electrónico
                 </p>
-                <h5 class="mb-0">info@example.com</h5>
+                <h5 class="mb-0">info.cbhn@gmail.com</h5>
               </div>
             </div>
           </div>
         </div>
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Contact Us</p>
-            <h1 class="display-5 mb-4">Have Any Query? Please Contact Us!</h1>
+            <p><span class="text-primary me-2">#</span>Contáctanos</p>
+            <h1 class="display-5 mb-4">¿Tienes alguna duda? ¡Escríbenos!</h1>
             <p class="mb-4">
               The contact form is currently inactive. Get a functional and
               working contact form with Ajax & PHP in a few minutes. Just copy
