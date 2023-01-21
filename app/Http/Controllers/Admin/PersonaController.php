@@ -4,25 +4,23 @@ namespace App\Http\Controllers\Admin;
 use App\Models\Persona;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Request\StorePersonaRequest;
+use App\Http\Requests\StorePersonaRequest;
 use App\Repositories\Interfaces\PersonaRepositorioInterface;
 use App\Repositories\PersonaRepositorio;
 
 class PersonaController extends Controller
 {
     private $persona_repositorio;
-
     /*Constructor encargado de inicializar y desacoplar la logica de negocio con con la
     capa de acceso a datos*/
     public function __construct(PersonaRepositorioInterface $persona_repositorio){
         $this->persona_repositorio = $persona_repositorio;
     }
    
-    public function index() 
+    public function index() : Renderable
     {
         $personas = $this->persona_repositorio->allPeople();
-        //return view('admin.personas.index', compact('personas'));
-        return $personas;
+        return view('admin.personas.index', compact('personas'));
     }
 
     public function create() 
@@ -30,7 +28,7 @@ class PersonaController extends Controller
         return view('admin.personas.create');
     }
 
-    public function store(StorePersonaRequest $request) 
+    public function store(StorePersonaRequest $request) : RedirectResponse
     {
         $validated_data = $request->validate();
         $this->persona_repositorio->storePerson($validated_data);
@@ -52,14 +50,13 @@ class PersonaController extends Controller
     public function update(Persona $persona, StorePersonaRequest $request ) : RedirectResponse
     {
         $request->validate();
-        $this->persona_repositorio->updatePerson($request->all(), $id);
+        $this->persona_repositorio->updatePerson($request->all(), $persona['id']);
         return redirect->route('personas.index')->with('message', 'Persona Actualizada');
     }
 
-    public function destroy($id) 
+    public function destroy(int $id) : RedirectResponse
     {
         $this->persona_repositorio->destroyPerson($id);
-        //return redirect->route('personas.index')->with('message', 'Persona Eliminada');
-        return 'Persona Eliminada';
+        return redirect->route('personas.index')->with('message', 'Persona Eliminada');
     }
 }
