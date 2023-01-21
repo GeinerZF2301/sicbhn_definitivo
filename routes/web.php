@@ -50,3 +50,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
 Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
+Route::get('/admin', function () {
+    return view('layouts.admin');
+});
