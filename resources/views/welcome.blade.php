@@ -643,6 +643,7 @@
             <a class="btn btn-primary py-3 px-5" href="">Special Pricing</a>
           </div>
         </div>
+
         <div class="row g-4">
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
             <div class="membership-item position-relative">
@@ -661,6 +662,9 @@
               <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
             </div>
           </div>
+
+
+          
           <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
             <div class="membership-item position-relative">
               <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
