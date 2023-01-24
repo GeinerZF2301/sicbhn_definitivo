@@ -225,7 +225,7 @@
                       id="name"
                       placeholder="Your Name"
                     />
-                    <label for="name">Your Name</label>
+                    <label for="name">Nombre</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -236,7 +236,7 @@
                       id="email"
                       placeholder="Your Email"
                     />
-                    <label for="email">Your Email</label>
+                    <label for="email">Correo Electrónico</label>
                   </div>
                 </div>
                 <div class="col-12">
@@ -247,7 +247,7 @@
                       id="subject"
                       placeholder="Subject"
                     />
-                    <label for="subject">Subject</label>
+                    <label for="subject">Asunto</label>
                   </div>
                 </div>
                 <div class="col-12">
@@ -258,12 +258,12 @@
                       id="message"
                       style="height: 100px"
                     ></textarea>
-                    <label for="message">Message</label>
+                    <label for="message">Mensaje</label>
                   </div>
                 </div>
                 <div class="col-12">
                   <button class="btn btn-primary w-100 py-3" type="submit">
-                    Send Message
+                    Enviar
                   </button>
                 </div>
               </div>
@@ -271,9 +271,11 @@
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="h-100" style="min-height: 400px">
+
+
               <iframe
                 class="rounded w-100 h-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.4045185452546!2d-85.4196024850869!3d10.06590247465766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f9fbab8ad2ae131%3A0xd7416bb8610367e!2sFundecodes!5e0!3m2!1ses-419!2scr!4v1674361732713!5m2!1ses-419!2scr"
                 frameborder="0"
                 allowfullscreen=""
                 aria-hidden="false"
