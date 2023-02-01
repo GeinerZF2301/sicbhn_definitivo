@@ -305,7 +305,7 @@
   <script src="{{asset('spica/vendors/chart.js/Chart.min.js')}}"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="spica/js/off-canvas.js"></script>
+  <script src="{{asset('spica/js/off-canvas.js')}}"></script>
   <script src="{{asset('spica/js/hoverable-collapse.js')}}"></script>
   <script src="{{asset('spica/js/template.js')}}"></script>
   <!-- endinject -->
