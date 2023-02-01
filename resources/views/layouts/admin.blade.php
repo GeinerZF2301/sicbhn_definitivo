@@ -45,8 +45,8 @@
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Tipos de Voluntariados</a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Gestión de Voluntariados</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/tiposvoluntarios') }}">Tipos de Voluntariados</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/gestionvoluntarios') }}">Gestión de Voluntariados</a></li>
             </ul>
           </div>
         </li>
