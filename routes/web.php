@@ -1,6 +1,7 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\PersonaController;
+use App\Http\Controllers\Admin\TipoPersonaController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -47,6 +48,17 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+// PRUEBAS AK7
+Route::get('/tiposvoluntarios', function () {
+    return view('admin/tiposvoluntarios.index');
+});
+Route::get('/gestionvoluntarios', function () {
+    return view('admin/gestionvoluntarios.index');
+});
+
+
+Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
+Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
 Route::get('/admin', function () {
     return view('layouts.admin');
 });
