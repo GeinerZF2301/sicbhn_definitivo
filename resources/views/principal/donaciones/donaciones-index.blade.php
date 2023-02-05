@@ -49,7 +49,7 @@
     </nav>
    <!-- Page Header Start -->
    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgD py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s">
       <div class="container py-5">
         <h1 class="display-4 text-white mb-3 animated slideInDown">Donaciones</h1>
@@ -59,7 +59,7 @@
               <a class="text-white" href="{{ url('/') }}">Inicio</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Donaciones
+             <font color="#028A0F">Donaciones</font> 
             </li>
           </ol>
         </nav>
@@ -72,37 +72,33 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
+            {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
             <h1 class="display-5 mb-4">
-              Why You Should Visit
-              <span class="text-primary">Zoofari</span> Park!
+              ¿Por qué debería hacer una
+              <font color="#028A0F">Donación</font>?
+              {{-- <span class="text-primary">Donación</span>? --}}
             </h1>
             <p class="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
-              stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo
-              nonumy clita sit at, sed sit sanctus dolor eos.
+              La ayuda proporcionada al Corredor Biológico Hojancha-Nandayure, 
+              permite desarrollar nuevos proyectos y mantener los que ya están implementados.
+           
             </p>
+
+
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Free Car
-              Parking
+              <i class="far fa-check-circle text-primary me-3"></i>Donativos en Especie
             </h5>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Natural
-              Environment
+              <i class="far fa-check-circle text-primary me-3"></i>Donativos Monetarios
             </h5>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Professional
-              Guide & Security
-            </h5>
-            <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>World Best
-              Animals
+              <i class="far fa-check-circle text-primary me-3"></i>Donativos Alimenticios
             </h5>
             <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="img-border">
-              <img class="img-fluid" src="zoofari/img/about.jpg" alt="" />
+              <img class="img-fluid" src="zoofari/img/Donaciones/DonacionesRecuadro.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -161,7 +157,7 @@
           class="display-5 text-center mb-5 wow fadeInUp"
           data-wow-delay="0.1s"
         >
-          Our Clients Say!
+          Tipos de Donaciones
         </h1>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -170,52 +166,53 @@
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="zoofari/img/testimonial-1.jpg"
+              src="zoofari/img/Donaciones/DEspecie.png"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
-              <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
-              </p>
-              <h5 class="mb-1">Patient Name</h5>
+              <h5 class="mb-1">Donativos en Especie</h5>
               <span class="fst-italic">Profession</span>
+              <p>
+              Si deseas contribuir con algún tipo de material al Corredor Biológico Hojancha-Nandayure,
+              te dejamos una lista de opciones que te pueden ayudar.
+              </p>
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="img/testimonial-2.jpg"
+              src="zoofari/img/Donaciones/DMonetaria.png"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
+              <h5 class="mb-1">Donativos Monetarios</h5>
               <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
+              Si deseas contribuir con un aporte económico al Corredor Biológico Hojancha-Nandayure,
+              lo puedes realizar a través de nuestras cuentas bancarias.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class=" py-4 d-flex justify-content-center">Cuentas Bancarias</h5>
+                <span class="fw-bold">Banco Nacional-IBAN :</span>
+                <span>CR-90015108310026000086</span> 
+                <br>
+                <span class="fw-bold">Banco Nacional:</span>
+                <span>100-02-083-600008-7</span>
+                <br>
+                <span class="fw-bold">Cuenta Cliente:</span>
+                <span>15108310026000086</span> 
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="zoofari/img/testimonial-3.jpg"
+              src="zoofari/img/Donaciones/DAlimentos.png"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
+              <h5 class="mb-1">Donativos Alimenticios</h5>
               <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
+                Si deseas contribuir con algún tipo de alimento al Corredor Biológico Hojancha-Nandayure,
+                te dejamos una lista de opciones que te pueden ayudar.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
             </div>
           </div>
         </div>
