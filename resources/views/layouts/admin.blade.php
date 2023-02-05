@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>SICBHN ADMIN</title>
+  <title>Gestión Administrativa</title>
   <!-- base:css -->
   <link rel="stylesheet" href="{{asset('spica/vendors/mdi/css/materialdesignicons.min.css')}}">
   <link rel="stylesheet" href="{{asset('spica/vendors/css/vendor.bundle.base.css')}}">
@@ -27,85 +27,89 @@
           <span></span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html">
-            <i class="mdi mdi-view-quilt menu-icon"></i>
-            <span class="menu-title">Dashboard</span>
-            <div class="badge badge-info badge-pill">2</div>
+          <a class="nav-link" href="/admin">
+            <i class="mdi mdi-border-all menu-icon"></i>
+            <span class="menu-title">Inicio </span>
           </a>
         </li>
         <li class="nav-item sidebar-category">
-          <p>Components</p>
+          <p>Módulos</p>
           <span></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-            <i class="mdi mdi-palette menu-icon"></i>
+            <i class="mdi mdi-human-male-female menu-icon"></i>
             <span class="menu-title">Voluntariados</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/tiposvoluntarios') }}">Tipos de Voluntariados</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/gestionvoluntarios') }}">Gestión de Voluntariados</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/tiposvoluntarios') }}">Categorías </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/gestionvoluntarios') }}">Gestiónes</a></li>
             </ul>
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/forms/basic_elements.html">
-            <i class="mdi mdi-view-headline menu-icon"></i>
-            <span class="menu-title">Form elements</span>
-          </a>
+          <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false"
+              aria-controls="tables">
+              <i class=" mdi mdi-file-pdf menu-icon"></i>
+              <span class="menu-title">Documentación</span>
+              <i class="menu-arrow"></i>
+          </a> 
+          <div class="collapse" id="tables"> 
+          <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Administrativa</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Pública</a></li>
+            </ul>
+          </div>  
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/charts/chartjs.html">
-            <i class="mdi mdi-chart-pie menu-icon"></i>
-            <span class="menu-title">Charts</span>
-          </a>
+        <a class="nav-link" data-toggle="collapse" href="#chartjs" aria-expanded="false"
+              aria-controls="chartjs">
+            <i class="mdi mdi-bullhorn menu-icon"></i>
+            <span class="menu-title">Campañas</span>
+            <i class="menu-arrow"></i>
+          </a> 
+          <div class="collapse" id="chartjs"> 
+          <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Categorías</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestiónes</a></li>
+            </ul>
+          </div>  
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pages/tables/basic-table.html">
-            <i class="mdi mdi-grid-large menu-icon"></i>
-            <span class="menu-title">Tables</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pages/icons/mdi.html">
-            <i class="mdi mdi-emoticon menu-icon"></i>
-            <span class="menu-title">Icons</span>
-          </a>
-        </li>
-        <li class="nav-item sidebar-category">
-          <p>Pages</p>
-          <span></span>
+        <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false"
+              aria-controls="icons">
+            <i class="mdi mdi-cash-multiple menu-icon"></i>
+            <span class="menu-title">Donaciones</span>
+            <i class="menu-arrow"></i>
+          </a> 
+          <div class="collapse" id="icons"> 
+          <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Monetarias</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Artículos</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Cuentas</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestiónes</a></li>
+            </ul>
+          </div>  
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <i class="mdi mdi-account menu-icon"></i>
-            <span class="menu-title">User Pages</span>
+            <span class="menu-title">Usuarios</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Registro</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestión</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Roles</a></li>
             </ul>
           </div>
         </li>
-        <li class="nav-item sidebar-category">
-          <p>Apps</p>
-          <span></span>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="docs/documentation.html">
-            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-            <span class="menu-title">Documentation</span>
-          </a>
-        </li>
         <li class="nav-item">
           <a class="nav-link" href="{{ url('/') }}">
+          <i class="mdi  mdi-exit-to-app menu-icon"></i>
             <button class="btn btn-warning btn-sm menu-title">Volver al inicio</button>
 
           </a>
@@ -124,7 +128,7 @@
             <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a> -->
             <a class="navbar-brand brand-logo-mini" href="index.html"><img src="zoofari/img/LogoCorredor.png" alt="logo"/></a>
           </div>
-          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">¡Bienvenido de nuevo!</h4>
+          <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">¡Bienvenido!</h4>
           <ul class="navbar-nav navbar-nav-right">
             <li class="nav-item">
               <h4 class="mb-0 font-weight-bold d-none d-xl-block">Mar 12, 2019 - Apr 10, 2019</h4>
@@ -138,7 +142,7 @@
                 <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
                 <a class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
-                      <img src="images/faces/face4.jpg" alt="image" class="profile-pic">
+                      <img src="spica/images/faces/face4.jpg" alt="image" class="profile-pic">
                   </div>
                   <div class="preview-item-content flex-grow">
                     <h6 class="preview-subject ellipsis font-weight-normal">David Grey
@@ -227,48 +231,7 @@
             <span class="mdi mdi-menu"></span>
           </button>
         </div>
-        <div class="navbar-menu-wrapper navbar-search-wrapper d-none d-lg-flex align-items-center">
-          <ul class="navbar-nav mr-lg-2">
-            <li class="nav-item nav-search d-none d-lg-block">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Search Here..." aria-label="search" aria-describedby="search">
-              </div>
-            </li>
-          </ul>
-          <ul class="navbar-nav navbar-nav-right">
-            <li class="nav-item nav-profile dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                <img src="images/faces/face5.jpg" alt="profile"/>
-                <span class="nav-profile-name">Eleanor Richardson</span>
-              </a>
-              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                <a class="dropdown-item">
-                  <i class="mdi mdi-settings text-primary"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item">
-                  <i class="mdi mdi-logout text-primary"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link icon-link">
-                <i class="mdi mdi-plus-circle-outline"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link icon-link">
-                <i class="mdi mdi-web"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link icon-link">
-                <i class="mdi mdi-clock-outline"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </nav>
       <!-- partial -->
       <div class="main-panel">
