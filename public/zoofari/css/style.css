@@ -146,10 +146,23 @@
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-1.jpg) center center no-repeat;
     background-size: cover;
 }
+/*Header de documentos*/
+.header-bgDP {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/DocumentosPublicos/DocumentosPrincipal.jpg) center center no-repeat;
+    background-size: cover;
+}
+/*Header de Donaciones*/
 .header-bgD {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.jpg) center center no-repeat;
     background-size: cover;
 }
+
+/*Header de Campannas*/
+.header-bgC {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Campannas/CampannaPrincipal.jpeg) center center no-repeat;
+    background-size: cover;
+}
+
 
 .btn-play {
     position: relative;
@@ -407,9 +420,9 @@
 
 /*** Membership ***/
 .membership-item {
-    padding: 45px 30px;
+    padding: 10px 10px;
     color: #FFFFFF;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .membership-item img {
@@ -420,6 +433,7 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    
 }
 
 .membership-item .display-1 {
@@ -582,3 +596,105 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+
+/*Campannas*/
+header.campannas .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+
+
+@media (min-width: 768px) {
+    header.campannas {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+    /* header.campannas .masthead-subheading {
+      font-size: 2.25rem;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+      font-family: 'Poppins', sans-serif; 
+    } */
+    header.campannas .masthead-heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+      font-family: 'Poppins', sans-serif; 
+    }
+  }
+  
+  .containertiposcampannas{
+    width: auto;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 50px auto 100px ;
+   }
+  
+   .containertiposcampannas .cardtipos{
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+    grid-template-rows: auto,auto,auto;
+    gap: 1rem;
+    width: 369.5px;
+    height: 335.23px;;
+    border-radius: 20px;
+    box-shadow: 2px 2px #1e2125 ;
+    overflow: hidden;
+    margin: 20px 30px ;
+    text-align: center;
+    transition: all 0.25s;
+    
+   }
+   .bg-green{
+    background-color: #8FEB56;
+   }
+   .bg-yellow{
+    background-color: #F8F545;
+   }
+   .textocartas{
+    text-align: left;
+    margin-left: 16px;
+    font-family: 'Poppins', sans-serif;
+   }
+   .descripcioncarta{
+    text-align:left;
+    font-size: medium;
+    height: 20px;
+    width: 300px;
+    margin-left: 32px;
+    padding-bottom: 60px;
+   }
+   .ic{
+    
+    width: 100px;
+    height: 100px;
+   }
+   .saber-mas{
+    margin-bottom: 32px;
+    margin-right: 10px;
+    background-color:#000000;
+    border-radius: 5px;
+    border-color:#0c4128 ;
+   }
+  
+   .icon-arrow{
+    margin-left: 6px;
+   }
+  
+   .subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+   }
+  
+  
+  

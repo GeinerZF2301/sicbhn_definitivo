@@ -50,10 +50,10 @@
 
        <!-- Page Header Start -->
    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgC py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s">
       <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">Nuestras Campañas</h1>
+        <h1 class="display-4 text-white mb-3 animated slideInDown">Campañas</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
@@ -68,6 +68,64 @@
     </div>
     <!-- Page Header End -->
 
+
+
+ <!-- About Start -->
+ <div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
+        <h1 class="display-5 mb-4">
+          Nuestras
+          <font color="#028A0F">Campañas</font>
+          {{-- <span class="text-primary">Donación</span>? --}}
+        </h1>
+        <p class="mb-4">
+          El Corredor Biológico Hojancha-Nandayure se ubica en el área de Conservación Tempisque y fue creado con
+           el fin de conservar la vida silvestre entre el Parque Nacional Barra Honda y la zona protectora Península
+            de Nicoya, durante el año se realizan diversas campañas que abarcan dicho territorio con el objetivo de 
+            concienciar sobre temas medioambientales.
+        </p>
+        
+      </div>
+      {{-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="img-border">
+          <img class="img-fluid" src="zoofari/img/Donaciones/DonacionesRecuadro.jpg" alt="" />
+        </div>
+      </div> --}}
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+
+
+<div class="containertiposcampannas">
+  {{-- @foreach ($tipos as $tipo) --}}
+      {{-- <input type="hidden" value="{{ $tipo->id }}" id="idTipoCampanna" class="idTipoCampanna">
+      @if ($tipo->id % 2 != 0) --}}
+          <div class="cardtipos bg-green ">
+              <div class="d-flex justify-content-center">
+                  <img class="ic" src="zoofari/img/Campannas/recycle.png">
+              </div>
+              {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
+              <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
+              <div class="d-flex justify-content-center">
+                  <a href="#" class="saber-mas btn btn-primary">Descargar</a>
+              </div>
+          </div>
+
+          <div class="cardtipos bg-yellow ">
+              <div class="d-flex justify-content-center">
+                  <img class="ic" src="zoofari/img/Campannas/recycle.png">
+              </div>
+              {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
+              <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
+              <div class="d-flex justify-content-center">
+                  <a href="#" class="saber-mas btn btn-success">Descargar</a>
+              </div>
+          </div>
 
 
     @endsection

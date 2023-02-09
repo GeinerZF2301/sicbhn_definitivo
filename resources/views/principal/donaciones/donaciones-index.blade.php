@@ -47,6 +47,7 @@
         ></a>
       </div>
     </nav>
+    
    <!-- Page Header Start -->
    <div
       class="container-fluid header-bgD py-5 mb-5 wow fadeIn"
@@ -57,6 +58,8 @@
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
               <a class="text-white" href="{{ url('/') }}">Inicio</a>
+
+              
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
              <font color="#028A0F">Donaciones</font> 
@@ -94,7 +97,7 @@
             <h5 class="mb-3">
               <i class="far fa-check-circle text-primary me-3"></i>Donativos Alimenticios
             </h5>
-            <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+        
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="img-border">

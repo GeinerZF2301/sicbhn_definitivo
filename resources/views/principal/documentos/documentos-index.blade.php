@@ -2,6 +2,7 @@
 @extends('layouts.navbar')
 @section('content')
     <!-- Navbar Start -->
+      
     <nav
       class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
       data-wow-delay="0.1s"
@@ -50,10 +51,10 @@
 
        <!-- Page Header Start -->
    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgDP py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s">
       <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">Nuestra documentación</h1>
+        <h1 class="display-4 text-white mb-3 animated slideInDown">Documentación</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
@@ -69,5 +70,92 @@
     <!-- Page Header End -->
 
 
+     <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
+            <h1 class="display-5 mb-4">
+              Sobre Nuestra
+              <font color="#028A0F">Documentación</font>
+              {{-- <span class="text-primary">Donación</span>? --}}
+            </h1>
+            <p class="mb-4">
+            En este apartado se encuentran una serie de documentos de carácter oficial que sirven
+            para identificar información acerca del Corredor Biológico Hojancha-Nandayure. 
+            <br>
+            La documentación publicada cuenta con información recopilada puntual y actualizada. 
+            </p>
+
+          </div>
+          {{-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="img-border"> 
+               <img class="img-fluid" src="zoofari/img/Donaciones/DonacionesRecuadro.jpg" alt="" />
+            </div>
+          </div> --}}
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Membership Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div
+          class="row g-5 mb-5 align-items-end wow fadeInUp"
+          data-wow-delay="0.1s"
+        >
+          <div class="col-lg-6">
+          </div>
+          <div class="col-lg-6 text-lg-end">
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="membership-item position-relative">
+              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
+              {{-- <h1 class="display-1">01</h1> --}}
+              <h4 class="text-white mb-3">Actas</h4>
+              {{-- <h3 class="text-primary mb-4">$99.00</h3> --}}
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut, laboriosam maxime magnam voluptates quis quibusdam architecto molestias minima, quaerat veritatis, excepturi doloribus placeat enim sint explicabo et ab perferendis.</p>
+              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="membership-item position-relative">
+              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
+              {{-- <h1 class="display-1">01</h1> --}}
+              <h4 class="text-white mb-3">Proyectos</h4>
+              {{-- <h3 class="text-primary mb-4">$99.00</h3> --}}
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut, laboriosam maxime magnam voluptates quis quibusdam architecto molestias minima, quaerat veritatis, excepturi doloribus placeat enim sint explicabo et ab perferendis.</p>
+              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+            </div>
+          </div>
+
+
+          
+
+    
+          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="membership-item position-relative">
+              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
+              {{-- <h1 class="display-1">03</h1> --}}
+              <h4 class="text-white mb-3">Oficios</h4>
+              {{-- <h3 class="text-primary mb-4">$199.00</h3> --}}
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio enim reiciendis, doloremque commodi repellat accusantium porro sed fugit dolor voluptas corporis quos quam, est quibusdam soluta iusto, a provident? Repellat.</p>
+  
+              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Membership End -->
+ 
+ 
 
     @endsection
