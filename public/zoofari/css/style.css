@@ -675,16 +675,18 @@ header.campannas .masthead-subheading {
     padding-bottom: 60px;
    }
    .ic{
-    
+    margin-top: 10px;
     width: 100px;
     height: 100px;
    }
    .saber-mas{
-    margin-bottom: 32px;
+    margin-bottom: -70px;
     margin-right: 10px;
-    background-color:#000000;
+    background-color: #000000;
     border-radius: 5px;
-    border-color:#0c4128 ;
+    border-color: #0c4128;
+    height: 40px;
+    margin-top: 60px;
    }
   
    .icon-arrow{
@@ -697,4 +699,103 @@ header.campannas .masthead-subheading {
    }
   
   
+   /*DOCUMENTOS*/
+/* 
+header.campannas .masthead-subheading {
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+   */
+
+
+@media (min-width: 768px) {
+    header.campannas {
+      padding-top: 17rem;
+      padding-bottom: 12.5rem;
+    }
+    /* header.campannas .masthead-subheading {
+      font-size: 2.25rem;
+      font-style: italic;
+      line-height: 2.25rem;
+      margin-bottom: 2rem;
+      font-family: 'Poppins', sans-serif; 
+    } */
+    /* header.campannas .masthead-heading {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 4.5rem;
+      margin-bottom: 4rem;
+      font-family: 'Poppins', sans-serif; 
+    } */
+  }
   
+  .containertiposcampannas-document{
+    width: auto;
+    height: auto; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 50px auto 100px ;
+   }
+  
+   .containertiposcampannas-document .cardtipos{
+    display: grid;
+    grid-template-columns: auto, auto, auto;
+    grid-template-rows: auto,auto,auto;
+    gap: 1rem;
+    width: 369.5px;
+    height: 335.23px;;
+    border-radius: 20px;
+    box-shadow: 2px 2px #1e2125 ;
+    overflow: hidden;
+    margin: 20px 30px ;
+    text-align: center;
+    transition: all 0.25s;
+    
+   }
+   .bg-beige{
+    background-color: #e3e1d0;
+   }
+   /* .bg-beige{
+    background-color: #e3e1d0;
+   } */
+   /* .textocartas-document{
+    text-align: left;
+    margin-left: 16px;
+    font-family: 'Poppins', sans-serif;
+   } */
+   /* .descripcioncarta-document{
+    text-align:left;
+    font-size: medium;
+    height: 20px;
+    width: 300px;
+    margin-left: 32px;
+    padding-bottom: 60px;
+   } */
+   .ic-document{
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+   }
+   .saber-mas-document{
+    margin-bottom: -70px;
+    margin-right: 10px;
+    background-color: #000000;
+    border-radius: 5px;
+    border-color: #0c4128;
+    height: 40px;
+    margin-top: 60px;
+   }
+  
+   /* .icon-arrow{
+    margin-left: 6px;
+   } */
+  
+   /* .subtitle-document{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+   }
+   */

@@ -112,7 +112,7 @@
               {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
               <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
               <div class="d-flex justify-content-center">
-                  <a href="#" class="saber-mas btn btn-primary">Descargar</a>
+                  <a href="#" class="saber-mas btn" style="color:aliceblue">Ver más</a>
               </div>
           </div>
 
@@ -123,7 +123,7 @@
               {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
               <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
               <div class="d-flex justify-content-center">
-                  <a href="#" class="saber-mas btn btn-success">Descargar</a>
+                  <a href="#" class="saber-mas btn "style="color:aliceblue">Ver más</a>
               </div>
           </div>
 

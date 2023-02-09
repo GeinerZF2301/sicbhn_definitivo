@@ -100,62 +100,34 @@
     <!-- About End -->
 
 
-    <!-- Membership Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-          </div>
-          <div class="col-lg-6 text-lg-end">
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="membership-item position-relative">
-              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
-              {{-- <h1 class="display-1">01</h1> --}}
-              <h4 class="text-white mb-3">Actas</h4>
-              {{-- <h3 class="text-primary mb-4">$99.00</h3> --}}
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut, laboriosam maxime magnam voluptates quis quibusdam architecto molestias minima, quaerat veritatis, excepturi doloribus placeat enim sint explicabo et ab perferendis.</p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-
-
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="membership-item position-relative">
-              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
-              {{-- <h1 class="display-1">01</h1> --}}
-              <h4 class="text-white mb-3">Proyectos</h4>
-              {{-- <h3 class="text-primary mb-4">$99.00</h3> --}}
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aut, laboriosam maxime magnam voluptates quis quibusdam architecto molestias minima, quaerat veritatis, excepturi doloribus placeat enim sint explicabo et ab perferendis.</p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-
-
-          
-
+       <!-- CARDS DE DOCUMENTOS-->
+    <div class="containertiposcampannas-document">
+      {{-- @foreach ($tipos as $tipo) --}}
+          {{-- <input type="hidden" value="{{ $tipo->id }}" id="idTipoCampanna" class="idTipoCampanna">
+          @if ($tipo->id % 2 != 0) --}}
+              <div class="cardtipos bg-beige">
+                  <div class="d-flex justify-content-center">
+                      <img class="ic-document" src="zoofari/img/DocumentosPublicos/folder.png">
+                  </div>
+                  {{-- <h4 class="textocartas-document">{{ $tipo->Nombre }}</h4>
+                  <p class="descripcioncarta-document">{{ $tipo->Descripcion }}</p> --}}
+                  <div class="d-flex justify-content-center">
+                      <a href="#" class="saber-mas-document btn" style="color:aliceblue">Descargar</a>
+                  </div>
+              </div>
     
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="membership-item position-relative">
-              {{-- <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documento.jpg" alt="" /> --}}
-              {{-- <h1 class="display-1">03</h1> --}}
-              <h4 class="text-white mb-3">Oficios</h4>
-              {{-- <h3 class="text-primary mb-4">$199.00</h3> --}}
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio enim reiciendis, doloremque commodi repellat accusantium porro sed fugit dolor voluptas corporis quos quam, est quibusdam soluta iusto, a provident? Repellat.</p>
-  
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Membership End -->
- 
- 
+              <div class="cardtipos bg-beige ">
+                  <div class="d-flex justify-content-center">
+                      <img class="ic-document" src="zoofari/img/DocumentosPublicos/folder.png">
+                  </div>
+                  {{-- <h4 class="textocartas-document">{{ $tipo->Nombre }}</h4>
+                  <p class="descripcioncarta-document">{{ $tipo->Descripcion }}</p> --}}
+                  <div class="d-flex justify-content-center">
+                     <a href="#" class="saber-mas-document btn" style="color:aliceblue">Descargar</a>
+                  </div>
+              </div>
+     <!-- FIN DE CARDS DOCUMENTOS -->
 
     @endsection
+
+
