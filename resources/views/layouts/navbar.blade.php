@@ -75,10 +75,10 @@
             <small>+(506) 8670-3535</small>
           </div>
           <div class="h-100 d-inline-flex align-items-center">
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-1"  href="https://www.facebook.com/CorredorBiologico.CBHN"
               ><i class="fab fa-facebook-f"></i
             ></a>
-            <a class="btn btn-sm-square bg-white text-primary me-1" href=""
+            <a class="btn btn-sm-square bg-white text-primary me-1" href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"
               ><i class="fab fa-instagram"></i
             ></a>
             <a class="btn btn-sm-square bg-white text-primary me-0" href=""
@@ -112,10 +112,10 @@
               <i class="fa fa-envelope me-3"></i>info.cbhn@gmail.com
             </p>
             <div class="d-flex pt-2">
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/CorredorBiologico.CBHN"
                 ><i class="fab fa-facebook-f"></i
               ></a>
-              <a class="btn btn-outline-light btn-social" href=""
+              <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"
               ><i class="fab fa-instagram"></i
             ></a>
               <a class="btn btn-outline-light btn-social" href=""
