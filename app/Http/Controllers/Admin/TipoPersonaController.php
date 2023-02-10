@@ -16,27 +16,30 @@ class TipoPersonaController extends Controller
         $this->tipo_persona_repositorio = $tipo_persona_repositorio;
     }
 
-    public function index() : Renderable
+    public function index() 
     {
         $tipo_personas = $this->tipo_persona_repositorio->allTypesOfPeople();
         return view('admin.tipopersonas.index', compact('tipo_personas'));
     }
 
-    public function create() : RedirectResponse
+    public function create() 
     {
         return view('admin.tipopersonas.createOrEdit');
     }
 
-    public function store(StoreTipoPersonaRequest $request) : RedirectResponse
+    public function store(StoreTipoPersonaRequest $request) 
     {
         $validated_data = $request->validated();
         $this->tipo_persona_repositorio->storePersonType($validated_data);
-        return redirect->route('tipospersonas.index')->with('message', 'OK');
+
+        return response()->json([
+            'success' => 'Tipo de persona guardada correctamente'
+        ], 201);
     }
 
     public function show($id)
     {
-        //
+        
     }
 
     public function edit($id)

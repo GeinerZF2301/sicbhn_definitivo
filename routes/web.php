@@ -55,10 +55,16 @@ Route::get('/tiposvoluntarios', function () {
 Route::get('/gestionvoluntarios', function () {
     return view('admin/gestionvoluntarios.index');
 });
-
-
-Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
-Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
 Route::get('/admin', function () {
     return view('layouts.admin');
 });
+
+
+Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
+
+// Rutas para el modulo de Tipos de Persona
+Route::get('/tipospersonas',[TipoPersonaController::class,'index'])->name('tipospersonas');
+Route::get('/tipospersonas/create',[TipoPersonaController::class,'create'])->name('tipospersonas.create');
+Route::post('/tipospersonas/store',[TipoPersonaController::class,'store'])->name('tipospersonas.store');
+
+

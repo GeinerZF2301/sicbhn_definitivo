@@ -11,7 +11,7 @@
         public function storePersonType($data){
             return TipoPersona::create($data);
         }
-        public function findPersonTypes($id){
+        public function findPersonType($id){
             return TipoPersona::find($id);
         }
         public function updatePersonType($data, $id){

@@ -5,17 +5,17 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
   <title>Gestión Administrativa</title>
-  <!-- base:css -->
   <link rel="stylesheet" href="{{asset('spica/vendors/mdi/css/materialdesignicons.min.css')}}">
-  <link rel="stylesheet" href="{{asset('spica/vendors/css/vendor.bundle.base.css')}}">
-  <!-- endinject -->
-  <!-- plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
+  {{-- <link rel="stylesheet" href="{{asset('spica/vendors/css/vendor.bundle.base.css')}}"> --}}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href={{asset('css/admin-styles.css')}}>
   <link rel="stylesheet" href="{{asset('spica//css/style.css')}}">
+  
   <!-- endinject -->
   <link rel="shortcut icon" href="zoofari/img/LogoCorredor.png" />
+ 
 </head>
 <body>
   <div class="container-scroller d-flex">
@@ -39,13 +39,13 @@
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
             <i class="mdi mdi-human-male-female menu-icon"></i>
-            <span class="menu-title">Voluntariados</span>
+            <span class="menu-title">Personas</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/tiposvoluntarios') }}">Categorías </a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/gestionvoluntarios') }}">Gestiónes</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/tipospersonas') }}">Tipos de Persona </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/personas') }}">Gestion de las Personas</a></li>
             </ul>
           </div>
         </li>
@@ -233,49 +233,50 @@
         </div>
         
       </nav>
-      <!-- partial -->
+      
       <div class="main-panel">
-        <div class="content-wrapper">
+        @yield('content')
+      
+      </div>
+          <div class="content-wrapper">
 
-        </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:./partials/_footer.html -->
-        <footer class="footer">
-          <div class="card">
-            <div class="card-body">
-              <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Distributed By: <a href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>
-                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:./partials/_footer.html -->
+          <footer class="footer">
+            <div class="card">
+              <div class="card-body">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+                  <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Distributed By: <a href="https://www.themewagon.com/" target="_blank">ThemeWagon</a></span>
+                  <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
+                </div>
               </div>
             </div>
-          </div>
-        </footer>
+          </footer>
         <!-- partial -->
-      </div>
+      
       <!-- main-panel ends -->
-    </div>
+    
     <!-- page-body-wrapper ends -->
   </div>
   
-  
+ 
   <!-- container-scroller -->
 
   <!-- base:js -->
-  <script src="{{asset('spica/vendors/js/vendor.bundle.base.js')}}"></script>
+  {{-- <script src="{{asset('spica/vendors/js/vendor.bundle.base.js')}}"></script> --}}
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="{{asset('spica/vendors/chart.js/Chart.min.js')}}"></script>
+  {{-- <script src="{{asset('spica/vendors/chart.js/Chart.min.js')}}"></script> --}}
   <!-- End plugin js for this page-->
   <!-- inject:js -->
-  <script src="{{asset('spica/js/off-canvas.js')}}"></script>
-  <script src="{{asset('spica/js/hoverable-collapse.js')}}"></script>
-  <script src="{{asset('spica/js/template.js')}}"></script>
-  <!-- endinject -->
-  <!-- plugin js for this page -->
-  <!-- End plugin js for this page -->
-  <!-- Custom js for this page-->
-  <script src="{{asset('spica/js/dashboard.js')}}"></script>
+  {{-- <script src="{{asset('spica/js/off-canvas.js')}}"></script> --}}
+  {{-- <script src="{{asset('spica/js/hoverable-collapse.js')}}"></script> --}}
+  {{-- <script src="{{asset('spica/js/template.js')}}"></script> --}}
+  {{-- <script src="{{asset('spica/js/dashboard.js')}}"></script> --}}  
+
+
   <!-- End custom js for this page-->
 </body>
 
