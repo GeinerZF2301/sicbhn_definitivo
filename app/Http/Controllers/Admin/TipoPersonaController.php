@@ -22,11 +22,6 @@ class TipoPersonaController extends Controller
         return view('admin.tipopersonas.index', compact('tipo_personas'));
     }
 
-    public function create() 
-    {
-        return view('admin.tipopersonas.createOrEdit');
-    }
-
     public function store(StoreTipoPersonaRequest $request) 
     {
         $validated_data = $request->validated();
