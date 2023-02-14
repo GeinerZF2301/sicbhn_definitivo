@@ -170,7 +170,11 @@
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Campannas/CampannaPrincipal.jpeg) center center no-repeat;
     background-size: cover;
 }
-
+/*** Header Contactos***/
+.header-bgCO {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Contactos/inicioCo.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .btn-play {
     position: relative;
