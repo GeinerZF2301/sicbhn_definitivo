@@ -143,7 +143,7 @@
 
 /*** Header ***/
 .header-bg {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/inicio/iniciocorredor2.jpg) center center no-repeat;
     background-size: cover;
 }
 /*Header de documentos*/
@@ -154,6 +154,14 @@
 /*Header de Donaciones*/
 .header-bgD {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.jpg) center center no-repeat;
+    background-size: cover;
+}
+.header-bgHV {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/Encabezado.jpeg) center center no-repeat;
+    background-size: cover;
+}
+.header-bgG {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/galeria/EncabezadoGaleria3.jpg) center center no-repeat;
     background-size: cover;
 }
 
@@ -370,7 +378,7 @@
 }
 
 .visiting-hours {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/FotoTucan.jpg) center center no-repeat;
     background-size: cover;
 }
 

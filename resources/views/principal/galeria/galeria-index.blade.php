@@ -50,7 +50,7 @@
 
    <!-- Page Header Start -->
    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgG py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s">
       <div class="container py-5">
         <h1 class="display-4 text-white mb-3 animated slideInDown">Galería de fotografías</h1>
@@ -76,16 +76,18 @@
           data-wow-delay="0.1s"
         >
           <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Animals</p>
+            <p><span class="text-primary me-2">#</span>Nuestra flora y fauna</p>
             <h1 class="display-5 mb-0">
-              Let`s See Our <span class="text-primary">Zoofari</span> Awsome
-              Animals
+              Aquí podrás encontrar nuestra <span class="text-primary">Flora</span> y <span class="text-warning">Fauna</span>
             </h1>
+            <br>
+            <p class="mb-9">
+            El Corredor Biológico Hojancha-Nandayure posee una gran biodiversidad y es uno de los territorios más admirados de Costa Rica. <br> 
+            En esta sección encontrará fotografías captadas del Corredor Biológico Hojancha-Nandayure. <br>
+            Te invitamos a ser parte de la vida silvestre que nos rodea.
+            </p>
           </div>
           <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href=""
-              >Explore More Animals</a
-            >
           </div>
         </div>
         <div class="row g-4">
@@ -94,14 +96,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-md-1.jpg"
+                  href="zoofari/img/galeria/foto1.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-1.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto1.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna</p>
+                      <h5 class="text-white mb-0">Mono</h5>
                     </div>
                   </div>
                 </a>
@@ -109,14 +111,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-lg-1.jpg"
+                  href="zoofari/img/galeria/foto2.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-1.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto2.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna y Flora</p>
+                      <h5 class="text-white mb-0">Colibrí y flor</h5>
                     </div>
                   </div>
                 </a>
@@ -128,14 +130,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-lg-2.jpg"
+                  href="zoofari/img/galeria/foto3.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-2.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto3.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna</p>
+                      <h5 class="text-white mb-0">Ardilla</h5>
                     </div>
                   </div>
                 </a>
@@ -143,14 +145,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-md-2.jpg"
+                  href="zoofari/img/galeria/foto4.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-2.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto4.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna</p>
+                      <h5 class="text-white mb-0">Perico verde</h5>
                     </div>
                   </div>
                 </a>
@@ -162,14 +164,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-md-3.jpg"
+                  href="zoofari/img/galeria/foto6.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-3.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto6.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna y Flora</p>
+                      <h5 class="text-white mb-0">Mariposa y flor</h5>
                     </div>
                   </div>
                 </a>
@@ -177,14 +179,14 @@
               <div class="col-12">
                 <a
                   class="animal-item"
-                  href="img/animal-lg-3.jpg"
+                  href="zoofari/img/galeria/foto5.jpg"
                   data-lightbox="animal"
                 >
                   <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-3.jpg" alt="" />
+                    <img class="img-fluid" src="zoofari/img/galeria/foto5.jpg" alt="" />
                     <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
+                      <p class="text-white small text-uppercase mb-0">Fauna</p>
+                      <h5 class="text-white mb-0">Coyote</h5>
                     </div>
                   </div>
                 </a>

@@ -66,7 +66,7 @@
                 type="button"
                 class="btn-play"
                 data-bs-toggle="modal"
-                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc"
+                data-src="https://youtu.be/JcxND65b0QI"
                 data-bs-target="#videoModal"
               >
                 <span></span>
@@ -78,13 +78,19 @@
         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
           <div class="owl-carousel header-carousel">
             <div class="owl-carousel-item">
-              <img class="img-fluid" src="zoofari/img/carousel-1.jpg" alt="" />
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal1.jpg" alt="" />
             </div>
             <div class="owl-carousel-item">
-              <img class="img-fluid" src="zoofari/img/carousel-2.jpg" alt="" />
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal4.jpg" alt="" />
             </div>
             <div class="owl-carousel-item">
-              <img class="img-fluid" src="zoofari/img/carousel-3.jpg" alt="" />
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal5.jpg" alt="" />
+            </div>
+            <div class="owl-carousel-item">
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal2.jpg" alt="" />
+            </div>
+            <div class="owl-carousel-item">
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal7.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -103,7 +109,7 @@
       <div class="modal-dialog">
         <div class="modal-content rounded-0">
           <div class="modal-header">
-            <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+            <h3 class="modal-title" id="exampleModalLabel">Conoce el Corredor Biológico</h3>
             <button
               type="button"
               class="btn-close"
@@ -134,37 +140,35 @@
       <div class="container">
         <div class="row g-5">
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
+            <p><span class="text-primary me-2">#</span>Bienvenidos a nuestra experiencia</p>
             <h1 class="display-5 mb-4">
-              Why You Should Visit
-              <span class="text-primary">Zoofari</span> Park!
+              ¿Conoces acerca del Corredor Biológico
+              <span class="text-primary">Hojancha-Nandayure</span>?
             </h1>
             <p class="mb-4">
-              Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No
-              stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo
-              nonumy clita sit at, sed sit sanctus dolor eos.
+            El Corredor Biológico Hojancha-Nandayure (CBHN) se encuentra ubicado en los Cantones de
+            Hojancha y Nandayure en la provincia de Guanacaste. <br>
+            Dentro del Corredor Biológico existe una gran biodiversidad de flora y fauna. 
+            Te invitamos a conocer más acerca de nuestras actividades y conectarte con la naturaleza. 
+            Sé parte de la familia del Corredor Biológico Hojancha-Nandayure.
             </p>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Free Car
-              Parking
+              <i class="far fa-check-circle text-primary me-3"></i>Voluntariados
             </h5>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Natural
-              Environment
+              <i class="far fa-check-circle text-primary me-3"></i>Campañas
             </h5>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>Professional
-              Guide & Security
+              <i class="far fa-check-circle text-primary me-3"></i>Donaciones
             </h5>
             <h5 class="mb-3">
-              <i class="far fa-check-circle text-primary me-3"></i>World Best
-              Animals
+              <i class="far fa-check-circle text-primary me-3"></i>Galería de fotos
             </h5>
-            <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+            <a class="btn btn-primary py-3 px-5 mt-3" href="{{ url('/sobrenosotros') }}">Más información</a>
           </div>
           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="img-border">
-              <img class="img-fluid" src="zoofari/img/about.jpg" alt="" />
+              <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal3.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -183,33 +187,39 @@
             class="col-md-6 col-lg-3 text-center wow fadeIn"
             data-wow-delay="0.1s"
           >
-            <i class="fa fa-paw fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Animal</p>
+          
+            <i class="fa fa-dove fa-3x text-primary mb-3"></i>
+            <h1 class="text-white mb-2" data-toggle="counter-up">257</h1>
+            <p class="text-white mb-0">Especies de <br>
+              Aves</p>
           </div>
           <div
             class="col-md-6 col-lg-3 text-center wow fadeIn"
             data-wow-delay="0.3s"
           >
-            <i class="fa fa-users fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Daily Vigitors</p>
+            <i class="fa fa-regular fa-paw fa-3x text-primary mb-3"></i>
+            <h1 class="text-white mb-2" data-toggle="counter-up">65</h1>
+            <p class="text-white mb-0">Especies de <br>
+              Mamíferos</p>
           </div>
           <div
             class="col-md-6 col-lg-3 text-center wow fadeIn"
             data-wow-delay="0.5s"
           >
-            <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Total Membership</p>
+            <i class="fa fa-frog fa-3x text-primary mb-3"></i>
+            <h1 class="text-white mb-2" data-toggle="counter-up">40</h1>
+            <p class="text-white mb-0">Especies de <br>
+              Reptiles y Anfibios</p>
           </div>
           <div
             class="col-md-6 col-lg-3 text-center wow fadeIn"
             data-wow-delay="0.7s"
           >
-            <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-            <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-            <p class="text-white mb-0">Save Wild Life</p>
+            <i class="fa fa-globe fa-3x text-primary mb-3"></i>
+            <h1 class="text-white mb-2" data-toggle="counter-up">41.800</h1>
+            <p class="text-white mb-0">Hectáreas de <br>
+              Extensión territorial</p>
+          </div>
           </div>
         </div>
       </div>
@@ -221,10 +231,10 @@
       <div class="container">
         <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
           <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Services</p>
+            <p><span class="text-primary me-2">#</span>Nuestros servicios</p>
             <h1 class="display-5 mb-0">
-              Special Services For
-              <span class="text-primary">Zoofari</span> Visitors
+              Ven a conocer más acerca de los servicios del
+              <span class="text-primary">Corredor Biológico</span>
             </h1>
           </div>
           <div class="col-lg-6">
@@ -233,8 +243,8 @@
             >
               <i class="fa fa-3x fa-mobile-alt text-white"></i>
               <div class="ms-4">
-                <p class="text-white mb-0">Call for more info</p>
-                <h2 class="text-white mb-0">+012 345 6789</h2>
+                <p class="text-white mb-0">Llamar para más información</p>
+                <h2 class="text-white mb-0">+ (506) 8670-3535</h2>
               </div>
             </div>
           </div>
@@ -244,88 +254,88 @@
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-2.png" alt="Icon" />
-            <h5 class="mb-3">Car Parking</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
+            <h5 class="mb-3">Fotografías</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Dentro de las instalaciones verdes puedes tomar fotografías,
+              para que puedas conservar tu experiencia.</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-3.png" alt="Icon" />
-            <h5 class="mb-3">Animal Photos</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />
+            <h5 class="mb-3">Parqueo seguro</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Podrás encontrar el área del parqueo para que tus vehículos
+              estén dentro de las instalaciones seguras.</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.5s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-4.png" alt="Icon" />
-            <h5 class="mb-3">Guide Services</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.png" alt="Icon" />
+            <h5 class="mb-3">Guías turísticos</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Encontrarás personal autorizado
+              y capacitado para poder llevar acabo las excursiones.</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.7s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-5.png" alt="Icon" />
-            <h5 class="mb-3">Food & Beverages</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.png" alt="Icon" />
+            <h5 class="mb-3">Senderos seguros</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Durante tu caminata, explora el bosque de manera segura
+              con nuestros senderos seguros. </span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.1s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-6.png" alt="Icon" />
-            <h5 class="mb-3">Zoo Shopping</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.png" alt="Icon" />
+            <h5 class="mb-3">Hospedaje</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Contamos con un pequeño hospedaje para nuestros visitantes
+              de largo o que busquen realizar una pasantía.</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.3s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-7.png" alt="Icon" />
-            <h5 class="mb-3">Free Hi Speed Wi-Fi</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.png" alt="Icon" />
+            <h5 class="mb-3">Zonas de comida</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Para que tu experiencia sea más agradable, recuerda
+              que existen espacios para zonas de comida.</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.5s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-8.png" alt="Icon" />
-            <h5 class="mb-3">Play Ground</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.png" alt="Icon" />
+            <h5 class="mb-3">Fauna</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >En el Corredor Biológico se registran alrededor de 
+              365 especies de animales. ¡Ven a conocer!</span
             >
           </div>
           <div
             class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp"
             data-wow-delay="0.7s"
           >
-            <img class="img-fluid mb-3" src="zoofari/img/icon/icon-9.png" alt="Icon" />
-            <h5 class="mb-3">Rest House</h5>
+            <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.png" alt="Icon" />
+            <h5 class="mb-3">Flora</h5>
             <span
-              >Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem
-              sed diam stet diam sed stet.</span
+              >Poseemos una gran variedad de biodiversidad con 
+              un registro de alrededor de 591 especies de plantas.</span
             >
           </div>
         </div>
@@ -333,286 +343,8 @@
     </div>
     <!-- Service End -->
 
-    <!-- Animal Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Our Animals</p>
-            <h1 class="display-5 mb-0">
-              Let`s See Our <span class="text-primary">Zoofari</span> Awsome
-              Animals
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href=""
-              >Explore More Animals</a
-            >
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-1.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-1.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-2.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-2.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="row g-4">
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-md-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-md-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div class="col-12">
-                <a
-                  class="animal-item"
-                  href="img/animal-lg-3.jpg"
-                  data-lightbox="animal"
-                >
-                  <div class="position-relative">
-                    <img class="img-fluid" src="zoofari/img/animal-lg-3.jpg" alt="" />
-                    <div class="animal-text p-4">
-                      <p class="text-white small text-uppercase mb-0">Animal</p>
-                      <h5 class="text-white mb-0">Elephant</h5>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Animal End -->
-
-    <!-- Visiting Hours Start -->
-    <div
-      class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
-      data-wow-delay="0.1s"
-    >
-      <div class="container py-5">
-        <div class="row g-5">
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">
-                <span>Monday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Tuesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Wednesday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Thursday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Friday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Saturday</span>
-                <span>9:00AM - 6:00PM</span>
-              </li>
-              <li class="list-group-item">
-                <span>Sunday</span>
-                <span>Closed</span>
-              </li>
-            </ul>
-          </div>
-          <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="display-6 text-white mb-5">Contact Info</h1>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>Office</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Zoo</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Ticket</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">ticket@example.com</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Support</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">support@example.com</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Visiting Hours End -->
-
-    <!-- Membership Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div
-          class="row g-5 mb-5 align-items-end wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="col-lg-6">
-            <p><span class="text-primary me-2">#</span>Membership</p>
-            <h1 class="display-5 mb-0">
-              You Can Be A Proud Member Of
-              <span class="text-primary">Zoofari</span>
-            </h1>
-          </div>
-          <div class="col-lg-6 text-lg-end">
-            <a class="btn btn-primary py-3 px-5" href="">Special Pricing</a>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-1.jpg" alt="" />
-              <h1 class="display-1">01</h1>
-              <h4 class="text-white mb-3">Popular</h4>
-              <h3 class="text-primary mb-4">$99.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>10% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>2 adult and 2 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
 
 
-          
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-2.jpg" alt="" />
-              <h1 class="display-1">02</h1>
-              <h4 class="text-white mb-3">Standard</h4>
-              <h3 class="text-primary mb-4">$149.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>15% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>4 adult and 4 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div class="membership-item position-relative">
-              <img class="img-fluid" src="img/animal-lg-3.jpg" alt="" />
-              <h1 class="display-1">03</h1>
-              <h4 class="text-white mb-3">Premium</h4>
-              <h3 class="text-primary mb-4">$199.00</h3>
-              <p><i class="fa fa-check text-primary me-3"></i>20% discount</p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>6 adult and 6 child
-              </p>
-              <p>
-                <i class="fa fa-check text-primary me-3"></i>Free animal
-                exhibition
-              </p>
-              <a class="btn btn-outline-light px-4 mt-3" href="">Get Started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Membership End -->
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -621,7 +353,7 @@
           class="display-5 text-center mb-5 wow fadeInUp"
           data-wow-delay="0.1s"
         >
-          Our Clients Say!
+          Opiniones de nuestros visitantes
         </h1>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
@@ -630,52 +362,49 @@
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="zoofari/img/testimonial-1.jpg"
+              src="zoofari/img/inicio/MarFoto.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
+                El recorrido que tuvé en el Corredor Biológico Hojancha-Nandayure
+                fue una experiencia de conexión con la naturaleza.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">María Acón</h5>
+              <span class="fst-italic">Estudiante</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="zoofari/img/testimonial-2.jpg"
+              src="zoofari/img/inicio/AlfieriFoto.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
+                En mi recorrdido por el Corredor Biológico Hojancha-Nandayure lo que
+                más me impresionó fueron las zonas verdes, las vistas, y la fauna del lugar.
+                Sin lugar a dudas volvería a visitar el Corredor Biológico.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">Alfieri Mora</h5>
+              <span class="fst-italic">Estudiante</span>
             </div>
           </div>
           <div class="testimonial-item text-center">
             <img
               class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-              src="zoofari/img/testimonial-3.jpg"
+              src="zoofari/img/inicio/MelanyFoto.jpg"
               style="width: 100px; height: 100px"
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                Clita clita tempor justo dolor ipsum amet kasd amet duo justo
-                duo duo labore sed sed. Magna ut diam sit et amet stet eos sed
-                clita erat magna elitr erat sit sit erat at rebum justo sea
-                clita.
+                El servicio al cliente y la atención que tuvieron 
+                los guías y encargados de la actividad fueron una de las 
+                mejores experiencias que tuvé en mi voluntariado en el
+                Corredor Biológico Hojancha-Nandayure.
               </p>
-              <h5 class="mb-1">Patient Name</h5>
-              <span class="fst-italic">Profession</span>
+              <h5 class="mb-1">Melany Lawson</h5>
+              <span class="fst-italic">Estudiante</span>
             </div>
           </div>
         </div>
