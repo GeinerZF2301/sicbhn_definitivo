@@ -52,7 +52,7 @@
     
     <!-- Page Header Start -->
     <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgSN py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">
@@ -75,8 +75,267 @@
 
 
 
+
+ <!-- About Start -->
+ <div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+        {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
+        <h1 class="display-5 mb-4">
+          Acerca del Corredor Biológico
+          <font color="#028A0F">Hojancha-</font>
+          <font color="#ffed4a">Nandayure</font>
+          
+          {{-- <span class="text-primary">Donación</span>? --}}
+        </h1>
+        <p class="mb-4">
+          El Corredor Biológico Hojancha-Nandayure (CBHN), se encuentra ubicado en la Provincia de
+          Guanacaste, en los cantones de Hojancha y Nandayure, de ahí su nombre. Tiene una extensión de
+          41 832 hectáreas, abarcando el 25% del área del cantón de Hojancha y el 75% del área de
+          Nandayure. 
+          <br>
+          <br>
+
+        El Corredor Biológico Hojancha-Nandayure (CBHN) se encuentra ubicado en la región climática del
+         Pacífico Norte, abarcando parte de dos subregiones climáticas: occidental de la península de
+        Nicoya (PN1: de sequía) y central del Pacífico Norte (PN2: lluvioso con influencia monzónica).
+        </p>
+
     
-    <!-- MyV Start -->
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End -->
+
+
+
+<!-- Funciones del corredor -->
+<div class="text-uppercase text-center"> 
+  <h2>Funciones del Corredor Biológico</h2>   
+</div>
+
+<div class="card-container">
+  <div class="card" style="background-color: #4caf50;">
+    <p class="card-text">Administración y gestión de actividades del POA</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <p class="card-text">Formulación, gestión y evaluación de Proyectos</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <p class="card-text">Coordinación de sesiones y reuniones del CL</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <p class="card-text">Autoevaluación de Gestión del corredor</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <p class="card-text">Nuestras actividades dependen mucho de los representantes
+      institucionales</p>
+  </div>
+</div>
+
+<!-- funciones del corredor End -->
+
+
+<!-- colaboradores -->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="text-uppercase text-center"> 
+  <h2>Colaboradores</h2>   
+</div>
+  <div class="cards-container-">
+    <div class="card-">
+      <a href="https://www.chorotega.una.ac.cr">
+      <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
+    </div>
+    <div class="card-">
+      <a href="https://www.facebook.com/nicoyasistemas/">
+      <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2">
+    </div>
+    <div class="card-">
+       <a href="https://www.instagram.com/jose_venegas_photography/">
+      <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3">
+    </div>
+  </div>
+
+<!-- colaboradores end -->
+
+
+<!-- EQUIPO DESARROLLADOR-->
+
+
+ <div class="container-circle">
+  <div class="circle">
+    <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Circle Image 1">
+    <h6>Melany Lawson Méndez</h6>
+    <p>Front End Developer</p>
+  </div>
+  <div class="circle">
+    <img src="../zoofari/img/SobreNosotros/Geiner.jpg" alt="Circle Image 2">
+    <h6>Geiner Zúñiga Flores</h6>
+    <p>Full Stack Developer Developer</p>
+  </div>
+  <div class="circle">
+    <img src="../zoofari/img/SobreNosotros/jose-venegas.png" alt="Circle Image 3">
+    <h6>Kriscia Campos Cárdenas</h6>
+    <p>Front End Developer</p>
+  </div>
+  <div class="circle">
+    <img src="../zoofari/img/SobreNosotros/jose-venegas.png" alt="Circle Image 4">
+    <h6>Alfieri Mora Jiménez</h6>
+    <p>holaaaaaaaa</p>
+  </div>
+  <div class="circle">
+    <img src="../zoofari/img/SobreNosotros/jose-venegas.png" alt="Circle Image 5">
+    <h6>María del Mar Acón Vargas</h6>
+    <p>Front End Developer</p>
+  </div>
+</div> 
+
+
+
+
+
+<!-- EQUIPO DESARROLLADOR END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{-- <div class="card-container">
+  <div class="card" style="background-color: #4caf50;">
+    <h3></h3>
+    <p>Administración y gestión de actividades del POA.</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <h3>Card 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <h3>Card 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <h3>Card 4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="card" style="background-color: #4caf50;">
+    <h3>Card 5</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</div> --}}
+
+
+
+
+
+
+  
+
+
+
+
+{{-- <div class="containerfunciones">
+  <div class="title-Funciones text-uppercase text-center "> 
+    <h2>Funciones del Corredor Biológico</h2>   
+</div>
+{{-- <div class="shadow-lg p-3 mb-5 bg-body rounded" >
+  <h1  class="text-center" class="display-5 mb-4">
+    Funciones del Corredor Biológico
+  </h1>
+</div> --}}
+
+{{-- </div> --}} 
+
+{{-- <div class="container">
+  <div class="row">
+    <div class="col-3">
+      <div class="card">
+        <img src="../zoofari/img/SobreNosotros/mision.jpg" alt="Vision del CBHN" class="card-img-top">
+        <div class="card-body">
+          <h1 class="card-title">Misión</h1>
+          <p class="card-text">El Corredor Biológico Hojancha-Nandayure es una suma de voluntades institucionales y de la sociedad civil, 
+            que buscan mejorar la conectividad entre Áreas Silvestres Protegidas y gestionar de manera integral la biodiversidad a través
+             de la educación ambiental, la producción sostenible y el fortalecimiento de capacidades locales.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-3">
+      <div class="card">
+        <img src="../zoofari/img/SobreNosotros/vision.jpg" alt="Vision del CBHN" class="card-img-top">
+        <div class="card-body">
+          <h1 class="card-title" class="text align-center">Visión</h1>
+          <p class="card-text">Ser un paisaje sostenible que brinda conectividad ecológica,
+             en donde las comunidades y la biodiversidad conviven en armonía.</p>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div> --}}
+
+
+    
+  
+
+
+
+{{-- <div class="containertiposcampannas">
+          <div class="cardtipos bg-mision ">
+              <div class="d-flex justify-content-center">
+                  <img class="ic" src="zoofari/img/Campannas/recycle.png">
+                  <h3>Misión</h3>
+              </div>
+              <div class="d-flex justify-content-center">
+              </div>
+          </div>
+
+          <div class="cardtipos bg-vision ">
+              <div class="d-flex justify-content-center">
+                  <img class="ic" src="zoofari/img/Campannas/recycle.png">
+                  <h3>Visión</h3>
+              </div>
+              <div class="d-flex justify-content-center">
+              </div>
+          </div> --}}
+
+
+
+          
+   
+           
+
+    
+    {{-- <!-- MyV Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div
@@ -139,10 +398,10 @@
                 </div>
         </div>
     </div>
-    <!-- MyV End -->
+    <!-- MyV End --> --}}
 
     
-    <!-- Funciones Start -->
+    {{-- <!-- Funciones Start -->
     <div class="container-xxl py-5">
 
         <div class="container">
@@ -240,5 +499,5 @@
             </div>
         </div>
     </div>
-    <!-- Funciones End -->
+    <!-- Funciones End --> --}}
     @endsection

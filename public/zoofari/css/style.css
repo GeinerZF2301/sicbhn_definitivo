@@ -163,6 +163,12 @@
     background-size: cover;
 }
 
+/*Header de Sobre Nosotros*/
+.header-bgSN {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/SobreNosotros/SNprincipal.jpg) center center no-repeat;
+    background-size: cover;
+}
+
 
 .btn-play {
     position: relative;
@@ -790,12 +796,102 @@ header.campannas .masthead-subheading {
     margin-top: 60px;
    }
   
-   /* .icon-arrow{
-    margin-left: 6px;
-   } */
+
+
+ .container-sm{
+  background-color: #BDF367;
+  display: flex;
+ } 
+ 
+/*FUNCIONES DEL CORREDOR*/
+   .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
   
-   /* .subtitle-document{
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
-   }
-   */
+  .card {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .card-text {
+    color: white;
+    font-size: 20px;
+  }
+/*******************************/
+  
+  
+  
+
+
+
+  /*COLABORADORES*/
+
+  .cards-container- {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .card- {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    overflow: hidden;
+  }
+  
+  .card- img {
+    width: 100%;
+    height: auto;
+  }
+  
+
+
+  /*EQUIPO DESARROLLADOR*/
+
+  
+  .container-circle {
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  .circle img {
+    width: 100%;
+  }
+  
+  .circle h6 {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .circle p {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+   
+
