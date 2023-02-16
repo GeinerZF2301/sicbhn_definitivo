@@ -170,6 +170,7 @@
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Campannas/CampannaPrincipal.jpeg) center center no-repeat;
     background-size: cover;
 }
+<<<<<<< HEAD
 
 /*Header de Sobre Nosotros*/
 .header-bgSN {
@@ -177,6 +178,13 @@
     background-size: cover;
 }
 
+=======
+/*** Header Contactos***/
+.header-bgCO {
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Contactos/inicioCo.jpg) center center no-repeat;
+    background-size: cover;
+}
+>>>>>>> babd3cdbab236f9c999ea358d832a34ea9a0393b
 
 .btn-play {
     position: relative;
