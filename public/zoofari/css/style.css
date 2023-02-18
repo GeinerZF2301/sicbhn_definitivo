@@ -874,12 +874,14 @@ header.campannas .masthead-subheading {
   /*EQUIPO DESARROLLADOR*/
 
   
-  .container-circle {
+  /* .container-circle {
     background-color: lightgray;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
+    min-height: 401px;
   }
   
   .circle {
@@ -906,5 +908,49 @@ header.campannas .masthead-subheading {
     font-size: 10px;
     margin-top: 5px;
   }
-   
 
+
+
+  .texto {
+    margin-top: 10px;
+  } */
+
+
+
+
+
+  .card-Desarrolladores {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  
+  .card-Desarrolladores img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-text-Desarrolladores {
+    padding: 20px;
+  }
+  
+  .card-text-Desarrolladores h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card-text-Desarrolladores p {
+    font-size: 16px;
+    color: #999;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card-Desarrolladores {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  
