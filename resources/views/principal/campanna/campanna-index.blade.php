@@ -184,7 +184,7 @@
                   <div class="card-body">
                     <div class="row ">
                         <div class="col d-flex ">
-                            <img src="zoofari/img/Campannas/maps.png" alt="">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
                             <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
                     
                         </div>
@@ -228,7 +228,7 @@
                   <div class="card-body">
                     <div class="row ">
                         <div class="col d-flex ">
-                            <img src="zoofari/img/Campannas/maps.png" alt="">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
                             <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
                     
                         </div>
@@ -271,8 +271,8 @@
                     </div>
                   <div class="card-body">
                     <div class="row ">
-                        <div class="col d-flex ">
-                            <img src="zoofari/img/Campannas/maps.png" alt="">
+                        <div class="col d-flex">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
                             <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
                     
                         </div>
@@ -301,7 +301,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <p>Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
+                            <p >Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
                         </div>
                     </div>                    
                   </div>
