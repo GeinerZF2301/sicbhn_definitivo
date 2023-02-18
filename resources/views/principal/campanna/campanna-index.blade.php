@@ -177,7 +177,7 @@
 <div class="container mt-5">
   <div class="row g-4">
             <div class="col-sm-12 col-md-6  col-lg-4">
-                <div class="card">
+                <div class="cards">
                     <div class="card-title mt-4">
                         <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
                     </div>
@@ -221,7 +221,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6  col-lg-4">
-                <div class="card">
+                <div class="cards">
                     <div class="card-title mt-4">
                         <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
                     </div>
@@ -265,7 +265,7 @@
             </div>
 
             <div class="col-sm-12 col-md-6  col-lg-4">
-                <div class="card">
+                <div class="cards">
                     <div class="card-title mt-4">
                         <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
                     </div>
@@ -313,7 +313,6 @@
 
       </div>
 </div>
-  
 
 
 
