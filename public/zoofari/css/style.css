@@ -710,7 +710,34 @@ header.campannas .masthead-subheading {
     font-size: 2.5rem;
    }
   
-  
+   /*    ------------Campanas------------   */
+
+   .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .card{
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    }
+    .card:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3%);
+    }
+
+    .card-body{
+        text-align: center;
+    }
+   
+
+
+
+
+
    /*DOCUMENTOS*/
 /* 
 header.campannas .masthead-subheading {
