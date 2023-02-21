@@ -100,12 +100,11 @@
     <div class="container-xxl py-5">
       <div class="container">
         <div class="row g-5">
-          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-            {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">       
             <h1 class="display-5 mb-4">
               Sobre Nuestra
-              <font color="#028A0F">Documentación</font>
-              {{-- <span class="text-primary">Donación</span>? --}}
+              <font color="#028A0F">Documentación</font>      
+
             </h1>
             <p class="mb-4">
             En este apartado se encuentran una serie de documentos de carácter oficial que sirven
@@ -115,18 +114,18 @@
             </p>
 
           </div>
-          {{-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+         <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
             <div class="img-border"> 
-               <img class="img-fluid" src="zoofari/img/Donaciones/DonacionesRecuadro.jpg" alt="" />
-            </div>
-          </div> --}}
+               <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documentos.jpg" alt="" />
+        </div>
+          </div> 
         </div>
       </div>
     </div>
     <!-- About End -->
 
 
-       <!-- CARDS DE DOCUMENTOS-->
+       <!-- CARDS DE DOCUMENTOS
     <div class="containertiposcampannas-document">
       {{-- @foreach ($tipos as $tipo) --}}
           {{-- <input type="hidden" value="{{ $tipo->id }}" id="idTipoCampanna" class="idTipoCampanna">
@@ -152,7 +151,125 @@
                      <a href="#" class="saber-mas-document btn" style="color:aliceblue">Descargar</a>
                   </div>
               </div>
-     <!-- FIN DE CARDS DOCUMENTOS -->
+     -->
+
+
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+      
+        <h1 class="display-5 mb-4 text-center">
+          
+         ¡Documentos Públicos!
+        </h1>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+        <div class="row g-4 ">
+         
+       
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cardd mb-5">
+                   
+                    <div class="cardd-body ">
+                        <div class="row">
+                            <div class="col- d-flex justify-content-center">
+                                <div class="icono mt-2 mb-2">
+                                    <img src="zoofari/img/DocumentosPublicos/docs.png" alt="" weight="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">                            
+                            <div class="col">
+                                <div class="cardd-title d-flex justify-content-center">
+                                    <h4>Acta de Asistencia</h4>
+                                </div>
+                                <p class="text-center mt-2 mb-3">  Registro de los participantes de la reunión del 14 de febrero de 2023.</p>
+                                <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                    <a  class="btn btn-Descarga text-decoration-none" href="" id="Descargar "> Descargar </a>
+                               </div>
+                            </div>
+                          
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cardd mb-5">
+                   
+                    <div class="cardd-body ">
+                        <div class="row">
+                            <div class="col- d-flex justify-content-center">
+                                <div class="icono mt-2 mb-2">
+                                    <img src="zoofari/img/DocumentosPublicos/docs.png" alt="" weight="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">                            
+                            <div class="col">
+                                <div class="cardd-title d-flex justify-content-center">
+                                    <h4>Acta de Asistencia</h4>
+                                </div>
+                                <p class="text-center mt-2 mb-3">  Registro de los participantes de la reunión del 14 de febrero de 2023.</p>
+                                <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                    <a  class="btn btn-Descarga text-decoration-none" href="" id="Descargar "> Descargar </a>
+                               </div>
+                            </div>
+                          
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="cardd mb-5">
+                   
+                    <div class="cardd-body ">
+                        <div class="row">
+                            <div class="col- d-flex justify-content-center">
+                                <div class="icono mt-2 mb-2">
+                                    <img src="zoofari/img/DocumentosPublicos/docs.png" alt="" weight="50px" height="50px">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row ">                            
+                            <div class="col">
+                                <div class="cardd-title d-flex justify-content-center">
+                                    <h4>Acta de Asistencia</h4>
+                                </div>
+                                <p class="text-center mt-2 mb-3">  Registro de los participantes de la reunión del 14 de febrero de 2023.</p>
+                                <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                    <a  class="btn btn-Descarga text-decoration-none" href="" id="Descargar "> Descargar </a>
+                               </div>
+                            </div>
+                          
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+          
+        
+        </div>
+    </div>
+
 
     @endsection
 
