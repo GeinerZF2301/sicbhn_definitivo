@@ -4,22 +4,30 @@
     <section>
         <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
-                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Tipos de Persona</h1>
+                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Tipos de Persona del
+                    Corredor
+                    Biológico</h1>
             </span>
-            <div class="row mb-5">
+            <div class="row mb-2">
                 <span class="fw-light fs-6">Gestion de los tipos de Persona</span>
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
-                    <a href="categorias/create" class="btn btn-success pull-right fw-light fs-6">Crear</a>
+                    <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#createModal">
+                        Crear Tipo de Persona
+                    </button>
+                    @include('admin.tipopersonas.createModal')
                 </div>
             </div>
-            <div class="row mx-auto">
+
+            <div class="table-container">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
-                    <div class="row ">
-                        <table class=" table align-items-center table-ligth " class="col-2">
-                            <thead class=" bg-dark text-white text-center text-uppercase fw-light fs-6  ">
+                    <div class="">
+                        <table id="dataTable" class="table table-hover  align-items-center">
+                            <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
+                                    <th scope="col">ID</th>
                                     <th scope="col">Tipo de Persona</th>
                                     <th scope="col">Descripcion</th>
                                     <th scope="col">acciones</th>
@@ -27,31 +35,42 @@
                             </thead>
                             <tbody>
                                 @foreach ($tipo_personas as $tipo_persona)
-                                    <tr class="text-center">
-                                        <td name="Nombre" class="budget">
+                                    <tr class="">
+                                        <td class="id" name="id" class="budget">
+                                            {{ $tipo_persona->id }}
+                                        </td>
+                                        <td name="tipo_persona" class="budget">
                                             {{ $tipo_persona->tipo_persona }}
                                         </td>
-                                        <td name="Descripcion" class="budget">
+                                        <td name="descripcion" class="budget">
                                             {{ $tipo_persona->descripcion }}
                                         </td>
-                                        <div class="d-flex justify-content-between">
-                                            <td>
+                                        <div class="d-flex shadow-lg justify-content-between">
+                                            <td class="">
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    class="editBtn rounded btn btn-warning">Editar</button>
+                                                <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
+                                                    data-bs-target="#showModal">Ver más</button>
                                                 <button type="submit"
-                                                    class=" shadow rounded btn btn-danger">Editar</button>
-                                                <a href="#"
-                                                    class=" shadow btn btn-info rounded">Ver</a>
-                                                @csrf
-                                                @method('DELETE')
-                                                <button type="submit"
-                                                    class=" shadow rounded btn btn-danger">Eliminar</button>
+                                                    class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                             </td>
                                         </div>
                                     </tr>
                                 @endforeach
+
                             </tbody>
                         </table>
+
                     </div>
                 </div>
+                @include('admin.tipopersonas.editModal')
+                @include('admin.tipopersonas.showModal')
             </div>
+        </div>
     </section>
+@endsection
+
+@section('js')
+    <script src="js/tipo_persona/upsert.js"></script>
+    <script src="js/utilities/dataTable.js"></script>
 @endsection

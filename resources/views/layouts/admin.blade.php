@@ -11,13 +11,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="stylesheet" href="{{ asset('spica/vendors/mdi/css/materialdesignicons.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('spica/vendors/css/vendor.bundle.base.css') }}">
-    
+    {{-- <link rel="stylesheet" href="{{ asset('spica/vendors/css/vendor.bundle.base.css') }}"> --}}
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href={{ asset('css/admin-styles.css') }}>
     <link rel="stylesheet" href="{{ asset('spica//css/style.css') }}">
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
     crossorigin="anonymous"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
 </head>
 
@@ -279,14 +280,14 @@
 
             <!-- page-body-wrapper ends -->
         </div>
-
         <div class="js">
           @yield('js')
-            
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
             </script>
             <script src="{{ asset('spica/vendors/js/vendor.bundle.base.js') }}"></script>
+            <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+            <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
         </div>
 </body>
 

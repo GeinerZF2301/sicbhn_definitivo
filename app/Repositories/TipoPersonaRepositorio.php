@@ -6,7 +6,7 @@
     class TipoPersonaRepositorio implements TipoPersonaRepositorioInterface {
 
         public function allTypesOfPeople(){
-            return TipoPersona::latest()->paginate(10);
+            return TipoPersona::all();
         }
         public function storePersonType($data){
             return TipoPersona::create($data);

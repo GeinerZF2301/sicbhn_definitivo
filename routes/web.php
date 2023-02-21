@@ -60,11 +60,24 @@ Route::get('/admin', function () {
 });
 
 
-Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
 
 // Rutas para el modulo de Tipos de Persona
 Route::get('/tipospersonas',[TipoPersonaController::class,'index'])->name('tipospersonas');
-Route::get('/tipospersonas/create',[TipoPersonaController::class,'create'])->name('tipospersonas.create');
 Route::post('/tipospersonas/store',[TipoPersonaController::class,'store'])->name('tipospersonas.store');
+Route::get('/tipospersonas/{id}/edit',[TipoPersonaController::class,'edit'])->name('tipospersonas.edit');
+Route::post('/tipospersonas/update/{id}',[TipoPersonaController::class,'update'])->name('tipospersonas.update');
+Route::delete('/tipospersonas/delete/{id}',[TipoPersonaController::class,'delete'])->name('tipospersonas.delete');
+Route::get('/tipospersonas/{id}/show',[TipoPersonaController::class,'show'])->name('tipospersonas.show');
+
+//Rutas para el modulo de Personas
+Route::get('/personas',[PersonaController::class,'index'])->name('personas');
+Route::get('/personas/create',[PersonaController::class,'create'])->name('personas.create');
+Route::post('/personas/store',[PersonaController::class,'store'])->name('personas.store');
+Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('personas.edit');
+Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
+Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
+Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
+
+
 
 

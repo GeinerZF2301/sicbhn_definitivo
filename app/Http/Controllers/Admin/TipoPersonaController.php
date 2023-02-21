@@ -10,45 +10,72 @@ use App\Repositories\TipoPersonaRepositorio;
 use App\Models\TipoPersona;
 class TipoPersonaController extends Controller
 {
-    private $tipo_persona_repositorio;
+    private $tipoPersonaRepositorio;
 
-    public function __construct(TipoPersonaRepositorioInterface $tipo_persona_repositorio){
-        $this->tipo_persona_repositorio = $tipo_persona_repositorio;
+    public function __construct(TipoPersonaRepositorioInterface $tipoPersonaRepositorio){
+        $this->tipoPersonaRepositorio = $tipoPersonaRepositorio;
     }
 
     public function index() 
     {
-        $tipo_personas = $this->tipo_persona_repositorio->allTypesOfPeople();
+        $tipo_personas = $this->tipoPersonaRepositorio->allTypesOfPeople();
         return view('admin.tipopersonas.index', compact('tipo_personas'));
     }
-
     public function store(StoreTipoPersonaRequest $request) 
     {
-        $validated_data = $request->validated();
-        $this->tipo_persona_repositorio->storePersonType($validated_data);
-
+        $validatedData = $request->validated();
+        $this->tipoPersonaRepositorio->storePersonType($validatedData);
         return response()->json([
             'success' => 'Tipo de persona guardada correctamente'
         ], 201);
     }
 
-    public function show($id)
+    public function show(Request $request)
     {
-        
+        try{
+            $id = intval($request->id);
+            $persontype = $this->tipoPersonaRepositorio->findPersonType($id);
+            return response()->json($persontype);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error' . $e->getMessage()
+            ], 404);
+        }
+    }
+    public function edit(Request $request){
+        try{
+            $id = intval($request->id);
+            $persontype = $this->tipoPersonaRepositorio->findPersonType($id);
+            return response()->json($persontype);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error' . $e->getMessage()
+            ], 404);
+        }
     }
 
-    public function edit($id)
+    public function update(StoreTipoPersonaRequest $request)
     {
-        //
+        try{
+            $id = intval($request->id);
+            $validatedData = $request->validated();
+            $tipo_persona = $this->tipoPersonaRepositorio->updatePersonType($validatedData, $id);
+            return response()->json([
+                'success' => 'Registro Actualizado Correctamente'
+            ], 200); 
+              
+        } catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error:'. $e->getMessage()
+            ], 400);
+        }
     }
-
-    public function update(Request $request, $id)
+    public function delete(int $id)
     {
-        //
-    }
-
-    public function destroy($id)
-    {
-        //
+        $intId = intval($id);
+        $this->tipoPersonaRepositorio->destroyPersonType($intId);
+        return response()->json([
+            'success' => 'Tipo de persona eliminada correctamente'
+        ], 200);
     }
 }

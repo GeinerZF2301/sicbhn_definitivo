@@ -25,14 +25,15 @@ class StorePersonaRequest extends FormRequest
     {
         return [
             'nombre' => 'required|string|max:100',
-            'apellido1' => 'required|string|max:100',
-            'apellido2' => 'string|max:100',
-            'identificacion' => 'required|string|max:15',
+            'apellidos' => 'required|string|max:150',
             'tipo_identificacion' => 'required|string|max:50',
+            'numero_identificacion' => 'required|string|max:15',
+            'fecha_de_nacimiento' => 'required|date|',
+            'edad' => 'required |integer|min:1|max:99',
             'pais' => 'required|string|max:50',
             'ciudad' => 'required|string|max:75',
             'calle' => 'required|string|max:75',
-            'tipo_persona' => 'required|int' 
+            'tipo_persona_id' => 'required|int' 
         ];
     }
 }

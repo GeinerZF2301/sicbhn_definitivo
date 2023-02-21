@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('personas', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
-            $table->string('apellido1');
-            $table->string('apellido2')->nullable();
-            $table->string('numero_identificacion');
+            $table->string('apellidos');
             $table->string('tipo_identificacion');
+            $table->string('numero_identificacion');
+            $table->date('fecha_de_nacimiento');
+            $table->integer('edad');
             $table->string('pais');
             $table->string('ciudad');
             $table->string('calle');
