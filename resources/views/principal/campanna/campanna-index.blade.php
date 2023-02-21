@@ -39,12 +39,38 @@
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
         </div>
-        <a href="{{ route('login') }}" class="btn btn-warning"
-          >Iniciar Sesión<i class="fa fa-right ms-0"></i
-        ></a>
-        <a href="{{ route('register') }}" class="btn btn-success"
-          >Registrarse<i class="fa fa-right ms-0"></i
-        ></a>
+          <!-- Authentication Links -->
+          @guest
+                                @if (Route::has('login'))
+                                <a href="{{ route('login') }}" class="btn btn-warning"
+                                  >Iniciar Sesión<i class="fa fa-right ms-0"></i
+                                ></a>
+                                @endif
+
+                                @if (Route::has('register'))
+                                <a href="{{ route('register') }}" class="btn btn-success"
+                                  >Registrarse<i class="fa fa-right ms-0"></i
+                                ></a>
+                                @endif
+                            @else
+                                <li class="nav-item dropdown">
+                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                        {{ Auth::user()->name }}
+                                    </a>
+
+                                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="{{ route('logout') }}"
+                                          onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                            {{ __('Logout') }}
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                            @csrf
+                                        </form>
+                                    </div>
+                                </li>
+                            @endguest
       </div>
     </nav>
 
@@ -75,13 +101,13 @@
   <div class="container">
     <div class="row g-5">
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-        {{-- <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p> --}}
+
         <h1 class="display-5 mb-4">
-          Nuestras
-          <font color="#028A0F">Campañas</font>
-          {{-- <span class="text-primary">Donación</span>? --}}
+          ¡Nuestras
+          <font color="#028A0F">Campañas!</font>
+         
         </h1>
-        <p class="mb-4">
+        <p class="lh-lg mb-4 ">
           El Corredor Biológico Hojancha-Nandayure se ubica en el área de Conservación Tempisque y fue creado con
            el fin de conservar la vida silvestre entre el Parque Nacional Barra Honda y la zona protectora Península
             de Nicoya, durante el año se realizan diversas campañas que abarcan dicho territorio con el objetivo de 
@@ -89,18 +115,18 @@
         </p>
         
       </div>
-      {{-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="img-border">
-          <img class="img-fluid" src="zoofari/img/Donaciones/DonacionesRecuadro.jpg" alt="" />
-        </div>
-      </div> --}}
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="img-border">
+              <img class="img-fluid" src="zoofari/img/Campannas/monte alto autoeva.jpeg" alt="" />
+            </div>
+          </div>
     </div>
   </div>
 </div>
 <!-- About End -->
 
 
-
+<!--
 <div class="containertiposcampannas">
   {{-- @foreach ($tipos as $tipo) --}}
       {{-- <input type="hidden" value="{{ $tipo->id }}" id="idTipoCampanna" class="idTipoCampanna">
@@ -112,20 +138,193 @@
               {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
               <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
               <div class="d-flex justify-content-center">
-                  <a href="#" class="saber-mas btn btn-primary">Descargar</a>
+                  <a href="#" class="saber-mas btn" style="color:aliceblue">Ver más</a>
               </div>
           </div>
 
-          <div class="cardtipos bg-yellow ">
+        <div class="cardtipos bg-yellow ">
               <div class="d-flex justify-content-center">
                   <img class="ic" src="zoofari/img/Campannas/recycle.png">
               </div>
               {{-- <h4 class="textocartas">{{ $tipo->Nombre }}</h4>
               <p class="descripcioncarta">{{ $tipo->Descripcion }}</p> --}}
               <div class="d-flex justify-content-center">
-                  <a href="#" class="saber-mas btn btn-success">Descargar</a>
-              </div>
-          </div>
+                  <a href="#" class="saber-mas btn "style="color:aliceblue">Ver más</a>
+      </div>
+</div>
+-->
 
+
+
+
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
+      
+          <h1 class="display-4 text-center mb-4">
+          <font color="#028A0F">¡Campañas Disponibles!</font>
+          {{-- <span class="text-primary">Donación</span>? --}}
+          </h1>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Cards Nuevas-->
+<div class="container mt-5">
+  <div class="row g-4">
+            <div class="col-sm-12 col-md-6  col-lg-4">
+                <div class="cards">
+                    <div class="card-title mt-4">
+                        <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
+                    </div>
+                  <div class="card-body">
+                    <div class="row ">
+                        <div class="col d-flex ">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
+                            <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
+                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/calendario.png" alt="">                           
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/reloj.png" alt="">                            
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/usuario.png" alt="">                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">                            
+                            <p class="fw-bold">14-04-2023</p>
+                        </div>
+                        <div class="col-4">                            
+                            <p class="fw-bold">8:00pm </p>
+                        </div>
+                        <div class="col-4">                           
+                            <p class="fw-bold">Rosa López Turcios</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
+                        </div>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6  col-lg-4">
+                <div class="cards">
+                    <div class="card-title mt-4">
+                        <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
+                    </div>
+                  <div class="card-body">
+                    <div class="row ">
+                        <div class="col d-flex ">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
+                            <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
+                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/calendario.png" alt="">                           
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/reloj.png" alt="">                            
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/usuario.png" alt="">                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">                            
+                            <p class="fw-bold">14-04-2023</p>
+                        </div>
+                        <div class="col-4">                            
+                            <p class="fw-bold">8:00pm </p>
+                        </div>
+                        <div class="col-4">                           
+                            <p class="fw-bold">Rosa López Turcios</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
+                        </div>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6  col-lg-4">
+                <div class="cards">
+                    <div class="card-title mt-4">
+                        <h4> ¡Campanas de <font color="#028A0F">Recoleccion!</font> </h4>                      
+                    </div>
+                  <div class="card-body">
+                    <div class="row ">
+                        <div class="col d-flex">
+                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34px">
+                            <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
+                    
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/calendario.png" alt="">                           
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/reloj.png" alt="">                            
+                        </div>
+                        <div class="col-4">
+                            <img src="zoofari/img/Campannas/usuario.png" alt="">                          
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">                            
+                            <p class="fw-bold">14-04-2023</p>
+                        </div>
+                        <div class="col-4">                            
+                            <p class="fw-bold">8:00pm </p>
+                        </div>
+                        <div class="col-4">                           
+                            <p class="fw-bold">Rosa López Turcios</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p >Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
+                        </div>
+                    </div>                    
+                  </div>
+                </div>
+            </div>
+
+        
+
+
+      </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+          
 
     @endsection

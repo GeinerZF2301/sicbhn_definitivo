@@ -38,104 +38,116 @@
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
         </div>
-        <a href="{{ route('login') }}" class="btn btn-warning"
-          >Iniciar Sesión<i class="fa fa-right ms-0"></i
-        ></a>
-        <a href="{{ route('register') }}" class="btn btn-success"
-          >Registrarse<i class="fa fa-right ms-0"></i
-        ></a>
+        <!-- Authentication Links -->
+        @guest
+                            @if (Route::has('login'))
+                            <a href="{{ route('login') }}" class="btn btn-warning"
+                              >Iniciar Sesión<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
+
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn btn-success"
+                              >Registrarse<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
       </div>
     </nav>
 
+    
        <!-- Page Header Start -->
    <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgHV py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s">
       <div class="container py-5">
-        <h1 class="display-4 text-white mb-3 animated slideInDown">Horas de visita</h1>
+        <h1 class="display-4 text-white mb-3 animated slideInDown">Horarios de visita</h1>
         <nav aria-label="breadcrumb animated slideInDown">
           <ol class="breadcrumb mb-0">
             <li class="breadcrumb-item">
               <a class="text-white" href="{{ url('/') }}">Inicio</a>
             </li>
             <li class="breadcrumb-item text-primary active" aria-current="page">
-              Horas de Visita
+              Horarios de Visita
             </li>
           </ol>
         </nav>
       </div>
     </div>
     <!-- Page Header End -->
-    
+
+    <div class="container">
+        <div class="row g-9">
+          <div class="col-lg-13 text-center wow fadeInUp" data-wow-delay="0.1s">
+            <p><span class="text-primary me-2">¡Sé parte de nuestra familia! </p>
+            <h1 class="display-5 mb-9">
+              Aquí podrás encontrar nuestros 
+              <span class="text-primary">horarios de visita</span>
+            </h1>
+            <p class="mb-9">
+              Te presentamos nuestros horarios de visita para que puedas conocer más del Corredor Biológico Hojancha-Nandayure.<br>
+              Además, si te encuentras interesado en realizar alguna visita con más personas nos puedes contactar para coordinar y realizar una experiencia <br>
+              más agradable para ti.
+            </p>
+          </div>
+          </div>
+
    <!-- Visiting Hours Start -->
    <div
-      class="container-xxl bg-primary visiting-hours py-5 wow fadeInUp"
-      data-wow-delay="0.1s"
-      style="margin: 6rem 0"
-    >
+      class="container-xxl bg-primary visiting-hours my-5 py-5 wow fadeInUp"
+      data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="row g-5">
-          <div class="col-md-6 wow fadeIn" data-wow-delay="0.3s">
-            <h1 class="display-6 text-white mb-5">Visiting Hours</h1>
+          <div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
+            <h1 class="display-6 text-center text-white mb-6">Horarios de Visita</h1>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">
-                <span>Monday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Lunes</span>
+                <span>8:00 AM - 12:00 PM</span>
               </li>
               <li class="list-group-item">
-                <span>Tuesday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Martes</span>
+                <span>8:00 AM - 12:00 PM</span>
               </li>
               <li class="list-group-item">
-                <span>Wednesday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Miércoles</span>
+                <span>8:00 AM - 12:00 PM</span>
               </li>
               <li class="list-group-item">
-                <span>Thursday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Jueves</span>
+                <span>8:00 AM - 12:00 PM</span>
               </li>
               <li class="list-group-item">
-                <span>Friday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Viernes</span>
+                <span>8:00 AM - 12:00 PM</span>
               </li>
               <li class="list-group-item">
-                <span>Saturday</span>
-                <span>9:00AM - 6:00PM</span>
+                <span>Sábado</span>
+                <span>Cerrado</span>
               </li>
               <li class="list-group-item">
-                <span>Sunday</span>
-                <span>Closed</span>
+                <span>Domingo</span>
+                <span>Cerrado</span>
               </li>
             </ul>
-          </div>
-          <div class="col-md-6 text-light wow fadeIn" data-wow-delay="0.5s">
-            <h1 class="display-6 text-white mb-5">Contact Info</h1>
-            <table class="table">
-              <tbody>
-                <tr>
-                  <td>Office</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Zoo</td>
-                  <td>123 Street, New York, USA</td>
-                </tr>
-                <tr>
-                  <td>Ticket</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">ticket@example.com</p>
-                  </td>
-                </tr>
-                <tr>
-                  <td>Support</td>
-                  <td>
-                    <p class="mb-2">+012 345 6789</p>
-                    <p class="mb-0">support@example.com</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>
