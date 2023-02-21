@@ -5,8 +5,9 @@ use App\Http\Controllers\Admin\TipoPersonaController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/admin', function () {
@@ -44,7 +45,7 @@ Route::get('/voluntariado', function () {
     return view('principal/voluntariado.voluntariado-index');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -59,6 +60,4 @@ Route::get('/gestionvoluntarios', function () {
 
 Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
 Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
-Route::get('/admin', function () {
-    return view('layouts.admin');
-});
+
