@@ -63,7 +63,6 @@ Route::get('/tiposvoluntarios', function () {
 Route::get('/gestionvoluntarios', function () {
     return view('admin/gestionvoluntarios.index');
 });
-<<<<<<< HEAD
 Route::get('/admin', function () {
     return view('layouts.admin');
 });
@@ -109,7 +108,6 @@ Route::post('/validarvoluntariado', [VoluntariadoController::class,'validarVolun
 
 
 
-=======
 
 
 Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
@@ -119,4 +117,3 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
 });
->>>>>>> 0d11a86942f595be267a92fdb33553bcbfd05065
