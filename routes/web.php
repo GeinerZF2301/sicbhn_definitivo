@@ -2,6 +2,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PersonaController;
 use App\Http\Controllers\Admin\TipoPersonaController;
+use App\Http\Controllers\Admin\CampañaController;
+use App\Http\Controllers\Admin\VoluntariadoController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -77,6 +79,25 @@ Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('perso
 Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
 Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
 Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
+
+//Rutas para el modulo Campañas
+Route::get('/campannas',[CampañaController::class,'index'])->name('campannas');
+Route::post('/campannas/store',[CampañaController::class,'store'])->name('campannas.store');
+Route::get('/campannas/{id}/edit',[CampañaController::class,'edit'])->name('campannas.edit');
+Route::post('/campannas/update/{id}',[CampañaController::class,'update'])->name('campannas.update');
+Route::delete('/campannas/delete/{id}',[CampañaController::class,'delete'])->name('campannas.delete');
+Route::get('/campannas/{id}/show',[CampañaController::class,'show'])->name('campannas.show');
+//Ruta para validar que no se pueda crear una campaña si ya existe una previamente con una misma fecha y hora
+Route::post('/validarcampanna', [CampañaController::class,'validarCampaña']); 
+    
+Route::get('/voluntariados',[VoluntariadoController::class,'index'])->name('voluntariados');
+Route::post('/voluntariados/store',[VoluntariadoController::class,'store'])->name('voluntariados.store');
+Route::get('/voluntariados/{id}/edit',[VoluntariadoController::class,'edit'])->name('voluntariados.edit');
+Route::post('/voluntariados/update/{id}',[VoluntariadoController::class,'update'])->name('voluntariados.update');
+Route::delete('/voluntariados/delete/{id}',[VoluntariadoController::class,'delete'])->name('voluntariados.delete');
+Route::get('/voluntariados/{id}/show',[VoluntariadoController::class,'show'])->name('voluntariados.show');
+//Ruta para validar que no se pueda crear una campaña si ya existe una previamente con una misma fecha y hora
+Route::post('/validarvoluntariado', [VoluntariadoController::class,'validarVoluntariado']); 
 
 
 

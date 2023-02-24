@@ -13,16 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('campañas', function (Blueprint $table) {
+        Schema::create('voluntariados', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
             $table->string('descripcion');
             $table->string('ubicacion');
             $table->date('fecha');
             $table->time('hora');
-            $table->string('tipo_campaña');
+            $table->string('tipo_voluntariado');
             $table->boolean('estado');
-            $table->boolean('validar_campaña');
+            $table->boolean('validar_voluntariado');
             $table->timestamps();
         });
     }
@@ -34,6 +34,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('campañas');
+        Schema::dropIfExists('voluntariados');
     }
 };

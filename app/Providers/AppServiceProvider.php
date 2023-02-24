@@ -8,6 +8,12 @@ use App\Repositories\Interfaces\PersonaRepositorioInterface;
 use App\Repositories\PersonaRepositorio;
 use App\Repositories\Interfaces\TipoPersonaRepositorioInterface;
 use App\Repositories\TipoPersonaRepositorio;
+use App\Repositories\Interfaces\CampañaRepositorioInterface;
+use App\Repositories\CampañaRepositorio;
+use App\Repositories\Interfaces\VoluntariadoRepositorioInterface;
+use App\Repositories\VoluntariadoRepositorio;
+
+
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -20,6 +26,8 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(TipoPersonaRepositorioInterface::class, TipoPersonaRepositorio::class);
         $this->app->bind(PersonaRepositorioInterface::class, PersonaRepositorio::class);
+        $this->app->bind(CampañaRepositorioInterface::class, CampañaRepositorio::class);
+        $this->app->bind(VoluntariadoRepositorioInterface::class, VoluntariadoRepositorio::class);
     }
 
     /**

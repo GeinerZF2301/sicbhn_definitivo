@@ -11,7 +11,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="hidden" class="form-control" name="id" id="edit_id">
+                                <input type="int" class="form-control" name="id" id="edit_id">
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" name="nombre" id="edit_nombre"
@@ -27,8 +27,8 @@
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de
                                         Identificacion</label>
-                                    <select class="form-select form-select-sm " id="edit_tipo_identificacion" name="tipo_identificacion"
-                                        aria-label=".form-select-sm example">
+                                    <select class="form-select form-select-sm " id="edit_tipo_identificacion"
+                                        name="tipo_identificacion" aria-label=".form-select-sm example">
                                         <option selected>Selecciona una opcion</option>
                                         <option value="Cédula Nacional">Cédula Nacional</option>
                                         <option value="Cédula de Residencia">Cédula de Residencia</option>
@@ -80,12 +80,13 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de Persona </label>
-                                    <select class="form-select form-select-sm" id="edit_tipo_persona_id" name="tipo_persona_id"
-                                        aria-label=".form-select-sm example">
-                                        <option selected>Selecciona una opcion</option>  
+                                    <select class="form-select form-select-sm" id="edit_tipo_campaña"
+                                        name="tipo_persona_id" aria-label=".form-select-sm example">
+                                        <option selected>Selecciona una opcion</option>
                                     </select>
-                                    <span id="edit_tipo_persona_id_error" class="text-danger error-messages"></span>
+                                    <span id="edit_tipo_persona_error" class="text-danger error-messages"></span>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>

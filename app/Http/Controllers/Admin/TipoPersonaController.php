@@ -23,11 +23,17 @@ class TipoPersonaController extends Controller
     }
     public function store(StoreTipoPersonaRequest $request) 
     {
-        $validatedData = $request->validated();
-        $this->tipoPersonaRepositorio->storePersonType($validatedData);
-        return response()->json([
-            'success' => 'Tipo de persona guardada correctamente'
-        ], 201);
+        try{
+            $validatedData = $request->validated();
+            $this->tipoPersonaRepositorio->storePersonType($validatedData);
+            return response()->json([
+                'success' => 'Tipo de persona guardada correctamente'
+            ], 201);
+        }catch(Exception $exception){
+             return response()->json([
+                'error' => 'Ocurrio un error' . $exception->getMessage()
+             ], 400);
+        }
     }
 
     public function show(Request $request)

@@ -4,19 +4,19 @@
     <section>
         <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
-                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Voluntariados del Corredor
+                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Campañas del Corredor
                     Biológico</h1>
             </span>
             <div class="row mb-2">
-                <span class="fw-light fs-6">Gestion de los voluntariados del Corredor Biologico</span>
+                <span class="fw-light fs-6">Gestion de las Campañas</span>
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
                     <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#createModal">
-                        Crear voluntariado
+                        Crear Campaña
                     </button>
-                    @include('admin.voluntariados.createModal')
+                    @include('admin.campañas.createModal')
                 </div>
             </div>
 
@@ -33,16 +33,16 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($voluntariados as $voluntariado)
+                                @foreach ($campañas as $campaña)
                                     <tr class="text-center">
                                         <td class="id" name="id" class="budget">
-                                            {{ $voluntariado->id }}
+                                            {{ $campaña->id }}
                                         </td>
                                         <td name="tipo_persona" class="budget">
-                                            {{ $voluntariado->nombre }}
+                                            {{ $campaña->nombre }}
                                         </td>
                                         <td name="descripcion" class="budget">
-                                            {{ $voluntariado->descripcion }}
+                                            {{ $campaña->descripcion }}
                                         </td>
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
@@ -56,20 +56,19 @@
                                         </div>
                                     </tr>
                                 @endforeach
-
                             </tbody>
                         </table>
 
                     </div>
                 </div>
-                @include('admin.voluntariados.editModal')
-                @include('admin.voluntariados.showModal')
+                @include('admin.campañas.editModal')
+                @include('admin.campañas.showModal')
             </div>
         </div>
     </section>
 @endsection
 
 @section('js')
-    <script src="js/voluntariados/upsert.js"></script>
+    <script src="js/campañas/upsert.js"></script>
     <script src="js/utilities/dataTable.js"></script>
 @endsection

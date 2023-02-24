@@ -13,20 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('campañas', function (Blueprint $table) {
+        Schema::create('personas_voluntariados', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');
-            $table->string('descripcion');
-            $table->string('ubicacion');
-            $table->date('fecha');
-            $table->time('hora');
-            $table->string('tipo_campaña');
-            $table->boolean('estado');
-            $table->boolean('validar_campaña');
+            $table->unsignedBigInteger('persona_id',);
+            $table->unsignedBigInteger('voluntariado_id',);
+            $table->foreign('persona_id')->references('id')->on('personas')->onDelete('cascade');
+            $table->foreign('voluntariado_id')->references('id')->on('voluntariados')->onDelete('cascade');
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *
@@ -34,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('campañas');
+        Schema::dropIfExists('personas_voluntariados');
     }
 };

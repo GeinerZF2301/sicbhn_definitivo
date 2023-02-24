@@ -66,8 +66,7 @@
                     </a>
                     <div class="collapse" id="tables">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Administrativa</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Pública</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Documentos del Corredor</a></li>
                         </ul>
                     </div>
                 </li>
@@ -80,8 +79,7 @@
                     </a>
                     <div class="collapse" id="chartjs">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Categorías</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestiónes</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('/campannas') }}">Gestión de las Campañas</a></li>
                         </ul>
                     </div>
                 </li>
@@ -95,9 +93,9 @@
                     <div class="collapse" id="icons">
                         <ul class="nav flex-column sub-menu">
                             <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Monetarias</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">En Especie</a></li>
+                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Cuentas Bancarias</a></li>
                             <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Artículos</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Cuentas</a></li>
-                            <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestiónes</a></li>
                         </ul>
                     </div>
                 </li>
