@@ -2,6 +2,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PersonaController;
 use App\Http\Controllers\Admin\TipoPersonaController;
+use App\Http\Controllers\Admin\RolController;
+use App\Http\Controllers\Admin\UsuarioController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -61,3 +63,7 @@ Route::get('/gestionvoluntarios', function () {
 Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
 Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
 
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles', RolController::class);
+    Route::resource('usuarios', UsuarioController::class);
+});

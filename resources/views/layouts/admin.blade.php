@@ -101,9 +101,9 @@
           </a>
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Registro</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/usuarios') }}">Registro</a></li>
               <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Gestión</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Roles</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/roles') }}">Roles</a></li>
             </ul>
           </div>
         </li>
@@ -235,9 +235,8 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-        <div class="content-wrapper">
-
-        </div>
+        @yield('content')
+    </div>
         <!-- content-wrapper ends -->
         <!-- partial:./partials/_footer.html -->
         <footer class="footer">
