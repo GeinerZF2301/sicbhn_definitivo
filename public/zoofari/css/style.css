@@ -876,6 +876,7 @@ header.campannas .masthead-subheading {
   /*COLABORADORES*/
 
   .cards-container- {
+    background-color: #d3d0d0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -943,9 +944,6 @@ header.campannas .masthead-subheading {
   } */
 
 
-
-
-
   .card-Desarrolladores {
     display: inline-block;
     width: 300px;
@@ -980,4 +978,56 @@ header.campannas .masthead-subheading {
       margin: 20px 0;
     }
   }
+
+
+
+  /*Documentos*/
+
+.cardd{
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    }
+    .cardd:hover{
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-2%);
+    }
+
+.icono{
+    display: flex;
+    align-items: center;
+    
+}
+
+.btn-Descarga{
+display: inline-block;
+align-items: center;
+
+
+text-decoration: none;
+color: aliceblue;
+
+width: 7rem;
+height: 2.5rem;
+border-radius: 3px;
+
+background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
+
+transition: transform 0.3s ease;
+}
+
+.btn-Descarga:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2%);
+}
+
+
+
+/* ////////// */
+
+.miembros-img{
+    height: 300px;
+    width: 100%;
+}
   

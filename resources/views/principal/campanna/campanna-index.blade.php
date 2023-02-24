@@ -164,7 +164,7 @@
       
           <h1 class="display-4 text-center mb-4">
           <font color="#028A0F">¡Campañas Disponibles!</font>
-          {{-- <span class="text-primary">Donación</span>? --}}
+
           </h1>
       
       </div>
