@@ -39,38 +39,12 @@
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
         </div>
-        <!-- Authentication Links -->
-        @guest
-                            @if (Route::has('login'))
-                            <a href="{{ route('login') }}" class="btn btn-warning"
-                              >Iniciar Sesión<i class="fa fa-right ms-0"></i
-                            ></a>
-                            @endif
-
-                            @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="btn btn-success"
-                              >Registrarse<i class="fa fa-right ms-0"></i
-                            ></a>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
+        <a href="" class="btn btn-warning"
+          >Iniciar Sesión<i class="fa fa-right ms-0"></i
+        ></a>
+        <a href="" class="btn btn-success"
+          >Registrarse<i class="fa fa-right ms-0"></i
+        ></a>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -139,9 +113,10 @@
 
 
 <!-- Funciones del corredor -->
-<div class="text-uppercase text-center"> 
-  <h2>Funciones del Corredor Biológico</h2>   
-</div>
+<h1 class="display-5 mb-4 text-center">
+          
+  Funciones del Corredor Biológico
+ </h1>
 
 <div class="card-container">
   <div class="card" style="background-color: #4caf50;">
@@ -235,6 +210,7 @@ FAltan agregar miembros
 
 
     <div class="row g-4">
+
       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
         <div class="row g-4">
           <div class="col-12">
@@ -244,7 +220,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Miembros/munihojancha.jpeg" href=" " alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/munihojancha.jpeg" href=" " alt="" />
                 <div class="animal-text p-4">
                   <p class="text-white small text-uppercase mb-0">Municipalidad de Hojancha</p>
                   <h5 class="text-white mb-0">Miembro</h5>
@@ -262,7 +238,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Miembros/sinac.png" alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/sinac.png" alt="" />
                 <div class="animal-text p-4">
                 <p class="text-white small text-uppercase mb-0">SINAC</p>
                   <h5 class="text-white mb-0">Miembro</h5>
@@ -270,6 +246,29 @@ FAltan agregar miembros
               </div>
             </a>
           </div>
+
+
+
+
+   
+          <div class="col-12">
+            <a
+              class="animal-item"
+              href="img/SobreNosotros/Miembros/panamericanWoods.jpeg"
+              data-lightbox="animal"
+            >
+              <div class="position-relative">
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/panamericanWoods.jpeg" alt="" />
+                <div class="animal-text p-4">
+                <p class="text-white small text-uppercase mb-0">WOODS</p>
+                  <h5 class="text-white mb-0">Miembro</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
         </div>
       </div>
       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
@@ -282,7 +281,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.jpeg"  alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.jpeg"  alt="" />
                 <div class="animal-text p-4">
                   <p class="text-white small text-uppercase mb-0">Offbeat Travel</p>
                   <h5 class="text-white mb-0">Miembro</h5>
@@ -297,7 +296,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Miembros/Logo Final MTF.jpg" alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/Logo Final MTF.jpg" alt="" />
                 <div class="animal-text p-4">
                   <p class="text-white small text-uppercase mb-0">MTF Teca</p>
                   <h5 class="text-white mb-0">Elephant</h5>
@@ -305,6 +304,32 @@ FAltan agregar miembros
               </div>
             </a>
           </div>
+
+           <div class="col-12">
+            <a
+              class="animal-item"
+              href="img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.jpeg"
+              data-lightbox="animal"
+            >
+              <div class="position-relative">
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.jpeg" alt="" />
+                <div class="animal-text p-4">
+                <p class="text-white small text-uppercase mb-0">Gestion Ambiental</p>
+                  <h5 class="text-white mb-0">Miembro</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+
+
+          
+
+
+
+
         </div>
       </div>
       <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -316,7 +341,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Miembros/monteAlto.png" alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/monteAlto.png" alt="" />
                 <div class="animal-text p-4">
                   <p class="text-white small text-uppercase mb-0">Reserva Monte Alto</p>
                   <h5 class="text-white mb-0">Miembro</h5>
@@ -331,7 +356,7 @@ FAltan agregar miembros
               data-lightbox="animal"
             >
               <div class="position-relative">
-                <img class="img-fluid" src="zoofari/img/SobreNosotros/Msplogo.jpg" alt="" />
+                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/Msplogo.jpg" alt="" />
                 <div class="animal-text p-4">
                   <p class="text-white small text-uppercase mb-0">Ministerio de Salud</p>
                   <h5 class="text-white mb-0">Miembro</h5>
@@ -339,6 +364,31 @@ FAltan agregar miembros
               </div>
             </a>
           </div>
+{{-- /////////////// --}}
+
+
+
+ <div class="col-12">
+  <a
+    class="animal-item"
+    href="img/SobreNosotros/Miembros/fundecodes.jpeg"
+    data-lightbox="animal"
+  >
+    <div class="position-relative">
+      <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/fundecodes.jpeg" alt="" />
+      <div class="animal-text p-4">
+      <p class="text-white small text-uppercase mb-0">Fundecodes</p>
+        <h5 class="text-white mb-0">Miembro</h5>
+      </div>
+    </div>
+  </a>
+</div>
+
+
+
+
+
+
         </div>
       </div>
     </div>
@@ -366,8 +416,13 @@ FAltan agregar miembros
 <br>
 <br>
 
-<div class="text-uppercase text-center"> 
-  <h2>Colaboradores</h2>   
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+      
+  <h1 class="display-5 mb-4 text-center">
+    
+   Colaboradores
+  </h1>
+
 </div>
   <div class="cards-container-">
     <div class="card-">
@@ -421,9 +476,15 @@ FAltan agregar miembros
 </div>  --}}
 
 
-
+<br>
+<br>
+<br>
 
 <center>
+  <h1 class="display-5 mb-4 text-center">
+          
+    Equipo Desarrollador
+   </h1>
 <div class="card-Desarrolladores">
   <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 1">
   <div class="card-text-Desarrolladores">
@@ -441,7 +502,7 @@ FAltan agregar miembros
 </div>
 
 <div class="card-Desarrolladores">
-  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 3">
+  <img src="../zoofari/img/SobreNosotros/Geiner.jpg" alt="Imagen 3">
   <div class="card-text-Desarrolladores">
     <h2>Título de la tarjeta 3</h2>
     <p>Texto de la tarjeta 3</p>

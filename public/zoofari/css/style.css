@@ -876,6 +876,7 @@ header.campannas .masthead-subheading {
   /*COLABORADORES*/
 
   .cards-container- {
+    background-color: #d3d0d0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -941,9 +942,6 @@ header.campannas .masthead-subheading {
   .texto {
     margin-top: 10px;
   } */
-
-
-
 
 
   .card-Desarrolladores {
@@ -1024,4 +1022,12 @@ transition: transform 0.3s ease;
     transform: translateY(-2%);
 }
 
+
+
+/* ////////// */
+
+.miembros-img{
+    height: 300px;
+    width: 100%;
+}
   
