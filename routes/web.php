@@ -2,13 +2,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\PersonaController;
 use App\Http\Controllers\Admin\TipoPersonaController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\CampañaController;
 use App\Http\Controllers\Admin\VoluntariadoController;
-=======
 use App\Http\Controllers\Admin\RolController;
 use App\Http\Controllers\Admin\UsuarioController;
->>>>>>> 0d11a86942f595be267a92fdb33553bcbfd05065
+use App\Http\Controllers\Admin\DocumentoController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -102,16 +100,24 @@ Route::get('/voluntariados/{id}/edit',[VoluntariadoController::class,'edit'])->n
 Route::post('/voluntariados/update/{id}',[VoluntariadoController::class,'update'])->name('voluntariados.update');
 Route::delete('/voluntariados/delete/{id}',[VoluntariadoController::class,'delete'])->name('voluntariados.delete');
 Route::get('/voluntariados/{id}/show',[VoluntariadoController::class,'show'])->name('voluntariados.show');
-//Ruta para validar que no se pueda crear una campaña si ya existe una previamente con una misma fecha y hora
+//Ruta para validar que no se pueda crear un voluntariado si ya existe uno previamente con una misma fecha y hora
 Route::post('/validarvoluntariado', [VoluntariadoController::class,'validarVoluntariado']); 
 
+Route::get('/documentos',[DocumentoController::class,'index'])->name('documentos');
+Route::post('/documentos/store',[DocumentoController::class,'store'])->name('documentos.store');
+Route::get('/documentos/{id}/edit',[DocumentoController::class,'edit'])->name('documentos.edit');
+Route::post('/documentos/update/{id}',[DocumentoController::class,'update'])->name('documentos.update');
+Route::delete('/documentos/delete/{id}',[DocumentoController::class,'delete'])->name('documentos.delete');
+Route::get('/documentos/{id}/show',[DocumentoController::class,'show'])->name('documentos.show');
 
 
+Route::get('/galeriaimagenes',[GaleriaController::class,'index'])->name('galeria');
+Route::post('/galeriaimagenes/store',[GaleriaController::class,'store'])->name('galeria.store');
+Route::get('/galeriaimagenes/{id}/edit',[GaleriaController::class,'edit'])->name('galeria.edit');
+Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
+Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
+Route::get('/galeriaimagenes/{id}/show',[GaleriaController::class,'show'])->name('galeria.show');
 
-
-
-Route::resource('/personas','App\Http\Controllers\Admin\PersonaController')->name('GET','personas');
-Route::resource('/tipospersonas','App\Http\Controllers\Admin\TipoPersonaController')->name('GET','tipospersonas');
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);

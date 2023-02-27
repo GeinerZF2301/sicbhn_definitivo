@@ -43,8 +43,6 @@
                                     <span id="fecha_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                             </div>
-
-
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Hora</label>
                                 <input type="time" class="form-control" name="hora" id="hora">
@@ -52,12 +50,19 @@
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Tipo de campaña </label>
-                                <select class="tipoPersona_id form-select form-select-sm" name="tipo_campaña"
+                                <select class="tipo_campanna form-select form-select-sm" name="tipo_campaña"
                                     id="tipo_campaña" aria-label=".form-select-sm example">
                                     <option selected>Selecciona una opcion</option>
                                     <option value="Conservación Ambiental">Conservación Ambiental</option>
                                     <option value="Educación Ambiental">Educación Ambiental</option>
+                                    <option value="otro">Otro, Especifique...</option>
                                 </select>
+                                <span id="tipo_campaña_error" class="text-danger fw-bolder error-messages"></span>
+                            </div>
+                            <div id="otroInput" style="display:none;">
+                                <input type="text" class="form-control" id="otro_tipo"
+                                    placeholder="Escriba el tipo de campaña al que pertenece" >
+                                <button class="btn-dark rounded mt-2 mb-3" id="otroBtn">Guardar</button>
                                 <span id="tipo_campaña_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">

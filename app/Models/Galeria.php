@@ -5,16 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TipoPersona extends Model
+class Galeria extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'tipo_persona',
-        'descripcion'
+        'nombre',
+        'descripcion',
+        'estado',
+        'path',
+        'file',
+        'categoria_imagen'
     ];
-    
-    public function personas()
-    {
-        return $this->hasMany(Persona::class);
-    }
 }

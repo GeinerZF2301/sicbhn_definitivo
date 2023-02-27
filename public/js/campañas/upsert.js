@@ -30,10 +30,32 @@ $(document).ready(function () {
                 validarCampanna(method);
                 limpiarMensagesValidacion();
             });
+        $('#otroInput').val(" ");
         $("#tipo_campaña").val("");
         $("#estado").val("");
     });
 
+    $('#tipo_campaña').on("change", function(){
+        if($(this).val() == "otro"){
+            $('#otroInput').show();           
+        }else{
+            $('#otroInput').hide();
+        }
+    });
+
+    $('#otroBtn').on('click', function(e){
+        e.preventDefault();
+        let otroInput = $('#otro_tipo').val();
+        let nuevaOpcion = $('<option>', {
+            value: otroInput,
+            text: otroInput,
+            selected: true
+        });
+        $('#tipo_campaña').append(nuevaOpcion);
+        $('#otro_tipo').val(' ');
+        $('#otro_tipo').hide();
+    });
+     
     //Logica del cliente para realizar una solicitud POST al servidor y hacer un Store
     var form = $("#createForm")[0];
     $("#saveBtn").click(function (e) {

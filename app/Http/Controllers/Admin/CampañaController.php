@@ -21,7 +21,7 @@ class CampañaController extends Controller
         return view('admin.campañas.index', compact('campañas'));
     }
 
-    public function store(StoreCampañaRequest $request){
+    public function store(StoreCampañaRequest $request) {
         $validacionFechaCampaña = $this->validarCampaña($request);
         if($validacionFechaCampaña->getStatusCode() === 200){
             $validatedData = $request->validated();
@@ -61,7 +61,6 @@ class CampañaController extends Controller
     }
     public function update(StoreCampañaRequest $request, $method)
     {
-        
         $estadoAuxiliar = true;
         $id = intval($request->id);
         try{
@@ -101,7 +100,7 @@ class CampañaController extends Controller
     {
         $fecha = $request->fecha;
         $hora = $request->hora;
-        $id = $request->id; // Si estás editando un registro, asumo que tienes el id en tu formulario
+        $id = $request->id; 
         
         $campañaExistente = Campaña::where('fecha', $fecha)->where('hora', $hora)->first();
         
@@ -115,15 +114,5 @@ class CampañaController extends Controller
             'success' => 'Fecha y hora disponible para creación o actualización'
         ], 200);
     }
-    
-    public function retornarRespuestaErrorJson(){
-        return response()->json([
-            'error' => 'Ya existe una campaña en esa fecha y hora indicada'
-        ], 422);
-    }
-    public function retornarRespuestaSuccessJson(){
-        return response()->json([
-            'success' => 'Fecha y hora disponible para creación'
-        ], 200);
-    }
+
 }
