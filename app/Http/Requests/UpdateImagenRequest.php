@@ -3,8 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Galeria;
-class StoreImagenRequest extends FormRequest
+
+class UpdateImagenRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -28,17 +28,18 @@ class StoreImagenRequest extends FormRequest
             'descripcion' => 'string|max:100',
             'estado' => 'required|boolean',
             'path' => 'required|string|max:100',
-            'file' => 'required|mimes:png, jpg, jpeg|max:5048',
+            'file' => 'nullable|mimes:png, jpg, jpeg|max:5048',
             'categoria_imagen' => 'required|string'
         ];
     }
+
     public function messages()
     {
         return [
-            'nombre.required' => 'El estado es obligatorio',
+            'nombre.required' => 'El nombre es obligatorio',
             'estado.required' => 'El estado es obligatorio',
             'path.required' => 'La ruta es obligatoria',
-            'file.required' => 'La imagen que desea cargar es obligatoria',
+            'file.mimes' => 'Los archivos permitidos son png, jpg, jpeg',
             'file.max' => 'La imagen que desea cargar excede el limite de 5 megabytes',
             'categoria_imagen.required' => 'La categoria de la imagen es obligatoria',
         ];

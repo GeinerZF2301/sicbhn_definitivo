@@ -103,12 +103,12 @@ Route::get('/voluntariados/{id}/show',[VoluntariadoController::class,'show'])->n
 //Ruta para validar que no se pueda crear un voluntariado si ya existe uno previamente con una misma fecha y hora
 Route::post('/validarvoluntariado', [VoluntariadoController::class,'validarVoluntariado']); 
 
-Route::get('/documentos',[DocumentoController::class,'index'])->name('documentos');
+Route::get('/documentacion',[DocumentoController::class,'index'])->name('documentacion');
 Route::post('/documentos/store',[DocumentoController::class,'store'])->name('documentos.store');
 Route::get('/documentos/{id}/edit',[DocumentoController::class,'edit'])->name('documentos.edit');
 Route::post('/documentos/update/{id}',[DocumentoController::class,'update'])->name('documentos.update');
 Route::delete('/documentos/delete/{id}',[DocumentoController::class,'delete'])->name('documentos.delete');
-Route::get('/documentos/{id}/show',[DocumentoController::class,'show'])->name('documentos.show');
+
 
 
 Route::get('/galeriaimagenes',[GaleriaController::class,'index'])->name('galeria');
@@ -116,7 +116,6 @@ Route::post('/galeriaimagenes/store',[GaleriaController::class,'store'])->name('
 Route::get('/galeriaimagenes/{id}/edit',[GaleriaController::class,'edit'])->name('galeria.edit');
 Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
 Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
-Route::get('/galeriaimagenes/{id}/show',[GaleriaController::class,'show'])->name('galeria.show');
 
 
 Route::group(['middleware' => ['auth']], function() {

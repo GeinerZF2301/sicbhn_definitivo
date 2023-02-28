@@ -5,7 +5,7 @@ $(document).ready(function() {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    
+
     let method = 'create';
     obtenerTiposPersona(method);
    
@@ -76,8 +76,8 @@ $(document).ready(function() {
         });
     });
     
-    method = 'edit';
-    obtenerTiposPersona(method);
+    let editMethod = 'edit';
+    obtenerTiposPersona(editMethod);
 // Logica del cliente que realiza un GET para el metodo Edit Tipo Persona
     $(".editBtn").click(function(e) {
         let url = "/personas/{id}/edit";

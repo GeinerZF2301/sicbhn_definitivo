@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de Persona </label>
-                                    <select class="form-select form-select-sm" id="edit_tipo_campaña"
+                                    <select class="form-select form-select-sm" id="edit_tipo_persona_id"
                                         name="tipo_persona_id" aria-label=".form-select-sm example">
                                         <option selected>Selecciona una opcion</option>
                                     </select>

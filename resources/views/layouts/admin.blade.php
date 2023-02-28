@@ -68,7 +68,7 @@
           </a>
           <div class="collapse" id="tables">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/documentos') }}">Documentos del CBHN</a>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/documentacion') }}">Documentos del CBHN</a>
               </li>
             </ul>
           </div>

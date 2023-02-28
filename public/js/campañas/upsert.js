@@ -116,7 +116,6 @@ $(document).ready(function () {
             },
         });
     });
-
     // Logica del cliente que realiza un GET para el metodo Edit Tipo Persona
     $(".editBtn").click(function (e) {
         let url = '/campannas/{id}/edit';
