@@ -29,73 +29,45 @@
                 </div>
                 <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
             </div>
-<<<<<<< HEAD
-            <!-- Authentication Links -->
-            @guest
-                @if (Route::has('login'))
-                    <a href="{{ route('login') }}" class="btn btn-warning">Iniciar Sesión<i class="fa fa-right ms-0"></i></a>
-                @endif
-
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="btn btn-success">Registrarse<i class="fa fa-right ms-0"></i></a>
-                @endif
-            @else
-                <li class="nav-item dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
-                    </a>
-=======
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
           @can('ver-administracion')
           <a href="{{ url('/admin') }}" class="nav-item nav-link">Administración</a>
           @endcan
         </div>
-          <!-- Authentication Links -->
-          @guest
-                                @if (Route::has('login'))
-                                <a href="{{ route('login') }}" class="btn btn-warning"
-                                  >Iniciar Sesión<i class="fa fa-right ms-0"></i
-                                ></a>
-                                @endif
+        <!-- Authentication Links -->
+        @guest
+                            @if (Route::has('login'))
+                            <a href="{{ route('login') }}" class="btn btn-warning"
+                              >Iniciar Sesión<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
 
-                                @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="btn btn-success"
-                                  >Registrarse<i class="fa fa-right ms-0"></i
-                                ></a>
-                                @endif
-                            @else
-                             
-                                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                        {{ Auth::user()->name }}
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn btn-success"
+                              >Registrarse<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
+                        @else
+                            
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
                                     </a>
->>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
 
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                            onclick="event.preventDefault();
-                                                        document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-
-<<<<<<< HEAD
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                            @csrf
-                        </form>
-                    </div>
-                </li>
-            @endguest
-        </div>
-=======
-                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                            @csrf
-                                        </form>
-                                    </div>
-                               
-                            @endguest
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            
+                        @endguest
       </div>
->>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
     </nav>
 
     <!-- Page Header Start -->

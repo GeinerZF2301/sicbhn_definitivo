@@ -42,8 +42,8 @@
           <a href="{{ url('/admin') }}" class="nav-item nav-link">Administración</a>
           @endcan
         </div>
-       <!-- Authentication Links -->
-       @guest
+        <!-- Authentication Links -->
+        @guest
                             @if (Route::has('login'))
                             <a href="{{ route('login') }}" class="btn btn-warning"
                               >Iniciar Sesión<i class="fa fa-right ms-0"></i
