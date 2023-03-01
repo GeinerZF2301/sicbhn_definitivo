@@ -9,6 +9,7 @@ use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\Admin\DocumentoController;
 use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Cliente\CampañaClienteController;
+use App\Http\Controllers\Cliente\DocumentosClienteController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -23,14 +24,11 @@ Route::get('/admin', function () {
 
 
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
 Route::get('/contactos', function () {
     return view('principal/contactos.contactos-index');
-});
-
-Route::get('/documentos', function () {
-    return view('principal/documentos.documentos-index');
 });
 
 Route::get('/donaciones', function () {
