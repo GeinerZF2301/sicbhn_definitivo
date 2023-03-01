@@ -382,7 +382,7 @@
             />
             <div class="testimonial-text rounded text-center p-4">
               <p>
-                En mi recorrdido por el Corredor Biológico Hojancha-Nandayure lo que
+                En mi recorrido por el Corredor Biológico Hojancha-Nandayure lo que
                 más me impresionó fueron las zonas verdes, las vistas, y la fauna del lugar.
                 Sin lugar a dudas volvería a visitar el Corredor Biológico.
               </p>
@@ -412,3 +412,4 @@
     </div>
     <!-- Testimonial End -->
     @endsection
+
