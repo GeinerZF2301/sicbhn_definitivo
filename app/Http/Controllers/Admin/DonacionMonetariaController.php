@@ -22,7 +22,7 @@ class DonacionMonetariaController extends Controller
     public function index() 
     {
         $donaciones = $this->donacionMonetaria->allMonetaryDonations();
-        return view('admin.donaciones.index', compact('donaciones'));
+        return view('admin.donacionMonetaria.index', compact('donaciones'));
     }
 
     public function create() 

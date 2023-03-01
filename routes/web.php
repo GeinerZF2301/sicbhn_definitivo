@@ -11,6 +11,10 @@ use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Cliente\CampañaClienteController;
 use App\Http\Controllers\Cliente\DocumentosClienteController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Admin\ArticuloController;
+use App\Http\Controllers\Admin\DonacionMonetariaController;
+use App\Http\Controllers\Admin\DonacionEspecieController;
+use App\Http\Controllers\Admin\CuentaBancariaController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -51,6 +55,12 @@ Route::get('/voluntariado', function () {
     return view('principal/voluntariado.voluntariado-index');
 });
 
+
+
+
+
+
+
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -60,6 +70,39 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('admin', AdminController::class);
 
+
+    /*Routas Donoaciones admin*/
+    Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');
+    Route::post('/articulos/store',[ArticuloController::class,'store'])->name('articulos.store');
+    Route::get('/articulos/{id}/edit',[ArticuloController::class,'edit'])->name('articulos.edit');
+    Route::post('/articulos/update/{id}',[ArticuloController::class,'update'])->name('articulos.update');
+    Route::delete('/articulos/delete/{id}',[ArticuloController::class,'delete'])->name('articulos.delete');
+    Route::get('/articulos/{id}/show',[ArticuloController::class,'show'])->name('articulos.show');
+
+
+    // Rutas para el modulo de Donacion Especie
+    Route::get('/donacionEspecie',[DonacionEspecieController::class,'index'])->name('donacionEspecie');
+    Route::post('/donacionEspecie/store',[DonacionEspecieController::class,'store'])->name('donacionEspecie.store');
+    Route::get('/donacionEspecie/{id}/edit',[DonacionEspecieController::class,'edit'])->name('donacionEspecie.edit');
+    Route::post('/donacionEspecie/update/{id}',[DonacionEspecieController::class,'update'])->name('donacionEspecie.update');
+    Route::delete('/donacionEspecie/delete/{id}',[DonacionEspecieController::class,'delete'])->name('donacionEspecie.delete');
+    Route::get('/donacionEspecie/{id}/show',[DonacionEspecieController::class,'show'])->name('donacionEspecie.show');
+
+    // Rutas para el modulo de Donacion Monetaria
+    Route::get('/donacionMonetaria',[DonacionMonetariaController::class,'index'])->name('donacionMonetaria');
+    Route::post('/donacionMonetaria/store',[DonacionMonetariaController::class,'store'])->name('donacionMonetaria.store');
+    Route::get('/donacionMonetaria/{id}/edit',[DonacionMonetariaController::class,'edit'])->name('donacionMonetaria.edit');
+    Route::post('/donacionMonetaria/update/{id}',[DonacionMonetariaController::class,'update'])->name('donacionMonetaria.update');
+    Route::delete('/donacionMonetaria/delete/{id}',[DonacionMonetariaController::class,'delete'])->name('donacionMonetaria.delete');
+    Route::get('/donacionMonetaria/{id}/show',[DonacionMonetariaController::class,'show'])->name('donacionMonetaria.show');
+
+    // Rutas para el modulo de Cuentas Bancarias
+    Route::get('/cuentaBancaria',[CuentaBancariaController::class,'index'])->name('cuentaBancaria');
+    Route::post('/cuentaBancaria/store',[CuentaBancariaController::class,'store'])->name('cuentaBancaria.store');
+    Route::get('/cuentaBancaria/{id}/edit',[CuentaBancariaController::class,'edit'])->name('cuentaBancaria.edit');
+    Route::post('/cuentaBancaria/update/{id}',[CuentaBancariaController::class,'update'])->name('cuentaBancaria.update');
+    Route::delete('/cuentaBancaria/delete/{id}',[CuentaBancariaController::class,'delete'])->name('cuentaBancaria.delete');
+    Route::get('/cuentaBancaria/{id}/show',[CuentaBancariaController::class,'show'])->name('cuentaBancaria.show');
 
     // Rutas para el modulo de Tipos de Persona
     Route::get('/tipospersonas',[TipoPersonaController::class,'index'])->name('tipospersonas');

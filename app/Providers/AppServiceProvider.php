@@ -16,6 +16,14 @@ use App\Repositories\Interfaces\DocumentoRepositorioInterface;
 use App\Repositories\DocumentoRepositorio;
 use App\Repositories\Interfaces\GaleriaRepositorioInterface;
 use App\Repositories\GaleriaRepositorio;
+use App\Repositories\Interfaces\ArticuloRepositorioInterface;
+use App\Repositories\ArticuloRepositorio;
+use App\Repositories\Interfaces\DonacionEspecieRepositorioInterface;
+use App\Repositories\DonacionEspecieRepositorio;
+use App\Repositories\Interfaces\DonacionMonetariaRepositorioInterface;
+use App\Repositories\DonacionMonetariaRepositorio;
+use App\Repositories\Interfaces\CuentaBancariaRepositorioInterface;
+use App\Repositories\CuentaBancariaRepositorio;
 use App\Services\FileUploadService;
 
 
@@ -37,6 +45,10 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(VoluntariadoRepositorioInterface::class, VoluntariadoRepositorio::class);
         $this->app->bind(DocumentoRepositorioInterface::class, DocumentoRepositorio::class);
         $this->app->bind(GaleriaRepositorioInterface::class, GaleriaRepositorio::class);
+        $this->app->bind(ArticuloRepositorioInterface::class, ArticuloRepositorio::class);
+        $this->app->bind(DonacionEspecieRepositorioInterface::class, DonacionEspecieRepositorio::class);
+        $this->app->bind(DonacionMonetariaRepositorioInterface::class, DonacionMonetariaRepositorio::class);
+        $this->app->bind(CuentaBancariaRepositorioInterface::class, CuentaBancariaRepositorio::class);
     }
 
     /**

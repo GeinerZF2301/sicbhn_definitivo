@@ -19,7 +19,7 @@ class CuentaBancariaController extends Controller
     public function index() 
     {
         $articulos = $this->cuentaBancariaRepositorio->allBankAccounts();
-        return view('admin.tipopersonas.index', compact('$articulos'));
+        return view('admin.cuentaBancaria.index', compact('articulos'));
     }
     public function store(StoreCuentaBancariaRequest $request) 
     {

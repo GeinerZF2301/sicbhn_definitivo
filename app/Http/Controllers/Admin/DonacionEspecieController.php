@@ -22,7 +22,7 @@ class DonacionEspecieController extends Controller
     public function index() 
     {
         $donaciones = $this->donacionEspecie->allInKindDonations();
-        return view('admin.personas.index', compact('donaciones'));
+        return view('admin.donacionEspecies.index', compact('donaciones'));
     }
 
     public function create() 

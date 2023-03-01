@@ -106,12 +106,12 @@
           </a>
           <div class="collapse" id="icons">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Monetarias</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">En Especie</a></li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Cuentas
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/donacionMonetaria') }}">Monetarias</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/donacionEspecie') }}">En Especie</a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/cuentaBancaria') }}">Cuentas
                   Bancarias</a>
               </li>
-              <li class="nav-item"> <a class="nav-link" href="{{ url('') }}">Artículos y
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/articulos') }}">Artículos y
                   Alimentos</a></li>
             </ul>
           </div>
