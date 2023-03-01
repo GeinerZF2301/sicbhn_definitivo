@@ -7,13 +7,10 @@ use App\Http\Controllers\Admin\VoluntariadoController;
 use App\Http\Controllers\Admin\RolController;
 use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\Admin\DocumentoController;
-<<<<<<< HEAD
 use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Cliente\CampañaClienteController;
 use App\Http\Controllers\Cliente\DocumentosClienteController;
-=======
 use App\Http\Controllers\AdminController;
->>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -22,20 +19,15 @@ Route::get('/', function () {
     return view('home');
 });
 
-<<<<<<< HEAD
-Route::get('/admin', function () {
-    return view('layouts.admin');
-});
+
 
 
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
-=======
 Route::get('/campanna', function () {
     return view('principal/campanna.campanna-index');
 });
->>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
 
 Route::get('/contactos', function () {
     return view('principal/contactos.contactos-index');
@@ -60,7 +52,6 @@ Route::get('/voluntariado', function () {
     return view('principal/voluntariado.voluntariado-index');
 });
 
-<<<<<<< HEAD
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -127,8 +118,6 @@ Route::post('/galeriaimagenes/store',[GaleriaController::class,'store'])->name('
 Route::get('/galeriaimagenes/{id}/edit',[GaleriaController::class,'edit'])->name('galeria.edit');
 Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
 Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
-=======
->>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
 
 
 Route::group(['middleware' => ['auth']], function() {
