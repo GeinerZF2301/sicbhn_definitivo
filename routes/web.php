@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\VoluntariadoController;
 use App\Http\Controllers\Admin\RolController;
 use App\Http\Controllers\Admin\UsuarioController;
 use App\Http\Controllers\Admin\DocumentoController;
+use App\Http\Controllers\Admin\GaleriaController;
+use App\Http\Controllers\Cliente\CampañaClienteController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
@@ -19,9 +21,9 @@ Route::get('/admin', function () {
     return view('layouts.admin');
 });
 
-Route::get('/campanna', function () {
-    return view('principal/campanna.campanna-index');
-});
+
+Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+// Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
 Route::get('/contactos', function () {
     return view('principal/contactos.contactos-index');
@@ -85,7 +87,7 @@ Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name
 Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
 
 //Rutas para el modulo Campañas
-Route::get('/campannas',[CampañaController::class,'index'])->name('campannas');
+Route::get('/campannasadmin',[CampañaController::class,'index'])->name('campannas');
 Route::post('/campannas/store',[CampañaController::class,'store'])->name('campannas.store');
 Route::get('/campannas/{id}/edit',[CampañaController::class,'edit'])->name('campannas.edit');
 Route::post('/campannas/update/{id}',[CampañaController::class,'update'])->name('campannas.update');

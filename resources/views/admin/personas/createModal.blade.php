@@ -17,13 +17,13 @@
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" name="nombre" id="nombre"
                                         placeholder="Escriba el nombre de la persona">
-                                    <span id="nombre_error" class="text-danger error-messages"></span>
+                                    <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
                                     <input type="text" class="form-control" name="apellidos" id="apellidos"
                                         placeholder="Escriba los apellidos de la persona">
-                                    <span id="apellidos_error" class="text-danger error-messages"></span>
+                                    <span id="apellidos_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de
@@ -35,7 +35,7 @@
                                         <option value="Cédula de Residencia">Cédula de Residencia</option>
                                         <option value="Pasaporte">Pasaporte</option>
                                     </select>
-                                    <span id="tipo_identificacion_error" class="text-danger error-messages"></span>
+                                    <span id="tipo_identificacion_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Número de
@@ -43,7 +43,7 @@
                                     <input type="int" class="form-control" name="numero_identificacion"
                                         id="numero_identificacion"
                                         placeholder="Escriba el numero de identificacion de la persona">
-                                    <span id="numero_identificacion_error" class="text-danger error-messages"></span>
+                                    <span id="numero_identificacion_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Fecha de
@@ -51,7 +51,7 @@
                                     <input type="date" class="form-control" name="fecha_de_nacimiento"
                                         id="fecha_de_nacimiento"
                                         placeholder="Proporcione la fecha de nacimiento de la persona">
-                                    <span id="fecha_de_nacimiento_error" class="text-danger error-messages"></span>
+                                    <span id="fecha_de_nacimiento_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
 
                             </div>
@@ -60,33 +60,33 @@
                                     <label for="formGroupExampleInput" class="form-label">Edad</label>
                                     <input type="int" class="form-control" name="edad" id="edad"
                                         placeholder="Edad de la persona" disabled >
-                                    <span id="edad_error" class="text-danger error-messages"></span>
+                                    <span id="edad_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Pais</label>
                                     <input type="text" class="form-control" name="pais" id="pais"
                                         placeholder="Escriba el tipo de persona">
-                                    <span id="pais_error" class="text-danger error-messages"></span>
+                                    <span id="pais_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Provincia o Ciudad</label>
                                     <input type="text" class="form-control" name="ciudad" id="ciudad"
                                         placeholder="Escriba el tipo de persona">
-                                    <span id="ciudad_error" class="text-danger error-messages"></span>
+                                    <span id="ciudad_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Distrito o Calle </label>
                                     <input type="text" class="form-control" name="calle" id="calle"
                                         placeholder="Calle">
-                                    <span id="calle_error" class="text-danger error-messages"></span>
+                                    <span id="calle_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de Persona </label>
-                                    <select class="tipoPersona_id form-select form-select-sm" name="tipo_persona_id"
+                                    <select class="tipoPersona_id  form-select form-select-sm" name="tipo_persona_id"
                                         id="tipo_persona_id" aria-label=".form-select-sm example">
                                         <option selected>Selecciona una opcion</option>
                                     </select>
-                                    <span id="tipo_persona_id_error" class="text-danger error-messages"></span>
+                                    <span id="tipo_persona_id_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                             </div>
                         </div>

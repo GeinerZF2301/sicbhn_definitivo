@@ -36,4 +36,20 @@ class StorePersonaRequest extends FormRequest
             'tipo_persona_id' => 'required|int' 
         ];
     }
+    public function messages()
+    {
+        return [
+            'nombre.required' => 'El nombre de la persona es obligatorio',
+            'apellidos.required' => 'Los apellidos de la persona son obligatorios',
+            'tipo_identificacion.required' => 'El tipo de identificacion es obligatorio',
+            'numero_identificacion.required' => 'El numero de identificacion es obligatorio',
+            'fecha_de_nacimiento.required' => 'La fecha de nacimiento es obligatoria',
+            'pais.required' => 'El pais es obligatorio',
+            'ciudad.required' => 'La ciudad es obligatoria',
+            'calle.required' => 'La calle es obligatoria',
+            'tipo_persona_id.required' => 'El tipo de persona es obligatorio',
+            'edad.min' => 'La edad no puede ser menor a 1',
+            'edad.max' => 'La edad no puede ser mayor a 99',
+        ];
+    }
 }

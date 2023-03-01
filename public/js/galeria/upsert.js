@@ -26,11 +26,15 @@ $(document).ready(function () {
             limpiarMensagesValidacion();
         });
 
-        $("#file")
-        .val("")
+        $("#file").val("")
         .on("change", function () {
-            limpiarMensagesValidacion();
+            let reader = new FileReader();
+            reader.onload = function(){
+            $("#preview").attr("src", reader.result);
+        };
+            reader.readAsDataURL($("#file")[0].files[0]);
         });
+        $('#preview').attr('src', '');
 
     });
    
@@ -120,7 +124,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: "POST",
-            url: '/imagens/update/'+ idRequest,
+            url: '/galeriaimagenes/update/'+ idRequest,
             data: formEdit,
             processData: false,
             contentType: false,
@@ -179,7 +183,7 @@ $(".deleteBtn").click(function (e) {
         if (result.isConfirmed) {
             $.ajax({
                 type: "DELETE",
-                url: "/imagens/delete/" + id,
+                url: "/galeriaimagenes/delete/" + id,
                 data: id,
                 success: function (response) {
                     console.log(response);
