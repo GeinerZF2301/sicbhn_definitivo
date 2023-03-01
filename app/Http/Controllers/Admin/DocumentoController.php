@@ -22,6 +22,10 @@ class DocumentoController extends Controller
     {
         $this->fileUploadService = $fileUploadService;
         $this->documentoRepositorio = $documentoRepositorio;
+        $this->middleware('permission:ver-Documento|crear-Documento|editar-Documento|borrar-Documento',['only' => ['index']]);
+        $this->middleware('permission:crear-Documento' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-Documento' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-Documento' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index()

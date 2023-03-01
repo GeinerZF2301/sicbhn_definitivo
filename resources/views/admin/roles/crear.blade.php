@@ -1,65 +1,63 @@
 @extends('layouts.admin')
 
 @section('content')
-<div class="row">
-        <div class="col-lg-12 margin-tb">
-          <div >
-              <h2 class=""><i class="far fa-user" ></i> Crear Rol</h2>
-          </div>
-            
+<div class="row mx-auto py-4 d-flex justify-content-center">
+            <span class="mb-4 col-20">
+                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Creacion de roles del
+                    Corredor
+                    Biológico</h1>
+            </span>
+
+    @if ($errors->any())                                                
+        <div class="alert alert-dark alert-dismissible fade show" role="alert">
+        <strong>|Llene todos los campos!</strong>                   
+            @foreach ($errors->all() as $error)                                    
+                <span class="badge badge-danger">Error</span>
+            @endforeach                        
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
         </div>
-</div> 
-                        @if ($errors->any())                                                
-                            <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                            <strong>¡Revise los campos!</strong>                        
-                                @foreach ($errors->all() as $error)                                    
-                                    <span class="badge badge-danger">{{ $error }}</span>
-                                @endforeach                        
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
-                        @endif
+    @endif
 
-                        {!! Form::open(array('route' => 'roles.store','method'=>'POST')) !!}
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <label for="">Nombre del Rol:</label>                                    
-                                    {!! Form::text('name', null, array('class' => 'form-control')) !!}
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <label for="">Permisos para este Rol:</label>
-                                    <br/>
-                                    <div class="row">
-                                    @foreach($permission as $value)
-                                        <div class="col-2">
-                                        
-                                        <label>{{ Form::checkbox('permission[]', $value->id, false, array('class' => 'name')) }}
-                                        {{ $value->name }}</label>
-                                        <br/>
-                                    
+        {!! Form::open(array('route' => 'roles.store','method'=>'POST')) !!}
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="">Nombre del Rol:</label>                                    
+                    {!! Form::text('name', null, array('class' => 'form-control')) !!}
+                </div>
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <label for="">Permisos para este Rol:</label>
+                    <br/>
+                    <div class=" row  py-8 mx-auto d-flex justify-content-center">
+                    @foreach($permission as $value)
+                        <div class="col-2">
+                        
+                        <label>{{ Form::checkbox('permission[]', $value->id, false, array('class' => 'name')) }}
+                        {{ $value->name }}</label>
+                        <br/>
 
-                                        
-
-                                        </div>
-                                    @endforeach
-                                    <div class="col-2">
-                                        
-                                    <input type="checkbox" name="select-all" id="select-all" />
-                                    <label for="">Seleccionar todos los permisos</label>
-
-                                    </div>
-                                    </div>
-
-                                    
-                                </div>
-                            </div>        
                         </div>
-                        <button type="submit" class="btn btn-primary">Guardar</button>
-                        {!! Form::close() !!} 
+                    @endforeach
+                    <div class="col-2">
+                        
+                    <input type="checkbox" name="select-all" id="select-all" />
+                    <label for="">Seleccionar todos los permisos</label>
+
+                    </div>
+                    </div>
+
+                    
+                </div>
+            </div>        
+        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
+        {!! Form::close() !!} 
+</div>
 @endsection
 
 @section('js')

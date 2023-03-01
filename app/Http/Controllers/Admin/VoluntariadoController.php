@@ -14,6 +14,11 @@ class VoluntariadoController extends Controller
 
     public function __construct(VoluntariadoRepositorioInterface $voluntariadoRepositorio){
         $this->voluntariadoRepositorio = $voluntariadoRepositorio;
+
+        $this->middleware('permission:ver-Voluntarios|crear-Voluntarios|editar-Voluntarios|borrar-Voluntarios',['only' => ['index']]);
+        $this->middleware('permission:crear-Voluntarios' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-Voluntarios' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-Voluntarios' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index()

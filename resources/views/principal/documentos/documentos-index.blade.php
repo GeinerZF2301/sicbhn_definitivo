@@ -39,6 +39,9 @@
             </div>
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link">Contactos</a>
+          @can('ver-administracion')
+          <a href="{{ url('/admin') }}" class="nav-item nav-link">Administración</a>
+          @endcan
         </div>
         <!-- Authentication Links -->
         @guest
@@ -54,7 +57,7 @@
                             ></a>
                             @endif
                         @else
-                            <li class="nav-item dropdown">
+                            
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
@@ -70,7 +73,7 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
+                            
                         @endguest
       </div>
     </nav>
