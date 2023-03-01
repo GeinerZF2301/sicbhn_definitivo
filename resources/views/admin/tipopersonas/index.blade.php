@@ -13,10 +13,12 @@
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
+                @can('crear-TipoPersona')
                     <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#createModal">
                         Crear Tipo de Persona
                     </button>
+                @endcan
                     @include('admin.tipopersonas.createModal')
                 </div>
             </div>
@@ -47,12 +49,16 @@
                                         </td>
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
+                                            @can('editar-TipoPersona')
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     class="editBtn rounded btn btn-warning">Editar</button>
+                                            @endcan
                                                 <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
+                                            @can('borrar-TipoPersona')
                                                 <button type="submit"
                                                     class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
+                                            @endcan
                                             </td>
                                         </div>
                                     </tr>

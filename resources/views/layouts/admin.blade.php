@@ -52,11 +52,15 @@
           </a>
           <div class="collapse" id="ui-basic">
             <ul class="nav flex-column sub-menu">
+              @can('ver-TipoPersona')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/tipospersonas') }}">Tipos de
                   Personas
                 </a></li>
+                @endcan
+              @can('ver-Persona')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/personas') }}">Gestión de las
                   Personas</a></li>
+                @endcan
             </ul>
           </div>
         </li>
@@ -68,9 +72,15 @@
           </a>
           <div class="collapse" id="tables">
             <ul class="nav flex-column sub-menu">
+<<<<<<< HEAD
               <li class="nav-item"> <a class="nav-link" href="{{ url('/documentacion') }}">Documentos del
                   CBHN</a>
+=======
+            @can('ver-Documento')
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/documentacion') }}">Documentos del CBHN</a>
+>>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
               </li>
+            @endcan
             </ul>
           </div>
         </li>
@@ -82,10 +92,18 @@
           </a>
           <div class="collapse" id="chartjs">
             <ul class="nav flex-column sub-menu">
+<<<<<<< HEAD
               <li class="nav-item"> <a class="nav-link" href="{{ url('/campannasadmin') }}">Gestión de las
+=======
+            @can('ver-Campañas')
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/campannas') }}">Gestión de las
+>>>>>>> 5ce069e521140b090c4622d4aae2e56e8939bc27
                   campañas</a></li>
+            @endcan
+            @can('ver-Voluntarios')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/voluntariados') }}">Gestión de los
                   voluntariados</a></li>
+            @endcan
             </ul>
           </div>
         </li>

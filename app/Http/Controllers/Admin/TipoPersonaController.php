@@ -12,10 +12,18 @@ class TipoPersonaController extends Controller
 {
     private $tipoPersonaRepositorio;
 
+    
     public function __construct(TipoPersonaRepositorioInterface $tipoPersonaRepositorio){
         $this->tipoPersonaRepositorio = $tipoPersonaRepositorio;
+
+        $this->middleware('permission:ver-TipoPersona|crear-TipoPersona|editar-TipoPersona|borrar-TipoPersona',['only' => ['index']]);
+        $this->middleware('permission:crear-TipoPersona' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-TipoPersona' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-TipoPersona' , ['only' => ['delete', 'destroy']]);
     }
 
+    
+    
     public function index() 
     {
         $tipo_personas = $this->tipoPersonaRepositorio->allTypesOfPeople();

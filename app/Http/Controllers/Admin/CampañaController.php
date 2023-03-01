@@ -13,6 +13,11 @@ class CampañaController extends Controller
 
     public function __construct(CampañaRepositorioInterface $campañaRepositorio){
         $this->campañaRepositorio = $campañaRepositorio;
+
+         $this->middleware('permission:ver-Campañas|crear-Campañas|editar-Campañas|borrar-Campañas',['only' => ['index']]);
+        $this->middleware('permission:crear-Campañas' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-Campañas' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-Campañas' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index()
