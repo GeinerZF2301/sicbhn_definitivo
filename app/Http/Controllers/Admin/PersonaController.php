@@ -2,6 +2,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Models\Persona;
+use App\Models\TipoPersona;
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Http\Requests\StorePersonaRequest;
@@ -10,53 +13,94 @@ use App\Repositories\PersonaRepositorio;
 
 class PersonaController extends Controller
 {
-    private $persona_repositorio;
+    private $personaRepositorio;
     /*Constructor encargado de inicializar y desacoplar la logica de negocio con con la
     capa de acceso a datos*/
-    public function __construct(PersonaRepositorioInterface $persona_repositorio){
-        $this->persona_repositorio = $persona_repositorio;
+    public function __construct(PersonaRepositorioInterface $personaRepositorio){
+        $this->personaRepositorio = $personaRepositorio;
     }
    
-    public function index() : Renderable
+    public function index() 
     {
-        $personas = $this->persona_repositorio->allPeople();
+        $personas = $this->personaRepositorio->allPeople();
         return view('admin.personas.index', compact('personas'));
     }
 
     public function create() 
     {
-        return view('admin.personas.create');
+        try{
+            $tipoPersona = DB::table('tipo_personas')->select('id','tipo_persona')->get();
+            return response()->json($tipoPersona, 200);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error:'. $e->getMessage()
+            ], 400);
+        }
     }
 
-    public function store(StorePersonaRequest $request) : RedirectResponse
+    public function store(StorePersonaRequest $request) 
     {
-        $validated_data = $request->validate();
-        $this->persona_repositorio->storePerson($validated_data);
-        return redirect()->route('personas.index')->with('message', 'OK');
+        try{
+            $validatedData = $request->validated();
+            $this->personaRepositorio->storePerson($validatedData);
+            return response()->json([
+                'success' => 'Persona guardada correctamente'
+            ], 201);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error' . $e->getMessage()
+            ], 400);
+        }
     }
 
-    public function show(int $id) : Renderable
+    public function show(Request $request) 
     {
-        $persona = $this->persona_repositorio->findPerson($id);
-        return view('admin.personas.show', compact('persona'));
+        try{
+            $id = intval($request->id);
+            $persona = $this->personaRepositorio->findPerson($id);
+            return response()->json($persona);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error' . $e->getMessage()
+            ], 404);
+        }
     }
 
-    public function edit(int $id) : Renderable
+    public function edit(Request $request) 
     {
-        $persona = $this->persona_repositorio->findPerson($id);
-        return view('admin.personas.edit', compact('persona'));
+        try{
+            $id = intval($request->id);
+            $persona = $this->personaRepositorio->findPerson($id);
+            return response()->json($persona);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error' . $e->getMessage()
+            ], 404);
+        }
     }
 
-    public function update(Persona $persona, StorePersonaRequest $request ) : RedirectResponse
+    public function update(StorePersonaRequest $request) 
     {
-        $request->validate();
-        $this->persona_repositorio->updatePerson($request->all(), $persona['id']);
-        return redirect->route('personas.index')->with('message', 'Persona Actualizada');
+        try{
+            $id = intval($request->id);
+            $validatedData = $request->validated();
+            $persona = $this->personaRepositorio->updatePerson($validatedData, $id);
+            return response()->json([
+                'success' => 'Registro Actualizado Correctamente'
+            ], 200); 
+              
+        } catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error:'. $e->getMessage()
+            ], 400);
+        }
     }
-
-    public function destroy(int $id) : RedirectResponse
+    public function delete(int $id) 
     {
-        $this->persona_repositorio->destroyPerson($id);
-        return redirect->route('personas.index')->with('message', 'Persona Eliminada');
+        $intId = intval($id);
+        $this->personaRepositorio->destroyPerson($intId);
+        return response()->json([
+            'success' => 'Registro de persona eliminada correctamente'
+        ], 200);
     }
 }

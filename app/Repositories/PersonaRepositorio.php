@@ -6,7 +6,7 @@
     class PersonaRepositorio implements PersonaRepositorioInterface {
 
         public function allPeople(){
-            return Persona::latest()->paginate(10);
+            return Persona::all();
         }
         public function storePerson($data){
             return Persona::create($data);
@@ -17,10 +17,11 @@
         public function updatePerson($data, $id){
             $persona = Persona::where('id', $id)->first();
             $persona->nombre = $data['nombre'];
-            $persona->apellido1 = $data['apellido1'];
-            $persona->apellido2 = $data['apellido2'];
-            $persona->numero_identificacion = $data['numero_identificacion'];
+            $persona->apellidos = $data['apellidos'];
             $persona->tipo_identificacion = $data['tipo_identificacion'];
+            $persona->numero_identificacion = $data['numero_identificacion'];
+            $persona->fecha_de_nacimiento = $data['fecha_de_nacimiento'];
+            $persona->edad = $data['edad'];
             $persona->pais = $data['pais'];
             $persona->ciudad = $data['ciudad'];
             $persona->calle = $data['calle'];

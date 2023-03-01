@@ -39,19 +39,45 @@
           </div>
           <a href="{{ url('/contactos') }}" class="nav-item nav-link active">Contactos</a>
         </div>
-        <a href="" class="btn btn-warning"
-          >Iniciar Sesión<i class="fa fa-right ms-0"></i
-        ></a>
-        <a href="" class="btn btn-success"
-          >Registrarse<i class="fa fa-right ms-0"></i
-        ></a>
+       <!-- Authentication Links -->
+       @guest
+                            @if (Route::has('login'))
+                            <a href="{{ route('login') }}" class="btn btn-warning"
+                              >Iniciar Sesión<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
+
+                            @if (Route::has('register'))
+                            <a href="{{ route('register') }}" class="btn btn-success"
+                              >Registrarse<i class="fa fa-right ms-0"></i
+                            ></a>
+                            @endif
+                        @else
+                            <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+
+                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                </div>
+                            </li>
+                        @endguest
       </div>
     </nav>
     <!-- Navbar End -->
 
     <!-- Page Header Start -->
     <div
-      class="container-fluid header-bg py-5 mb-5 wow fadeIn"
+      class="container-fluid header-bgCO py-5 mb-5 wow fadeIn"
       data-wow-delay="0.1s"
     >
       <div class="container py-5">

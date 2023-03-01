@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class TipoPersona extends Model
 {
+    use HasFactory;
     protected $fillable = [
         'tipo_persona',
         'descripcion'
     ];
-    use HasFactory;
     
     public function personas()
     {
