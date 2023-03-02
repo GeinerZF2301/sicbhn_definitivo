@@ -116,6 +116,23 @@
             </ul>
           </div>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="ui-basic">
+            <i class="mdi mdi-image menu-icon"></i>
+            <span class="menu-title">Galeria</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="charts">
+            <ul class="nav flex-column sub-menu">
+            @can('ver-Galeria')
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/galeriaimagenes') }}">Galeria
+                </a></li>
+                @endcan
+            </ul>
+          </div>
+        </li>
+
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
             <i class="mdi mdi-account menu-icon"></i>

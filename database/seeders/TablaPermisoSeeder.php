@@ -53,6 +53,11 @@ class TablaPermisoSeeder extends Seeder
             'crear-Voluntarios',
             'editar-Voluntarios',
             'borrar-Voluntarios',
+            //Permisos Galeria
+            'ver-Galeria',
+            'crear-Galeria',
+            'editar-Galeria',
+            'borrar-Galeria',
         ];
 
         foreach($permisos as $permiso){

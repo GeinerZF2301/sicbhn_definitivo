@@ -13,10 +13,12 @@
         </div>
         <div class="row">
             <div class="d-flex justify-content-between mt-2 ">
+            @can('crear-Galeria')
                 <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#createModal">
                     Crear Imagen
                 </button>
+                @endcan
                 @include('admin.galeriaimagenes.createModal')
             </div>
         </div>
@@ -62,12 +64,15 @@
                                 </td>
                                 <div class="d-flex shadow-lg justify-content-between">
                                     <td class="">
+                                    @can('editar-Galeria')
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                             class="editBtn shadow-lg rounded btn btn-warning"><i class="bi bi-pencil-square"></i>  Editar</button>
                                             <a href="{{ asset('storage/imagenes/'.$imagen->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i> Ver Imagen</a>
-                                             
+                                         @endcan    
+                                         @can('borrar-Galeria')    
                                         <button type="submit"
                                             class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>
+                                            @endcan
                                     </td>
                                 </div>
                             </tr>
