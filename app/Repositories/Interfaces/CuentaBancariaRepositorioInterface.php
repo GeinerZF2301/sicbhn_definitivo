@@ -3,7 +3,7 @@
     
      interface CuentaBancariaRepositorioInterface{
         public function allBankAccounts();
-        public function storeArticule($data, $estado);
+        public function storeBankAccount($data);
         public function findBankAccount($id);
         public function updateBankAccount($data, $id); 
         public function destroyBankAccount($id);

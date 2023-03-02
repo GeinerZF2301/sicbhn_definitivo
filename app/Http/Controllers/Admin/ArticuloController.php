@@ -19,7 +19,7 @@ class ArticuloController extends Controller
     public function index() 
     {
         $articulos = $this->articuloRepositorio->allArticles();
-        return view('admin.tipopersonas.index', compact('$articulos'));
+        return view('admin.articulos.index', compact('articulos'));
     }
     public function store(StoreArticuloRequest $request) 
     {
