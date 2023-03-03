@@ -68,6 +68,35 @@ $(document).ready(function() {
                     if (errors.hasOwnProperty("apellidos")) {
                         $("#apellidos_error").html(errors.apellidos[0]);
                     }
+                    if (errors.hasOwnProperty("tipo_identificacion")) {
+                        $("#tipo_identificacion_error").html(errors.tipo_identificacion[0]);
+                    }
+                    if (errors.hasOwnProperty("numero_identificacion")) {
+                        $("#numero_identificacion_error").html(errors.numero_identificacion[0]);
+                    }
+                   
+                    if (errors.hasOwnProperty("fecha_de_nacimiento")) {
+                        $("#fecha_de_nacimiento_error").html(errors.fecha_de_nacimiento[0]);
+                    }
+                    if (errors.hasOwnProperty("edad")) {
+                        $("#edad_error").html(errors.edad[0]);
+                    }
+                    if (errors.hasOwnProperty("pais")) {
+                        $("#pais_error").html(errors.pais[0]);
+                    }
+                    if (errors.hasOwnProperty("ciudad")) {
+                        $("#ciudad_error").html(errors.ciudad[0]);
+                    }
+                    if (errors.hasOwnProperty("calle")) {
+                        $("#calle_error").html(errors.calle[0]);
+                    }
+                    if (errors.hasOwnProperty("edad")) {
+                        $("#edad_error").html(errors.apellidos[0]);
+                    }
+                    if (errors.hasOwnProperty("tipo_persona_id")) {
+                        $("#tipo_persona_id_error").html(errors.tipo_persona_id[0]);
+                    }
+
                 } else {
                     console.error(error);
                 }

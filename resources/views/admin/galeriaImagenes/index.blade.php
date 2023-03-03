@@ -4,22 +4,20 @@
 <section>
     <div class="row mx-auto py-4 d-flex justify-content-center">
         <span class="mb-4 col-20">
-            <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Documentación del
+            <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Galería del
                 Corredor
                 Biológico</h1>
         </span>
         <div class="row mb-2">
-            <span class="fw-light fs-6">Gestion de la Documentación del Corredor Biológico</span>
+            <span class="fw-light fs-6">Gestion de la Galeria del Corredor Biológico</span>
         </div>
         <div class="row">
             <div class="d-flex justify-content-between mt-2 ">
-            @can('crear-Documento')
                 <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                     data-bs-target="#createModal">
-                    Crear Documento
+                    Crear Imagen
                 </button>
-            @endcan
-                @include('admin.documentos.createModal')
+                @include('admin.galeriaimagenes.createModal')
             </div>
         </div>
 
@@ -31,65 +29,61 @@
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">Nombre</th>
-                                <th scope="col">Descripcion</th>
                                 <th scope="col">Estado</th>
-                                <th scope="col">Tipo Documento</th>
+                                <th scope="col">Categoria Imagen</th>
+                                <th scope="col">Imagen</th>
                                 <th scope="col">acciones</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($documentos as $documento)
+                            @foreach ($imagenes as $imagen)
                             <tr class="">
                                 <td class="id" name="id" class="budget">
-                                    {{ $documento->id }}
+                                    {{ $imagen->id }}
                                 </td>
                                 <td name="documento" class="budget">
-                                    {{ $documento->nombre }}
+                                    {{ $imagen->nombre }}
                                 </td>
-                                <td name="descripcion" class="budget">
-                                    {{ $documento->descripcion }}
-                                </td>
-                                @if ($documento->estado == 1)
+                                
+                                @if ($imagen->estado == 1)
                                     <td name="estado" class="budget">
-                                        Activo
+                                        Visible
                                     </td>
                                 @else
                                     <td name="estado" class="budget">
-                                        Inactivo
+                                        No Visible
                                     </td>
                                 @endif
                                 <td name="documento" class="budget">
-                                    {{ $documento->tipo_documento }}
+                                    {{ $imagen->categoria_imagen }}
+                                </td>
+                                <td name="imagen" class="budget">
+                                   <img class="rounded-circle" style="max-width: 100px;" src="{{ asset('storage/imagenes/'.$imagen->file ) }}" >
                                 </td>
                                 <div class="d-flex shadow-lg justify-content-between">
                                     <td class="">
-                                    @can('editar-Documento')
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                             class="editBtn shadow-lg rounded btn btn-warning"><i class="bi bi-pencil-square"></i>  Editar</button>
-                                    @endcan
-                                            <a href="{{ asset('storage/documentos/'.$documento->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i>  Ver</a>
-                                    @can('borrar-Documento')         
+                                            <a href="{{ asset('storage/imagenes/'.$imagen->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i> Ver Imagen</a>
+                                             
                                         <button type="submit"
                                             class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>
-                                    @endcan
                                     </td>
                                 </div>
                             </tr>
                             @endforeach
-
                         </tbody>
                     </table>
 
                 </div>
             </div>
-            @include('admin.documentos.editModal')
-           
+            @include('admin.galeriaimagenes.editModal')
         </div>
     </div>
 </section>
 @endsection
 
 @section('js')
-<script src="js/documentos/upsert.js"></script>
+<script src="js/galeria/upsert.js"></script>
 <script src="js/utilities/dataTable.js"></script>
 @endsection

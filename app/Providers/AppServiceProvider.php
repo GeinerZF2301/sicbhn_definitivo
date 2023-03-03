@@ -14,6 +14,8 @@ use App\Repositories\Interfaces\VoluntariadoRepositorioInterface;
 use App\Repositories\VoluntariadoRepositorio;
 use App\Repositories\Interfaces\DocumentoRepositorioInterface;
 use App\Repositories\DocumentoRepositorio;
+use App\Repositories\Interfaces\GaleriaRepositorioInterface;
+use App\Repositories\GaleriaRepositorio;
 use App\Services\FileUploadService;
 
 
@@ -34,6 +36,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(CampañaRepositorioInterface::class, CampañaRepositorio::class);
         $this->app->bind(VoluntariadoRepositorioInterface::class, VoluntariadoRepositorio::class);
         $this->app->bind(DocumentoRepositorioInterface::class, DocumentoRepositorio::class);
+        $this->app->bind(GaleriaRepositorioInterface::class, GaleriaRepositorio::class);
     }
 
     /**

@@ -1,9 +1,9 @@
 <?php
     namespace App\Repositories\Interfaces;
     
-     interface DocumentoRepositorioInterface{
+     interface GaleriaRepositorioInterface{
         public function allImages();
-        public function storeImage($data, $estado);
+        public function storeImage($data);
         public function findImage($id);
         public function updateImage($data, $id); 
         public function destroyImage($id);

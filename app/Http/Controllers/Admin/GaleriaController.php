@@ -7,8 +7,8 @@ use Illuminate\Support\Facades\Storage;
 use App\Services\FileUploadService;
 use Illuminate\Http\Request;
 use App\Models\Galeria;
-use App\Http\Requests\StoreGaleriaRequest;
-use App\Http\Requests\UpdateGaleriaRequest;
+use App\Http\Requests\StoreImagenRequest;
+use App\Http\Requests\UpdateImagenRequest;
 use App\Repositories\Interfaces\GaleriaRepositorioInterface;
 use App\Repositories\GaleriaRepositorio;
 
@@ -26,7 +26,7 @@ class GaleriaController extends Controller
     public function index()
     {
        $imagenes = $this->galeriaRepositorio->allImages();
-        return view('admin.imagenes.index', compact('imagenes'));
+        return view('admin.galeriaimagenes.index', compact('imagenes'));
     }
     
     public function store(StoreImagenRequest $request)
@@ -49,7 +49,7 @@ class GaleriaController extends Controller
 
             $this->galeriaRepositorio->storeImage($validatedData);
             return response()->json([
-                'success' => 'El documento ha sido creado correctamente'
+                'success' => 'El Imagen ha sido creada correctamente'
             ], 200);
         }catch(Exception $exception){
             return response()->json([
