@@ -58,6 +58,26 @@ class TablaPermisoSeeder extends Seeder
             'crear-Galeria',
             'editar-Galeria',
             'borrar-Galeria',
+            //Permisos DonacionEspecies
+            'ver-DonacionEspecies',
+            'crear-DonacionEspecies',
+            'editar-DonacionEspecies',
+            'borrar-DonacionEspecies',
+            //Permisos DonacionArticulos
+            'ver-DonacionArticulos',
+            'crear-DonacionArticulos',
+            'editar-DonacionArticulos',
+            'borrar-DonacionArticulos',
+            //Permisos DonacionMonetarias
+            'ver-DonacionMonetarias',
+            'crear-DonacionMonetarias',
+            'editar-DonacionMonetarias',
+            'borrar-DonacionMonetarias',
+            //Permisos CuentasBancarias
+            'ver-CuentasBancarias',
+            'crear-CuentasBancarias',
+            'editar-CuentasBancarias',
+            'borrar-CuentasBancarias',
         ];
 
         foreach($permisos as $permiso){

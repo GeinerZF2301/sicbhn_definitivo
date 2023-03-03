@@ -14,7 +14,9 @@
         <div class="row">
                 <div  class="d-flex justify-content-between mt-2 ">
                     <div align="right">
+                        @can('crear-usuario') 
                         <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-primary"> <i class="fas fa-plus"></i>  Crear usuario</a>
+                        @endcan
                     </div>
                 </div>
         </div> 
@@ -54,9 +56,14 @@
                                 @endif
                             </td>
                             <td>
+                                @can('editar-usuario') 
                                 <a class="editBtn rounded btn btn-warning" href="{{ route('usuarios.edit', $usuario->id)}}">Editar</a>
+                                @endcan
+
                                 {!! Form::open(['method' => 'DELETE', 'route' =>['usuarios.destroy', $usuario->id], 'style' => 'display:inline' ]) !!}
+                                @can('borrar-usuario') 
                                     {!! Form::submit('Borrar', ['class' => 'btn btn-danger']) !!}
+                                    @endcan
                                 {!! Form::close() !!}
                             </td>
                         </tr>

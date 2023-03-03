@@ -17,8 +17,13 @@ class DonacionEspecieController extends Controller
     capa de acceso a datos*/
     public function __construct(DonacionEspecieRepositorioInterface $donacionEspecie){
         $this->donacionEspecie = $donacionEspecie;
+        $this->middleware('permission:ver-DonacionEspecies|crear-DonacionEspecies|editar-DonacionEspecies|borrar-DonacionEspecies',['only' => ['index']]);
+        $this->middleware('permission:crear-DonacionEspecies' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-DonacionEspecies' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-DonacionEspecies' , ['only' => ['delete', 'destroy']]);
+    
     }
-   
+
     public function index() 
     {
         $donaciones = $this->donacionEspecie->allInKindDonations();

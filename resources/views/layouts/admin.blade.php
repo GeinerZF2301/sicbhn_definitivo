@@ -106,13 +106,22 @@
           </a>
           <div class="collapse" id="icons">
             <ul class="nav flex-column sub-menu">
+              @can('ver-DonacionMonetarias')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/donacionMonetaria') }}">Monetarias</a></li>
+              @endcan
+              @can('ver-DonacionEspecies')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/donacionEspecie') }}">En Especie</a></li>
+              @endcan
+
+              @can('ver-CuentasBancarias')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/cuentaBancaria') }}">Cuentas
                   Bancarias</a>
               </li>
+              @endcan
+              @can('ver-DonacionArticulos')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/articulos') }}">Artículos y
                   Alimentos</a></li>
+              @endcan
             </ul>
           </div>
         </li>

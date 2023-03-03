@@ -4,18 +4,18 @@
     <section>
         <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
-                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Tipos de Persona del Corredor
+                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Gestión de Personas del Corredor
                     Biológico</h1>
             </span>
             <div class="row mb-2">
-                <span class="fw-light fs-6">Gestion de los tipos de Persona</span>
+                <span class="fw-light fs-6">Gestión de Personas</span>
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
                     @can('crear-Persona')
                     <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#createModal">
-                        Crear Tipo de Persona
+                        Crear  Persona
                     </button>
                     @endcan
                     @include('admin.personas.createModal')

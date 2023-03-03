@@ -17,6 +17,10 @@ class DonacionMonetariaController extends Controller
     capa de acceso a datos*/
     public function __construct(DonacionMonetariaRepositorioInterface $donacionMonetaria){
         $this->donacionMonetaria = $donacionMonetaria;
+        $this->middleware('permission:ver-DonacionMonetarias|crear-DonacionMonetarias|editar-DonacionMonetarias|borrar-DonacionMonetarias',['only' => ['index']]);
+        $this->middleware('permission:crear-DonacionMonetarias' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-DonacionMonetarias' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-DonacionMonetarias' , ['only' => ['delete', 'destroy']]);
     }
    
     public function index() 

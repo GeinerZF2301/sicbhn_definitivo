@@ -14,6 +14,10 @@ class CuentaBancariaController extends Controller
 
     public function __construct(CuentaBancariaRepositorioInterface $cuentaBancariaRepositorio){
         $this->cuentaBancariaRepositorio = $cuentaBancariaRepositorio;
+        $this->middleware('permission:ver-CuentasBancarias|crear-CuentasBancarias|editar-CuentasBancarias|borrar-CuentasBancarias',['only' => ['index']]);
+        $this->middleware('permission:crear-CuentasBancarias' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-CuentasBancarias' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-CuentasBancarias' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index() 
