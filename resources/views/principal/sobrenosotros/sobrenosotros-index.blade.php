@@ -133,6 +133,11 @@
 
     
       </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="img-border">
+          <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -175,6 +180,13 @@
 <div class="container-xxl py-5">
   <div class="container">
     <div class="row g-5">
+
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="img-border">
+          <img class="img-fluid" src="zoofari/img/SobreNosotros/SBNII.jpg" alt="" />
+        </div>
+      </div>
+
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
         
         <h1 class="display-5 mb-4">
@@ -197,11 +209,7 @@
         </p>
       
       </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="img-border">
-          <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-voluntariado<div class="contenedor">
+<div class="contenedor">
     <div class="modal fade show-modal" id="showModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <form id="showForm">
             @csrf
