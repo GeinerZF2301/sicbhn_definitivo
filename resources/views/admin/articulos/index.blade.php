@@ -43,7 +43,7 @@
                                         <td class="id" name="id" class="budget">
                                         {{ $articulo->id }}
                                         </td>
-                                        <td name="tipo_persona" class="budget">
+                                        <td name="nombre" class="budget">
                                         {{ $articulo->nombre }}
                                         </td>
                                         <td name="descripcion" class="budget">
@@ -80,6 +80,6 @@
 @endsection
 
 @section('js')
-
+    <script src="js/articulos/upsert.js"></script>
     <script src="js/utilities/dataTable.js"></script>
 @endsection

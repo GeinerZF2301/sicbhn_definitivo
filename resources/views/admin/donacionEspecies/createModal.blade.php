@@ -44,7 +44,7 @@
                                 <div class="mb-3 mt-2">
                                     <label for="formGroupExampleInput" class="form-label">Artículo</label>
                                     <input type="text" class="form-control" name="articulo" id="articulo"
-                                        placeholder="Escriba el artículo ">
+                                        placeholder="Escriba el nombre del artículo ">
                                     <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
 

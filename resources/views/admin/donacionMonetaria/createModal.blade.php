@@ -28,8 +28,8 @@
                                     <div class="mb-3">
                                         <label for="formGroupExampleInput2" class="form-label">Fecha de Donación</label>
                                         <input type="date" class="form-control" name="fechaDonacion" id="fechaDonacion"
-                                            placeholder="Escriba una pequeña fecha">
-                                        <span id="fecha_error" class="text-danger fw-bolder error-messages"></span>
+                                            placeholder="Escriba la fecha de la donación">
+                                        <span id="fechaDonacion_error" class="text-danger fw-bolder error-messages"></span>
                                     </div>
                                 </div>
 
@@ -37,15 +37,15 @@
                                     <div class="mb-3">
                                         <label for="formGroupExampleInput2" class="form-label">Fecha de Recepción</label>
                                         <input type="date" class="form-control" name="fechaRecepcion" id="fechaRecepcion"
-                                            placeholder="Escriba una pequeña fecha">
-                                        <span id="fecha_error" class="text-danger fw-bolder error-messages"></span>
+                                            placeholder="Escriba la fecha de recepción">
+                                        <span id="fechaRecepcion_error" class="text-danger fw-bolder error-messages"></span>
                                     </div>
                                 </div>
                                 <div class="mb-3 mt-2">
                                     <label for="formGroupExampleInput" class="form-label">Monto</label>
                                     <input type="text" class="form-control" name="monto" id="monto"
                                         placeholder="Escriba la cantidad de la donación">
-                                    <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
+                                    <span id="monto_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
 
 
@@ -53,7 +53,7 @@
                                     <label for="formGroupExampleInput" class="form-label">Donante</label>
                                     <input type="text" class="form-control" name="donante" id="donante"
                                         placeholder="Escriba el id del Donante">
-                                    <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
+                                    <span id="donante_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
 
 

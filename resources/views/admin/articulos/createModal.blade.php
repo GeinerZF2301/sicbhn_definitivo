@@ -19,7 +19,7 @@
                             <div class="mb-3 mt-2">
                                 <label for="formGroupExampleInput" class="form-label">Nombre </label>
                                 <input type="text" class="form-control" name="nombre" id="nombre"
-                                    placeholder="Escriba el nombre de la entidad bancaria">
+                                    placeholder="Escriba el nombre del artículo">
                                 <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
@@ -27,11 +27,21 @@
                                 <input type="text" class="form-control" name="descripcion" id="descripcion"
                                     placeholder="Escriba una pequeña descripción">
                                 <span id="descripcion_error" class="text-danger fw-bolder error-messages"></span>
-                            </div>                           
+                            </div>  
+                            <div class="mb-3">
+                                <label for="formGroupExampleInput2" class="form-label">Tipo de Artículo</label>
+                                <select class="tipoPersona_id form-select form-select-sm" name="tipo_articulo" id="tipo_articulo"
+                                    aria-label=".form-select-sm example">
+                                    <option selected>Selecciona una opcion</option>
+                                    <option value="Herramienta">Herramienta</option>
+                                    <option value="Alimentos">Alimentos</option>
+                                </select>
+                                <span id="tipo_articulo_error" class="text-danger fw-bolder error-messages"></span>
+                            </div>                         
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="submit" id="saveBtn" class="save-Btn btn btn-primary"></button>
+                            <button type="submit" id="saveBtn" class="save-Btn btn btn-primary">Guardar</button>
                         </div>
                     </div>
                 </div>
