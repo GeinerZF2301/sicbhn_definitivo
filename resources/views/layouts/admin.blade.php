@@ -269,7 +269,7 @@
       <!-- content-wrapper ends -->
       <!-- partial:./partials/_footer.html -->
 
-      </div>
+
       <footer class="footer">
         <div class="card">
           <div class="card-body">
@@ -285,7 +285,8 @@
           </div>
         </div>
       </footer>
-  
+    </div>
+  </div>
         <div class="js">
         @yield('js')
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
