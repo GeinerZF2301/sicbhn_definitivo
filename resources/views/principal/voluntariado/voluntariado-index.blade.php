@@ -191,6 +191,78 @@
 </div>
         </section>
 
+
+        <div class="container-xxl py-5">
+          <div class="container">
+              <div class="row g-5">
+                  <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
+  
+                      <h1 class="display-4 text-center mb-4">
+                          <font color="#028A0F">Voluntariados Disponibles!</font>
+  
+                      </h1>
+  
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="container mt-5 mb-5">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+
+            
+<div class="col-sm-12 col-md-6  col-lg-4">
+  <div class="cardv">
+              <div class="cardv-title mt-2">
+                  <h5 class="text-center"> ¡Voluntariado en <font color="#028A0F">Recoleccion!</font> </h5>                      
+              </div>
+          <div class="cardv-body">
+              <div class="row ">
+                  <div class="col d-flex ">
+                      <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34PX">
+                      <p> Rio Nosara, Hojancha, Guanacaste, Costa Rica.</p>
+              
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-4">
+                    <img src="zoofari/img/Campannas/calendario.png" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img src="zoofari/img/Campannas/reloj.png" alt="">
+                  </div>
+                  <div class="col-4">
+                    <img src="zoofari/img/voluntariado/altavoz.png" alt="">
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-4">                            
+                      <p>14-04-2023</p>
+                  </div>
+                  <div class="col-4">                            
+                      <p>8:00pm </p>
+                  </div>
+                  <div class="col-4">                           
+                      <p>Rosa López Turcios</p>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <p>Plantar árboles y preservar la naturaleza en los alrededores del río Nosara</p>
+                  </div>
+              </div>       
+
+          </div>
+  </div>
+</div>
+             
+            
+          </div>
+      </div>
+
+
+
         
         <section class="section-padding section-bg" id="section_2">
             <div class="container">

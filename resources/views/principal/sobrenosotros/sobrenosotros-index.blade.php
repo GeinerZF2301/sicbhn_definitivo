@@ -133,6 +133,11 @@
 
     
       </div>
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="img-border">
+          <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -142,7 +147,7 @@
 
 
 <!-- Funciones del corredor -->
-<h1 class="display-5 mb-4 text-center">
+<h1 class=" tituloFun display-5 mb-4 text-center">
           
   Funciones del Corredor Biológico
  </h1>
@@ -173,8 +178,15 @@
 <!-- Misión y visión Start -->
   
 <div class="container-xxl py-5">
-  <div class="container">
+  <div class="container mv">
     <div class="row g-5">
+
+      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="img-border">
+          <img class="img-fluid" src="zoofari/img/SobreNosotros/SBNII.jpg" alt="" />
+        </div>
+      </div>
+
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
         
         <h1 class="display-5 mb-4">
@@ -197,11 +209,7 @@
         </p>
       
       </div>
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="img-border">
-          <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>
@@ -209,30 +217,15 @@
 <!-- Misión y visión End -->
 
 
-
-
-<!-- Miembros Start --
-
-'''''''''''''''''''NOTA````````````````````````````
-
-FAltan agregar miembros
-
-
-.......>Yo subì las fotos
-.......>SOlo faltan 2 miembros de conseguir la foto  
-              ASADA y Centro Agrìcola
-              
-
--->
 <div class="container-xxl py-5">
-  <div class="container">
+  <div class="container ">
     <div
       class="row g-5 mb-5 align-items-end wow fadeInUp"
       data-wow-delay="0.1s"
     >
-        <div class="col-lg-6">
-          <h1 class="display-5 mb-0">
-            <span class="text-primary">Miembros</span> del comité
+        <div class="col-lg-12 titulo-miembros ">
+          <h1 class="display-5 text-center">
+            <span class="text-primary text-center">Miembros</span> del comité
           </h1>
         </div>          
     </div>

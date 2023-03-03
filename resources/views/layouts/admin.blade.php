@@ -286,7 +286,7 @@
       <!-- content-wrapper ends -->
       <!-- partial:./partials/_footer.html -->
 
-      </div>
+
       <footer class="footer">
         <div class="card">
           <div class="card-body">
@@ -302,7 +302,8 @@
           </div>
         </div>
       </footer>
-  
+    </div>
+  </div>
         <div class="js">
         @yield('js')
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -311,6 +312,10 @@
         <script src="{{ asset('spica/vendors/js/vendor.bundle.base.js') }}"></script>
         <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+        <script src="{{asset('spica/js/off-canvas.js')}}"></script>
+        <script src="{{asset('spica/js/hoverable-collapse.js')}}"></script>
+        <script src="{{asset('spica/js/template.js')}}"></script>
+        
       </div>
 </body>
 
