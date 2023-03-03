@@ -20690,7 +20690,7 @@ dl li {
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link.active {
-  color: #93a8ff;
+  color: #ffffff;
   background: transparent;
 }
 
@@ -21096,7 +21096,7 @@ dl li {
     text-align: left;
     top: 0;
     bottom: 0;
-    width: 190px;
+    width: 230px;
     z-index: 1;
     line-height: 1.8;
     box-shadow: 4px 0px 7px 0px rgba(182, 185, 189, 0.25);
@@ -21105,7 +21105,7 @@ dl li {
     display: none;
   }
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .nav-link:hover .menu-title {
-    background: ##ffbf36;
+    background: #ffbf36;
   }
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapse,
   .sidebar-icon-only .sidebar .nav .nav-item.hover-open .collapsing {
@@ -21115,7 +21115,7 @@ dl li {
     border-radius: 0 0 5px 0;
     position: absolute;
     left: 70px;
-    width: 190px;
+    width: 230px;
     box-shadow: 4px 4px 7px 0px rgba(182, 185, 189, 0.25);
   }
   .sidebar-icon-only .sidebar .nav.sub-menu {
