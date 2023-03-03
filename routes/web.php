@@ -10,17 +10,54 @@ use App\Http\Controllers\Admin\DocumentoController;
 use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Cliente\CampañaClienteController;
 use App\Http\Controllers\Cliente\DocumentosClienteController;
+<<<<<<< HEAD
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\ArticuloController;
 use App\Http\Controllers\Admin\DonacionMonetariaController;
 use App\Http\Controllers\Admin\DonacionEspecieController;
 use App\Http\Controllers\Admin\CuentaBancariaController;
+=======
+use App\Http\Controllers\Cliente\GaleriaClienteController;
+use App\Http\Controllers\HomeController;
+use App\Http\Middleware\LocaleCookieMiddleware;
+>>>>>>> 4455ca8 (Middleware Locale para segundo idioma y consultas para galeria)
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
 
-Route::get('/', function () {
-    return view('home');
+Route::get('/',[HomeController::class, 'index'])->name('home');
+
+Route::get('/locale/{locale}', function($locale){
+    return redirect()->back()->withCookie('locale', $locale);
+});
+
+Route::middleware(LocaleCookieMiddleware::class)->group(function () {
+    Route::get('/',[HomeController::class, 'index'])->name('home');
+    Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+    Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
+
+    Route::get('/contactos', function () {
+        return view('principal/contactos.contactos-index');
+    });
+    
+    Route::get('/donaciones', function () {
+        return view('principal/donaciones.donaciones-index');
+    });
+    
+    Route::get('/galeria',[GaleriaClienteController::class, 'index'])->name('galeria');
+       
+    
+    Route::get('/horavisita', function () {
+        return view('principal/horavisita.horavisita-index');
+    });
+    
+    Route::get('/sobrenosotros', function () {
+        return view('principal/sobrenosotros.sobrenosotros-index');
+    });
+    Route::get('/voluntariado', function () {
+        return view('principal/voluntariado.voluntariado-index');
+    });
+    
 });
 
 
@@ -43,9 +80,7 @@ Route::get('/donaciones', function () {
     return view('principal/donaciones.donaciones-index');
 });
 
-Route::get('/galeria', function () {
-    return view('principal/galeria.galeria-index');
-});
+
 
 Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
@@ -66,7 +101,7 @@ Route::get('/voluntariado', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 
 
 

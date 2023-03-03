@@ -10,7 +10,8 @@
 
     <!-- Favicon -->
     <link href="zoofari/img/LogoCorredor.png" rel="icon" />
-
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,7 +57,9 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Lunes a Viernes: 08:00 AM - 12:00 PM</small>
+                    <small>{{ __('messages.NavBarHorario') }}: 08:00 AM - 12:00 PM</small>
+                    <a class="m-2" href="/locale/en">EN</a>
+                    <a href="/locale/es">ES</a>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
@@ -87,12 +90,15 @@
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Más información</h5>
+                    
                     <p class="mb-2">
                         <i class="fa fa-map-marker-alt me-3"></i>Guanacaste, Costa Rica
                     </p>
+                    
                     <p class="mb-2">
                         <i class="fa fa-phone-alt me-3"></i>+(506) 8670-3535
                     </p>
+                    
                     <p class="mb-2">
                         <i class="fa fa-envelope me-3"></i>info.cbhn@gmail.com
                     </p>
