@@ -19,11 +19,11 @@ $(document).ready(function () {
     $("#pais").val("");
     $("#ciudad").val("");
     $("#calle").val("");
-    $("#tipo_persona_id").val("");
+    $("#tipo_voluntariado_id").val("");
 
     //Logica del cliente para realizar una solicitud POST al servidor y hacer un Store
     let form = $("#requestForm")[0];
-    $("#saveBtn").click(function (e) {
+    $("#Enviar").click(function (e) {
         $("#edad").attr("disabled", false);
         e.preventDefault();
         $(".error-messages").html("");

@@ -18,7 +18,7 @@ class VoluntariadoClienteController extends Controller
         $this->personaRepositorio = $personaRepositorio;
     }
     public function index(){
-        $voluntariadosDisponibles = Voluntariado::select('nombre', 'descripcion','ubicacion','fecha','hora','tipo_voluntariado')->
+        $voluntariadosDisponibles = Voluntariado::select('id','nombre', 'descripcion','ubicacion','fecha','hora','tipo_voluntariado')->
         where('estado', 1)->get();
         return view('principal.voluntariado.voluntariado-index', compact('voluntariadosDisponibles'));
     }

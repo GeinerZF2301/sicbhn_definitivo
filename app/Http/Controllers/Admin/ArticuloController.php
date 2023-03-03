@@ -14,6 +14,10 @@ class ArticuloController extends Controller
 
     public function __construct(ArticuloRepositorioInterface $articuloRepositorio){
         $this->articuloRepositorio = $articuloRepositorio;
+        $this->middleware('permission:ver-DonacionArticulos|crear-DonacionArticulos|editar-DonacionArticulos|borrar-DonacionArticulos',['only' => ['index']]);
+        $this->middleware('permission:crear-DonacionArticulos' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-DonacionArticulos' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-DonacionArticulos' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index() 
