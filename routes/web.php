@@ -10,17 +10,14 @@ use App\Http\Controllers\Admin\DocumentoController;
 use App\Http\Controllers\Admin\GaleriaController;
 use App\Http\Controllers\Cliente\CampañaClienteController;
 use App\Http\Controllers\Cliente\DocumentosClienteController;
-<<<<<<< HEAD
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Admin\ArticuloController;
 use App\Http\Controllers\Admin\DonacionMonetariaController;
 use App\Http\Controllers\Admin\DonacionEspecieController;
 use App\Http\Controllers\Admin\CuentaBancariaController;
-=======
 use App\Http\Controllers\Cliente\GaleriaClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
->>>>>>> 4455ca8 (Middleware Locale para segundo idioma y consultas para galeria)
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
