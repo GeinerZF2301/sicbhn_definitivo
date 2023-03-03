@@ -16,6 +16,7 @@ use App\Http\Controllers\Admin\DonacionMonetariaController;
 use App\Http\Controllers\Admin\DonacionEspecieController;
 use App\Http\Controllers\Admin\CuentaBancariaController;
 use App\Http\Controllers\Cliente\GaleriaClienteController;
+use App\Http\Controllers\Cliente\VoluntariadoClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 
@@ -30,7 +31,7 @@ Route::get('/locale/{locale}', function($locale){
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/',[HomeController::class, 'index'])->name('home');
-    Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+    Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 
     Route::get('/contactos', function () {
@@ -44,19 +45,14 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/galeria',[GaleriaClienteController::class, 'index'])->name('galeria');
        
     
-    Route::get('/horavisita', function () {
-        return view('principal/horavisita.horavisita-index');
-    });
-    
     Route::get('/sobrenosotros', function () {
         return view('principal/sobrenosotros.sobrenosotros-index');
     });
-    Route::get('/voluntariado', function () {
-        return view('principal/voluntariado.voluntariado-index');
-    });
-    
+
+    Route::get('/voluntariado', [VoluntariadoClienteController::class, 'index'])->name('index');
 });
 
+Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'storstoreSolicitudPersona'])->name('store');
 
 
 
@@ -65,41 +61,9 @@ Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('camp
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
-Route::get('/campanna', function () {
-    return view('principal/campanna.campanna-index');
-});
-
-Route::get('/contactos', function () {
-    return view('principal/contactos.contactos-index');
-});
-
-Route::get('/donaciones', function () {
-    return view('principal/donaciones.donaciones-index');
-});
-
-
-
-Route::get('/horavisita', function () {
-    return view('principal/horavisita.horavisita-index');
-});
-
-Route::get('/sobrenosotros', function () {
-    return view('principal/sobrenosotros.sobrenosotros-index');
-});
-Route::get('/voluntariado', function () {
-    return view('principal/voluntariado.voluntariado-index');
-});
-
-
-
-
-
 
 
 Auth::routes(['verify' => true]);
-
-
-
 
 
 
@@ -107,7 +71,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('admin', AdminController::class);
-
 
     /*Routas Donoaciones admin*/
     Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');

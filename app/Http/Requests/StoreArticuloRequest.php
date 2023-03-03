@@ -26,6 +26,15 @@ class StoreArticuloRequest extends FormRequest
         return [
             'nombre' => 'required|string|max:50',
             'descripcion' => 'required|string|max:100',
+            'tipo_articulo' => 'required|string|max:100'
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'nombre.required' => 'El nombre del articulo es obligatorio',
+            'descripcion.required' => 'La descripcion es obligatoria',
+            'tipo_articulo.required' => 'El tipo de articulo es obligatorio',
         ];
     }
 }

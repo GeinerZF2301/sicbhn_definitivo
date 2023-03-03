@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('pais');
             $table->string('ciudad');
             $table->string('calle');
+            $table->string('estado');
             //Relacion de tipopersona a persona
             $table->unsignedBigInteger('tipo_persona_id',);
             $table->foreign('tipo_persona_id')->references('id')->on('tipo_personas');

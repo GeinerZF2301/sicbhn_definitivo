@@ -11,7 +11,7 @@
         <div class="navbar-nav ms-auto">
             <a href="{{ url('/') }}" class="nav-item nav-link active">{{ __('messages.NavBarInicio') }}</a>
             <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">{{ __('messages.NavBarVoluntariados') }}</a>
-            <a href="{{ url('/campannas') }}" class="nav-item nav-link">{{ __('messages.NavBarCampaña') }}</a>
+            <a href="{{ url('/campañas') }}" class="nav-item nav-link">{{ __('messages.NavBarCampaña') }}</a>
             <a href="{{ url('/donaciones') }}" class="nav-item nav-link">{{ __('messages.NavBarDonaciones') }}</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle"

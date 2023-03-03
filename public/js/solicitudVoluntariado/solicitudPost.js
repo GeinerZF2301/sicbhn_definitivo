@@ -15,7 +15,7 @@ $(document).ready(function () {
         .on("change", function () {
             calcularEdad();
         });
-    $("#edad").val("").attr("disabled", false);
+    $("#edad").val("").attr("disabled", true);
     $("#pais").val("");
     $("#ciudad").val("");
     $("#calle").val("");
@@ -103,11 +103,11 @@ function calcularEdad() {
     let edadInput = "";
 
     fechaNacimiento = moment($("#fechaNacimiento").val(), "YYYY-MM-DD");
-    edadInput = $("#edadPersona");
+    edadInput = $("#edad");
     let edad = moment().diff(fechaNacimiento, "years");
     if (edad < 0) {
         edad = 0;
     }
-    // $(edadInput).val(edad);
+     $(edadInput).val(edad);
     console.log(edad);
 }

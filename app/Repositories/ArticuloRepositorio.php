@@ -18,6 +18,7 @@
             $articulo = Articulo::where('id', $id)->first();
             $articulo->nombre = $data['nombre'];
             $articulo->descripcion = $data['descripcion'];
+            $articulo->tipo_articulo = $data['tipo_articulo'];
             $articulo->save();
         }
         public function destroyArticle($id){

@@ -373,7 +373,6 @@
             <a href="https://www.chorotega.una.ac.cr">
                 <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
         </div>
-<<<<<<< HEAD
       </div>
     </div>
   </div>
@@ -528,15 +527,6 @@
 
 
 
-=======
-        <div class="card-">
-            <a href="https://www.facebook.com/nicoyasistemas/">
-                <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2">
-        </div>
-        <div class="card-">
-            <a href="https://www.instagram.com/jose_venegas_photography/">
-                <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3">
->>>>>>> d4b191c (Formulario de Voluntariados no terminado)
         </div>
     </div>
 
