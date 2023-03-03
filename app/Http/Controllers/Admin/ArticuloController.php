@@ -25,7 +25,7 @@ class ArticuloController extends Controller
     {
         try{
             $validatedData = $request->validated();
-            $this->articuloRepositorio->storePersonType($validatedData);
+            $this->articuloRepositorio->storeArticle($validatedData);
             return response()->json([
                 'success' => 'Articulo guardada correctamente'
             ], 201);

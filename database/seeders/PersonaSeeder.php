@@ -17,8 +17,7 @@ class PersonaSeeder extends Seeder
     {
         DB::table('personas')->insert([
             'nombre' => 'Geiner',
-            'apellido1' => 'Zuniga',
-            'apellido2' => 'Flores',
+            'apellidos' => 'Zuniga',
             'numero_identificacion' => '12345',
             'tipo_identificacion' => 'Cedula Nacional',
             'pais' => 'Costa Rica',
@@ -28,8 +27,7 @@ class PersonaSeeder extends Seeder
         ]);
         DB::table('personas')->insert([
             'nombre' => 'Melany',
-            'apellido1' => 'Lawson',
-            'apellido2' => 'Mendez',
+            'apellidos' => 'Lawson',
             'numero_identificacion' => '09876',
             'tipo_identificacion' => 'Cedula Nacional',
             'pais' => 'Costa Rica',
@@ -39,8 +37,7 @@ class PersonaSeeder extends Seeder
         ]);
         DB::table('personas')->insert([
             'nombre' => 'Maria',
-            'apellido1' => 'Acon',
-            'apellido2' => 'Vargas',
+            'apellidos' => 'Acon',
             'numero_identificacion' => '43456',
             'tipo_identificacion' => 'Cedula Nacional',
             'pais' => 'Costa Rica',

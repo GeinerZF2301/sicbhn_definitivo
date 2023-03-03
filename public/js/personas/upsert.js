@@ -313,7 +313,7 @@ function obtenerTiposPersona(method){
         }
     });
 }
- export function calcularEdad(method){
+  function calcularEdad(method){
     let fechaNacimiento = '';
     let edadInput = '';
         if(method.toLowerCase() === 'create'){

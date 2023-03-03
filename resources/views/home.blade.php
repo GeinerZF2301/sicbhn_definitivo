@@ -1,6 +1,7 @@
 @extends('layouts.navbar')
 @section('content')
     <!-- Navbar Start -->
+<<<<<<< HEAD
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand p-0">
@@ -101,6 +102,9 @@
 
         </div>
     </nav>
+=======
+    @include('componentes.NavBarPrincipal')
+>>>>>>> d4b191c (Formulario de Voluntariados no terminado)
     <!-- Navbar End -->
 
     <!-- Header Start -->
@@ -109,10 +113,11 @@
             <div class="col-lg-6 p-0 wow fadeIn" data-wow-delay="0.1s">
                 <div class="header-bg h-100 d-flex flex-column justify-content-center p-5">
                     <h1 class="display-4 text-light mb-5">
-                      {{ __('messages.TituloHero') }} Hojancha-Nandayure
+                        {{ __('messages.TituloHero') }} Hojancha-Nandayure
                     </h1>
                     <div class="d-flex align-items-center pt-4 animated slideInDown">
-                        <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">{{ __('messages.TextoBotonMasInformacion') }}</a>
+                        <a href=""
+                            class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">{{ __('messages.TextoBotonMasInformacion') }}</a>
                         <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://youtu.be/JcxND65b0QI" data-bs-target="#videoModal">
                             <span></span>
