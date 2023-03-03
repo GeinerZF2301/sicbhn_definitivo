@@ -21,12 +21,17 @@ class GaleriaController extends Controller
     {
         $this->fileUploadService = $fileUploadService;
         $this->galeriaRepositorio = $galeriaRepositorio;
+        $this->middleware('permission:ver-Galeria|crear-Galeria|editar-Galeria|borrar-Galeria',['only' => ['index']]);
+        $this->middleware('permission:crear-Galeria' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-Galeria' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-Galeria' , ['only' => ['delete', 'destroy']]);
     }
 
     public function index()
     {
        $imagenes = $this->galeriaRepositorio->allImages();
         return view('admin.galeriaimagenes.index', compact('imagenes'));
+
     }
     
     public function store(StoreImagenRequest $request)

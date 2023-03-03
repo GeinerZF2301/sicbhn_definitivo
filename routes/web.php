@@ -23,6 +23,9 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+
+
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
@@ -64,6 +67,9 @@ Route::get('/voluntariado', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);
@@ -153,7 +159,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/galeriaimagenes/{id}/edit',[GaleriaController::class,'edit'])->name('galeria.edit');
     Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
     Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
-
+    
 });
 
 Auth::routes(['verify' => true]);
