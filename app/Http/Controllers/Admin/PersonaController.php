@@ -19,17 +19,29 @@ class PersonaController extends Controller
     public function __construct(PersonaRepositorioInterface $personaRepositorio){
         $this->personaRepositorio = $personaRepositorio;
 
-        $this->middleware('permission:ver-Persona|crear-Persona|editar-Persona|borrar-Persona',['only' => ['index']]);
-        $this->middleware('permission:crear-Persona' , ['only' => ['create', 'store']]);
-        $this->middleware('permission:editar-Persona' , ['only' => ['edit', 'update']]);
-        $this->middleware('permission:borrar-Persona' , ['only' => ['delete', 'destroy']]);
+        // $this->middleware('permission:ver-Persona|crear-Persona|editar-Persona|borrar-Persona',['only' => ['index']]);
+        // $this->middleware('permission:crear-Persona' , ['only' => ['create', 'store']]);
+        // $this->middleware('permission:editar-Persona' , ['only' => ['edit', 'update']]);
+        // $this->middleware('permission:borrar-Persona' , ['only' => ['delete', 'destroy']]);
     }
    
     public function index() 
     {
-        $personas = $this->personaRepositorio->allPeople();
+        $personas = $this->personaRepositorio->allApprovedPersons();
         return view('admin.personas.index', compact('personas'));
     }
+
+    public function VolunteerRequestPendings() 
+    {
+        $personasPendientes = $this->personaRepositorio->allPendingPersons();
+        return view('admin.solicitudes.indexVoluntariosPendientes', compact('personasPendientes'));
+    }
+    public function VolunteerRejectedandApproved() 
+    {
+        $historialVoluntarios= $this->personaRepositorio->allRejectedandApprovedPersons();
+        return view('admin.historialSolicitudes.voluntarios.index', compact('historialVoluntarios'));
+    }
+
 
     public function create() 
     {
@@ -106,6 +118,26 @@ class PersonaController extends Controller
         $this->personaRepositorio->destroyPerson($intId);
         return response()->json([
             'success' => 'Registro de persona eliminada correctamente'
+        ], 200);
+    }
+    public function updateApprovedStatus(Request $request){
+        $estado = 'Aprobado';
+        $id = $request->id;
+        $persona = $this->personaRepositorio->findPerson($id);
+        $persona->estado = $estado;
+        $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
+        return response()->json([
+            'success' => 'Solicitud aprobada satisfactoriamente'
+        ], 200);
+    }
+    public function updateRejectStatus(Request $request){
+        $estado = 'Rechazado';
+        $id = $request->id;
+        $persona = $this->personaRepositorio->findPerson($id);
+        $persona->estado = $estado;
+        $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
+        return response()->json([
+            'success' => 'Solicitud rechazada de manera exitosa'
         ], 200);
     }
 }

@@ -114,13 +114,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/tipospersonas/{id}/show',[TipoPersonaController::class,'show'])->name('tipospersonas.show');
 
     //Rutas para el modulo de Personas
-    Route::get('/personas',[PersonaController::class,'index'])->name('personas');
-    Route::get('/personas/create',[PersonaController::class,'create'])->name('personas.create');
-    Route::post('/personas/store',[PersonaController::class,'store'])->name('personas.store');
-    Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('personas.edit');
-    Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
-    Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
-    Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
+   
     
     //Rutas para el modulo Campañas
     Route::get('/campannas',[CampañaController::class,'index'])->name('campannas');
@@ -156,3 +150,16 @@ Route::group(['middleware' => ['auth']], function() {
     Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
     
 });
+Route::get('/personas',[PersonaController::class,'index'])->name('personas');
+Route::get('/personas/create',[PersonaController::class,'create'])->name('personas.create');
+Route::post('/personas/store',[PersonaController::class,'store'])->name('personas.store');
+Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('personas.edit');
+Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
+Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
+Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
+
+Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
+Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
+Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
+Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
+Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');

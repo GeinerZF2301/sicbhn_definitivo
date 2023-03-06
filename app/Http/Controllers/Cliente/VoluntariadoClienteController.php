@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Cliente;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Voluntariado;
-use App\Models\Persona;
+use App\Models\TipoPersona;
 use App\Http\Requests\StorePersonaSolicitudRequest;
 use App\Repositories\Interfaces\PersonaRepositorioInterface;
 use App\Repositories\PersonaRepositorio;
@@ -18,14 +18,17 @@ class VoluntariadoClienteController extends Controller
         $this->personaRepositorio = $personaRepositorio;
     }
     public function index(){
+        $tipoVoluntario = TipoPersona::select('id')->where('tipo_persona', 'Voluntario')->orWhere('tipo_persona', 'voluntario')->first();
         $voluntariadosDisponibles = Voluntariado::select('id','nombre', 'descripcion','ubicacion','fecha','hora','tipo_voluntariado')->
         where('estado', 1)->get();
-        return view('principal.voluntariado.voluntariado-index', compact('voluntariadosDisponibles'));
+        return view('principal.voluntariado.voluntariado-index', compact('voluntariadosDisponibles', 'tipoVoluntario'));
     }
 
-    public function storeSolicitudPersona(StorePersonaSolicitudRequest $request){
+    public function storeRequest(StorePersonaSolicitudRequest $request){
         try{
+            $estado = 'Pendiente';
             $validatedData = $request->validated();
+            $validatedData['estado'] = $estado;
             $this->personaRepositorio->storePerson($validatedData);
             return response()->json([
                 'success' => 'Solicitud enviada correctamente'
@@ -36,4 +39,6 @@ class VoluntariadoClienteController extends Controller
             ], 400);
         }
     }
+
+    
 }

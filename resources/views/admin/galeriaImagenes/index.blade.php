@@ -67,12 +67,12 @@
                                     @can('editar-Galeria')
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                             class="editBtn shadow-lg rounded btn btn-warning"><i class="bi bi-pencil-square"></i>  Editar</button>
-                                            <a href="{{ asset('storage/imagenes/'.$imagen->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i> Ver Imagen</a>
-                                         @endcan    
-                                         @can('borrar-Galeria')    
+                                        <a href="{{ asset('storage/imagenes/'.$imagen->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i> Ver Imagen</a>
+                                    @endcan    
+                                    @can('borrar-Galeria')    
                                         <button type="submit"
                                             class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>
-                                            @endcan
+                                    @endcan
                                     </td>
                                 </div>
                             </tr>

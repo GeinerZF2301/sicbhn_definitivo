@@ -67,7 +67,7 @@
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                             class="editBtn shadow-lg rounded btn btn-warning"><i class="bi bi-pencil-square"></i>  Editar</button>
                                     @endcan
-                                            <a href="{{ asset('storage/documentos/'.$documento->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i>  Ver</a>
+                                        <a href="{{ asset('storage/documentos/'.$documento->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i>  Ver</a>
                                     @can('borrar-Documento')         
                                         <button type="submit"
                                             class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>

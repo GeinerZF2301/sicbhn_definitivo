@@ -13,6 +13,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <input type="hidden" class="form-control" name="id" id="id">
+                                
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" name="nombre" id="nombre"
@@ -40,7 +41,7 @@
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Número de
                                         Identificación</label>
-                                    <input type="int" class="form-control" name="numero_identificacion"
+                                    <input type="text" class="form-control" name="numero_identificacion"
                                         id="numero_identificacion"
                                         placeholder="Escriba el numero de identificacion de la persona">
                                     <span id="numero_identificacion_error" class="text-danger fw-bolder error-messages"></span>
@@ -88,6 +89,7 @@
                                     </select>
                                     <span id="tipo_persona_id_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
+                                <input type="hidden" class="form-control" value="Creado desde Admin" name="estado" id="estado">
                             </div>
                         </div>
                     </div>

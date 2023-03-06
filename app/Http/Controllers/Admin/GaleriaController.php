@@ -54,7 +54,7 @@ class GaleriaController extends Controller
 
             $this->galeriaRepositorio->storeImage($validatedData);
             return response()->json([
-                'success' => 'El Imagen ha sido creada correctamente'
+                'success' => 'La Imagen ha sido creada correctamente'
             ], 200);
         }catch(Exception $exception){
             return response()->json([

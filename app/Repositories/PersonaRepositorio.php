@@ -5,8 +5,15 @@
 
     class PersonaRepositorio implements PersonaRepositorioInterface {
 
-        public function allPeople(){
-            return Persona::all();
+        public function allApprovedPersons(){
+            return Persona::where('estado', 'Aprobado')->orWhere('estado', 'Creado desde Admin')->get();
+        }
+        public function allPendingPersons(){
+            return Persona::all()->where('estado', 'Pendiente');
+        }
+        public function allRejectedandApprovedPersons(){
+            return Persona::where('estado', 'Rechazado')
+            ->orWhere('estado', 'Aprobado')->get();;
         }
         public function storePerson($data){
             return Persona::create($data);
@@ -25,7 +32,9 @@
             $persona->pais = $data['pais'];
             $persona->ciudad = $data['ciudad'];
             $persona->calle = $data['calle'];
+            $persona->estado = $data['estado'];
             $persona->tipo_persona_id = $data['tipo_persona_id'];
+            
             $persona->save();
         }
         public function destroyPerson($id){

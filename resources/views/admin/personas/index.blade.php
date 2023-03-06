@@ -12,12 +12,12 @@
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
-                    @can('crear-Persona')
+                    {{-- @can('crear-Persona') --}}
                     <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#createModal">
                         Crear  Persona
                     </button>
-                    @endcan
+                    {{-- @endcan --}}
                     @include('admin.personas.createModal')
                 </div>
             </div>
@@ -32,7 +32,7 @@
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Apellidos</th>
                                     <th scope="col">Número de identificación</th>
-                                    <th scope="col">Tipo de Persona</th>
+                                    <th scope="col">Estado</th>
                                     <th scope="col">acciones</th>
                                 </tr>
                             </thead>
@@ -52,20 +52,20 @@
                                             {{ $persona->numero_identificacion }}
                                         </td>
                                         <td name="tipo_persona" class="budget">
-                                            {{ $persona->tipoPersona->tipo_persona ?? 'None' }}
+                                            <span class="bg-success text-light rounded-pill p-2"> {{ $persona->estado }} </span>
                                         </td>
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
-                                            @can('editar-Persona')
+                                            {{-- @can('editar-Persona') --}}
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                                     class="editBtn rounded btn btn-warning">Editar</button>
-                                            @endcan
+                                            {{-- @endcan --}}
                                                 <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
-                                                @can('borrar-Persona')
+                                                {{-- @can('borrar-Persona') --}}
                                                 <button type="submit"
                                                     class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
-                                                @endcan
+                                                {{-- @endcan --}}
                                             </td>
                                         </div>
                                     </tr>

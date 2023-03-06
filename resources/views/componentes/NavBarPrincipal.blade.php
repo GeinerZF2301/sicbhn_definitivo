@@ -32,7 +32,7 @@
         </div>
     </div>
     @can('ver-administracion')
-        <a href="{{ url('/admin') }}" class="nav-item nav-link">Administración</a>
+        <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
     @endcan
 
     <!-- Authentication Links -->

@@ -209,7 +209,7 @@ $(document).ready(function() {
         let url = "/personas/{id}/show";
         let method = 'show';
         let id = $(this).closest('tr').find('td.id').text();
-        $('#show-modal-title').html('Información del Tipo de Persona');
+        $('#show-modal-title').html('Información de la Persona');
         $('#show-modal').modal('show');
         obtenerRegistroPorId(url, id, method);
     });

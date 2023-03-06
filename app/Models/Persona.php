@@ -18,6 +18,7 @@ class Persona extends Model
         'pais',
         'ciudad',
         'calle',
+        'estado',
         'tipo_persona_id'
     ];
     public function tipoPersona()

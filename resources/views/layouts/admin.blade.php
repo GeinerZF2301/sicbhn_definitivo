@@ -64,6 +64,23 @@
             </ul>
           </div>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#request" aria-expanded="false" aria-controls="request">
+            <i class="mdi mdi-human-male-female menu-icon"></i>
+            <span class="menu-title">Solicitudes</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="request">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/solicitudesvoluntarios') }}"> Solicitud de Voluntariados
+                </a></li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/solicitudestalleres') }}">Solicitud de Talleres</a></li>
+
+            </ul>
+          </div>
+        </li>
+        
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
             <i class=" mdi mdi-file-pdf menu-icon"></i>
@@ -79,6 +96,7 @@
             </ul>
           </div>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#chartjs" aria-expanded="false" aria-controls="chartjs">
             <i class="mdi mdi-bullhorn menu-icon"></i>
@@ -153,6 +171,20 @@
               <li class="nav-item"> <a class="nav-link" href="{{ url('/usuarios') }}">Usuarios</a>
               </li>
               <li class="nav-item"> <a class="nav-link" href="{{ url('/roles') }}">Roles</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="collapse" href="#historial" aria-expanded="false" aria-controls="historial">
+            <i class="mdi mdi-account menu-icon"></i>
+            <span class="menu-title">Historial de Solicitudes</span>
+            <i class="menu-arrow"></i>
+          </a>
+          <div class="collapse" id="historial">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/historialvoluntarios') }}"> Voluntarios</a>
+              </li>
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/historialtalleres') }}"> Participantes Talleres</a></li>
             </ul>
           </div>
         </li>

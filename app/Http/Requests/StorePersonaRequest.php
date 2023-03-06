@@ -33,6 +33,7 @@ class StorePersonaRequest extends FormRequest
             'pais' => 'required|string|max:50',
             'ciudad' => 'required|string|max:75',
             'calle' => 'required|string|max:75',
+            'estado' => 'required|string|max:75',
             'tipo_persona_id' => 'required|int' 
         ];
     }
@@ -48,6 +49,7 @@ class StorePersonaRequest extends FormRequest
             'ciudad.required' => 'La ciudad es obligatoria',
             'calle.required' => 'La calle es obligatoria',
             'tipo_persona_id.required' => 'El tipo de persona es obligatorio',
+            'estado.required' => 'El estado de la persona es obligatorio',
             'edad.min' => 'La edad no puede ser menor a 1',
             'edad.max' => 'La edad no puede ser mayor a 99',
         ];
