@@ -30,7 +30,7 @@
                             </div>  
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Tipo de Artículo</label>
-                                <select class="tipoPersona_id form-select form-select-sm" name="tipo_articulo" id="tipo_articulo"
+                                <select class="tipo_articulo form-select form-select-sm" name="tipo_articulo" id="tipo_articulo"
                                     aria-label=".form-select-sm example">
                                     <option selected>Selecciona una opcion</option>
                                     <option value="Herramienta">Herramienta</option>

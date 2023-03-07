@@ -23,7 +23,7 @@ return new class extends Migration
             $table->integer('edad');
             $table->string('pais');
             $table->string('ciudad');
-            $table->string('calle');
+            $table->string('calle')->nullable();
             $table->string('estado');
             //Relacion de tipopersona a persona
             $table->unsignedBigInteger('tipo_persona_id',);

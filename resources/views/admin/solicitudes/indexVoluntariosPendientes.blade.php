@@ -21,9 +21,10 @@
                             <table id="dataTable" class="table table-hover  align-items-center">
                                 <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
+                                        <th style="display: none" scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Apellidos</th>
-                                        <th scope="col">Número de identificación</th>
+                                        <th scope="col">Voluntariado a Inscribirse</th>
                                         <th scope="col">Estado</th>
                                         <th scope="col">acciones</th>
                                     </tr>
@@ -31,7 +32,10 @@
                                 <tbody>
                                     @foreach ($personasPendientes as $persona)
                                         <tr class="text-center">
-                                        <input class="id" value="{{$persona->id}}" name="id" id="id" type="hidden">
+                                            <td style="display: none" class="id" name="id" class="budget">
+                                                {{ $persona->id }}
+                                            </td>
+                                            <input type="hidden" name="id" class="id">
                                             <td name="tipo_persona" class="budget">
                                                 {{ $persona->nombre }}
                                             </td>
@@ -39,7 +43,7 @@
                                                 {{ $persona->apellidos }}
                                             </td>
                                             <td name="numero_identificacion" class="budget">
-                                                {{ $persona->numero_identificacion }}
+                                                {{ $persona->voluntariado_nombre }}
                                             </td>
                                             <td name="tipo_persona" class="budget">
                                                 <span class="bg-warning text-light rounded-pill p-2"> {{ $persona->estado }} </span>
@@ -59,7 +63,7 @@
                                             </div>
                                         </tr>
                                     @endforeach
-
+                                        <input type="hidden" value="Aprobado" name="estado" id="estado">
                                 </tbody>
                             </table>
 

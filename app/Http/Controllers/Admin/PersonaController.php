@@ -33,7 +33,8 @@ class PersonaController extends Controller
 
     public function VolunteerRequestPendings() 
     {
-        $personasPendientes = $this->personaRepositorio->allPendingPersons();
+        //$personasPendientes = $this->personaRepositorio->allPendingPersons();
+        $personasPendientes = $this->QueryRequestVolunteer();
         return view('admin.solicitudes.indexVoluntariosPendientes', compact('personasPendientes'));
     }
     public function VolunteerRejectedandApproved() 
@@ -122,7 +123,7 @@ class PersonaController extends Controller
     }
     public function updateApprovedStatus(Request $request){
         $estado = 'Aprobado';
-        $id = $request->id;
+        $id = intval($request->id);
         $persona = $this->personaRepositorio->findPerson($id);
         $persona->estado = $estado;
         $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
@@ -132,7 +133,7 @@ class PersonaController extends Controller
     }
     public function updateRejectStatus(Request $request){
         $estado = 'Rechazado';
-        $id = $request->id;
+        $id = intval($request->id);
         $persona = $this->personaRepositorio->findPerson($id);
         $persona->estado = $estado;
         $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
@@ -140,4 +141,17 @@ class PersonaController extends Controller
             'success' => 'Solicitud rechazada de manera exitosa'
         ], 200);
     }
+    public function QueryRequestVolunteer(){
+        $resultados = DB::table('personas_voluntariados')->join('personas', 'personas_voluntariados.persona_id', '=', 'personas.id')
+        ->join('voluntariados', 'personas_voluntariados.voluntariado_id', '=', 'voluntariados.id') 
+        ->join('tipo_personas', 'personas.tipo_persona_id', '=', 'tipo_personas.id')
+        ->select('personas.id', 'personas.nombre', 'personas.apellidos', 'personas.estado', 'voluntariados.id as voluntariado_id',
+         'voluntariados.nombre as voluntariado_nombre')
+        ->where('tipo_personas.tipo_persona', 'Voluntario')->orWhere('tipo_personas.tipo_persona', 'voluntario')
+        ->where('voluntariados.estado', 'activo')->get();
+        
+        return $resultados;
+    }
 }
+
+   

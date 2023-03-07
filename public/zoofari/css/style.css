@@ -980,6 +980,16 @@ header.campannas .masthead-subheading {
     font-size: 2.5rem;
    }
   
+  /* Duracion de la animacion de la ventana modal de Voluntariados */
+  .animate__fadeOutUp {
+    animation-duration: 2s !important;
+  }
+  
+  .animate__fadeInDown {
+    animation-duration: 2s !important;
+  }
+
+
    /*    ------------Campanas------------     */
  
 

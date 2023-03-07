@@ -25,4 +25,9 @@ class Persona extends Model
     {
         return $this->belongsTo(TipoPersona::class,'tipo_persona_id');
     }
+
+    //relacion muchos a muchos
+    public function voluntariados(){
+        return $this->belongsToMany(Voluntariado::class, 'personas_voluntariados');
+    }
 }
