@@ -9,7 +9,7 @@
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
-            <a href="{{ url('/') }}" class="nav-item nav-link active">{{ __('messages.NavBarInicio') }}</a>
+            <a href="{{ url('/') }}" class="nav-item nav-link">{{ __('messages.NavBarInicio') }}</a>
             <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">{{ __('messages.NavBarVoluntariados') }}</a>
             <a href="{{ url('/campañas') }}" class="nav-item nav-link">{{ __('messages.NavBarCampaña') }}</a>
             <a href="{{ url('/donaciones') }}" class="nav-item nav-link">{{ __('messages.NavBarDonaciones') }}</a>
@@ -29,14 +29,12 @@
                 </div>
             </div>
             <a href="{{ url('/contactos') }}" class="nav-item nav-link">{{ __('messages.NavBarContactos') }}</a>
+            @can('ver-administracion')
+            <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
+            @endcan          
         </div>
-    </div>
-    @can('ver-administracion')
-        <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
-    @endcan
-
-    <!-- Authentication Links -->
-    @guest
+        <!-- Authentication Links -->
+        @guest
         @if (Route::has('login'))
             <a href="{{ route('login') }}" class="btn btn-success">{{ __('messages.NavBarBotonLogin') }}<i
                     class="fa fa-right ms-0"></i></a>
@@ -48,7 +46,7 @@
     </a> --}}
 
 
-        <li class="nav-item dropdown">
+        
             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
@@ -57,7 +55,7 @@
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();">
+                                            document.getElementById('logout-form').submit();">
                     {{ __('Logout') }}
                 </a>
 
@@ -67,4 +65,8 @@
             </div>
 
         @endguest
+    </div>
+    
+
+    
 </nav>
