@@ -6,10 +6,6 @@
             <div>
                 <h2 class=""><i class="far fa-user"></i> Usuarios</h2>
             </div>
-            <div align="right">
-                <a href="{{ route('usuarios.create') }}" class="btn bg-gradient-success"> <i class="fas fa-plus"></i>
-                    Crear</a>
-            </div>
         </div>
     </div>
 
