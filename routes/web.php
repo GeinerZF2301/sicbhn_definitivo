@@ -41,7 +41,7 @@ Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('d
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-    Route::get('/',[HomeController::class, 'index'])->name('home');
+    Route::get('/home',[HomeController::class, 'index'])->name('home');
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 
@@ -64,7 +64,7 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
 
 
 Auth::routes(['verify' => true]);
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::group(['middleware' => ['auth']], function() {
