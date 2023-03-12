@@ -23,7 +23,9 @@ use App\Http\Middleware\LocaleCookieMiddleware;
 
 //AQUI VAN LAS RUTAS DE VISTAS
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
@@ -32,6 +34,11 @@ Route::get('/locale/{locale}', function($locale){
 Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
 });
+
+Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+
+Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
+// Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/',[HomeController::class, 'index'])->name('home');
@@ -56,16 +63,8 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
 });
 
 
-
-Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
-
-Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
-// Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
-
-
-
 Auth::routes(['verify' => true]);
-
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
 Route::group(['middleware' => ['auth']], function() {
@@ -110,7 +109,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/tipospersonas/{id}/show',[TipoPersonaController::class,'show'])->name('tipospersonas.show');
 
     //Rutas para el modulo de Personas
-   
+    Route::get('/personas',[PersonaController::class,'index'])->name('personas');
+    Route::get('/personas/create',[PersonaController::class,'create'])->name('personas.create');
+    Route::post('/personas/store',[PersonaController::class,'store'])->name('personas.store');
+    Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('personas.edit');
+    Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
+    Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
+    Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
     
     //Rutas para el modulo Campañas
     Route::get('/campannas',[CampañaController::class,'index'])->name('campannas');
@@ -145,28 +150,23 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
     Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
     
+
+    
+
+
+    //Rutas para la solicitud de un voluntario (Formulario de voluntariados)
+    Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
+    Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
+    Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
+    Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
+    Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');
+
+
+
+    Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');
+    Route::post('/articulos/store',[ArticuloController::class,'store'])->name('articulos.store');
+    Route::get('/articulos/{id}/edit',[ArticuloController::class,'edit'])->name('articulos.edit');
+    Route::post('/articulos/update/{id}',[ArticuloController::class,'update'])->name('articulos.update');
+    Route::delete('/articulos/delete/{id}',[ArticuloController::class,'delete'])->name('articulos.delete');
+    Route::get('/articulos/{id}/show',[ArticuloController::class,'show'])->name('articulos.show');
 });
-Route::get('/personas',[PersonaController::class,'index'])->name('personas');
-Route::get('/personas/create',[PersonaController::class,'create'])->name('personas.create');
-Route::post('/personas/store',[PersonaController::class,'store'])->name('personas.store');
-Route::get('/personas/{id}/edit',[PersonaController::class,'edit'])->name('personas.edit');
-Route::post('/personas/update/{id}',[PersonaController::class,'update'])->name('personas.update');
-Route::delete('/personas/delete/{id}',[PersonaController::class,'delete'])->name('personas.delete');
-Route::get('/personas/{id}/show',[PersonaController::class,'show'])->name('personas.show');
-
-
-//Rutas para la solicitud de un voluntario (Formulario de voluntariados)
-Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
-Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
-Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
-Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
-Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');
-
-
-
-Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');
-Route::post('/articulos/store',[ArticuloController::class,'store'])->name('articulos.store');
-Route::get('/articulos/{id}/edit',[ArticuloController::class,'edit'])->name('articulos.edit');
-Route::post('/articulos/update/{id}',[ArticuloController::class,'update'])->name('articulos.update');
-Route::delete('/articulos/delete/{id}',[ArticuloController::class,'delete'])->name('articulos.delete');
-Route::get('/articulos/{id}/show',[ArticuloController::class,'show'])->name('articulos.show');
