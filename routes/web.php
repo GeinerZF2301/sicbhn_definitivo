@@ -72,10 +72,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('admin', AdminController::class);
 
-    /*Routas Donoaciones admin*/
-   
-
-
     // Rutas para el modulo de Donacion Especie
     Route::get('/donacionEspecie',[DonacionEspecieController::class,'index'])->name('donacionEspecie');
     Route::post('/donacionEspecie/store',[DonacionEspecieController::class,'store'])->name('donacionEspecie.store');
@@ -141,18 +137,12 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/documentos/{id}/edit',[DocumentoController::class,'edit'])->name('documentos.edit');
     Route::post('/documentos/update/{id}',[DocumentoController::class,'update'])->name('documentos.update');
     Route::delete('/documentos/delete/{id}',[DocumentoController::class,'delete'])->name('documentos.delete');
-    
-    
-    
+
     Route::get('/galeriaimagenes',[GaleriaController::class,'index'])->name('galeria');
     Route::post('/galeriaimagenes/store',[GaleriaController::class,'store'])->name('galeria.store');
     Route::get('/galeriaimagenes/{id}/edit',[GaleriaController::class,'edit'])->name('galeria.edit');
     Route::post('/galeriaimagenes/update/{id}',[GaleriaController::class,'update'])->name('galeria.update');
     Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
-    
-
-    
-
 
     //Rutas para la solicitud de un voluntario (Formulario de voluntariados)
     Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
@@ -160,8 +150,6 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
     Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
     Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');
-
-
 
     Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');
     Route::post('/articulos/store',[ArticuloController::class,'store'])->name('articulos.store');
