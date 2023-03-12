@@ -29,6 +29,10 @@ Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
 });
 
+Route::get('/horavisita', function () {
+    return view('principal/horavisita.horavisita-index');
+});
+
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/',[HomeController::class, 'index'])->name('home');
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');

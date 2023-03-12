@@ -19,10 +19,10 @@ class PersonaController extends Controller
     public function __construct(PersonaRepositorioInterface $personaRepositorio){
         $this->personaRepositorio = $personaRepositorio;
 
-        // $this->middleware('permission:ver-Persona|crear-Persona|editar-Persona|borrar-Persona',['only' => ['index']]);
-        // $this->middleware('permission:crear-Persona' , ['only' => ['create', 'store']]);
-        // $this->middleware('permission:editar-Persona' , ['only' => ['edit', 'update']]);
-        // $this->middleware('permission:borrar-Persona' , ['only' => ['delete', 'destroy']]);
+        $this->middleware('permission:ver-Persona|crear-Persona|editar-Persona|borrar-Persona',['only' => ['index']]);
+        $this->middleware('permission:crear-Persona' , ['only' => ['create', 'store']]);
+        $this->middleware('permission:editar-Persona' , ['only' => ['edit', 'update']]);
+        $this->middleware('permission:borrar-Persona' , ['only' => ['delete', 'destroy']]);
     }
    
     public function index() 

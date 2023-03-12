@@ -168,9 +168,13 @@
           </a>
           <div class="collapse" id="auth">
             <ul class="nav flex-column sub-menu">
+              @can('ver-usuario')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/usuarios') }}">Usuarios</a>
               </li>
+              @endcan
+              @can('ver-rol')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/roles') }}">Roles</a></li>
+              @endcan
             </ul>
           </div>
         </li>

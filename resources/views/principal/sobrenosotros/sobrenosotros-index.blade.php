@@ -70,7 +70,7 @@
 
 
     <!-- Funciones del corredor -->
-    <h1 class="display-5 mb-4 text-center">
+    <h1 class=" tituloFun display-5 mb-4 text-center">
 
         Funciones del Corredor Biológico
     </h1>
@@ -101,7 +101,7 @@
     <!-- Misión y visión Start -->
 
     <div class="container-xxl py-5">
-        <div class="container">
+        <div class="container mv">
             <div class="row g-5">
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -144,27 +144,13 @@
     <!-- Misión y visión End -->
 
 
-
-
-    <!-- Miembros Start --
-
-    '''''''''''''''''''NOTA````````````````````````````
-
-    FAltan agregar miembros
-
-
-    .......>Yo subì las fotos
-    .......>SOlo faltan 2 miembros de conseguir la foto
-                  ASADA y Centro Agrìcola
-                  
-
-    -->
+    <!-- Miembros -->
     <div class="container-xxl py-5">
-        <div class="container">
+        <div class="container ">
             <div class="row g-5 mb-5 align-items-end wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">
-                        <span class="text-primary">Miembros</span> del comité
+                <div class="col-lg-12 titulo-miembros ">
+                    <h1 class="display-5 text-center">
+                        <span class="text-primary text-center">Miembros</span> del comité
                     </h1>
                 </div>
             </div>
@@ -310,9 +296,6 @@
                                 </div>
                             </a>
                         </div>
-                        {{-- /////////////// --}}
-
-
 
                         <div class="col-12">
                             <a class="animal-item" href="img/SobreNosotros/Miembros/fundecodes.jpeg"
@@ -354,189 +337,43 @@
 
     <!-- colaboradores -->
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-
-        <h1 class="display-5 mb-4 text-center">
-
-            Colaboradores
-        </h1>
-
-    </div>
-    <div class="cards-container-">
-        <div class="card-">
-            <a href="https://www.chorotega.una.ac.cr">
-                <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- About End -->
-
-
-
-
-<!-- Funciones del corredor -->
-<h1 class=" tituloFun display-5 mb-4 text-center">
-          
-  Funciones del Corredor Biológico
- </h1>
-
-<div class="card-container">
-  <div class="card" style="background-color: #4caf50;">
-    <p class="card-text">Administración y gestión de actividades del POA</p>
-  </div>
-  <div class="card" style="background-color: #4caf50;">
-    <p class="card-text">Formulación, gestión y evaluación de Proyectos</p>
-  </div>
-  <div class="card" style="background-color: #4caf50;">
-    <p class="card-text">Coordinación de sesiones y reuniones del CL</p>
-  </div>
-  <div class="card" style="background-color: #4caf50;">
-    <p class="card-text">Autoevaluación de Gestión del corredor</p>
-  </div>
-  <div class="card" style="background-color: #4caf50;">
-    <p class="card-text">Nuestras actividades dependen mucho de los representantes
-      institucionales</p>
-  </div>
-</div>
-
-<!-- funciones del corredor End -->
-
-
-
-<!-- Misión y visión Start -->
-  
-<div class="container-xxl py-5">
-  <div class="container mv">
-    <div class="row g-5">
-
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-        <div class="img-border">
-          <img class="img-fluid" src="zoofari/img/SobreNosotros/SBNII.jpg" alt="" />
-        </div>
-      </div>
-
-      <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-        
-        <h1 class="display-5 mb-4">
-          ¡Nuestra
-          <span class="text-primary">Misión</span>!
-        </h1>
-        <p class="mb-4">
-        El Corredor Biológico Hojancha-Nandayure es una suma de voluntades institucionales y de la sociedad civil, 
-        que buscan mejorar la conectividad entre Áreas Silvestres Protegidas y gestionar de manera integral la biodiversidad
-         a través de la educación ambiental, la producción sostenible y el fortalecimiento de capacidades locales.
-        </p>
-     
-        <h1 class="display-5 mb-4">
-          ¡Nuestra
-          <span class="text-primary">Visión</span>!
-        </h1>
-        <p class="mb-4">
-        Es un paisaje sostenible que brinda conectividad ecológica, en donde las comunidades y la biodiversidad conviven en armonía.
-
-        </p>
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
       
-      </div>
-      
+  <h1 class="display-5 mb-4 text-center">
+    
+   Colaboradores
+  </h1>
+
+</div>
+  <div class="cards-container-">
+    <div class="card-">
+      <a href="https://www.chorotega.una.ac.cr">
+      <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
+    </div>
+    <div class="card-">
+      <a href="https://www.facebook.com/nicoyasistemas/">
+      <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2">
+    </div>
+    <div class="card-">
+       <a href="https://www.instagram.com/jose_venegas_photography/">
+      <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3">
     </div>
   </div>
-</div>
 
-<!-- Misión y visión End -->
-
-
-<div class="container-xxl py-5">
-  <div class="container ">
-    <div
-      class="row g-5 mb-5 align-items-end wow fadeInUp"
-      data-wow-delay="0.1s"
-    >
-        <div class="col-lg-12 titulo-miembros ">
-          <h1 class="display-5 text-center">
-            <span class="text-primary text-center">Miembros</span> del comité
-          </h1>
-        </div>          
-    </div>
-
-
-    <div class="row g-4">
-
-      <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="row g-4">
-          <div class="col-12">
-            <a
-              class="animal-item"
-              href="img/SobreNosotros/Miembros/munihojancha.jpeg"
-              data-lightbox="animal"
-            >
-              <div class="position-relative">
-                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/munihojancha.jpeg" href=" " alt="" />
-                <div class="animal-text p-4">
-                  <p class="text-white small text-uppercase mb-0">Municipalidad de Hojancha</p>
-                  <h5 class="text-white mb-0">Miembro</h5>
-                </div>
-              </div>
-            </a>
-          </div>
+<!-- colaboradores end -->
 
 
 
-          <div class="col-12">
-            <a
-              class="animal-item"
-              href="img/SobreNosotros/Miembros/sinac.png"
-              data-lightbox="animal"
-            >
-              <div class="position-relative">
-                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/sinac.png" alt="" />
-                <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">SINAC</p>
-                  <h5 class="text-white mb-0">Miembro</h5>
-                </div>
-              </div>
-            </a>
-          </div>
+<!-- EQUIPO DESARROLLADOR-->
 
 
-
-
-   
-          <div class="col-12">
-            <a
-              class="animal-item"
-              href="img/SobreNosotros/Miembros/panamericanWoods.jpeg"
-              data-lightbox="animal"
-            >
-              <div class="position-relative">
-                <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/panamericanWoods.jpeg" alt="" />
-                <div class="animal-text p-4">
-                <p class="text-white small text-uppercase mb-0">WOODS</p>
-                  <h5 class="text-white mb-0">Miembro</h5>
-                </div>
-              </div>
-            </a>
-          </div>
-
-
-
-        </div>
-    </div>
-
-    <!-- colaboradores end -->
-
-
-    <!-- EQUIPO DESARROLLADOR-->
-
-
-    {{-- <div class="container-circle">
+ {{-- <div class="container-circle">
   <div class="circle">
     <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Circle Image 1">
   </div>
@@ -567,61 +404,59 @@
 </div>  --}}
 
 
-    <br>
-    <br>
-    <br>
+<br>
+<br>
+<br>
 
-    <center>
-        <h1 class="display-5 mb-4 text-center">
+<center>
+  <h1 class="display-5 mb-4 text-center">
+          
+    Equipo Desarrollador
+   </h1>
+<div class="card-Desarrolladores">
+  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 1">
+  <div class="card-text-Desarrolladores">
+    <h2>Melany Lawson Méndez</h2>
+    <p>Front End Developer</p>
+  </div>
+</div>
 
-            Equipo Desarrollador
-        </h1>
-        <div class="card-Desarrolladores">
-            <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 1">
-            <div class="card-text-Desarrolladores">
-                <h2>Melany Lawson Méndez</h2>
-                <p>Front End Developer</p>
-            </div>
-        </div>
+<div class="card-Desarrolladores">
+  <img src="../zoofari/img/SobreNosotros/Mar.jpeg"  alt="Imagen 2">
+  <div class="card-text-Desarrolladores">
+    <h2>Título de la tarjeta 2</h2>
+    <p>Texto de la tarjeta 2</p>
+  </div>
+</div>
 
-        <div class="card-Desarrolladores">
-            <img src="../zoofari/img/SobreNosotros/Mar.jpeg" alt="Imagen 2">
-            <div class="card-text-Desarrolladores">
-                <h2>Título de la tarjeta 2</h2>
-                <p>Texto de la tarjeta 2</p>
-            </div>
-        </div>
+<div class="card-Desarrolladores">
+  <img src="../zoofari/img/SobreNosotros/Geiner.jpg" alt="Imagen 3">
+  <div class="card-text-Desarrolladores">
+    <h2>Título de la tarjeta 3</h2>
+    <p>Texto de la tarjeta 3</p>
+  </div>
+</div>
 
-        <div class="card-Desarrolladores">
-            <img src="../zoofari/img/SobreNosotros/Geiner.jpg" alt="Imagen 3">
-            <div class="card-text-Desarrolladores">
-                <h2>Título de la tarjeta 3</h2>
-                <p>Texto de la tarjeta 3</p>
-            </div>
-        </div>
+<div class="card-Desarrolladores">
+  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 4">
+  <div class="card-text-Desarrolladores">
+    <h2>Título de la tarjeta 4</h2>
+    <p>Texto de la tarjeta 4</p>
+  </div>
+</div>
 
-        <div class="card-Desarrolladores">
-            <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 4">
-            <div class="card-text-Desarrolladores">
-                <h2>Título de la tarjeta 4</h2>
-                <p>Texto de la tarjeta 4</p>
-            </div>
-        </div>
-
-        <div class="card-Desarrolladores">
-            <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 5">
-            <div class="card-text-Desarrolladores">
-                <h2>Título de la tarjeta 5</h2>
-                <p>Texto de la tarjeta 5</p>
-            </div>
-        </div>
-    </center>
-
-
-
-    <!-- EQUIPO DESARROLLADOR END-->
+<div class="card-Desarrolladores">
+  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 5">
+  <div class="card-text-Desarrolladores">
+    <h2>Título de la tarjeta 5</h2>
+    <p>Texto de la tarjeta 5</p>
+  </div>
+</div>
+</center>
 
 
+
+<!-- EQUIPO DESARROLLADOR END-->
 
 
 
@@ -642,7 +477,8 @@
 
 
 
-    {{-- <div class="card-container">
+
+                {{-- <div class="card-container">
   <div class="card" style="background-color: #4caf50;">
     <h3></h3>
     <p>Administración y gestión de actividades del POA.</p>
@@ -675,7 +511,7 @@
 
 
 
-    {{-- <div class="containerfunciones">
+                {{-- <div class="containerfunciones">
   <div class="title-Funciones text-uppercase text-center "> 
     <h2>Funciones del Corredor Biológico</h2>   
 </div>
@@ -685,9 +521,9 @@
   </h1>
 </div> --}}
 
-    {{-- </div> --}}
+                {{-- </div> --}}
 
-    {{-- <div class="container">
+                {{-- <div class="container">
   <div class="row">
     <div class="col-3">
       <div class="card">
@@ -726,7 +562,7 @@
 
 
 
-    {{-- <div class="containertiposcampannas">
+                {{-- <div class="containertiposcampannas">
           <div class="cardtipos bg-mision ">
               <div class="d-flex justify-content-center">
                   <img class="ic" src="zoofari/img/Campannas/recycle.png">
@@ -752,7 +588,7 @@
 
 
 
-    {{-- <!-- MyV Start -->
+                {{-- <!-- MyV Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div
@@ -818,7 +654,7 @@
     <!-- MyV End --> --}}
 
 
-    {{-- <!-- Funciones Start -->
+                {{-- <!-- Funciones Start -->
     <div class="container-xxl py-5">
 
         <div class="container">
@@ -917,4 +753,4 @@
         </div>
     </div>
     <!-- Funciones End --> --}}
-@endsection
+            @endsection
