@@ -21,27 +21,17 @@ use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 
 
+
 //AQUI VAN LAS RUTAS DE VISTAS
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/',[HomeController::class, 'index'])->name('home');
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
 });
 
-Route::get('/horavisita', function () {
-    return view('principal/horavisita.horavisita-index');
-});
-
-Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
-
-Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
-// Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
-
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-    Route::get('/home',[HomeController::class, 'index'])->name('home');
+    Route::get('/',[HomeController::class, 'index'])->name('home');
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 
@@ -55,23 +45,35 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     
     Route::get('/galeria',[GaleriaClienteController::class, 'index'])->name('galeria');
        
+    
     Route::get('/sobrenosotros', function () {
         return view('principal/sobrenosotros.sobrenosotros-index');
     });
-    Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'storstoreSolicitudPersona'])->name('store');
+
     Route::get('/voluntariado', [VoluntariadoClienteController::class, 'index'])->name('index');
 });
 
+Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'storstoreSolicitudPersona'])->name('store');
+
+
+
+Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
+
+Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
+// Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
+
+
 
 Auth::routes(['verify' => true]);
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
 
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('admin', AdminController::class);
-
+    
     // Rutas para el modulo de Donacion Especie
     Route::get('/donacionEspecie',[DonacionEspecieController::class,'index'])->name('donacionEspecie');
     Route::post('/donacionEspecie/store',[DonacionEspecieController::class,'store'])->name('donacionEspecie.store');
