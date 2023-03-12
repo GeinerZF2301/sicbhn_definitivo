@@ -55,7 +55,9 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
 
 Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'storstoreSolicitudPersona'])->name('store');
 
-
+Route::get('/horavisita', function () {
+    return view('principal/horavisita.horavisita-index');
+});
 
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 
