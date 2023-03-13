@@ -93,18 +93,114 @@ Within the Biological Corridor there is a great biodiversity of flora and fauna.
 'BotonFormularioVoluntariado'=>'Submit',
 
 //Vista Campanas
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
-''=>'',
+'TituloHeaderCampanas'=>'Campaigns',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderCampanas'=>'Campaigns',
+'PrimerTituloCampanas'=>'Our Campaigns',
+'PrimerParrafoCampanas'=>'The Hojancha-Nandayure Biological Corridor is located in the Tempisque Conservation Area and was created to conserve wildlife between Barra Honda National Park and the Nicoya Peninsula Protected Area. During the year, several campaigns are carried out throughout the year to raise awareness of environmental issues.',
+'SegundoTituloCampanas'=>'Campaigns available',
+
+//Vista DOnaciones
+'TituloHeaderDonaciones'=>'Donations',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderDonaciones'=>'Donations',
+'PrimerTituloDonaciones'=>'Why should I donate?',
+'PrimerParrafoCDonaciones'=>'The aid provided to the Hojancha-Nandayure Biological Corridor allows the development of new projects and the maintenance of those already implemented.',
+'CheckListDonacionesEspecie'=>'In-Kind Donations',
+'CheckListDonacionesMonetarios'=>'Monetary Donations',
+'CheckListDonacionesAlimenticios'=>'Food Donations',
+'SegundoTituloDonaciones'=>'Donation Types',
+
+//falta las cards nuevas
+
+//Vista SObre Nosotros
+'TituloHeaderSobreNosotros'=>'About us',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderSobreNosotros'=>'About us',
+'PrimerTituloSobreNosotros'=>'About the Hojancha-Nandayure Biological Corridor',
+'PrimerParrafoSobreNosotros'=>'The Hojancha-Nandayure Biological Corridor (CBHN) is located in the province of Guanacaste, in the cantons of Hojancha and Nandayure, hence its name. It covers an area of 41,832 hectares, 25% of the area of Hojancha and 75% of the area of Nandayure.
+
+The Hojancha-Nandayure Biological Corridor (CBHN) is located in the North Pacific climatic region, covering part of two climatic subregions: western Nicoya Peninsula (PN1: drought) and central North Pacific (PN2: rainy with monsoon influence).',
+'SegundoTituloFunciones'=>'Functions of the Biological Corridor',
+'CardsFuncionesAdministracion'=>'Administration and management of AOP activities',
+'CardsFuncionesFormulacion'=>'Project formulation, management and evaluation',
+'CardsFuncionesCoordinacion'=>'Coordination of CL sessions and meetings',
+'CardsFuncionesAutoevaluacion'=>'Self-evaluation of Corridor Management',
+'CardsFuncionesNuestrasActividades'=>'',
+'TituloMision'=>'Our Mission!',
+'TextoMision'=>'The Hojancha-Nandayure Biological Corridor is a sum of institutional and civil society wills that seek to improve connectivity between Protected Wildlife Areas and to manage biodiversity in an integral way through environmental education, sustainable production and local capacity building.',
+'TituloVision'=>'Our Vision!',
+'TextoVision'=>'It is a sustainable landscape that provides ecological connectivity, where communities and biodiversity coexist in harmony.',
+'TituloMiembros'=>'Committee members',
+'CardMiembros'=>'Member',
+/*
+'CardMiembros'=>'Member',
+'CardMiembrosSinac'=>'',
+'CardMiembrosPanamerican'=>'',
+'CardMiembrosOffbeat'=>'',
+'CardMiembrosMtfTeca'=>'',
+'CardMiembrosGestionAmbiental'=>'',
+'CardMiembrosMonteAlto'=>'',
+'CardMiembrosMinisterioSalud'=>'',
+'CardMiembrosFundecodes'=>'',
+*/
+'TituloColaboradores'=>'Collaborators',
+'TituloEquipoDesarrollador'=>'Development Team',
+
+//Vista Galeria
+'TituloHeaderGaleria'=>'Photo Gallery',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderGaleria'=>'Gallery',
+'PrimerHashtagGaleria'=>'Our Flora and Fauna',
+'PrimerTituloGaleria'=>'Here you can find our Flora & Fauna',
+'PrimerParrafoGaleria'=>'The Hojancha-Nandayure Biological Corridor has a great biodiversity and is one of the most admired territories in Costa Rica.
+In this section you will find photographs of the Hojancha-Nandayure Biological Corridor.
+We invite you to be part of the wildlife that surrounds us.',
+
+//Vista  Horas de visita
+'TituloHeaderHorarioVisita'=>'Visiting Hours',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderHorarioVisita'=>'Visiting Hours',
+'PrimeraOracionHorarioVisita'=>'Be part of our family!',
+'PrimerTituloHorarioVisita'=>'Here you can find our visiting hours',
+'PrimerParrafoHorarioVisita'=>'Here are our visiting hours so you can learn more about the Hojancha-Nandayure Biological Corridor.
+Also, if you are interested in making a visit with more people you can contact us to coordinate and make a more enjoyable experience for you.',
+'TituloImagenHorarios'=>'Visiting Hours',
+'HorarioLunes'=>'Monday',
+'HorarioMartes'=>'Tuesday',
+'HorarioMiercoles'=>'Wednesday',
+'HorarioJueves'=>'Thursday',
+'HorarioViernes'=>'Friday',
+'HorarioSabado'=>'Saturday',
+'HorarioDomingo'=>'Sunday',
+'HorarioCerrado'=>'Close',
+
+//Vista DOcumentacion
+'TituloHeaderDocumentacion'=>'Documentation',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderDocumentacion'=>'Documents',
+'PrimerTituloDocumentacion'=>'About Our Documentation',
+'PrimerParrafoDocumentacion'=>'In this section you will find a series of official documents that serve to identify information about the Hojancha-Nandayure Biological Corridor.
+The published documentation includes information that has been compiled in a timely and updated manner.',
+'SegundoTituloDOcuemntacion'=>'Public Documents!',
+
+//Vista Contactos
+'TituloHeaderContactos'=>'Our Contacts information',
+'TextoHeaderInicio'=>'Home',
+'TextoHeaderContactos'=>'Contacts',
+'CardContactosHashtagDireccion'=>'Address',
+'CardContactosUbicacion'=>'Alto del Cementerio Neighborhood, in Hojancha-Guanacaste, Costa Rica',
+'CardContactosHashtagNumero'=>'Phone Number',
+'CardContactosHashtagCorreo'=>'Email Address',
+'HashtagContactanos'=>'Contact us',
+'TituloFormularioContactos'=>'',
+'ParrafoFormularioContactos'=>'',
+'CamposFormularioNombre'=>'Name',
+'CamposFormularioCorreo'=>'Email Address',
+'CamposFormularioAsunto'=>'Subject',
+'CamposFormularioMensaje'=>'Message',
+'BotonEnviarFOrmularioContactos'=>'Submit',
+
+
+
 ];

@@ -676,7 +676,7 @@ h2 {
 }
 
 .section-bg {
-  background-color: #b8efbb;;
+  background: linear-gradient(90deg, hsla(112, 44%, 50%, 1) 7%, hsla(105, 70%, 35%, 1) 100%);
 }
 
 .section-overlay {
