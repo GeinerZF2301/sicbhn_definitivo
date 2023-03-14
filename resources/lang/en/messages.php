@@ -133,17 +133,6 @@ The Hojancha-Nandayure Biological Corridor (CBHN) is located in the North Pacifi
 'TextoVision'=>'It is a sustainable landscape that provides ecological connectivity, where communities and biodiversity coexist in harmony.',
 'TituloMiembros'=>'Committee members',
 'CardMiembros'=>'Member',
-/*
-'CardMiembros'=>'Member',
-'CardMiembrosSinac'=>'',
-'CardMiembrosPanamerican'=>'',
-'CardMiembrosOffbeat'=>'',
-'CardMiembrosMtfTeca'=>'',
-'CardMiembrosGestionAmbiental'=>'',
-'CardMiembrosMonteAlto'=>'',
-'CardMiembrosMinisterioSalud'=>'',
-'CardMiembrosFundecodes'=>'',
-*/
 'TituloColaboradores'=>'Collaborators',
 'TituloEquipoDesarrollador'=>'Development Team',
 
