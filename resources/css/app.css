@@ -1987,7 +1987,7 @@ progress {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 400px;
   padding: 0.375rem 0.75rem;
   font-size: 0.9rem;
   font-weight: 400;
@@ -10957,6 +10957,25 @@ textarea.form-control-lg {
 
 .small {
   font-size: 0.875rem !important;
+}
+
+
+
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+
+.ingresar{
+  position: relative;
+  left:-100px
+}
+
+.Info{
+  display: flex;
 }
 
 
