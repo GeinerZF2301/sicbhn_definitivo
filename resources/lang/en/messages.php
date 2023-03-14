@@ -201,6 +201,21 @@ The published documentation includes information that has been compiled in a tim
 'CamposFormularioMensaje'=>'Message',
 'BotonEnviarFOrmularioContactos'=>'Submit',
 
+//footer
+'FooterMasInfoSubtitulo'=>'More information',
+'FooterEnlacesRapidosSubtitulo'=>'Quick links',
+'FooterEnlacesRapidosSobreNosotros'=>'About us',
+'FooterEnlacesRapidosContactos'=>'Contacts',
+'FooterEnlacesRapidosHoras'=>'Visiting Hours',
+'FooterEnlacesRapidosDocumentos'=>'Documents',
+'FooterEnlacesPopularesSubtitulo'=>'Popular links',
+'FooterEnlacesGaleria'=>'Gallery',
+'FooterEnlacesVoluntariados'=>'Voluteering',
+'FooterEnlacesCampanas'=>'Campaigns',
+'FooterEnlacesDonaciones'=>'Donations',
+'FraseBienvenidaFooter'=>'The Biological Corridor welcomes you',
+'FraseDerechos'=>'All rights reserved.',
+
 
 
 ];
