@@ -146,7 +146,7 @@ class PersonaController extends Controller
         ->join('voluntariados', 'personas_voluntariados.voluntariado_id', '=', 'voluntariados.id') 
         ->join('tipo_personas', 'personas.tipo_persona_id', '=', 'tipo_personas.id')
         ->select('personas.id', 'personas.nombre', 'personas.apellidos', 'personas.estado', 'voluntariados.id as voluntariado_id',
-         'voluntariados.nombre as voluntariado_nombre')
+         'voluntariados.nombre as voluntariado_nombre')->where('personas.estado', 'Pendiente')
         ->where('tipo_personas.tipo_persona', 'Voluntario')->orWhere('tipo_personas.tipo_persona', 'voluntario')
         ->where('voluntariados.estado', 'activo')->get();
         
