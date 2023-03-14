@@ -18,4 +18,8 @@ class Voluntariado extends Model
         'estado',
         'validar_voluntariado'
     ];
+
+    public function personas(){
+        return $this->belongsToMany(Persona::class, 'personas_voluntariados');
+    }
 }

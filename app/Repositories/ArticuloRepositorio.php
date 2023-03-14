@@ -9,7 +9,11 @@
             return Articulo::all();
         }
         public function storeArticle($data){
-            return Articulo::create($data);
+            $articulo = new Articulo();
+            $articulo->nombre = $data['nombre'];
+            $articulo->descripcion = $data['descripcion'];
+            $articulo->tipo_articulo = $data['tipo_articulo'];
+            $articulo->save();
         }
         public function findArticle($id){
             return Articulo::find($id);

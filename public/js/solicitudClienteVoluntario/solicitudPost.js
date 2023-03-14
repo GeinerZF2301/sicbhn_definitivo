@@ -13,6 +13,7 @@ $(document).ready(function () {
         e.preventDefault();
         $(".error-messages").html("");
         var formData = new FormData(form);
+        console.log(formData);
         $.ajax({
             url: "/solicitud/nuevovoluntario",
             method: "POST",
@@ -20,19 +21,25 @@ $(document).ready(function () {
             contentType: false,
             processData: false,
             success: function(response) {
-                // $('.create-modal').modal('hide');
-                // if (response) {
-                //     Swal.fire({
-                //         position: 'top-center',
-                //         icon: 'success',
-                //         title: response.success,
-                //         showConfirmButton: false,
-                //         timer: 1200
-                //     }).then(function(){
-                //         location.reload()
-                //     });
-                // }
-                console.log(response);
+                Swal.fire({
+                    icon: 'success',
+                    padding: '5rem',
+                    confirmButtonText: 'Aceptar',
+                    confirmButtonColor: '#4CAF50',
+                    title: response.success,
+                    text: 'Gracias por inscribirte. Tu solicitud será revisada por nuestros administradores.',
+                    footer: 'Serás notificado al correo electronico que proporcionaste, con la respuesta a tu solicitud.',
+                    showClass: {
+                      popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                      popup: 'animate__animated animate__fadeOutUp'
+                    }
+                  }).then(function(){
+                    limpiarInputs();
+                    window.location.href = '/';
+                  });
+                  
             },
             error: function(error) {
                 if (error.status === 422) {
@@ -71,12 +78,17 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("tipo_persona_id")) {
                         $("#tipo_persona_id_error").html(errors.tipo_persona_id[0]);
                     }
+                    if (errors.hasOwnProperty("voluntariado_id")) {
+                        $("#voluntariado_id_error").html(errors.voluntariado_id[0]);
+                    }
                     } else {
                         console.error(error);
                     }
+                    limpiarInputsMensageValidacion();
             }
+            
         });
-        limpiarInputs();
+        
     });
 });
 
@@ -108,4 +120,39 @@ function limpiarInputs(){
     $("#ciudad").val("");
     $("#calle").val("");
     $("#voluntariado_id").val("");
+}
+
+function limpiarMensagesValidacion() {
+    $(".error-messages").text("");
+    $(".success-mesages").text("");
+}
+
+function limpiarInputsMensageValidacion(){
+    $("#nombre").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#apellidos").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#tipoIdentificacion").on('change', function(){
+        limpiarMensagesValidacion()
+    });;
+    $("#numeroIdentificacion").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#fechaNacimiento").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#edad").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#pais").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#ciudad").on('change', function(){
+        limpiarMensagesValidacion()
+    });
+    $("#voluntariado_id").on('change', function(){
+        limpiarMensagesValidacion()
+    });
 }

@@ -5,9 +5,11 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Voluntariado;
 use App\Models\TipoPersona;
+use App\Models\Persona;
 use App\Http\Requests\StorePersonaSolicitudRequest;
 use App\Repositories\Interfaces\PersonaRepositorioInterface;
 use App\Repositories\PersonaRepositorio;
+use Illuminate\Support\Facades\DB;
 
 class VoluntariadoClienteController extends Controller
 {
@@ -25,13 +27,16 @@ class VoluntariadoClienteController extends Controller
     }
 
     public function storeRequest(StorePersonaSolicitudRequest $request){
+        $voluntariado = $request->voluntariado_id;
         try{
             $estado = 'Pendiente';
             $validatedData = $request->validated();
             $validatedData['estado'] = $estado;
-            $this->personaRepositorio->storePerson($validatedData);
+            $personaVoluntario = $this->personaRepositorio->storePerson($validatedData);
+            $personaVoluntario->voluntariados()->attach($voluntariado);
             return response()->json([
-                'success' => 'Solicitud enviada correctamente'
+                'success' => '¡Solicitud enviada correctamente!'
+                 
             ], 201);
         }catch(Exception $e){
             return response()->json([

@@ -9,6 +9,7 @@ $(document).ready(function() {
         $('#saveBtn').html('Guardar');
         $('#nombre').val('')
         $('#descripcion').val('');
+        $('#tipo_articulo').val('');
     });
     //Logica del cliente para realizar una solicitud POST al servidor y hacer un Store
     var form = $('#createForm')[0];
@@ -18,7 +19,7 @@ $(document).ready(function() {
         var formData = new FormData(form);
         console.log(formData);
         $.ajax({
-            url: "/articulos/store",
+            url: '/articulos/store',
             method: "POST",
             data: formData,
             contentType: false,

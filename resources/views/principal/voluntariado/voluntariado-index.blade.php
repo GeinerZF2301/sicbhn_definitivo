@@ -4,6 +4,7 @@
     @include('componentes.NavBarPrincipal')
     <!-- Page Header Start -->
     <!-- Page Header Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <div class="container-fluid header-bgV py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <h1 class="display-4 text-white mb-3 animated slideInDown">Voluntariados</h1>
@@ -202,14 +203,14 @@
 
                 <div class="col-lg-6 col-12">
                     <!-- <div class="custom-text-box">
-                                    <h2 class="mb-2">Our Story</h2>
+                                            <h2 class="mb-2">Our Story</h2>
 
-                                    <h5 class="mb-3">Kind Heart Charity, Non-Profit Organization</h5>
+                                            <h5 class="mb-3">Kind Heart Charity, Non-Profit Organization</h5>
 
-                                    <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites.
-                                        You can feel free to use it. Please tell your friends about TemplateMo website. Thank
-                                        you.</p>
-                                </div> -->
+                                            <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites.
+                                                You can feel free to use it. Please tell your friends about TemplateMo website. Thank
+                                                you.</p>
+                                        </div> -->
 
                     <div class="col-12">
                         <div class="custom-text-box">
@@ -223,9 +224,16 @@
                                     </p>
                                     <form id="requestForm">
                                         @csrf
+                                        <p class="mb-4 text-dark">
+                                            Los campos con <span class="text-danger fs-5 fw-bolder">*</span> son
+                                            obligatorios
+                                        </p>
                                         <div class="row g-3">
+                                            <input type="hidden" class="form-control" name="id" id="id">
                                             <div class="col-12">
-                                            <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span id="nombre_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
                                                 <div class="form-floating">
                                                     <input type="text" name="nombre"
                                                         class="form-control bg-light border-0" id="nombre"
@@ -234,7 +242,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="apellidos_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span id="apellidos_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control bg-light border-0"
                                                         id="apellidos" name="apellidos" placeholder="Your Lastname" />
@@ -242,12 +252,13 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="tipo_identificacion_error" class="text-danger fw-bolder error-messages"></span>
-                                                <div class="mt-3 form-floating">
+                                                <span id="tipo_identificacion_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
+                                                <div class="form-floating">
                                                     <select id="tipoIdentificacion"
                                                         class="form-select bg-light form-select mb-3 "
-                                                        name="tipo_identificacion"
-                                                        aria-label=".form-select example"">
+                                                        name="tipo_identificacion" aria-label=".form-select example"">
                                                         <option selected>Selecciona una opcion</option>
                                                         <option value="Cedula Nacional">Cedula Nacional</option>
                                                         <option value="Pasaporte">Pasaporte</option>
@@ -257,7 +268,9 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="numero_identificacion_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span id="numero_identificacion_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
                                                 <div class="form-floating">
                                                     <input type="text" class="form-control bg-light border-0"
                                                         id="numeroIdentificacion" name="numero_identificacion"
@@ -266,8 +279,11 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="fecha_de_nacimiento_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span id="fecha_de_nacimiento_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
                                                 <div class="form-floating">
+
                                                     <input type="date" name="fecha_de_nacimiento"
                                                         class="form-control bg-light border-0" id="fechaNacimiento"
                                                         placeholder="Your Lastname" />
@@ -276,6 +292,8 @@
                                             </div>
                                             <div class="col-12">
                                                 <span id="edad_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
+
                                                 <div class="form-floating">
                                                     <input type="int" class="form-control bg-light border-0"
                                                         id="edad" name="edad" placeholder="Your Lastname" />
@@ -283,35 +301,43 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
+                                                <span class="text-danger fs-5 ">*</span>
+                                                <span id="pais_error" class="text-danger fw-bolder error-messages"></span>
                                                 <div class="form-floating">
-                                                    <span id="pais_error" class="text-danger fw-bolder error-messages"></span>
+
                                                     <input type="text" class="form-control bg-light border-0"
                                                         id="pais" name="pais" placeholder="Your Lastname" />
                                                     <label for="lastname">Pais</label>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="ciudad_error" class="text-danger fw-bolder error-messages"></span>
+                                                <span id="ciudad_error"
+                                                    class="text-danger fw-bolder error-messages"></span>
+                                                <span class="text-danger fs-5 ">*</span>
                                                 <div class="form-floating">
+
                                                     <input type="int" class="form-control bg-light border-0"
                                                         id="ciudad" name="ciudad" placeholder="Your Lastname" />
-                                                    <label for="lastname">Provincia o Ciudad</label>
+                                                    <label for="provincia">Provincia o Ciudad </label>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <span id="calle_error" class="text-danger fw-bolder error-messages"></span>
                                                 <div class="form-floating">
                                                     <input type="int" class="form-control bg-light border-0"
                                                         id="calle" name="calle" placeholder="Your Lastname" />
-                                                    <label for="lastname">Distrito o Calle </label>
+                                                    <label for="lastname">Distrito o Calle <span
+                                                            class="fs-6 text-secondary fw-light"> ( Opcional )</span>
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-12">
-                                            <div class=" mt-3 form-floating">
+                                            <span id="voluntariado_id_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
                                                 <select id="voluntariado_id"
-                                                    class="form-select bg-light form-select mb-3 "
-                                                    name="voluntariado_id"
+                                                    class="form-select bg-light form-select mb-3 " name="voluntariado_id"
                                                     aria-label=".form-select example"">
                                                     <option selected>Selecciona una opcion</option>
                                                     @foreach ($voluntariadosDisponibles as $voluntariadoDisponible)
@@ -323,9 +349,10 @@
                                                 <label for="voluntariado">Voluntariado a inscribirse</label>
                                             </div>
                                         </div>
-                                        <input type="hidden" id="estado" name="estado"/>
-                                        <input type="hidden" id="tipo_persona_id" value="{{$tipoVoluntario->id}}" name="tipo_persona_id"/>
-                                        
+                                        <input type="hidden" id="estado" name="estado" />
+                                        <input type="hidden" id="tipo_persona_id" value="{{ $tipoVoluntario->id }}"
+                                            name="tipo_persona_id" />
+
                                         <div class=" mt-2 col-12">
                                             <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
                                                 Enviar
@@ -346,4 +373,5 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
     <script src="{{ asset('js/solicitudClienteVoluntario/solicitudPost.js') }}"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 @endsection

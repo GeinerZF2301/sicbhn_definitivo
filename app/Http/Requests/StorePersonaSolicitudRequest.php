@@ -32,9 +32,9 @@ class StorePersonaSolicitudRequest extends FormRequest
             'edad' => 'required |integer|min:1|max:99',
             'pais' => 'required|string|max:50',
             'ciudad' => 'required|string|max:75',
-            'calle' => 'required|string|max:75',
             'estado' => 'required|string|max:75',
-            'tipo_persona_id' => 'required|int' 
+            'tipo_persona_id' => 'required|int' ,
+            'voluntariado_id' => 'required|int' 
         ];
     }
     public function messages()
@@ -47,9 +47,9 @@ class StorePersonaSolicitudRequest extends FormRequest
             'fecha_de_nacimiento.required' => 'La fecha de nacimiento es obligatoria',
             'pais.required' => 'El pais es obligatorio',
             'ciudad.required' => 'La ciudad es obligatoria',
-            'calle.required' => 'La calle es obligatoria',
             'estado.required' => 'El estado es obligatorio',
             'tipo_persona_id.required' => 'El tipo de persona es obligatorio',
+            'voluntariado_id.required' => 'El voluntariado a inscribirse es obligatorio',
             'edad.min' => 'La edad no puede ser menor a 1',
             'edad.max' => 'La edad no puede ser mayor a 99',
         ];

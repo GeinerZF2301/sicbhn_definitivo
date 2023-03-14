@@ -9,7 +9,7 @@
         </button>
         <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
-                <a href="{{ url('/') }}" class="nav-item nav-link active">Inicio</a>
+                <a href="{{ url('/') }}" class="nav-item nav-link ">Inicio</a>
                 <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">Voluntariados</a>
                 <a href="{{ url('/campannas') }}" class="nav-item nav-link">Campañas</a>
                 <a href="{{ url('/donaciones') }}" class="nav-item nav-link">Donaciones</a>
@@ -37,7 +37,7 @@
                     <a href="{{ route('register') }}" class="btn btn-success">Registrarse<i class="fa fa-right ms-0"></i></a>
                 @endif
             @else
-                <li class="nav-item dropdown">
+                
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                         data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ Auth::user()->name }}
@@ -54,7 +54,7 @@
                             @csrf
                         </form>
                     </div>
-                </li>
+                
             @endguest
 
         </div>
