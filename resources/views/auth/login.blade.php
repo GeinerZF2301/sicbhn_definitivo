@@ -103,7 +103,7 @@
                     <div class="form-outline mb-4">
                         <div class="row mb-3">
                            
-                            <div class="col-md-6">
+                            <div class="col-md-10">
                                 <input id="email" type="email" placeholder="Correo Electrónico" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')
@@ -122,7 +122,7 @@
 
                         <div class="row mb-3">
                             
-                            <div class="col-md-6">
+                            <div class="col-md-10">
                                 <input id="password" type="password" placeholder="Contraseña" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
                                 @error('password')
