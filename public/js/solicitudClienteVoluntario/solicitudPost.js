@@ -23,7 +23,7 @@ $(document).ready(function () {
             success: function(response) {
                 Swal.fire({
                     icon: 'success',
-                    padding: '5rem',
+                    padding: '4rem',
                     confirmButtonText: 'Aceptar',
                     confirmButtonColor: '#4CAF50',
                     title: response.success,
