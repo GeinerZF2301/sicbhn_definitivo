@@ -20,10 +20,11 @@ class VoluntariadoClienteController extends Controller
         $this->personaRepositorio = $personaRepositorio;
     }
     public function index(){
+        $sectionId = 'seccion-formulario';
         $tipoVoluntario = TipoPersona::select('id')->where('tipo_persona', 'Voluntario')->orWhere('tipo_persona', 'voluntario')->first();
         $voluntariadosDisponibles = Voluntariado::select('id','nombre', 'descripcion','ubicacion','fecha','hora','tipo_voluntariado')->
         where('estado', 1)->get();
-        return view('principal.voluntariado.voluntariado-index', compact('voluntariadosDisponibles', 'tipoVoluntario'));
+        return view('principal.voluntariado.voluntariado-index', compact('voluntariadosDisponibles', 'tipoVoluntario', 'sectionId'));
     }
 
     public function storeRequest(StorePersonaSolicitudRequest $request){

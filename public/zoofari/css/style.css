@@ -676,7 +676,7 @@ h2 {
 }
 
 .section-bg {
-  background-color: #b8efbb;;
+  background: linear-gradient(90deg, hsla(112, 44%, 50%, 1) 7%, hsla(105, 70%, 35%, 1) 100%);
 }
 
 .section-overlay {
@@ -1325,6 +1325,7 @@ transition: transform 0.3s ease;
 }
 
 .cardv{
+height: 350px;
 overflow: hidden;
 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 cursor: default;
