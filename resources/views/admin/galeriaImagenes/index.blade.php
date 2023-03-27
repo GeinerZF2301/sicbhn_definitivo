@@ -4,7 +4,7 @@
 <section>
     <div class="row mx-auto py-4 d-flex justify-content-center">
         <span class="mb-4 col-20">
-            <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Galeríaa del
+            <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Galería del
                 Corredor
                 Biológico</h1>
         </span>
