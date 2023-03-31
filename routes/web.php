@@ -24,14 +24,25 @@ use App\Http\Middleware\LocaleCookieMiddleware;
 
 //AQUI VAN LAS RUTAS DE VISTAS
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
 });
 
+
+
+
+
+Auth::routes(['verify' => true]);
+
+
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-    Route::get('/',[HomeController::class, 'index'])->name('home');
+    Route::get('/', function () {
+        return view('home');
+    });
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 
@@ -63,13 +74,6 @@ Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('camp
 
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
-
-
-
-Auth::routes(['verify' => true]);
-
-
-
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);

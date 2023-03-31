@@ -96,7 +96,7 @@
 
 
                 <div class="col-md-10">
-                    <input id="name" type="text" placeholder="Nombre completo" class="form-control @error('name') is-invalid @enderror form-control-lg" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                    <input id="name" type="text" placeholder="Nombre de Usuario" class="form-control @error('name') is-invalid @enderror form-control-lg" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                     @error('name')
                         <span class="invalid-feedback" role="alert">
