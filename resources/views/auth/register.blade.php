@@ -88,7 +88,7 @@
         <div class="col-12 col-md-9 col-lg-7 col-xl-6">
           <div class="card" style="border-radius: 15px;">
             <div class="card-body p-5">
-              <h2 class="text-uppercase text-center mb-5">Crear una cuenta</h2>
+              <h2 class="text-uppercase text-center mb-5 h1 fw-bold mb-0">Crear una cuenta</h2>
        
               <form method="POST" action="{{ route('register') }}">
                 @csrf
@@ -112,7 +112,7 @@
 
 
                 <div class="col-md-10">
-                    <input id="email" type="email" placeholder="Correo" class="form-control @error('email') is-invalid @enderror form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email">
+                    <input id="email" type="email" placeholder="Correo Electrónico" class="form-control @error('email') is-invalid @enderror form-control-lg" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -127,7 +127,7 @@
                
 
                 <div class="col-md-10">
-                    <input id="password" type="password" placeholder="Contrasenna" class="form-control @error('Contraseña') is-invalid @enderror form-control-lg" name="password" required autocomplete="new-password">
+                    <input id="password" type="password" placeholder="Contraseña" class="form-control @error('Contraseña') is-invalid @enderror form-control-lg" name="password" required autocomplete="new-password">
 
                     @error('password')
                         <span class="invalid-feedback" role="alert">
@@ -143,7 +143,7 @@
                 <div class="col-md-10">
                     
                     
-                        <input id="password-confirm" type="password" placeholder="Confirmar contrasenna" class="form-control form-control-lg" name="password_confirmation" required autocomplete="new-password">
+                        <input id="password-confirm" type="password" placeholder="Confirmar contraseña" class="form-control form-control-lg" name="password_confirmation" required autocomplete="new-password">
                    
                 </div>
 

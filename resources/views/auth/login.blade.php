@@ -76,17 +76,22 @@
 
 
 
-<section class="vh-100" style="background-color: #b3b0b1;">
+<section class="vh-100" style="  background-image: url('zoofari/img/Login/Osprey.jpg'); 
+background-repeat: no-repeat;
+background-size: cover; 
+background-position: center;">
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
+        <center>
         <div class="col col-xl-10">
-          <div class="card" style="border-radius: 1rem;">
+          <div class="card" style="border-radius: 1rem;   max-width: 500px;">
             <div class="row g-0">
-              <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="zoofari/img/SN.jpg"
-                  alt="login form" style="border-radius: 1rem 0 0 1rem; height: 100%;     max-width: 100%;" />
-              </div>
-              <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              {{-- <div class="col-md-6 col-lg-5 d-none d-md-block">
+                <img src="zoofari/img/Login/logfondo.jpg"
+                  alt="login form" style="border-radius: 1rem 0 0 1rem; height: 100%;     max-width: 100%; filter: blur(5px);" />
+              </div> --}}
+              <div class="">
+                
                 <div class="card-body p-4 p-lg-5 text-black">
   
                     <form method="POST" action="{{ route('login') }}">
@@ -95,14 +100,14 @@
   
                     <div class="d-flex align-items-center mb-3 pb-1">
                       <i class="fas fa-cubes fa-2x me-3" style="color: #ff6219;"></i>
-                      <span class="h1 fw-bold mb-0">Corredor Biólogico Hojancha Nandayures</span>
+                      <span class="h1 fw-bold mb-0">Corredor Biólogico Hojancha Nandayure</span>
                     </div>
   
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Iniciar sesión en su cuenta</h5>
                    
                     <div class="form-outline mb-4">
                         <div class="row mb-3">
-                           
+                           <center>
                             <div class="col-md-10">
                                 <input id="email" type="email" placeholder="Correo Electrónico" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
@@ -112,6 +117,7 @@
                                     </span>
                                 @enderror
                             </div>
+                        </center>
                         </div>
 
                     </div>
@@ -121,7 +127,7 @@
                     <div class="form-outline mb-4">
 
                         <div class="row mb-3">
-                            
+                            <center>
                             <div class="col-md-10">
                                 <input id="password" type="password" placeholder="Contraseña" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
 
@@ -131,6 +137,7 @@
                                     </span>
                                 @enderror
                             </div>
+                        </center>
                         </div>
 
                     </div>
@@ -158,8 +165,13 @@
                         {{ __('Olvidó su contraseña?') }}
                     </a>
                 @endif
-            </div>
+             </div>
 
+             <a class="btn btn-link" href="http://127.0.0.1:8000/register">
+                {{ __('¿Aún no tienes una cuenta? Regístrate Ahora') }}
+            </a>
+
+            
                   </form>
   
                 </div>
@@ -167,6 +179,7 @@
             </div>
           </div>
         </div>
+    </center>
       </div>
     </div>
   </section> 

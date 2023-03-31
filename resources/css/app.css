@@ -669,6 +669,8 @@ progress {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
+
+
 }
 .row > * {
   flex-shrink: 0;
@@ -10980,3 +10982,10 @@ background: #eee;
 
 
 
+.fondo-login{
+  background-image: url('zoofari/img/Login/logfondo.jpg'); 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  filter: blur(5px);
+}
