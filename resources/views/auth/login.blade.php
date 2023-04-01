@@ -167,7 +167,7 @@ background-position: center;">
                 @endif
              </div>
 
-             <a class="btn btn-link" href="http://127.0.0.1:8000/register">
+             <a class="btn btn-link" href="/register">
                 {{ __('¿Aún no tienes una cuenta? Regístrate Ahora') }}
             </a>
 
