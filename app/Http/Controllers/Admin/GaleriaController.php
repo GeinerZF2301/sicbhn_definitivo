@@ -30,7 +30,7 @@ class GaleriaController extends Controller
     public function index()
     {
        $imagenes = $this->galeriaRepositorio->allImages();
-        return view('admin.galeriaimagenes.index', compact('imagenes'));
+        return view('admin.galeriaImagenes.index', compact('imagenes'));
 
     }
     

@@ -19,7 +19,7 @@
                     Crear Imagen
                 </button>
                 @endcan
-                @include('admin.galeriaimagenes.createModal')
+                @include('admin.galeriaImagenes.createModal')
             </div>
         </div>
 
@@ -82,7 +82,7 @@
 
                 </div>
             </div>
-            @include('admin.galeriaimagenes.editModal')
+            @include('admin.galeriaImagenes.editModal')
         </div>
     </div>
 </section>
