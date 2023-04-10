@@ -12,7 +12,9 @@
             <a href="{{ url('/') }}" class="nav-item nav-link">{{ __('messages.NavBarInicio') }}</a>
             <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">{{ __('messages.NavBarVoluntariados') }}</a>
             <a href="{{ url('/campañas') }}" class="nav-item nav-link">{{ __('messages.NavBarCampaña') }}</a>
+            <a href="{{ url('/talleres') }}" class="nav-item nav-link">Talleres</a>
             <a href="{{ url('/donaciones') }}" class="nav-item nav-link">{{ __('messages.NavBarDonaciones') }}</a>
+            
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown">{{ __('messages.NavBarSobreNosotros') }}</a>
