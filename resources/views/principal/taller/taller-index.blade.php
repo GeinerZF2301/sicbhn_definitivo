@@ -167,9 +167,181 @@
             @endforeach
         </div>
     </div>  --}} 
+
+
+    
 <!-- FORMULARIO DE INSCRIPCIÓN -->
 
 
+
+{{-- 
+@auth
+
+
+<section class="section-padding section-bg" id="section_2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+
+                <img src="zoofari/img/voluntariado/Voluntariados9.jpg" class="custom-text-box-image img-fluid"
+                    alt="">
+            </div>
+
+            <div class="col-lg-6 col-12">
+                
+
+                <div id="seccion-formulario" class="col-12">
+                    <div class="custom-text-box">
+                        <div class="row g-5">
+                            <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                                <p><span class="text-primary me-2">#</span>Inscríbete</p>
+                                <h1 class="display-5 mb-4">Formulario para la inscripción</h1>
+                                <p class="mb-4">
+                                    Este formulario podrás participar en los voluntariados que
+                                    tenga el Corredor Biológico Hojancha-Nandayure.
+                                </p>
+                                <form id="requestForm">
+                                    @csrf
+                                    <p class="mb-4 text-dark">
+                                        Los campos con <span class="text-danger fs-5 fw-bolder">*</span> son
+                                        obligatorios
+                                    </p>
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <span id="nombre_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+                                                <input type="text" name="nombre"
+                                                    class="form-control bg-light border-0" id="nombre"
+                                                    placeholder="Your Name" />
+                                                <label for="nombre">Nombre</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="apellidos_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control bg-light border-0"
+                                                    id="apellidos" name="apellidos" placeholder="Your Lastname" />
+                                                <label for="apellidos">Apellidos</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="tipo_identificacion_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+                                                <select id="tipoIdentificacion"
+                                                    class="form-select bg-light form-select mb-3 "
+                                                    name="tipo_identificacion" aria-label=".form-select example"">
+                                                    <option selected>Selecciona una opcion</option>
+                                                    <option value=" Cedula Nacional">Cedula Nacional</option>
+                                                    <option value="Pasaporte">Pasaporte</option>
+                                                    <option value="Cedula de Residencia">Cedula de Residencia</option>
+                                                </select>
+                                                <label for="tipoidentificacion">Tipo de Identificacion</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="numero_identificacion_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+                                                <input type="text" class="form-control bg-light border-0"
+                                                    id="numeroIdentificacion" name="numero_identificacion"
+                                                    placeholder="Your Lastname" />
+                                                <label for="numeroIdentificacion">Numero de Identificacion</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="fecha_de_nacimiento_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+
+                                                <input type="date" name="fecha_de_nacimiento"
+                                                    class="form-control bg-light border-0" id="fechaNacimiento"
+                                                    placeholder="Your Lastname" />
+                                                <label for="lastname">Fecha de Nacimiento</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="edad_error" class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+
+                                            <div class="form-floating">
+                                                <input type="int" class="form-control bg-light border-0"
+                                                    id="edad" name="edad" placeholder="Your Lastname" />
+                                                <label for="lastname">Edad</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <span id="pais_error" class="text-danger fw-bolder error-messages"></span>
+                                            <div class="form-floating">
+
+                                                <input type="text" class="form-control bg-light border-0"
+                                                    id="pais" name="pais" placeholder="Your Lastname" />
+                                                <label for="lastname">Pais</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="ciudad_error"
+                                                class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+
+                                                <input type="int" class="form-control bg-light border-0"
+                                                    id="ciudad" name="ciudad" placeholder="Your Lastname" />
+                                                <label for="provincia">Provincia o Ciudad </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-floating">
+                                                <input type="int" class="form-control bg-light border-0"
+                                                    id="calle" name="calle" placeholder="Your Lastname" />
+                                                <label for="lastname">Distrito o Calle <span
+                                                        class="fs-6 text-secondary fw-light"> ( Opcional )</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <span id="voluntariado_id_error" class="text-danger fw-bolder error-messages"></span>
+                                            <span class="text-danger fs-5 ">*</span>
+                                            <div class="form-floating">
+                                                <select id="voluntariado_id" name="voluntariado_id" class="form-select bg-light mb-3" aria-label="Voluntariado a inscribirse">
+                                                    <option selected>Selecciona una opcion</option>
+                                                    @foreach ($voluntariadosDisponibles as $voluntariadoDisponible)
+                                                        <option value="{{ $voluntariadoDisponible->id }}">{{ $voluntariadoDisponible->nombre }}</option>
+                                                    @endforeach
+                                                </select>
+                                                <label for="voluntariado_id">Voluntariado a inscribirse</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                    <input type="hidden" id="estado" name="estado" />
+                                    <input type="hidden" id="tipo_persona_id" value="{{ $tipoVoluntario->id }}"
+                                        name="tipo_persona_id" />
+
+                                    <div class=" mt-2 col-12">
+                                        <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
+                                            Enviar
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+@endauth --}}
 
 <!-- About End -->
 <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
