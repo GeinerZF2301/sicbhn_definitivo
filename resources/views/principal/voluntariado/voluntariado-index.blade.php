@@ -229,15 +229,7 @@
                     </div>
 
                     <div class="col-lg-6 col-12">
-                        <!-- <div class="custom-text-box">
-                                                                                <h2 class="mb-2">Our Story</h2>
-
-                                                                                <h5 class="mb-3">Kind Heart Charity, Non-Profit Organization</h5>
-
-                                                                                <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites.
-                                                                                    You can feel free to use it. Please tell your friends about TemplateMo website. Thank
-                                                                                    you.</p>
-                                                                            </div> -->
+                        
 
                         <div id="seccion-formulario" class="col-12">
                             <div class="custom-text-box">

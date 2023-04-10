@@ -149,10 +149,10 @@
         <div class="container">
             <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="col-lg-6">
-                    <p><span class="text-primary me-2">#</span>Nuestros servicios</p>
+                    <p><span class="text-primary me-2">#</span>Nuesta red</p>
                     <h1 class="display-5 mb-0">
-                        Ven a conocer más acerca de los servicios del
-                        <span class="text-primary">Corredor Biológico</span>
+                        Ven a conocer más acerca de los servicios de
+                        <span class="text-primary">Monte Alto</span>
                     </h1>
                 </div>
                 <div class="col-lg-6">
@@ -168,9 +168,9 @@
             <div class="row gy-5 gx-4">
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
-                    <h5 class="mb-3">Fotografías</h5>
-                    <span>Dentro de las instalaciones verdes puedes tomar fotografías,
-                        para que puedas conservar tu experiencia.</span>
+                    <h5 class="mb-3">Tomar Fotografías</h5>
+                    <span>Dentro de las instalaciones verdes puedes tomar tus propias fotografías,
+                        para conservar tu experiencia.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />

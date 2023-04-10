@@ -70,6 +70,10 @@ Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
 });
 
+Route::get('/talleres', function () {
+    return view('principal/taller.taller-index');
+});
+
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
