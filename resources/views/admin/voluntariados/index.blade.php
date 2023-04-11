@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 @section('content')
     <section>
         <div class="row mx-auto py-4 d-flex justify-content-center">
@@ -11,16 +11,19 @@
                 <span class="fw-light fs-6">Gestion de los voluntariados del Corredor Biologico</span>
             </div>
             <div class="row">
-                <div class="d-flex justify-content-between mt-2 ">
+                <div class="d-flex justify-content mt-2 ">
                 @can('crear-Voluntarios')
-                    <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    <button id="create-button" type="button" class="btn btn-success mx-2"  data-bs-toggle="modal"
                         data-bs-target="#createModal">
                         Crear voluntariado
                     </button>
                   @endcan  
                     @include('admin.voluntariados.createModal')
+                    
+                    <a href="PDF/reporteVoluntarios.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    
                 </div>
-            </div>
+            </div>
 
             <div class="table-container ">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
