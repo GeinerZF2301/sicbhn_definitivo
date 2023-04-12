@@ -19,19 +19,34 @@ use App\Http\Controllers\Cliente\GaleriaClienteController;
 use App\Http\Controllers\Cliente\VoluntariadoClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\ContactController;
 
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
 
-Route::get('/',[HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
 });
 
+
+Route::get('/contactos', [ContactController::class, 'index'])->name('contact.index');
+    
+Route::post('/contactos', [ContactController::class, 'store'])->name('contact.store');
+
+Auth::routes(['verify' => true]);
+
+
 Route::middleware(LocaleCookieMiddleware::class)->group(function () {
-    Route::get('/',[HomeController::class, 'index'])->name('home');
+    Route::get('/', function () {
+        return view('home');
+    });
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 
@@ -59,17 +74,14 @@ Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
 });
 
+Route::get('/talleres', function () {
+    return view('principal/taller.taller-index');
+});
+
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
-
-
-
-Auth::routes(['verify' => true]);
-
-
-
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles', RolController::class);

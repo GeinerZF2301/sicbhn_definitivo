@@ -73,18 +73,18 @@
 
 
     <div class="container mt-5 mb-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row  g-3 d-flex justify-content-md-center justify-content-lg-start">
 
             @foreach ($voluntariadosDisponibles as $voluntariadosDisponible)
-                <div class="col-sm-12 col-md-6  col-lg-4">
+                <div class="col-sm-12 col-md-8  col-lg-4">
 
                     <div class="cardv">
                         <div class="cardv-title mt-2">
                             <input id="id" class="id" name="id" type="hidden"
                                 value="{{ $voluntariadosDisponible->id }}">
-                            <h5 class="text-center"> ¡Voluntariado en <span style="color:#028A0F "
+                            <h5 class="text-center"> ¡ <span style=" color:#028A0F "
                                     class="nombreVoluntariado">
-                                    {{ $voluntariadosDisponible->nombre }}</span>
+                                    {{ $voluntariadosDisponible->nombre }}</span>!
                             </h5>
                         </div>
                         <div class="cardv-body">
@@ -118,8 +118,8 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
-                                    <p>{{ $voluntariadosDisponible->descripcion }}</p>
+                                <div class="col-12 me-2px ms-2px">
+                                    <p class="descripcion ">{{ $voluntariadosDisponible->descripcion }}</p>
                                 </div>
                             </div>
                             @auth
@@ -229,15 +229,7 @@
                     </div>
 
                     <div class="col-lg-6 col-12">
-                        <!-- <div class="custom-text-box">
-                                                                                <h2 class="mb-2">Our Story</h2>
-
-                                                                                <h5 class="mb-3">Kind Heart Charity, Non-Profit Organization</h5>
-
-                                                                                <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites.
-                                                                                    You can feel free to use it. Please tell your friends about TemplateMo website. Thank
-                                                                                    you.</p>
-                                                                            </div> -->
+                        
 
                         <div id="seccion-formulario" class="col-12">
                             <div class="custom-text-box">

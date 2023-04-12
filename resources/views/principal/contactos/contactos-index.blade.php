@@ -73,47 +73,53 @@
                     <p><span class="text-primary me-2">#</span>Contáctanos</p>
                     <h1 class="display-5 mb-4">¿Tienes alguna duda? ¡Escríbenos!</h1>
                     <p class="mb-4">
-                        The contact form is currently inactive. Get a functional and
-                        working contact form with Ajax & PHP in a few minutes. Just copy
-                        and paste the files, add a little code and you're done.
-                        <a href="https://htmlcodex.com/contact-form">Download Now</a>.
+                        
                     </p>
-                    <form>
+                    <form action="{{route('contact.store')}}" method="POST">
+                        @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="name"
-                                        placeholder="Your Name" />
+                                    <input type="text" class="form-control bg-light border-0" name="name"
+                                        placeholder="Escriba su nombre"required>
                                     <label for="name">Nombre</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control bg-light border-0" id="email"
-                                        placeholder="Your Email" />
+                                    <input type="email" class="form-control bg-light border-0" name="email"
+                                        placeholder="Your Email"required>
                                     <label for="email">Correo Electrónico</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control bg-light border-0" id="subject"
-                                        placeholder="Subject" />
+                                    <input type="text" class="form-control bg-light border-0" name="subject"
+                                        placeholder="Subject" required>
                                     <label for="subject">Asunto</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
+                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message"
+                                        style="height: 100px"required></textarea>
                                     <label for="message">Mensaje</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100 py-3" type="submit">
-                                    Enviar
-                                </button>
+                                @auth
+                                    {{-- // The user is authenticated... --}}
+                                    <button id="btn-scroll" class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
+                                @endauth
+
+                                @guest
+                                    {{-- // The user is not authenticated... --}}
+                                    <a href="{{ route('login') }}?redirect={{ url()->current() }}"
+                                        class="btn btn-primary w-100 py-3">Registrate ahora</a>
+                                @endguest
                             </div>
                         </div>
+                        
                     </form>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">

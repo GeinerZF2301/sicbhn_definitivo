@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 @section('content')
 <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
@@ -11,13 +11,15 @@
                 <span class="fw-light fs-6">Gestión de los usuarios</span>
             </div>
 
-        <div class="row">
-                <div  class="d-flex justify-content-between mt-2 ">
-                    <div align="right">
+            <div class="row">
+                <div class="d-flex justify-content mt-2 ">
+                    
                         @can('crear-usuario') 
-                        <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-primary"> <i class="fas fa-plus"></i>  Crear usuario</a>
+                        <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-success"> <i class="fas fa-plus"></i>  Crear usuario</a>
                         @endcan
-                    </div>
+                        <a style="margin-bottom: 1rem;" href="PDF/reporteUsuarios.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    
+                    
                 </div>
         </div> 
 

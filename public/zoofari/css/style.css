@@ -171,10 +171,13 @@
     background-size: cover;
 }
 /*Header de Voluntariados*/
-/*Header de Voluntariados*/
-/*ESTO TIENE QUE IR EN LA LÍNEA 173*/
 .header-bgV {
   background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/voluntariado/Voluntariados3.jpg) center center no-repeat;
+  background-size: cover;
+}
+/*Header de Talleres*/
+.header-bgT {
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/talleres/Taller2.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -419,8 +422,9 @@
 
 /*** Animal ***/
 .animal-item {
-    position: relative;
-    display: block;
+  margin: 0 10px;
+  position: relative;
+  display: block;
 }
 
 .animal-item .animal-text {
@@ -879,7 +883,64 @@ outline: none;
     color: var(--primary);
 }
 
+/*Talleres*/
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 5px;
+  left: 0;
+  bottom: 0;
+  background: var(--primary);
+  border-radius: 2px;
+}
 
+.section-title.text-center::before {
+  left: 50%;
+  margin-left: -75px;
+}
+
+.section-title.section-title-sm::before {
+  width: 90px;
+  height: 3px;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 5px;
+  bottom: 0px;
+  background: #FFFFFF;
+  -webkit-animation: section-title-run 5s infinite linear;
+  animation: section-title-run 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+  width: 4px;
+  height: 3px;
+}
+
+.section-title.text-center::after {
+  -webkit-animation: section-title-run-center 5s infinite linear;
+  animation: section-title-run-center 5s infinite linear;
+}
+
+.section-title.section-title-sm::after {
+  -webkit-animation: section-title-run-sm 5s infinite linear;
+  animation: section-title-run-sm 5s infinite linear;
+}
+@-webkit-keyframes section-title-run {
+  0% {left: 0; } 50% { left : 145px; } 100% { left: 0; }
+}
+
+@-webkit-keyframes section-title-run-center {
+  0% { left: 50%; margin-left: -75px; } 50% { left : 50%; margin-left: 45px; } 100% { left: 50%; margin-left: -75px; }
+}
+
+@-webkit-keyframes section-title-run-sm {
+  0% {left: 0; } 50% { left : 85px; } 100% { left: 0; }
+}
 
 /*Campannas*/
 header.campannas .masthead-subheading {
@@ -1330,12 +1391,21 @@ overflow: hidden;
 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 cursor: default;
 transition: all 400ms ease;
+overflow-wrap: break-word;
+}
+
+.descripcion{
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .cardv:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-3%);
 }
 
+.nombreVoluntariado{
+  margin-top:3px
+}
 .cardv-body{
   text-align: center;
 }
@@ -1345,3 +1415,23 @@ transition: all 400ms ease;
   justify-content: center;
   align-items: center;
 }
+
+/*Login cards*/
+
+
+.carddd{
+
+overflow: hidden;
+background-color: #ffffff; 
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+cursor: default;
+border-radius: 1rem;
+}
+
+
+.imagen img {
+object-fit: cover;
+width:100%;
+height:100%;
+}
+

@@ -37,7 +37,7 @@
         <li class="nav-item">
           <a class="nav-link" href="/admin">
             <i class="mdi mdi-border-all menu-icon"></i>
-            <span class="menu-title">Inicio </span>
+            <span class="menu-title">Inicio</span>
           </a>
         </li>
         <li class="nav-item sidebar-category">
