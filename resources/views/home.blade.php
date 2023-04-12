@@ -81,9 +81,10 @@
                     <p class="mb-4">
                         El Corredor Biológico Hojancha-Nandayure (CBHN) se encuentra ubicado en los Cantones de
                         Hojancha y Nandayure en la provincia de Guanacaste. <br>
-                        Dentro del Corredor Biológico existe una gran biodiversidad de flora y fauna.
+                        donde existe una gran biodiversidad de flora y fauna, sé parte de la familia de este Corredor Biológico.
                         Te invitamos a conocer más acerca de nuestras actividades y conectarte con la naturaleza.
-                        Sé parte de la familia del Corredor Biológico Hojancha-Nandayure.
+                    
+                        
                     </p>
                     <h5 class="mb-3">
                         <i class="far fa-check-circle text-primary me-3"></i>Voluntariados
