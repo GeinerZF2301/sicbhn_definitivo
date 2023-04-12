@@ -19,6 +19,9 @@ use App\Http\Controllers\Cliente\GaleriaClienteController;
 use App\Http\Controllers\Cliente\VoluntariadoClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Mail;
+use App\Http\Controllers\ContactController;
 
 
 
@@ -33,8 +36,9 @@ Route::get('/locale/{locale}', function($locale){
 });
 
 
-
-
+Route::get('/contactos', [ContactController::class, 'index'])->name('contact.index');
+    
+Route::post('/contactos', [ContactController::class, 'store'])->name('contact.store');
 
 Auth::routes(['verify' => true]);
 
@@ -68,6 +72,10 @@ Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'st
 
 Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
+});
+
+Route::get('/talleres', function () {
+    return view('principal/taller.taller-index');
 });
 
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
