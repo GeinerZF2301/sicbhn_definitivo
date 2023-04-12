@@ -15,4 +15,9 @@ class DonacionMonetaria extends Model
         'monto',
         'persona_donante_id'
     ];
+
+    public function personaDonante()
+    {
+        return $this->belongsTo(DonacionMonetaria::class,'persona_donante_id');
+    }
 }

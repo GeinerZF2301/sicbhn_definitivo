@@ -113,6 +113,10 @@
               <li class="nav-item"> <a class="nav-link" href="{{ url('/voluntariados') }}">Gestión de los
                   voluntariados</a></li>
             @endcan
+            
+            <li class="nav-item"> <a class="nav-link" href="{{ url('/gestiontalleres') }}">Gestión de los
+                Talleres</a></li>
+            
             </ul>
           </div>
         </li>

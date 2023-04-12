@@ -44,8 +44,8 @@ class ArticuloController extends Controller
     {
         try{
             $id = intval($request->id);
-            $persontype = $this->articuloRepositorio->findArticle($id);
-            return response()->json($persontype);
+            $article = $this->articuloRepositorio->findArticle($id);
+            return response()->json($article);
         }catch(Exception $e){
             return response()->json([
                 'error' => 'Ha ocurrido un error' . $e->getMessage()

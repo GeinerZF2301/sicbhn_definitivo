@@ -17,7 +17,7 @@ class FileUploadService
      */
     public function uploadFile(UploadedFile $file, $disk, $path, $fileName = null)
     {
-        if ($fileName === null) {
+        if (!$fileName) {
             $fileName = uniqid('', true).'.'.$file->getClientOriginalExtension();
         }
         $fileName . $file->getClientOriginalExtension();

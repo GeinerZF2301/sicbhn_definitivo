@@ -15,8 +15,10 @@ use App\Http\Controllers\Admin\ArticuloController;
 use App\Http\Controllers\Admin\DonacionMonetariaController;
 use App\Http\Controllers\Admin\DonacionEspecieController;
 use App\Http\Controllers\Admin\CuentaBancariaController;
+use App\Http\Controllers\Admin\TallerController;
 use App\Http\Controllers\Cliente\GaleriaClienteController;
 use App\Http\Controllers\Cliente\VoluntariadoClienteController;
+use App\Http\Controllers\Cliente\TallerClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 use App\Mail\ContactMail;
@@ -66,16 +68,13 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     });
 
     Route::get('/voluntariado', [VoluntariadoClienteController::class, 'index'])->name('index');
+    Route::get('/talleres', [TallerClienteController::class, 'index'])->name('index');
 });
 
 Route::post('/solicitudvoluntariado', [VoluntariadoClienteController::class, 'storstoreSolicitudPersona'])->name('store');
 
 Route::get('/horavisita', function () {
     return view('principal/horavisita.horavisita-index');
-});
-
-Route::get('/talleres', function () {
-    return view('principal/taller.taller-index');
 });
 
 Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('campannacliente');
@@ -99,6 +98,7 @@ Route::group(['middleware' => ['auth']], function() {
     // Rutas para el modulo de Donacion Monetaria
     Route::get('/donacionMonetaria',[DonacionMonetariaController::class,'index'])->name('donacionMonetaria');
     Route::post('/donacionMonetaria/store',[DonacionMonetariaController::class,'store'])->name('donacionMonetaria.store');
+    Route::get('/donacionMonetaria/create',[DonacionMonetariaController::class,'create'])->name('donacionMonetaria.create');
     Route::get('/donacionMonetaria/{id}/edit',[DonacionMonetariaController::class,'edit'])->name('donacionMonetaria.edit');
     Route::post('/donacionMonetaria/update/{id}',[DonacionMonetariaController::class,'update'])->name('donacionMonetaria.update');
     Route::delete('/donacionMonetaria/delete/{id}',[DonacionMonetariaController::class,'delete'])->name('donacionMonetaria.delete');
@@ -111,7 +111,18 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/cuentaBancaria/update/{id}',[CuentaBancariaController::class,'update'])->name('cuentaBancaria.update');
     Route::delete('/cuentaBancaria/delete/{id}',[CuentaBancariaController::class,'delete'])->name('cuentaBancaria.delete');
     Route::get('/cuentaBancaria/{id}/show',[CuentaBancariaController::class,'show'])->name('cuentaBancaria.show');
+ //Rutas para el modulo Campañas
+    Route::get('/gestiontalleres',[TallerController::class,'index'])->name('talleres');
+    Route::post('/talleres/store',[TallerController::class,'store'])->name('talleres.store');
+    Route::get('/talleres/{id}/edit',[TallerController::class,'edit'])->name('talleres.edit');
+    Route::post('/talleres/update/{id}',[TallerController::class,'update'])->name('talleres.update');
+    Route::delete('/talleres/delete/{id}',[TallerController::class,'delete'])->name('talleres.delete');
+    Route::get('/talleres/{id}/show',[TallerController::class,'show'])->name('talleres.show');
+    //Ruta para validar que no se pueda crear una campaña si ya existe una previamente con una misma fecha y hora
+    Route::post('/validartaller', [TallerController::class,'validarTaller']); 
 
+
+   
     // Rutas para el modulo de Tipos de Persona
     Route::get('/tipospersonas',[TipoPersonaController::class,'index'])->name('tipospersonas');
     Route::post('/tipospersonas/store',[TipoPersonaController::class,'store'])->name('tipospersonas.store');
@@ -166,6 +177,13 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
     Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
     Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');
+//rutas para formulario de talleres
+    Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
+    Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
+    Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
+    Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
+    Route::post('/solicitud/nuevoparticipantetaller',[TallerClienteController::class,'storeRequest'])->name('talleres.storeRequest');
+
 
     Route::get('/articulos',[ArticuloController::class,'index'])->name('articulos');
     Route::post('/articulos/store',[ArticuloController::class,'store'])->name('articulos.store');

@@ -13,15 +13,15 @@
                         <input type="hidden" name="id" id="edit-id">
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Entidad Bancaria</label>
-                            <input type="text" class="form-control" name="entidadBancaria" id="edit_entidadBancaria"
+                            <input type="text" class="form-control" name="entidad_bancaria" id="edit_entidad_bancaria"
                                 placeholder="Escriba el nombre de la entidad bancaria">
-                            <span id="edit_entidadBancaria_error" class="text-danger error-messages"></span>
+                            <span id="edit_entidad_bancaria_error" class="text-danger error-messages"></span>
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Número de Cuenta</label>
-                            <input type="text" class="form-control" name="numeroCuenta" id="edit_numeroCuenta"
+                            <input type="text" class="form-control" name="numero_cuenta" id="edit_numero_cuenta"
                                 placeholder="Escriba el número de cuenta">
-                            <span id="edit_numeroCuenta_error" class="text-danger fw-bolder error-messages"></span>
+                            <span id="edit_numero_cuenta_error" class="text-danger fw-bolder error-messages"></span>
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Estado</label>

@@ -34,7 +34,7 @@ class DonacionMonetariaController extends Controller
         try{
             $personasDonantes =  DB::table('personas as p')->select('p.id', 'p.nombre', 'p.apellidos', 
             'tp.id as tipo_persona_id', 'tp.tipo_persona')
-            ->join('tipos_personas as tp', 'p.tipo_persona_id', '=', 'tp.id')
+            ->join('tipo_personas as tp', 'p.tipo_persona_id', '=', 'tp.id')
             ->where(function ($query) {
                 $query->where('tp.tipo_persona', '=', 'Donante')
                 ->orWhere('tp.tipo_persona', '=', 'donante');
