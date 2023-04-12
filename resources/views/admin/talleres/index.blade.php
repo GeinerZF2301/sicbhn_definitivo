@@ -4,22 +4,21 @@
     <section>
         <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
-                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Cuentas Bancarias del
-                    Corredor
+                <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Talleres del Corredor
                     Biológico</h1>
             </span>
             <div class="row mb-2">
-                <span class="fw-light fs-6">Gestión de las Cuentas Bancarias</span>
+                <span class="fw-light fs-6">Gestion de los talleres del Corredor Biologico</span>
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
-                    @can('crear-CuentasBancarias')
+                    @can('crear-Voluntarios')
                         <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#createModal">
-                            Agregar Cuentas Bancarias
+                            Crear taller
                         </button>
                     @endcan
-                    @include('admin.cuentaBancaria.createModal')
+                    @include('admin.talleres.createModal')
                 </div>
             </div>
 
@@ -30,44 +29,32 @@
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
                                     <th scope="col">ID</th>
-                                    <th scope="col">Entidad Bancaria</th>
-                                    <th scope="col">Número de Cuenta</th>
-                                    <th scope="col">Estado </th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Descripcion</th>
                                     <th scope="col">acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($articulos as $articulo)
+                                @foreach ($talleres as $taller)
                                     <tr class="text-center">
                                         <td class="id" name="id" class="budget">
-                                            {{ $articulo->id }}
+                                            {{ $taller->id }}
                                         </td>
                                         <td name="tipo_persona" class="budget">
-                                            {{ $articulo->entidad_bancaria }}
+                                            {{ $taller->nombre }}
                                         </td>
                                         <td name="descripcion" class="budget">
-                                            {{ $articulo->numero_cuenta }}
+                                            {{ $taller->descripcion }}
                                         </td>
-                                        @if ($articulo->estado == 1)
-                                            <td name="estado" class="budget">
-                                                Activo
-                                            </td>
-                                        @else
-                                            <td name="estado" class="budget">
-                                                Inactivo
-                                            </td>
-                                        @endif
-
-
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
-                                                @can('editar-CuentasBancarias')
+                                                @can('editar-Voluntarios')
                                                     <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                                         class="editBtn rounded btn btn-warning">Editar</button>
                                                 @endcan
                                                 <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
-                                                @can('borrar-CuentasBancarias')
+                                                @can('borrar-Voluntarios')
                                                     <button type="submit"
                                                         class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                 @endcan
@@ -75,19 +62,20 @@
                                         </div>
                                     </tr>
                                 @endforeach
+
                             </tbody>
                         </table>
 
                     </div>
                 </div>
-                @include('admin.cuentaBancaria.editModal')
-                @include('admin.cuentaBancaria.showModal')
+                @include('admin.talleres.editModal')
+                @include('admin.talleres.showModal')
             </div>
         </div>
     </section>
 @endsection
 
 @section('js')
+    <script src="js/talleres/upsert.js"></script>
     <script src="js/utilities/dataTable.js"></script>
-    <script src="js/cuentas_bancarias/upsert.js"></script>
 @endsection

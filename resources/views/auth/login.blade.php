@@ -144,7 +144,7 @@ background-position: center;">
                
   
                     <div class="pt-1 mb-4">
-                      <button class="btn btn-dark btn-lg btn-block" type="submit"> {{ __('Iniciar Sesión') }}</button>
+                      <button class="btn btn-dark btn-lg btn-block " type="submit"> {{ __('Iniciar Sesión') }}</button>
                     </div>
   
                 
@@ -161,14 +161,15 @@ background-position: center;">
                       
 
                     @if (Route::has('password.request'))
-                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                        {{ __('Olvidó su contraseña?') }}
+                    <a class="btn btn-link text-decoration-none" href="{{ route('password.request') }}">
+                        {{ __('¿Olvidó su contraseña?') }}
                     </a>
                 @endif
              </div>
 
-             <a class="btn btn-link" href="/register">
-                {{ __('¿Aún no tienes una cuenta? Regístrate Ahora') }}
+             <a class=" mt-4 btn btn-link text-decoration-none" href="/register">
+                <span class="text-dark text-decoration-none">¿Aún no tienes una cuenta?</span>
+                Regístrate Ahora
             </a>
 
             

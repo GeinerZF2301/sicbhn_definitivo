@@ -17,13 +17,13 @@
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Entidad Bancaria</label>
-                            <input type="text" class="form-control" name="entidadBancaria" id="show_entidadBancaria"
+                            <input type="text" class="form-control" name="entidad_bancaria" id="show_entidad_bancaria"
                              disabled>
                             
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput3" class="form-label">Número de Cuenta</label>
-                            <input type="text" class="form-control" name="numeroCuenta" id="show_numeroCuenta"
+                            <input type="text" class="form-control" name="numero_cuenta" id="show_numero_cuenta"
                              disabled>
                         </div>
                         <div class="mb-3">

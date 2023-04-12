@@ -6,7 +6,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="create-modal-title"></h5>
+                        <h5 class="modal-title" id="edit-modal-title"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
@@ -24,7 +24,7 @@
                                 <div class="d-flex-justify-content-center">
                                     <div class="mb-3">
                                         <label for="formGroupExampleInput2" class="form-label">Fecha de Donación</label>
-                                        <input type="date" class="form-control" name="fechaDonacion" id="edit_fechaDonacion"
+                                        <input type="date" class="form-control" name="fecha_donacion" id="edit_fecha_donacion"
                                             placeholder="Escriba la fecha de la donación">
                                         <span id="fechaDonacion_error" class="text-danger fw-bolder error-messages"></span>
                                     </div>
@@ -33,27 +33,31 @@
                                 <div class="d-flex-justify-content-center">
                                     <div class="mb-3">
                                         <label for="formGroupExampleInput2" class="form-label">Fecha de Recepción</label>
-                                        <input type="date" class="form-control" name="fechaRecepcion" id="edit_fechaRecepcion"
+                                        <input type="date" class="form-control" name="fecha_recibido" id="edit_fecha_recibido"
                                             placeholder="Escriba la fecha de recepción">
                                         <span id="fechaRecepcion_error" class="text-danger fw-bolder error-messages"></span>
                                     </div>
                                 </div>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Descripción</label>
+                                    <input type="text" class="form-control" name="descripcion" id="edit_descripcion"
+                                        placeholder="Escriba una pequeña descripción">
+                                    <span id="descripcion_error" class="text-danger fw-bolder error-messages"></span>
+                                </div> 
                                 <div class="mb-3 mt-2">
                                     <label for="formGroupExampleInput" class="form-label">Monto</label>
                                     <input type="text" class="form-control" name="monto" id="edit_monto"
                                         placeholder="Escriba la cantidad de la donación">
                                     <span id="monto_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
-
-
-                                <div class="mb-3 mt-2">
-                                    <label for="formGroupExampleInput" class="form-label">Donante</label>
-                                    <input type="text" class="form-control" name="donante" id="edit_donante"
-                                        placeholder="Escriba el id del Donante">
-                                    <span id="donante_error" class="text-danger fw-bolder error-messages"></span>
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput2" class="form-label">Donante </label>
+                                    <select class="tipoPersona_id  form-select form-select-sm" name="persona_donante_id"
+                                        id="edit_persona_donante_id" aria-label=".form-select-sm example">
+                                        <option selected>Selecciona una opcion</option>
+                                    </select>
+                                    <span id="persona_donante_id_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
-
-
 
                         </div>
                         
@@ -62,7 +66,7 @@
 
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                        <button type="submit" id="saveBtn" class="save-Btn btn btn-primary">Guardar</button>
+                                        <button type="submit" id="updateBtn" class="updateBtn btn btn-primary">Guardar</button>
                                     </div>
                 </div>
              </div>
