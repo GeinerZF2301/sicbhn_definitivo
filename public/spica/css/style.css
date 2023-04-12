@@ -20507,7 +20507,9 @@ dl li {
 /* Sidebar */
 .sidebar {
   min-height: calc(100vh - 65px);
-  background: #2eb872;
+  background: rgb(34,135,42);
+  background: linear-gradient(90deg, rgba(34,135,42,1) 0%, rgba(56,170,47,1) 41%, rgba(41,170,64,1) 100%);
+  
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   padding: 0;

@@ -1,5 +1,6 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-@charset "UTF-8"; /*!
+ /*!
  * Bootstrap  v5.2.1 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
@@ -2202,7 +2203,7 @@ textarea.form-control-lg {
   margin-bottom: 0.125rem;
 }
 .form-check .form-check-input {
-  float: left;
+  float: inherit;
   margin-left: -1.5em;
 }
 
@@ -2761,7 +2762,7 @@ textarea.form-control-lg {
 }
 
 .btn {
-  --bs-btn-padding-x: 0.75rem;
+
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
   --bs-btn-font-size: 0.9rem;
@@ -8024,11 +8025,11 @@ textarea.form-control-lg {
   word-break: break-word !important;
 }
 
-/* rtl:end:remove */
+/* rtl:end:remove 
 .text-primary {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
+}*/
 
 .text-secondary {
   --bs-text-opacity: 1;
@@ -10903,6 +10904,10 @@ textarea.form-control-lg {
   font-size: 0.875rem !important;
 }
 
-
-
+.btnregister {
+  border-radius: 3px;
+  box-shadow: rgba(0, 2, 0, 0.05);
+  background-color: #258F0A;
+  padding: 4px 2rem;
+}
 

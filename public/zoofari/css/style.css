@@ -1331,12 +1331,21 @@ overflow: hidden;
 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 cursor: default;
 transition: all 400ms ease;
+overflow-wrap: break-word;
+}
+
+.descripcion{
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .cardv:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
   transform: translateY(-3%);
 }
 
+.nombreVoluntariado{
+  margin-top:2px
+}
 .cardv-body{
   text-align: center;
 }
@@ -1346,3 +1355,23 @@ transition: all 400ms ease;
   justify-content: center;
   align-items: center;
 }
+
+/*Login cards*/
+
+
+.carddd{
+
+overflow: hidden;
+background-color: #ffffff; 
+box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+cursor: default;
+border-radius: 1rem;
+}
+
+
+.imagen img {
+object-fit: cover;
+width:100%;
+height:100%;
+}
+
