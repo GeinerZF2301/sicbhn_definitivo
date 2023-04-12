@@ -11,15 +11,15 @@
                 <span class="fw-light fs-6">Gestión de los usuarios</span>
             </div>
 
-        <div class="row">
-                <div  class="d-flex justify-content-between mt-2 ">
-                    <div align="right">
-                        @can('crear-usuario') 
-                        <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-primary"> <i class="fas fa-plus"></i>  Crear usuario</a>
-                        @endcan
-                        <a href="PDF/reporteUsuarios.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+            <div class="row">
+                <div class="d-flex justify-content mt-2 ">
                     
-                    </div>
+                        @can('crear-usuario') 
+                        <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-success"> <i class="fas fa-plus"></i>  Crear usuario</a>
+                        @endcan
+                        <a style="margin-bottom: 1rem;" href="PDF/reporteUsuarios.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    
+                    
                 </div>
         </div> 
 
