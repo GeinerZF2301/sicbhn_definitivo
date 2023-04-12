@@ -1335,8 +1335,8 @@ overflow-wrap: break-word;
 }
 
 .descripcion{
-  margin-left: 2px;
-  margin-right: 2px;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 .cardv:hover{
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);

@@ -73,10 +73,10 @@
 
 
     <div class="container mt-5 mb-5">
-        <div class="row  g-3">
+        <div class="row  g-3 d-flex justify-content-md-center justify-content-lg-start">
 
             @foreach ($voluntariadosDisponibles as $voluntariadosDisponible)
-                <div class="col-sm-12 col-md-6  col-lg-4">
+                <div class="col-sm-12 col-md-8  col-lg-4">
 
                     <div class="cardv">
                         <div class="cardv-title mt-2">
