@@ -25,8 +25,9 @@
             <div class="table-container ">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                     <div class="">
-                        <table id="dataTable" class="table table-hover  align-items-center">
-                            <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
+                        <div class="table-responsive">
+                        <table id="dataTable" class="table table-hover align-items-center">
+                        <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6">
                                 <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Nombre</th>
@@ -36,38 +37,33 @@
                                     <th scope="col">acciones</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody>  
                                 @foreach ($personas as $persona)
-                                    <tr class="text-center">
-                                        <td class="id" name="id" class="budget">
-                                            {{ $persona->id }}
-                                        </td>
-                                        <td name="tipo_persona" class="budget">
-                                            {{ $persona->nombre }}
-                                        </td>
-                                        <td name="descripcion" class="budget">
-                                            {{ $persona->apellidos }}
-                                        </td>
-                                        <td name="numero_identificacion" class="budget">
-                                            {{ $persona->numero_identificacion }}
-                                        </td>
+                                        <tr>
+                                     {{-- <tr class="text-center"> --}}
+                                        <td class="id" name="id" class="budget">{{ $persona->id }}</td>
+                                        <td name="tipo_persona" class="budget">{{ $persona->nombre }}</td>
+                                        <td name="descripcion" class="budget">{{ $persona->apellidos }}</td>
+                                        <td name="numero_identificacion" class="budget"> {{ $persona->numero_identificacion }}</td>
                                         <td name="tipo_persona" class="budget">
                                             <span class="bg-success text-light rounded-pill p-2"> {{ $persona->estado }} </span>
                                         </td>
-                                        <div class="d-flex shadow-lg justify-content-between">
-                                            <td class="">
+                                        {{-- <div class="d-flex shadow-lg justify-content-between"> --}}
+                                            <div class="d-flex justify-content-center"> 
+                                             <td class=""> 
                                             @can('editar-Persona')
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                    class="editBtn rounded btn btn-warning">Editar</button>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
+                                            class="editBtn rounded btn btn-warning me-2">Editar</button>
                                             @endcan
-                                                <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
-                                                    data-bs-target="#showModal">Ver más</button>
+                                                <button class="showBtn shadow btn btn-info rounded me-2"  data-bs-toggle="modal"
+                                                data-bs-target="#showModal">Ver más</button>
                                                 @can('borrar-Persona')
                                                 <button type="submit"
                                                     class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                 @endcan
+                                            </div>
                                             </td>
-                                        </div>
+                                        
                                     </tr>
                                 @endforeach
 
@@ -75,7 +71,11 @@
                         </table>
 
                     </div>
-                </div>
+                </div> 
+            </div>
+        
+
+                
                 @include('admin.personas.editModal')
                 @include('admin.personas.showModal')
             </div>

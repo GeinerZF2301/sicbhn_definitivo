@@ -25,6 +25,7 @@
             <div class="table-container">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                     <div class="">
+                        <div class="table-responsive">
                         <table id="dataTable" class="table table-hover  align-items-center">
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
@@ -38,41 +39,36 @@
                             </thead>
                             <tbody>
                                 @foreach ($donaciones as $donacion)
-                                    <tr class="">
-                                        <td class="id" name="id" class="budget">
-                                            {{ $donacion->id }}
-                                        </td>
-                                        <td name="fecha_donacion" class="budget">
-                                            {{ $donacion->fecha_donacion }}
-                                        </td>
-                                        <td name="fecha_recibido" class="budget">
-                                            {{ $donacion->fecha_recibido }}
-                                        </td>
-                                        <td name="monto" class="budget">
-                                            {{ $donacion->monto }}
-                                        </td>
-                                        <td name="persona_donante_id" class="budget">
-                                            {{ $donacion->persona_donante_id }}
-                                        </td>
+                                    {{-- <tr class=""> --}}
+                                        <tr>
+                                        <td class="id" name="id" class="budget">{{ $donacion->id }}</td>
+                                        <td name="fecha_donacion" class="budget">{{ $donacion->fecha_donacion }}</td>
+                                        <td name="fecha_recibido" class="budget">{{ $donacion->fecha_recibido }}</td>
+                                        <td name="monto" class="budget">{{ $donacion->monto }}</td>
+                                        <td name="persona_donante_id" class="budget">{{ $donacion->persona_donante_id }}</td>
                                         <div class="d-flex shadow-lg justify-content-between">
-                                            <td class="">
+                                            {{-- <td class=""> --}}
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
                                                 @can('editar-DonacionMonetarias') 
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                    class="editBtn rounded btn btn-warning">Editar</button>
+                                                    class="editBtn rounded btn btn-warning me-2">Editar</button>
                                                 @endcan
-                                                <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
+                                                <button class="showBtn shadow btn btn-info rounded me-2"  data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
                                                 @can('borrar-DonacionMonetarias') 
                                                 <button type="submit"
                                                     class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                 @endcan
+                                            </div>
                                             </td>
-                                        </div>
+                                       
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
-
+                    </div>
+                    {{-- aca un div --}}
                     </div>
                     @include('admin.donacionMonetaria.editModal')
                     @include('admin.donacionMonetaria.showModal')

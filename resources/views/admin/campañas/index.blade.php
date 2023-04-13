@@ -25,8 +25,9 @@
             <div class="table-container ">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                     <div class="">
+                        <div class="table-responsive">
                         <table id="dataTable" class="table table-hover  align-items-center">
-                            <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
+                            <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6   ">
                                 <tr>
                                     <th scope="col">ID</th>
                                     <th scope="col">Nombre</th>
@@ -36,37 +37,36 @@
                             </thead>
                             <tbody>
                                 @foreach ($campañas as $campaña)
-                                    <tr class="text-center">
-                                        <td class="id" name="id" class="budget">
-                                            {{ $campaña->id }}
-                                        </td>
-                                        <td name="tipo_persona" class="budget">
-                                            {{ $campaña->nombre }}
-                                        </td>
-                                        <td name="descripcion" class="budget">
-                                            {{ $campaña->descripcion }}
-                                        </td>
+                                <tr>
+                                    {{-- <tr class="text-center"> --}}
+                                    <td class="id" name="id" class="budget">{{ $campaña->id }}</td>
+                                        <td name="tipo_persona" class="budget">{{ $campaña->nombre }}</td>
+                                        <td name="descripcion" class="budget">{{ $campaña->descripcion }}</td>
                                         <div class="d-flex shadow-lg justify-content-between">
-                                            <td class="">
+                                            {{-- <td class="">  --}}
+
+                                                <td>
+                                                <div class="d-flex justify-content-center">
                                             @can('editar-Campañas')
                                                 <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                    class="editBtn rounded btn btn-warning">Editar</button>
+                                                    class="editBtn rounded btn btn-warning me-2">Editar</button>
                                                     @endcan
-                                                <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
+                                                <button class=" showBtn shadow btn btn-info rounded me-2" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
                                             @can('borrar-Campañas')
                                                 <button type="submit"
                                                     class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                     @endcan
+                                                </div>
                                             </td>
-                                        </div>
-                                    </tr>
+                                        </tr>
+                                    
                                 @endforeach
-                            </tbody>
-                        </table>
-
+                    </tbody>
+                    </table>
                     </div>
-                </div>
+                    </div>
+                    </div>
                 @include('admin.campañas.editModal')
                 @include('admin.campañas.showModal')
             </div>
