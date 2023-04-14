@@ -234,7 +234,7 @@ $(".deleteBtn").click(function (e) {
         if (result.isConfirmed) {
             $.ajax({
                 type: "DELETE",
-                url: "/campannas/delete/" + id,
+                url: "/talleres/delete/" + id,
                 data: id,
                 success: function (response) {
                     console.log(response);
