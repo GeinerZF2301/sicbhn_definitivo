@@ -24,6 +24,8 @@ use App\Repositories\Interfaces\DonacionMonetariaRepositorioInterface;
 use App\Repositories\DonacionMonetariaRepositorio;
 use App\Repositories\Interfaces\CuentaBancariaRepositorioInterface;
 use App\Repositories\CuentaBancariaRepositorio;
+use App\Repositories\Interfaces\TallerRepositorioInterface;
+use App\Repositories\TallerRepositorio;
 use App\Services\FileUploadService;
 
 
@@ -49,6 +51,7 @@ class AppServiceProvider extends ServiceProvider
         $this->app->bind(DonacionEspecieRepositorioInterface::class, DonacionEspecieRepositorio::class);
         $this->app->bind(DonacionMonetariaRepositorioInterface::class, DonacionMonetariaRepositorio::class);
         $this->app->bind(CuentaBancariaRepositorioInterface::class, CuentaBancariaRepositorio::class);
+        $this->app->bind(TallerRepositorioInterface::class, TallerRepositorio::class);
     }
 
     /**

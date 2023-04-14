@@ -72,7 +72,7 @@ $(document).ready(function() {
                 $('#edit-id').val(response.id);
                 $('#edit_nombre').val(response.nombre);
                 $('#edit_descripcion').val(response.descripcion);
-                
+                $('#edit_tipoArticulo').val(response.tipo_articulo);
             },
             error: function(error){
                 console.log(error)
@@ -87,10 +87,9 @@ $(document).ready(function() {
         $('.error-messages').html('');
         let formEdit = new FormData(editform);
         let idRequest = formEdit.get('id');
-        console.log(idRequest);
         $.ajax({
             type: "POST",
-            url: "/tipospersonas/update/" + idRequest,
+            url: "/articulos/update/" + idRequest,
             data: formEdit,
             processData: false,
             contentType: false,
@@ -112,11 +111,14 @@ $(document).ready(function() {
                 if (error.status === 422) {
                     var errors = error.responseJSON.errors;
                     console.log(errors);
-                    if (errors.hasOwnProperty("tipo_persona")) {
-                        $("#edit_tipo_persona_error").html(errors.tipo_persona[0]);
+                    if (errors.hasOwnProperty("nombre")) {
+                        $("#edit_nombre_error").html(errors.nombre[0]);
                     }
                     if (errors.hasOwnProperty("descripcion")) {
                         $("#edit_descripcion_error").html(errors.descripcion[0]);
+                    }
+                    if (errors.hasOwnProperty("tipo_articulo")) {
+                        $("#edit_tipo_articulo_error").html(errors.tipo_articulo[0]);
                     }
                 } else {
                     console.error(error);
@@ -141,7 +143,7 @@ $(document).ready(function() {
             if (result.isConfirmed) {
                 $.ajax({
                     type: "DELETE",
-                    url: "/tipospersonas/delete/" + id,
+                    url: "/articulos/delete/" + id,
                     data:  id,
                     success: function (response) {
                         console.log(response);
@@ -170,13 +172,13 @@ $(document).ready(function() {
         console.log(id);
         $.ajax({
             type: 'GET',
-            url: "/tipospersonas/{id}/show",
+            url: "/articulos/{id}/show",
             data: {
                 id: id, 
             },
             success: function (response) {
                 $('#show_id').val(id);
-                $('#show_tipo_persona').val(response.tipo_persona);
+                $('#show_nombre').val(response.nombre);
                 $('#show_descripcion').val(response.descripcion);
                 
             },
