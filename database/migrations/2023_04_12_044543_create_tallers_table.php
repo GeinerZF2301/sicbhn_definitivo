@@ -13,15 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('donacion_monetarias', function (Blueprint $table) {
+        Schema::create('tallers', function (Blueprint $table) {
             $table->id();
-            $table->date('fecha_donacion');
-            $table->date('fecha_recibido');
+            $table->string('nombre');
             $table->string('descripcion');
-            $table->double('monto');
-
-            $table->unsignedBigInteger('persona_donante_id',);
-            $table->foreign('persona_donante_id')->references('id')->on('personas');
+            $table->string('ubicacion');
+            $table->date('fecha');
+            $table->time('hora');
+            $table->string('tipo_taller');
+            $table->integer('cupo');
+            $table->boolean('estado');
+            $table->boolean('validar_taller');
             $table->timestamps();
         });
     }
@@ -33,6 +35,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('donacion_monetarias');
+        Schema::dropIfExists('tallers');
     }
 };

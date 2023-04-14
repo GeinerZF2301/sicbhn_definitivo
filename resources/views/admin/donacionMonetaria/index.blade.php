@@ -32,7 +32,6 @@
                                     <th scope="col">Fecha de Donacion</th>
                                     <th scope="col">Fecha de Recepción </th>
                                     <th scope="col">Monto </th>
-                                    <th scope="col">Donante</th>
                                     <th scope="col">acciones</th>
                                 </tr>
                             </thead>
@@ -50,9 +49,6 @@
                                         </td>
                                         <td name="monto" class="budget">
                                             {{ $donacion->monto }}
-                                        </td>
-                                        <td name="persona_donante_id" class="budget">
-                                            {{ $donacion->persona_donante_id }}
                                         </td>
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
@@ -85,4 +81,5 @@
 
 @section('js')
     <script src="js/utilities/dataTable.js"></script>
+    <script src="js/donacion_monetaria/upsert.js"></script>
 @endsection

@@ -6,7 +6,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="create-modal-title">Agregar cuenta bancaria</h5>
+                        <h5 class="modal-title" id="create-modal-title"></h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -18,15 +18,15 @@
                             <input type="hidden" class="form-control" name="id" id="id" >
                             <div class="mb-3 mt-2">
                                 <label for="formGroupExampleInput" class="form-label">Entidad Bancaria</label>
-                                <input type="text" class="form-control" name="entidadBancaria" id="entidadBancaria"
+                                <input type="text" class="form-control" name="entidad_bancaria" id="entidad_bancaria"
                                     placeholder="Escriba el nombre de la entidad bancaria">
-                                <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
+                                <span id="entidad_bancaria_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Número de Cuenta</label>
-                                <input type="text" class="form-control" name="numeroCuenta" id="numeroCuenta"
+                                <input type="text" class="form-control" name="numero_cuenta" id="numero_cuenta"
                                     placeholder="Escriba una pequeña descripción">
-                                <span id="descripcion_error" class="text-danger fw-bolder error-messages"></span>
+                                <span id="numero_cuenta_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Estado</label>
