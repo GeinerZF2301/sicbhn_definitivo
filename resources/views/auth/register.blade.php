@@ -1,6 +1,12 @@
  @extends('layouts.app')
 
  @section('content')
+
+
+  <!-- Navbar Start -->
+  @include('componentes.NavbarLogin')
+  <!-- Page Header Start -->
+  
      <section class="vh-100 bg-image"
          style="
    background: rgb(23,112,30);

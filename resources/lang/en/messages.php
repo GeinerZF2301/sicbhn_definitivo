@@ -8,6 +8,7 @@ return[
 'NavBarTalleres'=> 'Workshops',
 'NavBarDonaciones'=> 'Donations',
 'NavBarSobreNosotros'=> 'About Us',
+'NavBarRegister'=> 'Register',
 'NavBarContactos'=> 'Contacts',
 'NavBarDropDownGaleria'=> 'Gallery',
 'NavBarDropDownHorasVisita'=> 'Visiting Hours',
