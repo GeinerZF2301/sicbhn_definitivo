@@ -239,5 +239,5 @@ for ($i = 0; $i < count($data); $i++) {
 }
     // cell(ancho, largo, contenido,borde?, salto de linea?)
     
-    $pdf->Output('Reporte de Personas.pdf', 'I');//nombreDescarga, Visor(I->visualizar - D->descargar)
+    $pdf->Output('Reporte de Personas.pdf', 'D');//nombreDescarga, Visor(I->visualizar - D->descargar)
     ?>
