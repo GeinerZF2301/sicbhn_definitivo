@@ -101,7 +101,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal3.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -165,51 +165,49 @@
         <div class="row gy-5 gx-4">
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
-                <h5 class="mb-3">Tomar Fotografías</h5>
-                <span>Dentro de las instalaciones verdes puedes tomar tus propias fotografías,
-                    para conservar tu experiencia.</span>
+                <h5 class="mb-3">Monitoreo por cámaras trampa</h5>
+                <span>Algunos actores de nuestro comité local como MTF Teca, Panamerican Woods,
+                    Monte Alto realizan monitoreo de fauna silvestre.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />
-                <h5 class="mb-3">Parqueo seguro</h5>
-                <span>Podrás encontrar el área del parqueo para que tus vehículos
-                    estén dentro de las instalaciones seguras.</span>
+                <h5 class="mb-3">Incidencia en la gestión integral de residuos</h5>
+                <span>La municipalidad de Hojancha y Nandayure nos hacen partícipes del proceso de gestión
+                    para propiciar ambientes saludables.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.png" alt="Icon" />
-                <h5 class="mb-3">Guías turísticos</h5>
-                <span>Encontrarás personal autorizado
-                    y capacitado para poder llevar acabo las excursiones.</span>
+                <h5 class="mb-3">Control y prevención de delitos ambientales</h5>
+                <span>Mediante los esfuerzos por la educación ambiental.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.png" alt="Icon" />
-                <h5 class="mb-3">Senderos seguros</h5>
-                <span>Durante tu caminata, explora el bosque de manera segura
-                    con nuestros senderos seguros. </span>
+                <h5 class="mb-3">Fortalecimiento de la conectividad estructural</h5>
+                <span>Promoviendo sistemas productivos que generen conectividad y restaurar áreas deforestadas.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.png" alt="Icon" />
-                <h5 class="mb-3">Hospedaje</h5>
-                <span>Contamos con un pequeño hospedaje para nuestros visitantes
-                    de largo o que busquen realizar una pasantía.</span>
+                <h5 class="mb-3">Conservación</h5>
+                <span>Sensibilización de la importancia de los servicios ecosistémicos que provee el CBHN
+                    del sector productivo y civil.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.png" alt="Icon" />
-                <h5 class="mb-3">Zonas de comida</h5>
-                <span>Para que tu experiencia sea más agradable, recuerda
-                    que existen espacios para zonas de comida.</span>
+                <h5 class="mb-3">Reducir los factores de riesgo y vulnerabilidad</h5>
+                <span>De los elementos focales de manejo: bosque, fauna, ecosistema marino costero,
+                    hídrico y suelos.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.png" alt="Icon" />
-                <h5 class="mb-3">Fauna</h5>
-                <span>En el Corredor Biológico se registran alrededor de
-                    365 especies de animales. ¡Ven a conocer!</span>
+                <h5 class="mb-3">Trabajo en comunidades</h5>
+                <span>Campañas de limpieza de ríos, calles, resforestaciones, educación ambiental.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.png" alt="Icon" />
-                <h5 class="mb-3">Flora</h5>
-                <span>Poseemos una gran variedad de biodiversidad con
-                    un registro de alrededor de 591 especies de plantas.</span>
+                <h5 class="mb-3">Promoción de sistemas agropecuarios sustentables</h5>
+                <span>Y con mayor capacidad de resilencia a los cambios climáticos.
+                    El sector agropecuario fomra parte de nuestras alianzas: MAG, cámara de ganaderos, centros agrícolas.
+                </span>
             </div>
         </div>
     </div>
