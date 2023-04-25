@@ -36,6 +36,7 @@ Route::get('/', function () {
 
 Route::get('pdfs', [PdfController::class, 'index']);
 
+
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
 });

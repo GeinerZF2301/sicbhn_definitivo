@@ -8,15 +8,15 @@ class PDF extends FPDF {
     // Cabecera de página
     
     function Header() {
-        $this->Image('logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
-        $this->SetFont('Helvetica', '', 21); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
-        $this->Cell(95); // Movernos a la derecha
-        $this->SetTextColor(0, 174, 0); //color
+        $this->fpdf->Image('logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
+        $this->fpdf->SetFont('Helvetica', '', 21); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
+        $this->fpdf->Cell(95); // Movernos a la derecha
+        $this->fpdf->SetTextColor(0, 174, 0); //color
 
-        //creamos una celda o fila
-        $this->Cell(110, 15, utf8_decode('Sistema de Información Corredor Biológico Hojancha Nandayure'), 3, 1, 'C', 0); // AnchoCelda,AltoCelda,titulo,borde(1-0),saltoLinea(1-0),posicion(L-C-R),ColorFondo(1-0)
-        $this->Ln(3); // Salto de línea
-        $this->SetTextColor(0); //color
+        
+        $this->fpdf->Cell(110, 15, utf8_decode('Sistema de Información Corredor Biológico Hojancha Nandayure'), 3, 1, 'C', 0); // AnchoCelda,AltoCelda,titulo,borde(1-0),saltoLinea(1-0),posicion(L-C-R),ColorFondo(1-0)
+        $this->fpdf->Ln(3); // Salto de línea
+        $this->fpdf->SetTextColor(0); //color
 
         /* TITULO DE LA TABLA */
         $this->SetTextColor(255, 191, 0);
@@ -239,5 +239,5 @@ for ($i = 0; $i < count($data); $i++) {
 }
     // cell(ancho, largo, contenido,borde?, salto de linea?)
     
-    $pdf->Output('Reporte de Personas.pdf', 'D');//nombreDescarga, Visor(I->visualizar - D->descargar)
+    $pdf->Output('Reporte de Personas.pdf', 'I');//nombreDescarga, Visor(I->visualizar - D->descargar)
     ?>
