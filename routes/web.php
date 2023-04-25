@@ -34,7 +34,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('pdfs', [PdfController::class, 'index']);
+Route::get('ReportePersonas', [PdfController::class, 'ReportePersonas']);
 
 
 Route::get('/locale/{locale}', function($locale){
