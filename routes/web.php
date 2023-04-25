@@ -24,6 +24,7 @@ use App\Http\Middleware\LocaleCookieMiddleware;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\PdfController;
 
 
 
@@ -32,6 +33,8 @@ use App\Http\Controllers\ContactController;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('pdfs', [PdfController::class, 'index']);
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
