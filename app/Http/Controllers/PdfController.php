@@ -32,7 +32,7 @@ class PdfController extends Controller
         //     Crear objeto FPDF y definir encabezado y pie de página
 
         //     Header para abajo
-            $this->fpdf->Image('zoofari/img/logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
+            //$this->fpdf->Image('zoofari/img/logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
             $this->fpdf->SetFont('Helvetica', '', 21); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
             $this->fpdf->Cell(95); // Movernos a la derecha
             $this->fpdf->SetTextColor(0, 174, 0); //color
