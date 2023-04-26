@@ -20,7 +20,7 @@
                 </button>
                 @endcan
                 
-                <a href="{{ asset('PDF/reporteCampanna.php') }}" target="_blank" class="btn btn-primary mx-2"><i class="fas fa-file-pdf"></i> Generar reporte</a>
+                <a href="PDF/reporteCampanna.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
 
 
                 

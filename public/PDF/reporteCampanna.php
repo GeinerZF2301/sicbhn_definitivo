@@ -1,9 +1,7 @@
 <?php 
-$pdf_path = dirname(__FILE__) . '/PDF/reporteCampanna.php';
+
 require('./fpdf.php');
 require('../../public/conexion/conexion.php');
-
-
 
 class PDF extends FPDF {
 
