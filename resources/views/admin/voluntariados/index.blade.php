@@ -20,7 +20,7 @@
                   @endcan  
                     @include('admin.voluntariados.createModal')
                     
-                    <a href="PDF/reporteVoluntarios.php" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    <a href="ReporteVoluntarios" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
                     
                 </div>
             </div>

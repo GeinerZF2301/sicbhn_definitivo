@@ -38,6 +38,12 @@ Route::get('ReportePersonas', [PdfController::class, 'ReportePersonas']);
 
 Route::get('ReporteCampañas', [PdfController::class, 'ReporteCampañas']);
 
+Route::get('ReporteVoluntarios', [PdfController::class, 'ReporteVoluntarios']);
+
+Route::get('ReporteUsuarios', [PdfController::class, 'ReporteUsuarios']);
+
+Route::get('ReporteTalleres', [PdfController::class, 'ReporteTalleres']);
+
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
