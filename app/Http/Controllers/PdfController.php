@@ -32,7 +32,7 @@ class PdfController extends Controller
         //     Crear objeto FPDF y definir encabezado y pie de página
 
         //     Header para abajo
-            $this->fpdf->Image('zoofari/img/logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
+            //$this->fpdf->Image('zoofari/img/logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
             $this->fpdf->SetFont('Helvetica', '', 21); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
             $this->fpdf->Cell(95); // Movernos a la derecha
             $this->fpdf->SetTextColor(0, 174, 0); //color
@@ -181,17 +181,19 @@ class PdfController extends Controller
                 return $nl;
             }
 
-            $this->fpdf->SetX(10);
+            $this->fpdf->SetX(2);
             $this->fpdf->SetFillColor(56, 176, 0); //colorFondo
             $this->fpdf->SetTextColor(255, 255, 255); //colorTexto
            
             $this->fpdf->SetDrawColor(0, 0, 0); //colorBorde
             $this->fpdf->SetFont('Arial', 'B', 12);
-            $this->fpdf->Cell(20, 10, utf8_decode('N°'), 1, 0, 'C', 1);
-            $this->fpdf->Cell(50, 10, utf8_decode('NOMBRE'), 1, 0, 'C', 1);
-            $this->fpdf->Cell(60, 10, utf8_decode('APELLIDOS'), 1, 0, 'C', 1);
-            $this->fpdf->Cell(60, 10, utf8_decode('TIPO DE IDENTIFICACIÓN'), 1, 0, 'C', 1);
-            $this->fpdf->Cell(40, 10, utf8_decode('EDAD'), 1, 1, 'C', 1);
+            $this->fpdf->Cell(6, 10, utf8_decode('N°'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(70, 10, utf8_decode('NOMBRE'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(80, 10, utf8_decode('APELLIDOS'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(54, 10, utf8_decode('TIPO DE IDENTIFICACIÓN'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(40, 10, utf8_decode('IDENTIFICACIÓN'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(15, 10, utf8_decode('EDAD'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(28, 10, utf8_decode('PAIS'), 1, 1, 'C', 1);
 			$this->fpdf->SetFont('Arial', '', 12);
             $this->fpdf->SetTextColor(0, 0, 0); //colorTexto
 
@@ -199,16 +201,18 @@ class PdfController extends Controller
             $this->fpdf->SetDrawColor(61, 61, 61); //color de linea  rgb
 
             $this->fpdf->SetFont('Arial', '', 12);
-
+            
             foreach ($personas as $row)
                 {
-                    $this->fpdf->Cell(20,10,$row->id,1);
-                    $this->fpdf->Cell(50, 10, utf8_decode($row->nombre), 1, 0, 'C', 1);
-                    $this->fpdf->Cell(60, 10, utf8_decode($row->apellidos), 1, 0, 'C', 1);
-                    $this->fpdf->Cell(60, 10, utf8_decode($row->tipo_identificacion), 1, 0, 'C', 1);
-                    //$this->fpdf->Cell(40, 10, utf8_decode($row->identificacion), 1, 0, 'C', 1);
-                    $this->fpdf->Cell(40, 10, utf8_decode($row->edad), 1, 1, 'C', 1);
-                    $this->fpdf->Ln();
+                    $this->fpdf->SetX(2);
+                    $this->fpdf->Cell(6,8,$row->id,1);
+                    $this->fpdf->Cell(70, 8, utf8_decode($row->nombre), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(80, 8, utf8_decode($row->apellidos), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(54, 8, utf8_decode($row->tipo_identificacion), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(40, 8, utf8_decode($row->numero_identificacion), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(15, 8, utf8_decode($row->edad), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(28, 8, utf8_decode($row->pais), 1, 1, 'C', 1);
+                    $this->fpdf->Ln(0);
                 }
     
         
