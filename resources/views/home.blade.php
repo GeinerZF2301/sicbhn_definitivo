@@ -83,8 +83,11 @@
                         Hojancha y Nandayure en la provincia de Guanacaste. <br>
                         Dentro del Corredor Biológico existe una gran biodiversidad de flora y fauna.
                         Te invitamos a conocer más acerca de nuestras actividades y conectarte con la naturaleza.
-                        Sé parte de la familia del Corredor Biológico Hojancha-Nandayure.
-                    </p>
+                        Sé parte de la familia del Corredor Biológico Hojancha-Nandayure. <br>
+                        El Corredor Biológico es gestionado por el COMITÉ LOCAL de dicho corredor,
+                        constituido por instituciones públicas y privadas(FUNDECODES, MTF Teca, SINAC, Municipalidades, Ministerio de Salud,
+                        Ministerio de Agricultura, Monte Alto, Cámara de Ganaderos, Centros agrícolas, Panamerican Woods, OffBeat Travel, ASADA Morote,
+                        CoopeCerroAzul, Bomberos y Sociedad Civil) </p>
                     <h5 class="mb-3">
                         <i class="far fa-check-circle text-primary me-3"></i>Voluntariados
                     </h5>
@@ -101,7 +104,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal3.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -165,51 +168,49 @@
         <div class="row gy-5 gx-4">
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
-                <h5 class="mb-3">Tomar Fotografías</h5>
-                <span>Dentro de las instalaciones verdes puedes tomar tus propias fotografías,
-                    para conservar tu experiencia.</span>
+                <h5 class="mb-3">Monitoreo por cámaras trampa</h5>
+                <span>Algunos actores de nuestro comité local como MTF Teca, Panamerican Woods,
+                    Monte Alto realizan monitoreo de fauna silvestre.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />
-                <h5 class="mb-3">Parqueo seguro</h5>
-                <span>Podrás encontrar el área del parqueo para que tus vehículos
-                    estén dentro de las instalaciones seguras.</span>
+                <h5 class="mb-3">Incidencia en la gestión integral de residuos</h5>
+                <span>La municipalidad de Hojancha y Nandayure nos hacen partícipes del proceso de gestión
+                    para propiciar ambientes saludables.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.png" alt="Icon" />
-                <h5 class="mb-3">Guías turísticos</h5>
-                <span>Encontrarás personal autorizado
-                    y capacitado para poder llevar acabo las excursiones.</span>
+                <h5 class="mb-3">Control y prevención de delitos ambientales</h5>
+                <span>Mediante los esfuerzos por la educación ambiental.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.png" alt="Icon" />
-                <h5 class="mb-3">Senderos seguros</h5>
-                <span>Durante tu caminata, explora el bosque de manera segura
-                    con nuestros senderos seguros. </span>
+                <h5 class="mb-3">Fortalecimiento de la conectividad estructural</h5>
+                <span>Promoviendo sistemas productivos que generen conectividad y restaurar áreas deforestadas.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.png" alt="Icon" />
-                <h5 class="mb-3">Hospedaje</h5>
-                <span>Contamos con un pequeño hospedaje para nuestros visitantes
-                    de largo o que busquen realizar una pasantía.</span>
+                <h5 class="mb-3">Conservación</h5>
+                <span>Sensibilización de la importancia de los servicios ecosistémicos que provee el CBHN
+                    del sector productivo y civil.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.png" alt="Icon" />
-                <h5 class="mb-3">Zonas de comida</h5>
-                <span>Para que tu experiencia sea más agradable, recuerda
-                    que existen espacios para zonas de comida.</span>
+                <h5 class="mb-3">Reducir los factores de riesgo y vulnerabilidad</h5>
+                <span>De los elementos focales de manejo: bosque, fauna, ecosistema marino costero,
+                    hídrico y suelos.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.png" alt="Icon" />
-                <h5 class="mb-3">Fauna</h5>
-                <span>En el Corredor Biológico se registran alrededor de
-                    365 especies de animales. ¡Ven a conocer!</span>
+                <h5 class="mb-3">Trabajo en comunidades</h5>
+                <span>Campañas de limpieza de ríos, calles, resforestaciones, educación ambiental.</span>
             </div>
             <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
                 <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.png" alt="Icon" />
-                <h5 class="mb-3">Flora</h5>
-                <span>Poseemos una gran variedad de biodiversidad con
-                    un registro de alrededor de 591 especies de plantas.</span>
+                <h5 class="mb-3">Promoción de sistemas agropecuarios sustentables</h5>
+                <span>Y con mayor capacidad de resilencia a los cambios climáticos.
+                    El sector agropecuario fomra parte de nuestras alianzas: MAG, cámara de ganaderos, centros agrícolas.
+                </span>
             </div>
         </div>
     </div>
@@ -223,46 +224,52 @@
 <div class="container-xxl py-5">
     <div class="container">
         <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            Opiniones de nuestros visitantes
+            Participantes en actividades
         </h1>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/MarFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de abonos orgánicos</h5>
                     <p>
-                        El recorrido que tuvé en el Corredor Biológico Hojancha-Nandayure
-                        fue una experiencia de conexión con la naturaleza.
+                        Me gustó mucho, porque esto nos ayuda a crear nuestros propios abonos 
+                        y no gastar dinero en comprar químicos dañinos para el ambiente, 
+                        además que aprovechamos desechos que generamos en nuestros hogares
                     </p>
-                    <h5 class="mb-1">María Acón</h5>
-                    <span class="fst-italic">Estudiante</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/AlfieriFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de abonos orgánicos</h5>
                     <p>
-                        En mi recorrdido por el Corredor Biológico Hojancha-Nandayure lo que
-                        más me impresionó fueron las zonas verdes, las vistas, y la fauna del lugar.
-                        Sin lugar a dudas volvería a visitar el Corredor Biológico.
+                        Lo que más me gustó es que corredor me ofreció un nuevo conocimientos en conservación 
+                        y protección de suelos mediante la divulgación de información sobre el uso de abonos orgánicos.
                     </p>
-                    <h5 class="mb-1">Alfieri Mora</h5>
-                    <span class="fst-italic">Estudiante</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/MelanyFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de observación de aves</h5>
                     <p>
-                        El servicio al cliente y la atención que tuvieron
-                        los guías y encargados de la actividad fueron una de las
-                        mejores experiencias que tuvé en mi voluntariado en el
-                        Corredor Biológico Hojancha-Nandayure.
+                        Me encanto muchísimo las guías que nos daban, 
+                        llevarnos a conocer lugares, muchísimas gracias por esta oportunidad, me encantó.
                     </p>
-                    <h5 class="mb-1">Melany Lawson</h5>
-                    <span class="fst-italic">Estudiante</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de correcto uso de agroquímicos para la salud</h5>
+                    <p>
+                        Me dejó muchos conocimientos sobre cómo usar de forma adecuada los químicos, y evitar su uso para no arriesgar la salud. Aprendí que debemos de mantener etiquetas en cada químico, 
+                        guardarlos en un lugar seguro, y que las mujeres estamos más expuestas a los efectos por la reproducción.
+                    </p>
                 </div>
             </div>
         </div>
