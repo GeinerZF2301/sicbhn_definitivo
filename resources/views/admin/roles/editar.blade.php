@@ -1,11 +1,11 @@
 @extends('layouts.admin')
-
-
-
-
 @section('content')
-    <div class="card">
-        <div class="card-body">
+<div class="row mx-auto py-4 d-flex justify-content-center">
+    <span class="mb-4 col-20">
+        <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Edición  de roles del
+            Corredor
+            Biológico</h1>
+    </span>
 
             @if ($errors->any())
                 <div class="alert alert-dark alert-dismissible fade show" role="alert">
@@ -33,21 +33,29 @@
                         <br />
                         <div class=" row  py-8 mx-auto d-flex justify-content-center">
                             @foreach ($permission as $value)
+                            <div class="col-2">
+
                                 <label>{{ Form::checkbox('permission[]', $value->id, in_array($value->id, $rolePermission) ? true : false, ['class' => 'name']) }}
                                     {{ $value->name }}</label>
                                 <br />
+                                
+
+                            </div>
+                                
                             @endforeach
+                            <div class="col-2">
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-xs-12 col-sm-12 col-md-12">
                     <button class="btn btn-primary" type="submit">Guardar</button>
+                    <a href="/roles" class="btn btn-danger">Cancelar</a>
                 </div>
 
             </div>
             {!! Form::close() !!}
 
         </div>
-    </div>
 @endsection

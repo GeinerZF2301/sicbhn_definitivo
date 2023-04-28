@@ -13,12 +13,12 @@
             </div>
             <div class="row">
                 <div class="d-flex justify-content-between mt-2 ">
-                    {{-- @can('crear-DonacionArticulos')  --}}
+                    @can('crear-DonacionArticulos') 
                     <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
                         data-bs-target="#createModal">
                         Agregar Artículos
                     </button>
-                    {{-- @endcan --}}
+                    @endcan
                     @include('admin.articulos.createModal')
                 </div>
             </div>

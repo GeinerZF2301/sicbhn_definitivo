@@ -57,7 +57,7 @@
                   Personas
                 </a></li>
                 @endcan
-              @can('ver-Persona')
+              @can('ver-Persona/Solicitudes')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/personas') }}">Gestión de las
                   Personas</a></li>
                 @endcan
@@ -67,16 +67,19 @@
 
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#request" aria-expanded="false" aria-controls="request">
-            <i class="mdi mdi-human-male-female menu-icon"></i>
+            <i class="mdi mdi-message-alert menu-icon"></i>
             <span class="menu-title">Solicitudes</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="request">
             <ul class="nav flex-column sub-menu">
+              @can('ver-Persona/Solicitudes')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/solicitudesvoluntarios') }}"> Solicitud de Voluntariados
                 </a></li>
+                @endcan
+                @can('ver-Persona/Solicitudes')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/solicitudestalleres') }}">Solicitud de Talleres</a></li>
-
+              @endcan
             </ul>
           </div>
         </li>
@@ -109,14 +112,14 @@
               <li class="nav-item"> <a class="nav-link" href="{{ url('/campannas') }}">Gestión de las
                   campañas</a></li>
             @endcan
-            @can('ver-Voluntarios')
+            @can('ver-Voluntarios/Historial')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/voluntariados') }}">Gestión de los
                   voluntariados</a></li>
             @endcan
-            
+            @can('ver-Taller/Historial')
             <li class="nav-item"> <a class="nav-link" href="{{ url('/gestiontalleres') }}">Gestión de los
                 Talleres</a></li>
-            
+                @endcan
             </ul>
           </div>
         </li>
@@ -150,7 +153,7 @@
 
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="ui-basic">
-            <i class="mdi mdi-image menu-icon"></i>
+            <i class="mdi mdi-folder-multiple-image menu-icon"></i>
             <span class="menu-title">Galeria</span>
             <i class="menu-arrow"></i>
           </a>
@@ -184,16 +187,20 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="collapse" href="#historial" aria-expanded="false" aria-controls="historial">
-            <i class="mdi mdi-account menu-icon"></i>
+            <i class="mdi mdi-history menu-icon"></i>
             <span class="menu-title">Historial de Solicitudes</span>
             <i class="menu-arrow"></i>
           </a>
           <div class="collapse" id="historial">
             <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="{{ url('/historialvoluntarios') }}"> Voluntarios</a>
+              @can('ver-Voluntarios/Historial')
+              <li class="nav-item"> <a class="nav-link" href="{{ url('/historialvoluntarios') }}"> Participantes Voluntarios</a>
               </li>
+              @endcan
+              @can('ver-Taller/Historial')
               <li class="nav-item"> <a class="nav-link" href="{{ url('/historialtalleres') }}"> Participantes Talleres</a></li>
             </ul>
+            @endcan
           </div>
         </li>
         <li class="nav-item">

@@ -13,7 +13,7 @@
             </div>
             <div class="row">
                 <div class="d-flex justify-content mt-2 ">
-                    @can('crear-Voluntarios')
+                    @can('crear-Taller')
                         <button id="create-button" type="button"  class="btn btn-success mx-2" data-bs-toggle="modal"
                             data-bs-target="#createModal">
                             Crear taller
@@ -51,13 +51,13 @@
                                         </td>
                                         <div class="d-flex shadow-lg justify-content-between">
                                             <td class="">
-                                                @can('editar-Voluntarios')
+                                                @can('editar-Taller')
                                                     <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
                                                         class="editBtn rounded btn btn-warning">Editar</button>
                                                 @endcan
                                                 <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
-                                                @can('borrar-Voluntarios')
+                                                @can('borrar-Taller')
                                                     <button type="submit"
                                                         class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                 @endcan

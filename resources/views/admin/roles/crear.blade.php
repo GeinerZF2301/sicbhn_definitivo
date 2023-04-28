@@ -56,6 +56,7 @@
             </div>
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
+        <a href="/roles" class="btn btn-danger">Cancelar</a>
         {!! Form::close() !!}
     </div>
 @endsection

@@ -34,7 +34,7 @@ class TablaPermisoSeeder extends Seeder
             'editar-TipoPersona',
             'borrar-TipoPersona',
             //Permisos Persona
-            'ver-Persona',
+            'ver-Persona/Solicitudes',
             'crear-Persona',
             'editar-Persona',
             'borrar-Persona',
@@ -49,7 +49,7 @@ class TablaPermisoSeeder extends Seeder
             'editar-Campañas',
             'borrar-Campañas',
             //Permisos Voluntarios
-            'ver-Voluntarios',
+            'ver-Voluntarios/Historial',
             'crear-Voluntarios',
             'editar-Voluntarios',
             'borrar-Voluntarios',
@@ -78,6 +78,11 @@ class TablaPermisoSeeder extends Seeder
             'crear-CuentasBancarias',
             'editar-CuentasBancarias',
             'borrar-CuentasBancarias',
+            //Permisos Taller
+            'ver-Taller/Historial',
+            'crear- Taller',
+            'editar-Taller',
+            'borrar-Taller',
         ];
 
         foreach($permisos as $permiso){

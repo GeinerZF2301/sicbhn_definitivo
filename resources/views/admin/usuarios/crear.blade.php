@@ -56,6 +56,7 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <button  class="btn btn-primary"  type="submit">Guardar</button>
+                <a href="/usuarios" class="btn btn-danger">Cancelar</a>
             </div>        
         </div>
     </div>

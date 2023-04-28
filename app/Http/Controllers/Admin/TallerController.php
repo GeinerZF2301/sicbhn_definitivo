@@ -14,10 +14,10 @@ class TallerController extends Controller
     public function __construct(TallerRepositorioInterface $tallerRepositorio){
         $this->tallerRepositorio = $tallerRepositorio;
 
-        //      $this->middleware('permission:ver-Campañas|crear-Campañas|editar-Campañas|borrar-Campañas',['only' => ['index']]);
-        //     $this->middleware('permission:crear-Campañas' , ['only' => ['create', 'store']]);
-        //     $this->middleware('permission:editar-Campañas' , ['only' => ['edit', 'update']]);
-        //     $this->middleware('permission:borrar-Campañas' , ['only' => ['delete', 'destroy']]);
+            $this->middleware('permission:ver-Taller/Historial|crear-Taller|editar-Taller|borrar-Taller',['only' => ['index']]);
+            $this->middleware('permission:crear-Taller' , ['only' => ['create', 'store']]);
+            $this->middleware('permission:editar-Taller' , ['only' => ['edit', 'update']]);
+            $this->middleware('permission:borrar-Taller' , ['only' => ['delete', 'destroy']]);
     }
     public function index()
     {
