@@ -12,6 +12,7 @@ use App\Models\Campaña;
 use App\Models\Voluntariado;
 use App\Models\User;
 use App\Models\Taller;
+use App\Models\DonacionMonetaria;
 
 
 class PdfController extends Controller
@@ -323,6 +324,68 @@ class PdfController extends Controller
             
         // Generar el archivo fpdf y descargarlo
         $this->fpdf->Output('Reporte de Talleres del CBHN.pdf', 'I', true, 'UTF-8');
+        exit;
+    }
+
+    public function ReporteMonetario() 
+    {
+        
+
+        $monetarios = DB::table('donacion_monetarias')
+        ->join('personas', 'donacion_monetarias.persona_donante_id', '=', 'personas.id')
+        ->select('donacion_monetarias.*', 'personas.nombre')
+        ->get();
+        $this->fpdf = new Fpdf();
+        $this->fpdf->AddPage("landscape"); 
+        $this->fpdf->AliasNbPages(); 
+        $i = 0;
+        $this->fpdf->SetFont('Arial', '', 12);
+        //     Crear objeto FPDF y definir encabezado y pie de página
+        //     Header para abajo
+            //$this->fpdf->Image('zoofari/img/logoCorredor.png', 20, 5, 30); //logo de la empresa,moverDerecha,moverAbajo,tamañoIMG
+            $this->fpdf->SetFont('Helvetica', '', 21); //tipo fuente, negrita(B-I-U-BIU), tamañoTexto
+            $this->fpdf->Cell(95); // Movernos a la derecha
+            $this->fpdf->SetTextColor(0, 174, 0); //color
+            $this->fpdf->Cell(110, 15, utf8_decode('Sistema de Información Corredor Biológico Hojancha Nandayure'), 3, 1, 'C', 0); // AnchoCelda,AltoCelda,titulo,borde(1-0),saltoLinea(1-0),posicion(L-C-R),ColorFondo(1-0)
+            $this->fpdf->Ln(3); // Salto de línea
+            $this->fpdf->SetTextColor(0); //color
+            /* TITULO DE LA TABLA */
+            $this->fpdf->SetTextColor(255, 191, 0);
+            $this->fpdf->Cell(100); // mover a la derecha
+            $this->fpdf->SetFont('Arial', 'B', 16);
+            $this->fpdf->Cell(80, 10, utf8_decode("REPORTE DE GESTIÓN DE DONACIONES MONETARIAS"), 0, 1, 'C', 0);
+            $this->fpdf->Ln(7);
+            //Header Fin
+            $this->fpdf->SetX(15);
+            $this->fpdf->SetFillColor(56, 176, 0); //colorFondo
+            $this->fpdf->SetTextColor(255, 255, 255); //colorTexto
+            $this->fpdf->SetDrawColor(0, 0, 0); //colorBorde
+            $this->fpdf->SetFont('Arial', 'B', 12);
+            $this->fpdf->Cell(10, 10, utf8_decode('N°'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(54, 10, utf8_decode('NOMBRE DEL DONANTE'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(70, 10, utf8_decode('FECHA DE DONACION'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(54, 10, utf8_decode('MONTO'), 1, 0, 'C', 1);
+            $this->fpdf->Cell(80, 10, utf8_decode('FECHA DE DONACION INGRESADA'), 1, 1, 'C', 1);
+            
+            
+            $this->fpdf->SetTextColor(0, 0, 0); //colorTexto
+            $this->fpdf->SetFillColor(255, 255, 255); //color de fondo rgb
+            $this->fpdf->SetDrawColor(61, 61, 61); //color de linea  rgb
+            $this->fpdf->SetFont('Arial', '', 12);
+            foreach ($monetarios as $row)
+                {
+                    $this->fpdf->SetX(15);
+                    $this->fpdf->Cell(10,8,$row->id,1);
+                    $this->fpdf->Cell(54, 8, utf8_decode($row->nombre), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(70, 8, utf8_decode($row->fecha_donacion), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(54, 8, utf8_decode($row->monto), 1, 0, 'C', 1);
+                    $this->fpdf->Cell(80, 8, utf8_decode($row->fecha_recibido), 1, 1, 'C', 1);
+                    
+                    
+                    $this->fpdf->Ln(0);
+                }
+        // Generar el archivo fpdf y descargarlo
+        $this->fpdf->Output('Reporte de Personas del CBHN.pdf', 'I', true, 'UTF-8');
         exit;
     }
 }

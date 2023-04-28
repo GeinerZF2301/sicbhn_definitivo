@@ -44,6 +44,7 @@ Route::get('ReporteUsuarios', [PdfController::class, 'ReporteUsuarios']);
 
 Route::get('ReporteTalleres', [PdfController::class, 'ReporteTalleres']);
 
+Route::get('ReporteDonacionMonetaria', [PdfController::class, 'ReporteMonetario']);
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);

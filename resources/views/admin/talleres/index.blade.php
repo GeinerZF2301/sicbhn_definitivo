@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="d-flex justify-content mt-2 ">
                     @can('crear-Voluntarios')
-                        <button id="create-button" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        <button id="create-button" type="button"  class="btn btn-success mx-2" data-bs-toggle="modal"
                             data-bs-target="#createModal">
                             Crear taller
                         </button>
