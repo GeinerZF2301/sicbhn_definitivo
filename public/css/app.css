@@ -332,7 +332,7 @@ th {
 }
 
 label {
-  display: inline-block;
+  display: flex;
 }
 
 button {
@@ -2203,7 +2203,7 @@ textarea.form-control-lg {
 }
 .form-check .form-check-input {
   float: left;
-  margin-left: -1.5em;
+  margin-left: 8.5em;
 }
 
 .form-check-reverse {
@@ -8030,7 +8030,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: #028A0F  !important;
 }
 
 .text-secondary {
