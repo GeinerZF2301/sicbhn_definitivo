@@ -26,6 +26,7 @@
         <div class="table-container">
             <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                 <div class="">
+                    <div class="table-responsive">
                     <table id="dataTable" class="table table-hover  align-items-center">
                         <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                             <tr>
@@ -39,41 +40,34 @@
                         </thead>
                         <tbody>
                             @foreach ($documentos as $documento)
-                            <tr class="">
-                                <td class="id" name="id" class="budget">
-                                    {{ $documento->id }}
-                                </td>
-                                <td name="documento" class="budget">
-                                    {{ $documento->nombre }}
-                                </td>
-                                <td name="descripcion" class="budget">
-                                    {{ $documento->descripcion }}
-                                </td>
+                            {{-- <tr class=""> --}}
+                                <tr>
+                                <td class="id" name="id" class="budget">{{ $documento->id }}</td>
+                                <td name="documento" class="budget">{{ $documento->nombre }} </td>
+                                <td name="descripcion" class="budget">{{ $documento->descripcion }}</td>
                                 @if ($documento->estado == 1)
-                                    <td name="estado" class="budget">
-                                        Activo
-                                    </td>
+                                <td name="estado" class="budget">Activo</td>
                                 @else
-                                    <td name="estado" class="budget">
-                                        Inactivo
-                                    </td>
+                                <td name="estado" class="budget">Inactivo</td>
                                 @endif
-                                <td name="documento" class="budget">
-                                    {{ $documento->tipo_documento }}
-                                </td>
+                                <td name="documento" class="budget">{{ $documento->tipo_documento }} </td>
                                 <div class="d-flex shadow-lg justify-content-between">
-                                    <td class="">
+                                    {{-- <td class=""> --}}
+                                        <td>
+                                        <div class="d-flex justify-content-center">
                                     @can('editar-Documento')
                                         <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                            class="editBtn shadow-lg rounded btn btn-warning"><i class="bi bi-pencil-square"></i>  Editar</button>
+                                        class="editBtn shadow-lg rounded btn btn-warning me-2" ><i
+                                        class="bi bi-pencil-square"></i> Editar</button>
                                     @endcan
-                                        <a href="{{ asset('storage/documentos/'.$documento->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded"><i class="bi bi-eye"></i>  Ver</a>
+                                        <a href="{{ asset('storage/documentos/'.$documento->file) }}" target="_blank"  class=" shadow-lg btn btn-info rounded me-2"><i class="bi bi-eye"></i> Ver</a>
                                     @can('borrar-Documento')         
                                         <button type="submit"
                                             class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>
                                     @endcan
-                                    </td>
                                 </div>
+                                    </td>
+                                
                             </tr>
                             @endforeach
 
@@ -82,6 +76,7 @@
 
                 </div>
             </div>
+        </div>
             @include('admin.documentos.editModal')
            
         </div>

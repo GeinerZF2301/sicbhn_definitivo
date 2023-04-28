@@ -26,6 +26,7 @@
             <div class="table-container ">
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                     <div class="">
+                        <div class="table-responsive">
                         <table id="dataTable" class="table table-hover  align-items-center">
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
@@ -38,46 +39,37 @@
                             </thead>
                             <tbody>
                                 @foreach ($articulos as $articulo)
-                                    <tr class="text-center">
-                                        <td class="id" name="id" class="budget">
-                                            {{ $articulo->id }}
-                                        </td>
-                                        <td name="tipo_persona" class="budget">
-                                            {{ $articulo->entidad_bancaria }}
-                                        </td>
-                                        <td name="descripcion" class="budget">
-                                            {{ $articulo->numero_cuenta }}
-                                        </td>
-                                        @if ($articulo->estado == 1)
-                                            <td name="estado" class="budget">
-                                                Activo
-                                            </td>
-                                        @else
-                                            <td name="estado" class="budget">
-                                                Inactivo
-                                            </td>
-                                        @endif
-
+                                <tr>
+                                    {{-- <tr class="text-center"> --}}
+                                        <td class="id" name="id" class="budget">{{ $articulo->id }}</td>
+                                        <td name="tipo_persona" class="budget">{{ $articulo->entidad_bancaria }}</td>
+                                        <td name="descripcion" class="budget">{{ $articulo->numero_cuenta }}</td>
+                                        <td name="descripcion" class="budget">{{ $articulo->estado }}</td>
+                                       
 
                                         <div class="d-flex shadow-lg justify-content-between">
-                                            <td class="">
-                                                @can('editar-CuentasBancarias')
-                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                        class="editBtn rounded btn btn-warning">Editar</button>
+                                            {{-- <td class=""> --}}
+                                                <td>
+                                                    <div class="d-flex justify-content-center">
+
+                                                @can('editar-CuentasBancarias') 
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    class="editBtn rounded btn btn-warning me-2">Editar</button>
                                                 @endcan
-                                                <button class=" showBtn shadow btn btn-info rounded" data-bs-toggle="modal"
+                                                <button class="showBtn shadow btn btn-info rounded me-2" data-bs-toggle="modal"
                                                     data-bs-target="#showModal">Ver más</button>
                                                 @can('borrar-CuentasBancarias')
                                                     <button type="submit"
                                                         class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
                                                 @endcan
+                                            </div>
                                             </td>
-                                        </div>
+                                        
                                     </tr>
                                 @endforeach
                             </tbody>
                         </table>
-
+                    </div>
                     </div>
                 </div>
                 @include('admin.cuentaBancaria.editModal')
