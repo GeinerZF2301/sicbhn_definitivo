@@ -418,7 +418,7 @@
 .visiting-hours .table tr:last-child td {
     border: none;
 }
-
+/**Prueba**/
 
 /*** Animal ***/
 .animal-item {
@@ -1210,7 +1210,7 @@ header.campannas .masthead-subheading {
   /*COLABORADORES*/
 
   .cards-container- {
-    background-color: #d3d0d0;
+    background-color: #fffefe;
     display: flex;
     justify-content: center;
     align-items: center;

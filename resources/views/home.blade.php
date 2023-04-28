@@ -83,8 +83,11 @@
                         Hojancha y Nandayure en la provincia de Guanacaste. <br>
                         Dentro del Corredor Biológico existe una gran biodiversidad de flora y fauna.
                         Te invitamos a conocer más acerca de nuestras actividades y conectarte con la naturaleza.
-                        Sé parte de la familia del Corredor Biológico Hojancha-Nandayure.
-                    </p>
+                        Sé parte de la familia del Corredor Biológico Hojancha-Nandayure. <br>
+                        El Corredor Biológico es gestionado por el COMITÉ LOCAL de dicho corredor,
+                        constituido por instituciones públicas y privadas(FUNDECODES, MTF Teca, SINAC, Municipalidades, Ministerio de Salud,
+                        Ministerio de Agricultura, Monte Alto, Cámara de Ganaderos, Centros agrícolas, Panamerican Woods, OffBeat Travel, ASADA Morote,
+                        CoopeCerroAzul, Bomberos y Sociedad Civil) </p>
                     <h5 class="mb-3">
                         <i class="far fa-check-circle text-primary me-3"></i>Voluntariados
                     </h5>
@@ -221,46 +224,52 @@
 <div class="container-xxl py-5">
     <div class="container">
         <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            Opiniones de nuestros visitantes
+            Participantes en actividades
         </h1>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/MarFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de abonos orgánicos</h5>
                     <p>
-                        El recorrido que tuvé en el Corredor Biológico Hojancha-Nandayure
-                        fue una experiencia de conexión con la naturaleza.
+                        Me gustó mucho, porque esto nos ayuda a crear nuestros propios abonos 
+                        y no gastar dinero en comprar químicos dañinos para el ambiente, 
+                        además que aprovechamos desechos que generamos en nuestros hogares
                     </p>
-                    <h5 class="mb-1">María Acón</h5>
-                    <span class="fst-italic">Estudiante</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/AlfieriFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de abonos orgánicos</h5>
                     <p>
-                        En mi recorrdido por el Corredor Biológico Hojancha-Nandayure lo que
-                        más me impresionó fueron las zonas verdes, las vistas, y la fauna del lugar.
-                        Sin lugar a dudas volvería a visitar el Corredor Biológico.
+                        Lo que más me gustó es que corredor me ofreció un nuevo conocimientos en conservación 
+                        y protección de suelos mediante la divulgación de información sobre el uso de abonos orgánicos.
                     </p>
-                    <h5 class="mb-1">Alfieri Mora</h5>
-                    <span class="fst-italic">Estudiante</span>
                 </div>
             </div>
             <div class="testimonial-item text-center">
                 <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                    src="zoofari/img/inicio/MelanyFoto.jpg" style="width: 100px; height: 100px" />
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
                 <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de observación de aves</h5>
                     <p>
-                        El servicio al cliente y la atención que tuvieron
-                        los guías y encargados de la actividad fueron una de las
-                        mejores experiencias que tuvé en mi voluntariado en el
-                        Corredor Biológico Hojancha-Nandayure.
+                        Me encanto muchísimo las guías que nos daban, 
+                        llevarnos a conocer lugares, muchísimas gracias por esta oportunidad, me encantó.
                     </p>
-                    <h5 class="mb-1">Melany Lawson</h5>
-                    <span class="fst-italic">Estudiante</span>
+                </div>
+            </div>
+            <div class="testimonial-item text-center">
+                <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
+                    src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                <div class="testimonial-text rounded text-center p-4">
+                    <h5 class="mb-1">Taller de correcto uso de agroquímicos para la salud</h5>
+                    <p>
+                        Me dejó muchos conocimientos sobre cómo usar de forma adecuada los químicos, y evitar su uso para no arriesgar la salud. Aprendí que debemos de mantener etiquetas en cada químico, 
+                        guardarlos en un lugar seguro, y que las mujeres estamos más expuestas a los efectos por la reproducción.
+                    </p>
                 </div>
             </div>
         </div>
