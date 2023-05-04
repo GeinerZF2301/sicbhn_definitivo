@@ -20,7 +20,7 @@
                     </button>
                     @endcan
                     @include('admin.personas.createModal')
-                    <a href="ReportePersonas" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    <a href="/generate-pdf" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
                 </div>
             </div>
 

@@ -24,11 +24,15 @@ use App\Http\Middleware\LocaleCookieMiddleware;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\PdfController;
+
+use App\Http\Controllers\PDFDOMController;
 
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
+
+
+Route::get('/generate-pdf', [PDFDOMController::class, 'generatePDF']);
 
 Route::get('/', function () {
     return view('home');
