@@ -32,23 +32,21 @@ use App\Http\Controllers\PDFDOMController;
 //AQUI VAN LAS RUTAS DE VISTAS
 
 
-Route::get('/generate-pdf', [PDFDOMController::class, 'generatePDF']);
+Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('ReportePersonas', [PdfController::class, 'ReportePersonas']);
+Route::get('ReporteCampañas', [PDFDOMController::class, 'ReporteCampañas']);
 
-Route::get('ReporteCampañas', [PdfController::class, 'ReporteCampañas']);
+Route::get('ReporteVoluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
 
-Route::get('ReporteVoluntarios', [PdfController::class, 'ReporteVoluntarios']);
+Route::get('ReporteUsuarios', [PDFDOMController::class, 'ReporteUsuarios']);
 
-Route::get('ReporteUsuarios', [PdfController::class, 'ReporteUsuarios']);
+Route::get('ReporteTalleres', [PDFDOMController::class, 'ReporteTalleres']);
 
-Route::get('ReporteTalleres', [PdfController::class, 'ReporteTalleres']);
-
-Route::get('ReporteDonacionMonetaria', [PdfController::class, 'ReporteMonetario']);
+Route::get('ReporteDonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);

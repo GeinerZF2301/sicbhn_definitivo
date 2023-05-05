@@ -9,7 +9,7 @@ use PDF;
 
 class PDFDOMController extends Controller
 {
-    public function generatePDF()
+    public function ReportePersonas()
     {
         $personas = DB::table('personas')
             ->join('tipo_personas', 'personas.tipo_persona_id', '=', 'tipo_personas.id')
@@ -17,8 +17,9 @@ class PDFDOMController extends Controller
             ->get();
   
         $data = [
-            'title' => 'Your title',
-            'date' => date('m/d/Y'),
+            'title1' => 'Sistema de Información Corredor Biológico Hojancha Nandayure',
+            date_default_timezone_set('America/Costa_Rica'),
+            'date' => date('d/m/Y'),
             'Persona' => $personas
         ]; 
             
