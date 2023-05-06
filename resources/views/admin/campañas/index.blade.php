@@ -20,7 +20,7 @@
                 </button>
                 @endcan
                 
-                <a href="ReporteCampañas" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                <a href="/PDF-Campañas" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
 
 
                 

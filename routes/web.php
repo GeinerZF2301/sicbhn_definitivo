@@ -32,17 +32,19 @@ use App\Http\Controllers\PDFDOMController;
 //AQUI VAN LAS RUTAS DE VISTAS
 
 
+Route::get('/PDF-Usuarios', [PDFDOMController::class, 'ReporteUsuarios']);
+Route::get('/PDF-Voluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
+Route::get('/PDF-Campañas', [PDFDOMController::class, 'ReporteCampañas']);
 Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('ReporteCampañas', [PDFDOMController::class, 'ReporteCampañas']);
 
-Route::get('ReporteVoluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
 
-Route::get('ReporteUsuarios', [PDFDOMController::class, 'ReporteUsuarios']);
+
+
 
 Route::get('ReporteTalleres', [PDFDOMController::class, 'ReporteTalleres']);
 

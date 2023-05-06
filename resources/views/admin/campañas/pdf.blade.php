@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Reporte de Personas del CBHN</title>
+    <title>Reporte de Campañas del CBHN</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
@@ -10,7 +10,7 @@
 <body>
     <p style="position: absolute;  top: -20; right:30; width: 10px; height: 10px;">{{ $date }}</p>
     <div class="title1">Sistema de Información Corredor Biológico Hojancha Nandayure</div>
-    <div class="title2">REPORTE DE GESTIÓN DE PERSONAS</div>
+    <div class="title2">REPORTE DE GESTIÓN DE CAMPAÑAS</div>
     <img src="zoofari/img/LogoCorredor.jpg" style="position: absolute;  top: -20; left: 0; width: 100px; height: 100px;">
     <br>
 
@@ -19,23 +19,23 @@
             <tr>
                 <th style="width: 10%">N°</th>
                 <th style="width: 20%">Nombre</th>
-                <th style="width: 20%">Apellidos</th>
-                <th style="width: 20%">Número de identificación</th>
-                <th style="width: 10%">Edad</th>
-                <th style="width: 20%">Tipo de persona</th>
+                <th style="width: 30%">Descripción</th>
+                <th style="width: 20%">Ubicación</th>
+                <th style="width: 10%">Fecha</th>
+                <th style="width: 10%">Hora</th>
             </tr>
         </thead>
-        @foreach ($Persona as $persona)
+        @foreach ($Campaña as $campañas)
             <tr>
 
-                <td style="width: 10%" class="id" name="id" class="budget">{{ $persona->id }}</td>
-                <td style="width: 20%" name="nombre" class="budget">{{ $persona->nombre }}</td>
-                <td style="width: 20%" name="apellidos" class="budget">{{ $persona->apellidos }}</td>
-                <td style="width: 20%" name="numero_identificacion" class="budget">
-                    {{ $persona->numero_identificacion }}</td>
-                <td style="width: 10%" name="edad" class="budget">{{ $persona->edad }}</td>
-                <td style="width: 20%" name="tipo_persona_id_tipo_persona" class="budget">
-                    {{ $persona->tipo_persona_id_tipo_persona }}</td>
+                <td style="width: 10%" class="id" name="id" class="budget">{{ $campañas->id }}</td>
+                <td style="width: 20%" name="nombre" class="budget">{{ $campañas->nombre }}</td>
+                <td style="width: 30%" name="descripcion" class="budget">{{ $campañas->descripcion }}</td>
+                <td style="width: 20%" name="ubicacion" class="budget">
+                {{ $campañas->ubicacion }}</td>
+                <td style="width: 10%" name="fecha" class="budget">{{ $campañas->fecha }}</td>
+                <td style="width: 10%" name="hora" class="budget">
+                {{ $campañas->hora }}</td>
 
             </tr>
         @endforeach
