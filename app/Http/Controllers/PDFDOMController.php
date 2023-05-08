@@ -83,4 +83,39 @@ class PDFDOMController extends Controller
         return $pdf->stream('Reporte de Usuarios del CBHN.pdf','UTF-8');
 
     }
+
+    public function ReporteTalleres()
+    {
+        $talleres = Taller::all();
+       
+        $data = [
+            'title1' => 'Sistema de Información Corredor Biológico Hojancha Nandayure',
+            date_default_timezone_set('America/Costa_Rica'),
+            'date' => date('d/m/Y'),
+            'talleres' => $talleres
+        ]; 
+            
+        $pdf = PDF::setPaper('letter','landscape')->loadView('admin/talleres/pdf', $data);
+     
+        return $pdf->stream('Reporte de Talleres del CBHN.pdf','UTF-8');
+
+    }
+    public function ReporteMonetario()
+    {
+        $monetarios = DB::table('donacion_monetarias')
+        ->join('personas', 'donacion_monetarias.persona_donante_id', '=', 'personas.id')
+        ->select('donacion_monetarias.*', 'personas.nombre')
+        ->get();
+  
+        $data = [
+            'title1' => 'Sistema de Información Corredor Biológico Hojancha Nandayure',
+            date_default_timezone_set('America/Costa_Rica'),
+            'date' => date('d/m/Y'),
+            'monetarios' => $monetarios
+        ]; 
+            
+        $pdf = PDF::setPaper('letter','landscape')->loadView('admin/donacionMonetaria/pdf', $data);
+     
+        return $pdf->stream('Reporte de Donacion Monetaria del CBHN.pdf','UTF-8');
+    }
 }
