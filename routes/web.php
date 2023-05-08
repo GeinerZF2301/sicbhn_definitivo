@@ -30,13 +30,13 @@ use App\Http\Controllers\PDFDOMController;
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
-
+Route::get('/PDF-DonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
 Route::get('/DPF-Talleres', [PDFDOMController::class, 'ReporteTalleres']);
 Route::get('/PDF-Usuarios', [PDFDOMController::class, 'ReporteUsuarios']);
 Route::get('/PDF-Voluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
 Route::get('/PDF-Campañas', [PDFDOMController::class, 'ReporteCampañas']);
 Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
-Route::get('/PDF-DonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
+
 
 Route::get('/', function () {
     return view('home');
@@ -49,7 +49,6 @@ Route::get('/', function () {
 
 
 
-Route::get('ReporteDonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
