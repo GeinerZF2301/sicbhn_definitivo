@@ -16,10 +16,23 @@
                 <div class="d-flex align-items-center pt-4 animated slideInDown">
                     <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">{{
                         __('messages.TextoBotonMasInformacion') }}</a>
-                    <button type="button" class="btn-play" data-bs-toggle="modal"
-                        data-src="https://youtu.be/JcxND65b0QI" data-bs-target="#videoModal">
-                        <span></span>
-                    </button>
+                <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <span></span>
+                </button>
+                
+                <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="embed-responsive" style="height: 0; padding-bottom: 56.25%; position: relative;">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JcxND65b0QI" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                    
                     <h6 class="text-white m-0 ms-4 d-none d-sm-block">{{ __('messages.TextoBotonVerVideo') }}</h6>
                 </div>
             </div>
