@@ -1080,15 +1080,7 @@ header.campannas .masthead-subheading {
 
 
    /*DOCUMENTOS*/
-/* 
-header.campannas .masthead-subheading {
-    font-size: 1.5rem;
-    font-style: italic;
-    line-height: 1.5rem;
-    margin-bottom: 25px;
-    font-family: 'Poppins', sans-serif;
-  }
-   */
+
 
 
 @media (min-width: 768px) {
@@ -1096,20 +1088,7 @@ header.campannas .masthead-subheading {
       padding-top: 17rem;
       padding-bottom: 12.5rem;
     }
-    /* header.campannas .masthead-subheading {
-      font-size: 2.25rem;
-      font-style: italic;
-      line-height: 2.25rem;
-      margin-bottom: 2rem;
-      font-family: 'Poppins', sans-serif; 
-    } */
-    /* header.campannas .masthead-heading {
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 4.5rem;
-      margin-bottom: 4rem;
-      font-family: 'Poppins', sans-serif; 
-    } */
+  
   }
   
   .containertiposcampannas-document{
@@ -1139,22 +1118,7 @@ header.campannas .masthead-subheading {
    .bg-beige{
     background-color: #e3e1d0;
    }
-   /* .bg-beige{
-    background-color: #e3e1d0;
-   } */
-   /* .textocartas-document{
-    text-align: left;
-    margin-left: 16px;
-    font-family: 'Poppins', sans-serif;
-   } */
-   /* .descripcioncarta-document{
-    text-align:left;
-    font-size: medium;
-    height: 20px;
-    width: 300px;
-    margin-left: 32px;
-    padding-bottom: 60px;
-   } */
+   
    .ic-document{
     margin-top: 10px;
     width: 100px;
@@ -1178,6 +1142,8 @@ header.campannas .masthead-subheading {
  } 
  
 /*FUNCIONES DEL CORREDOR*/
+
+
    .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -1247,46 +1213,6 @@ header.campannas .masthead-subheading {
   /*EQUIPO DESARROLLADOR*/
 
   
-  /* .container-circle {
-    background-color: lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    min-height: 401px;
-  }
-  
-  .circle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    overflow: hidden;
-    margin: 20px;
-  }
-  
-  .circle img {
-    width: 100%;
-  }
-  
-  .circle h6 {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-  
-  .circle p {
-    font-size: 10px;
-    margin-top: 5px;
-  }
-
-
-
-  .texto {
-    margin-top: 10px;
-  } */
 
 
   .card-Desarrolladores {
