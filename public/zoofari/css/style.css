@@ -821,6 +821,7 @@ outline: none;
   width: 350px;
   height: 350px;
 }
+
 /*** Footer ***/
 .footer {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-2.jpg) center center no-repeat;
@@ -1435,3 +1436,266 @@ width:100%;
 height:100%;
 }
 
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hola{
+  display: flex;
+
+}
+
+.alimentosInfo{
+  display: flex;
+  justify-content: center;
+}
+
+.imagenAlimentos {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 2rem;
+
+} 
+
+/*Cards Alimentos*/
+
+.cardA{
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+  border-radius: 5px;
+  }
+  .cardA:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2%);
+  }
+
+
+  /*Cards Especies*/
+
+  .cardr{
+      overflow: hidden;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease;
+      border-radius: 5px;
+      }
+      .cardr:hover{
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(-2%);
+      }
+      .titulo{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+
+    /*Cards Monetaria*/
+
+      .cardM{
+          overflow: hidden;
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+          cursor: default;
+          transition: all 400ms ease;
+          border-radius: 5px;
+          }
+          .cardM:hover{
+              box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+              transform: translateY(-2%);
+          }
+          
+
+  /*Boton*/
+
+  .icono{
+      display: flex;
+      align-items: center;
+      
+  }
+  
+  .btn-Descarga{
+  display: inline-block;
+  align-items: center;
+  
+  
+  text-decoration: none;
+  color: aliceblue;
+  
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 3px;
+  
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
+  
+  transition: transform 0.3s ease;
+  }
+  
+  .btn-Descarga:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2%);
+  }
+
+
+
+
+
+
+
+
+
+
+  .flexEspecies  {
+      width: 100%;
+      height:100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  
+  
+  
+  .modalEspecies{
+      display: none;
+      position: fixed;
+      z-index: 1;
+      overflow: auto;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background:#0000002f;
+  }
+
+
+
+
+
+
+  .flex  {
+      width: 100%;
+      height:100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  
+  
+  
+  .modal{
+      display: none;
+      position: fixed;
+      /* z-index: 1; */
+      overflow: auto;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background:#0000002f;
+  }
+  
+  .contenido-modal{
+    position: relative;
+   background-color:#fefefe;
+   margin: auto;
+   width: 60%;
+   box-shadow: 0 0 6px 0 rgba(0,0, 0, .4) ;
+   animation-name: modal;
+  animation-duration: 1s;
+  overflow: hidden;
+  
+  }
+  @keyframes modal{
+    from{top: -330px; opacity:0;}
+    to{top: 0; opacity: 1;}
+ }
+
+  .modal-footer{
+      display: flex;
+      justify-content: center;
+  }
+  
+  
+  .close{
+      color: #808080;
+      font-size: 30px;
+      font-weight: bold;
+  }
+  
+  .close:hover{
+      color: #9b9b9b;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .p{
+      text-align: justify;
+  }
+  
+  @media screen and (max-width: 900px){
+      .contenido-modal{
+          width: 70%;
+  
+      }
+   .textos{
+      padding: 150px;
+   }
+      
+  }
+  
+  @media screen and (max-width: 500px){
+     
+   .textos{
+      padding: 150px;
+   }
+      
+  }
+  
+  
+  
+    /*Documentos*/
+  
+    .cardA{
+      overflow: hidden;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease;
+      }
+      .cardA:hover{
+          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+          transform: translateY(-2%);
+      }
+  
+  .icono{
+      display: flex;
+      align-items: center;
+      
+  }
+  
+  .btn-Descarga{
+  display: inline-block;
+  align-items: center;
+  
+  
+  text-decoration: none;
+  color: aliceblue;
+  
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 3px;
+  
+  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
+  
+  transition: transform 0.3s ease;
+  }
+  
+  .btn-Descarga:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+      transform: translateY(-2%);
+}

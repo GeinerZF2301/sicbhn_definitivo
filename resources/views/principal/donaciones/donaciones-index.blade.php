@@ -61,40 +61,6 @@
     </div>
     <!-- About End -->
 
-    <!-- Facts Start -->
-    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-
-                    <i class="fa fa-dove fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">257</h1>
-                    <p class="text-white mb-0">Especies de <br>
-                        Aves</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-regular fa-paw fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">65</h1>
-                    <p class="text-white mb-0">Especies de <br>
-                        Mamíferos</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-frog fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">40</h1>
-                    <p class="text-white mb-0">Especies de <br>
-                        Reptiles y Anfibios</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-globe fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">41.800</h1>
-                    <p class="text-white mb-0">Hectáreas de <br>
-                        Extensión territorial</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    <!-- Facts End -->
 
     <!-- Testimonial Start -->
     <div class="container-xxl py-5">
@@ -102,53 +68,283 @@
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
                 Tipos de Donaciones
             </h1>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/Donaciones/DEspecie.png" style="width: 100px; height: 100px" />
-                    <div class="testimonial-text rounded text-center p-4">
-                        <h5 class="mb-1">Donativos en Especie</h5>
-                        <span class="fst-italic">Profession</span>
-                        <p>
-                            Si deseas contribuir con algún tipo de material al Corredor Biológico Hojancha-Nandayure,
-                            te dejamos una lista de opciones que te pueden ayudar.
-                        </p>
+            <div class="container mt-5">
+                <div class="Hola row g-4 d-flex">
+
+                    
+                    <!--Cards Alimentos-->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="cardA mb-5">
+                            <div class="cardA-body ">
+                                <div class="row">
+                                    <div class="col- d-flex justify-content-center">
+                                        <div class="icono mt-2 mb-2">
+                                            <img src="zoofari/img/Donaciones/Alimento.jpg" alt="" weight="50px" height="50px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col">
+                                        <div class="cardA-title d-flex justify-content-center">
+                                            <h4>Donativos Alimenticios</h4>
+                                        </div>
+
+                                        <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                            <a class="btn abrirAlimentos btn-Descarga text-decoration-none" href="#"
+                                                id="abrirAlimentos">Ver más</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/Donaciones/DMonetaria.png" style="width: 100px; height: 100px" />
-                    <div class="testimonial-text rounded text-center p-4">
-                        <h5 class="mb-1">Donativos Monetarios</h5>
-                        <p>
-                            Si deseas contribuir con un aporte económico al Corredor Biológico Hojancha-Nandayure,
-                            lo puedes realizar a través de nuestras cuentas bancarias.
-                        </p>
-                        <h5 class=" py-4 d-flex justify-content-center">Cuentas Bancarias</h5>
-                        <span class="fw-bold">Banco Nacional-IBAN :</span>
-                        <span>CR-90015108310026000086</span>
-                        <br>
-                        <span class="fw-bold">Banco Nacional:</span>
-                        <span>100-02-083-600008-7</span>
-                        <br>
-                        <span class="fw-bold">Cuenta Cliente:</span>
-                        <span>15108310026000086</span>
+                    <!--Termina cards Alimentos-->
+
+
+                    <!--Cards especie-->
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="cardr mb-5">
+                            <div class="cardr-body ">
+                                <div class="row">
+                                    <div class="col- d-flex justify-content-center">
+                                        <div class="icono mt-2 mb-2">
+                                            <img src="zoofari/img/Donaciones/Especies.jpg" alt="" weight="50px" height="50px">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col">
+                                        <div class="cardr-title d-flex justify-content-center">
+                                            <h4>Donativos en Especie</h4>
+                                        </div>
+
+                                        <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                            <a class="abrirMEspecies btn btn-Descarga text-decoration-none" href="#"
+                                                id="abrirEspecies">Ver más</a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/Donaciones/DAlimentos.png" style="width: 100px; height: 100px" />
-                    <div class="testimonial-text rounded text-center p-4">
-                        <h5 class="mb-1">Donativos Alimenticios</h5>
-                        <p>
-                            Si deseas contribuir con algún tipo de alimento al Corredor Biológico Hojancha-Nandayure,
-                            te dejamos una lista de opciones que te pueden ayudar.
-                        </p>
-                    </div>
-                </div>
+                    <!--Termina cards especie-->
+            
+                     <!--Cards Monetarias-->
+                     <div class=" col-lg-4 col-md-6 col-sm-12">
+                                                    <div class="cardM mb-5">
+                                                        <div class="cardM-body ">
+                                                            <div class="row">
+                                                                <div class="col- d-flex justify-content-center">
+                                                                    <div class="icono mt-2 mb-2">
+                                                                        <img src="zoofari/img/Donaciones/DMonetaria.png" alt="" weight="50px"
+                                                                            height="50px">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row ">
+                                                                <div class="col">
+                                                                    <div class="cardM-title d-flex justify-content-center">
+                                                                        <h4>Donativos Monetarios</h4>
+                                                                    </div>
+            
+                                                                    <div
+                                                                        class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                                                        <a class="btn btn-Descarga text-decoration-none" href="#"
+                                                                            id="abrirMonetarias">Ver más</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                            <!--Termina cards Monetarias-->
+            
+                                        </div>
+                                    </div>
+            
+            
+            
+                                    <!--Modal Monetarias-->
+                                    <div id="Monetarias" class="modal">
+                                        <div class="flex" id="flexMonetarias">
+                                            <div class="contenido-modal">
+                                                <div class="row d-flex justify-content-end">
+                                                    <div
+                                                        class="col-lg-1 col-sm-2  d-flex justify-content-lg-start justify-content-sm-end">
+                                                        <span class="close" id="closeMonetarias">&times;</span>
+            
+                                                    </div>
+                                                </div>
+                                                <div class="row  ">
+                                                    <div class="col-lg-12  d-flex justify-content-center mt-2 ">
+                                                        <h2 class="text-sm-end mb-1">
+                                                            <font color="#028A0F">Donativos Monetarios</font>
+                                                        </h2>
+                                                    </div>
+            
+                                                    <div class="modal-body">
+                                                        <div class="row d-flex justify-content-center">
+                                                            <div class="col-9  ">
+                                                                <div class="flex-fill">
+                                                                    <p class="text-center">
+                                                                        Si deseas contribuir con un aporte económico al Corredor
+                                                                        Biológico Hojancha-Nandayure,
+                                                                        lo puedes realizar a través de nuestras cuentas bancarias.
+                                                                    </p>
+                                                                </div>
+            
+                                                            </div>
+                                                            <hr style="background-color:#028A0F ;">
+                                                            <div class="row">
+                                                                <div class="col">
+                                                                    <h5 class=" py-4 d-flex justify-content-center">Cuentas
+                                                                        Bancarias</h5>
+                                                                </div>
+                                                            </div>
+            
+                                                            <div class="row d-felx justify-content-end">
+                                                                <div class="col-lg-8 col-sm-12">
+                                                                    <span class="fw-bold">Banco Nacional-IBAN :</span>
+                                                                    <span>CR-90015108310026000086</span>
+                                                                    <br>
+                                                                    <span class="fw-bold">Banco Nacional:</span>
+                                                                    <span>100-02-083-600008-7</span>
+                                                                    <br>
+                                                                    <span class="fw-bold">Cuenta Cliente:</span>
+                                                                    <span>15108310026000086</span>
+                                                                </div>
+                                                            </div>
+            
+            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <!--Fin Modal Monetarias-->
+            
+                                    <!--Modal alimentos-->
+                                    <div id="Alimentos" class="modal">
+                                        <div class="flex" id="flexAlimentos">
+                                            <div class="contenido-modal">
+                                                <div class="alimentosInfo row d-flex justify-content-center ">
+                                                    <div class="col-10  d-flex justify-content-center mt-2 ">
+                                                        <div class="imagenAlimentos mt-2">
+                                                            <img src="zoofari/img/Donaciones/Alimento.jpg" weight="70px" height="70px">
+
+                                                        </div>
+                                                        <div class="tituloalimentos">
+                                                            <h2 class="mb-1">
+                                                                <font color="#028A0F">Donativos Alimenticios</font>
+                                                            </h2>
+                                                        </div>
+                                                        
+                                                        
+
+                                                        
+                                                    </div>
+                                                    <div class="col-2 d-flex justify-content-center aligh-items-center ">
+                                                        <span class="close" id="closeAlimentos">&times;</span>
+                                                    </div>
+                                                </div>
+                                                    <div class="modal-body">
+                                                        <div class="row d-flex justify-content-center">
+                                                            <div class="col-9  ">
+                                                                <div class="flex-fill">
+                                                                    <p class="text-center">
+                                                                        Si deseas contribuir con algún tipo de alimento al Corredor
+                                                                        Biológico Hojancha-Nandayure,
+                                                                        te dejamos una lista de opciones que te pueden ayudar.
+                                                                    </p>
+                                                                    <hr style="background-color:#028A0F ;">
+                                                                    <span>hola</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                        <!--Fin Modal alimentos-->
+            
+            
+                                        <!--MOdal Especies-->
+            
+            
+                                        <div id="Especies" class="modalEspecies">
+                                            <div class="flexEspecies" id="flexEspecies">
+                                                <div class="contenido-modal">
+                                                    <div class="row d-flex justify-content-end">
+                                                        <div
+                                                            class="col-lg-1 col-sm-2  d-flex justify-content-lg-start justify-content-sm-end">
+                                                            <span class="close closeEspecies" id="closeEspecies">&times;</span>
+            
+                                                        </div>
+                                                    </div>
+                                                    <div class="row  ">
+                                                        <div class="col-12  d-flex justify-content-center aligh-items-center mt-2 ">
+                                                            <div class="imagen">
+                                                                <img src="img/hoja.png" alt="">
+                                                            </div>
+                                                            <div class="titulo ">
+                                                                <h2>
+                                                                    <font color="#028A0F">Donativos en Especies</font>
+                                                                </h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+            
+            
+                                                    <div class="modal-body">
+                                                        <div class="row d-flex justify-content-center">
+                                                            <div class="col-9  ">
+                                                                <div class="flex-fill ">
+                                                                    <p class="text-center">
+                                                                        Si deseas contribuir con algún tipo de material al Corredor
+                                                                        Biológico Hojancha-Nandayure,
+                                                                        te dejamos una lista de opciones que te pueden ayudar.
+                                                                    </p>
+                                                                    <hr style="background-color:#028A0F ;">
+                                                                    <div class="row d-flex  ">
+                                                                        <div class="col-lg-4 col-md-4 col-sm-12 m-3 ">
+                                                                            <ul class="list-group list-group-flush text-center ">
+                                                                                <li class="list-group-item">An item</li>
+                                                                                <li class="list-group-item">A second item</li>
+                                                                                <li class="list-group-item">A third item</li>
+                                                                                <li class="list-group-item">A fourth item</li>
+                                                                                <li class="list-group-item">And a fifth one</li>
+                                                                                <li class="list-group-item">An item</li>
+                                                                                <li class="list-group-item">A second item</li>
+                                                                                <li class="list-group-item">A third item</li>
+                                                                                <li class="list-group-item">A fourth item</li>
+            
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+            
+            
+                                                                </div>
+                                                            </div>
+                                                        </div>
+            
+            
+                                                    </div>
+            
+                                                </div>
+                                            </div>
+            
+                                            <!--TErmina modal Especies-->
+
+
+
             </div>
         </div>
-    </div>
-    <!-- Testimonial End -->
+        <!-- Testimonial End -->
+
+<script src="zoofari/js/donaciones.js"></script>
 @endsection
 <!-- Navbar End -->
