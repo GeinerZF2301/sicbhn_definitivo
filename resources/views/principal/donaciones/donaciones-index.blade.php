@@ -34,8 +34,8 @@
                         {{-- <span class="text-primary">Donación</span>? --}}
                     </h1>
                     <p class="mb-4">
-                        La ayuda proporcionada al Corredor Biológico Hojancha-Nandayure,
-                        permite desarrollar nuevos proyectos y mantener los que ya están implementados.
+                        La ayuda proporcionada al Corredor Biológico Hojancha-Nandayure, es una manera significativa de contribuir a la conservación y protección de la biodiversidad y los ecosistemas de la región.<br>
+                        Además, permite desarrollar nuevos proyectos y mantener los que ya están implementados.
 
                     </p>
 

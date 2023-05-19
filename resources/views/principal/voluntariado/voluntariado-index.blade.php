@@ -161,8 +161,8 @@
 
                             <p class="featured-block-text">Experiencia <strong> Ambiental</strong></p>
                             <p class="mb-41">
-                                Ser voluntariado junto a personas que tienen conocimientos para brindarte en este
-                                contexto ambiental.
+                                Ser voluntario junto a otras personas nos brinda una valiosa experiencia al participar en 
+                                actividades que nos ayuden a conectar con la naturaleza, y contribuir de manera significativa.
                             </p>
                         </a>
                     </div>
@@ -176,8 +176,8 @@
                                 alt="">
                             <p class="featured-block-text"><strong>Genera</strong> Impacto</p>
                             <p class="mb-41">
-                                Ser voluntariado junto a personas que tienen conocimientos para brindarte en este
-                                contexto ambiental.
+                                El voluntariado genera impacto y promueve el cambio positivo en la sociedad, 
+                                permitiéndonos contribuir activamente a mejorar la vida de quienes más lo necesitan.
                             </p>
                         </a>
                     </div>
@@ -191,8 +191,8 @@
 
                             <p class="featured-block-text">Desarrollo <strong> Personal</strong></p>
                             <p class="mb-41">
-                                Ser voluntariado junto a personas que tienen conocimientos para brindarte en este
-                                contexto ambiental.
+                                Ser voluntario ayuda a adquirir nuevas habilidades, ampliar nuestra perspectiva y
+                                enriquecer nuestra experiencia al interactuar con diferentes comunidades.
                             </p>
                         </a>
                     </div>
@@ -201,13 +201,13 @@
                 <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                     <div class="featured-block d-flex justify-content-center align-items-center wow fadeInUp"
                         data-wow-delay="0.5s"">
-                        <a href=" donate.html" class="d-block">
+                        <a class="d-block">
                             <img src="zoofari/img/voluntariado/caridad.png" class="featured-block-image img-fluid"
                                 alt="">
                             <p class="featured-block-text"><strong>Ayudar al</strong> Entorno</p>
                             <p class="mb-41">
-                                Ser voluntariado junto a personas que tienen conocimientos para brindarte en este
-                                contexto ambiental.
+                                Ser voluntario permite ayudar en proyectos de conservación ambiental, limpieza y 
+                                prácticas sostenibles, contribuyendo a preservar y mejorar el medio ambiente.
                             </p>
                         </a>
                     </div>

@@ -72,7 +72,7 @@
         <h5 class="fw-bold text-primary text-uppercase">Aquí encontrarás las</h5>
         <h1 class="mb-0">Funciones del Corredor Biológico</h1>
     </div>
-    
+
     <div class="card-container">
         <div class="card" style="background-color: #4caf50;">
             <p class="card-text">Administración y gestión de actividades del POA</p>
@@ -90,7 +90,7 @@
             <p class="card-text">Nuestras actividades dependen mucho de los representantes
                 institucionales</p>
         </div>
-    </div> 
+    </div>
 
     <!-- funciones del corredor End -->
 
@@ -340,15 +340,15 @@
     <div class="cards-container- wow fadeInUp" data-wow-delay="0.1s">
         <div class="card-" data-wow-delay="0.1s">
             <a href="https://www.chorotega.una.ac.cr">
-                <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
+                <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1"> </a>
         </div>
         <div class="card- wow fadeInUp" data-wow-delay="0.1s">
             <a href="https://www.facebook.com/nicoyasistemas/">
-                <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2">
+                <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2"> </a>
         </div>
         <div class="card- wow fadeInUp" data-wow-delay="0.1s">
             <a href="https://www.instagram.com/jose_venegas_photography/">
-                <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3">
+                <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3"> </a>
         </div>
     </div>
 
@@ -370,47 +370,52 @@
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Geiner_EquipoD.jpg" alt="Imagen 5">
-            <a href="">
+            <a href=""> 
                 <div class="card-text-Desarrolladores">
                     <h2>Geiner Zúñiga Flores</h2>
                     <p>Desarrollador Full Stack</p>
                 </div>
+            </a>
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Melany_EquipoD.jpg" alt="Imagen 2">
-            <a href="">
+            <a href=""> 
                 <div class="card-text-Desarrolladores">
                     <h2>Melany Lawson Méndez</h2>
                     <p>Desarolladora Front-End</p>
                 </div>
+            </a>
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Mar_EquipoD.jpg" alt="Imagen 3">
-            <a href="">
+            <a href=""> </a>
                 <div class="card-text-Desarrolladores">
                     <h2>María del Mar Acón Vargas</h2>
                     <p>Desarolladora Front-End</p>
                 </div>
+            </a>
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Kris_EquipoD.jpg" alt="Imagen 4">
-            <a href="">
+            <a href="https://www.linkedin.com/in/kriscia-campos-c%C3%A1rdenas-46b937276/"> 
                 <div class="card-text-Desarrolladores">
                     <h2>Kriscia Campos Cárdenas</h2>
                     <p>Diseñadora Full Stack</p>
                 </div>
+            </a>
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Alfieri_EquipoD.jpg" alt="Imagen 1">
-            <a href="">
+            <a href="https://www.linkedin.com/in/alfieri-mora-2bb34625a/"> 
                 <div class="card-text-Desarrolladores">
                     <h2>Alfieri Mora Jiménez</h2>
                     <p>DevOps y Desarrollador Front-End</p>
                 </div>
+            </a>
         </div>
     </center>
 

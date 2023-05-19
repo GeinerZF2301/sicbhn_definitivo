@@ -64,7 +64,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                             <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
                             <div class="ps-4">
@@ -72,7 +72,7 @@
                                 <h6 class="text-uppercase mb-0">Positivamente</h6>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
                 @auth
                 {{-- // The user is authenticated... --}}
