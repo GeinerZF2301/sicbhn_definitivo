@@ -14,7 +14,7 @@ class ContactController extends Controller
     }
     public function store(Request $request){
         $correo = new ContactMail($request->all());
-    Mail::to('sicbhn2023@gmail.com')->send($correo);
+    Mail::to('sistema.cbhn.web@gmail.com')->send($correo);
     return view('principal/contactos.contactos-index');
     }
 }

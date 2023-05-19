@@ -21,6 +21,9 @@
     </div>
     <!-- Page Header End -->
 
+    <!-- Meta Description -->
+    <meta name="description" content="Muestra el contenido del Modulo de Campañas,ademas de mostrar las campañas disponibles de la base de datos.">
+
 
     <!-- About Start -->
     <div class="container-xxl py-5">
@@ -46,7 +49,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/Campannas/monte alto autoeva.jpeg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/Campannas/monte alto autoeva.webp" alt="" />
                     </div>
                 </div>
             </div>

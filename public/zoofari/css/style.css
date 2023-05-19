@@ -167,7 +167,7 @@
 
 /*Header de Campannas*/
 .header-bgC {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Campannas/CampannaPrincipal.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Campannas/CampannaPrincipal.webp) center center no-repeat;
     background-size: cover;
 }
 /*Header de Voluntariados*/
@@ -823,7 +823,7 @@ outline: none;
 }
 /*** Footer ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/bg-2.webp) center center no-repeat;
     background-size: cover;
 }
 

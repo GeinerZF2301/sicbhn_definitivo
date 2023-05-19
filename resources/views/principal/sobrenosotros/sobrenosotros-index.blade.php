@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/SN.webp" alt="" />
                     </div>
                 </div>
             </div>
