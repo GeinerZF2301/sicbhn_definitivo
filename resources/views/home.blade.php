@@ -25,7 +25,7 @@
                         <div class="modal-content">
                             <div class="modal-body">
                                 <div class="embed-responsive" style="height: 0; padding-bottom: 56.25%; position: relative;">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JcxND65b0QI" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                                    <iframe class="embed-responsive-item" src="https://youtu.be/32WfcSD8J1Q" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                                 </div>
                             </div>
                         </div>
