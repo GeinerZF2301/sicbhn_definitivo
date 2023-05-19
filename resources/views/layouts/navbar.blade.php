@@ -75,7 +75,7 @@
                     <a class="btn btn-sm-square bg-white text-primary me-1"
                         href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"><i
                             class="fab fa-instagram"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.youtube.com/channel/UC0Ll35d5h7h9JjJYDKyyvKA"><i
                             class="fab fa-youtube"></i></a>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                         <a class="btn btn-outline-light btn-social"
                             href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"><i
                                 class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC0Ll35d5h7h9JjJYDKyyvKA"><i class="fab fa-youtube"></i></a>
 
                     </div>
                 </div>
