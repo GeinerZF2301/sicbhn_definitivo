@@ -420,8 +420,5 @@
     </center>
 
     <!-- EQUIPO DESARROLLADOR END-->
-    <script src="../zoofari/js/owl-custom.js"></script>
-    <script src="../zoofari/js/owl-isotope.min.js"></script>
-    <script src="../zoofari/js/owl-owl-carousel.js"></script>
-    <script src="../zoofari/js/owl-slick-slider.js"></script>
+
 @endsection
