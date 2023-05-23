@@ -4,7 +4,7 @@ namespace App\Services;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\UploadedFile;
 
-class FileUploadService
+class FileDeleteService
 {
     /**
      * Sube un archivo al disco especificado.

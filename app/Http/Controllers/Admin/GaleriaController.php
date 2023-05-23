@@ -45,13 +45,10 @@ class GaleriaController extends Controller
             $fileName = $file->getClientOriginalName();
             $fileNameUpload = $this->fileUploadService->uploadFile($file, 'public', $path, $fileName);
             $validatedData['file'] = $fileNameUpload;
-            
             $estadoImagen = (boolean) $validatedData['estado'];
             $estadoAux = $estadoImagen;
-
             $validatedData['estado'] = $estadoAux;
             $validatedData['path'] = $path;
-
             $this->galeriaRepositorio->storeImage($validatedData);
             return response()->json([
                 'success' => 'La Imagen ha sido creada correctamente'
