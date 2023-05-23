@@ -30,19 +30,19 @@
                 <div class="row g-3">
                     <div class="col-6 text-start">
                         <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s"
-                            src="zoofari/img/talleres/taller1.jpg">
+                            src="/zoofari/img/talleres/taller1.jpg">
                     </div>
                     <div class="col-6 text-start">
                         <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s"
-                            src="zoofari/img/talleres/taller6.jpg" style="margin-top: 25%;">
+                            src="/zoofari/img/talleres/taller6.jpg" style="margin-top: 25%;">
                     </div>
                     <div class="col-6 text-end">
                         <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s"
-                            src="zoofari/img/talleres/taller6.jpg">
+                            src="/zoofari/img/talleres/taller6.jpg">
                     </div>
                     <div class="col-6 text-end">
                         <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s"
-                            src="zoofari/img/talleres/taller1.jpg">
+                            src="/zoofari/img/talleres/taller1.jpg">
                     </div>
                 </div>
             </div>
@@ -64,15 +64,6 @@
                             </div>
                         </div>
                     </div>
-                    {{-- <div class="col-sm-6">
-                        <div class="d-flex align-items-center border-start border-5 border-primary px-3">
-                            <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
-                            <div class="ps-4">
-                                <p class="mb-0">Zonas impactadas</p>
-                                <h6 class="text-uppercase mb-0">Positivamente</h6>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
                 @auth
                 {{-- // The user is authenticated... --}}
@@ -119,20 +110,20 @@
                 <div class="cardv-body">
                     <div class="row ">
                         <div class="col d-flex ">
-                            <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34PX">
+                            <img src="/zoofari/img/Campannas/maps.png" alt="" width="34px" height="34PX">
                             <p> {{ $talleresDisponible->ubicacion }}.</p>
 
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-4">
-                            <img src="zoofari/img/Campannas/calendario.png" alt="">
+                            <img src="/zoofari/img/Campannas/calendario.png" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="zoofari/img/Campannas/reloj.png" alt="">
+                            <img src="/zoofari/img/Campannas/reloj.png" alt="">
                         </div>
                         <div class="col-4">
-                            <img src="zoofari/img/voluntariado/altavoz.png" alt="">
+                            <img src="/zoofari/img/voluntariado/altavoz.png" alt="">
                         </div>
                     </div>
                     <div class="row">
@@ -189,7 +180,7 @@
         <div class="row">
             <div class="col-lg-6 col-12 mb-5 mb-lg-0">
 
-                <img src="zoofari/img/taller/Voluntariados9.jpg" class="custom-text-box-image img-fluid" alt="">
+                <img src="/zoofari/img/taller/Voluntariados9.jpg" class="custom-text-box-image img-fluid" alt="">
             </div>
 
             <div class="col-lg-6 col-12">
