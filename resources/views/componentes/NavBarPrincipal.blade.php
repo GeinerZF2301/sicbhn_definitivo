@@ -62,9 +62,7 @@
             </div>
  
     
-            @can('ver-administracion')
-            <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
-            @endcan          
+                      
         </div>
         <!-- Authentication Links -->
         @guest
@@ -79,13 +77,17 @@
     </a> --}}
 
 
-        
-            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false" v-pre>
+    <div class="nav-item dropdown">
+            <a href="#" role="button" class="nav-link dropdown-toggle"
+            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                 {{ Auth::user()->name }}
             </a>
+            <div class="dropdown-menu rounded-0 rounded-bottom m-0">
 
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                @can('ver-administracion')
+                <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
+                @endcan
+            
                 <a class="dropdown-item" href="{{ route('logout') }}"
                     onclick="event.preventDefault();
                                             document.getElementById('logout-form').submit();">
@@ -96,10 +98,8 @@
                     @csrf
                 </form>
             </div>
-
+        </div>
         @endguest
     </div>
-    
 
-    
 </nav>

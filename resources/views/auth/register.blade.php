@@ -47,7 +47,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#17701e",endCo
 
                                             @error('name')
                                                     <span class="invalid-feedback" role="alert">
-                                                        <strong>{{ $message }}</strong>
+                                                      {{ __('El nombre debe ser de 15 caracteres') }}
                                                     </span>
                                             @enderror
                                         </div>
