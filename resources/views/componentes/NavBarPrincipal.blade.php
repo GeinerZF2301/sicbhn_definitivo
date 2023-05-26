@@ -1,20 +1,48 @@
-<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn"
+<nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn "
     data-wow-delay="0.1s">
     <a href="{{ url('/') }}" class="navbar-brand p-0">
         <img class="img-fluid me-3" src="zoofari/img/LogoCorredor.png" alt="Icon" />
         <h1 class="m-0 text-primary">SICBHN</h1>
     </a>
+
+
+
     <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
+
+          
+
+             <div class="row ms-3   d-lg-none ">
+                <div class="col  ">
+                    <a class="m-2 " href="/locale/en"> <img src="zoofari/img/USA.png" alt=""></a>
+                    <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.png" alt=""></a>
+                    <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.png" alt=""></a>
+                </div>
+              
+            </div> 
+
+
             <a href="{{ url('/') }}" class="nav-item nav-link">{{ __('messages.NavBarInicio') }}</a>
-            <a href="{{ url('/voluntariado') }}" class="nav-item nav-link">{{ __('messages.NavBarVoluntariados') }}</a>
-            <a href="{{ url('/campañas') }}" class="nav-item nav-link">{{ __('messages.NavBarCampaña') }}</a>
-            <a href="{{ url('/talleres') }}" class="nav-item nav-link">Talleres</a>
             <a href="{{ url('/donaciones') }}" class="nav-item nav-link">{{ __('messages.NavBarDonaciones') }}</a>
-            
+
+
+              <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle"
+                    data-bs-toggle="dropdown">{{ __('messages.NavBarActividades') }}</a>
+
+                <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                    <a href="{{ url('/voluntariado') }}" class="dropdown-item">{{ __('messages.NavBarVoluntariados') }}</a>
+                    <a href="{{ url('/campañas') }}" class="dropdown-item">{{ __('messages.NavBarCampaña') }}</a>
+                    <a href="{{ url('/talleres') }}" class="dropdown-item">Talleres</a>
+                </div>
+
+            </div>
+
+
+
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown">{{ __('messages.NavBarSobreNosotros') }}</a>
@@ -28,9 +56,12 @@
                         {{ __('messages.NavBarDropDownHorasVisita') }} </a>
                     <a href="{{ url('/documentos') }}"
                         class="dropdown-item">{{ __('messages.NavBarDropDownHorasDocumentacion') }}</a>
+                    <a href="{{ url('/contactos') }}"
+                        class="dropdown-item">{{ __('messages.NavBarContactos') }}</a>
                 </div>
             </div>
-            <a href="{{ url('/contactos') }}" class="nav-item nav-link">{{ __('messages.NavBarContactos') }}</a>
+ 
+    
             @can('ver-administracion')
             <a href="{{ url('/admin') }}" class="nav-item nav-link"> Administración </a>
             @endcan          
