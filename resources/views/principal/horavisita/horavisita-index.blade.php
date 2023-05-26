@@ -6,14 +6,14 @@
     <!-- Page Header Start -->
     <div class="container-fluid header-bgHV py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-4 text-white mb-3 animated slideInDown">Horarios de visita</h1>
+            <h1 class="display-4 text-white mb-3 animated slideInDown">Horarios de Oficina</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
                         <a class="text-white" href="{{ url('/') }}">Inicio</a>
                     </li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">
-                        Horarios de Visita
+                        Horarios de Oficina
                     </li>
                 </ol>
             </nav>
@@ -27,12 +27,12 @@
                 <p><span class="text-primary me-2">¡Sé parte de nuestra familia! </p>
                 <h1 class="display-5 mb-9">
                     Aquí podrás encontrar nuestros
-                    <span class="text-primary">horarios de visita</span>
+                    <span class="text-primary">horarios de Oficina</span>
                 </h1>
                 <p class="mb-9">
-                    Te presentamos nuestros horarios de visita para que puedas conocer más del Corredor Biológico
+                    Te presentamos nuestros horarios de oficina para que puedas conocer más del Corredor Biológico
                     Hojancha-Nandayure.<br>
-                    Además, si te encuentras interesado en realizar alguna visita con más personas nos puedes contactar para
+                    Además, si te encuentras interesado en realizar alguna visita a nuestra oficina nos puedes contactar para
                     coordinar y realizar una experiencia <br>
                     más agradable para ti.
                 </p>
@@ -44,7 +44,7 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-md-12 wow fadeIn" data-wow-delay="0.3s">
-                        <h1 class="display-6 text-center text-white mb-6">Horarios de Visita</h1>
+                        <h1 class="display-6 text-center text-white mb-6">Nuestras oficinas están abiertas <br> en los siguientes horarios: </h1>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">
                                 <span>Lunes</span>

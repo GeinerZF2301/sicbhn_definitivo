@@ -55,7 +55,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/SN.jpg" alt="" />
+                        <img class="img-fluid" src="/zoofari/img/SN.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -67,7 +67,8 @@
 
 
     <!-- Funciones del corredor -->
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto wow fadeInUp" data-wow-delay="0.5s" style="max-width: 600px;">
+    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto wow fadeInUp" data-wow-delay="0.5s"
+        style="max-width: 600px;">
         <h5 class="fw-bold text-primary text-uppercase">Aquí encontrarás las</h5>
         <h1 class="mb-0">Funciones del Corredor Biológico</h1>
     </div>
@@ -173,9 +174,11 @@
 
 
                         <div class="col-12">
-                            <a class="animal-item" href="https://www.facebook.com/people/Gesti%C3%B3n-Ambiental-Municipalidad-de-Hojancha/100064327226544/">
+                            <a class="animal-item"
+                                href="https://www.facebook.com/people/Gesti%C3%B3n-Ambiental-Municipalidad-de-Hojancha/100064327226544/">
                                 <div class="position-relative">
-                                    <img class="img-fluid miembros-img" src="zoofari/img/SobreNosotros/Miembros/GestionAmbientalHojancha.jpg"
+                                    <img class="img-fluid miembros-img"
+                                        src="zoofari/img/SobreNosotros/Miembros/GestionAmbientalHojancha.jpg"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Gestión Ambiental de Hojancha</p>
@@ -246,8 +249,7 @@
                             <a class="animal-item" href="https://www.offbeattravel.us/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.jpeg"
-                                        alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.jpeg" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">OffBeat Travel</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -276,7 +278,8 @@
                             <a class="animal-item" href="https://www.ministeriodesalud.go.cr/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/LogoMinisterioSalud2.png" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/LogoMinisterioSalud2.png"
+                                        alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Ministerio de Salud</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -286,10 +289,12 @@
                         </div>
 
                         <div class="col-12">
-                            <a class="animal-item" href="https://www.nandayure.go.cr/index.php/mn-gestionmunicipal/mn-areaadministrativa/mn-gestion-ambiental">
+                            <a class="animal-item"
+                                href="https://www.nandayure.go.cr/index.php/mn-gestionmunicipal/mn-areaadministrativa/mn-gestion-ambiental">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.jpeg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.jpeg"
+                                        alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Gestión Ambiental Nandayure</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -301,7 +306,8 @@
                             <a class="animal-item" href="https://cacnandayure.com/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.png" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.png"
+                                        alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Centro Agrícola Nandayure</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -318,89 +324,101 @@
 
     <!-- colaboradores -->
 
-<br>
-<br>
-<br>
-<br>
-<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-        <h5 class="fw-bold text-primary text-uppercase">Conoce a nuestros</h5> <br>
-        <h1 class="mb-0">Colaboradores</h1>
+    <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">Conoce a nuestros</h5> <br>
+            <h1 class="mb-0">Colaboradores</h1>
+        </div>
+
+    </div>
+    <div class="cards-container- wow fadeInUp" data-wow-delay="0.1s">
+        <div class="card-" data-wow-delay="0.1s">
+            <a href="https://www.chorotega.una.ac.cr">
+                <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1"> </a>
+        </div>
+        <div class="card- wow fadeInUp" data-wow-delay="0.1s">
+            <a href="https://www.facebook.com/nicoyasistemas/">
+                <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2"> </a>
+        </div>
+        <div class="card- wow fadeInUp" data-wow-delay="0.1s">
+            <a href="https://www.instagram.com/jose_venegas_photography/">
+                <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3"> </a>
+        </div>
     </div>
 
-</div>
-  <div class="cards-container- wow fadeInUp" data-wow-delay="0.1s">
-    <div class="card-" data-wow-delay="0.1s">
-      <a href="https://www.chorotega.una.ac.cr">
-      <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1">
-    </div>
-    <div class="card- wow fadeInUp" data-wow-delay="0.1s">
-      <a href="https://www.facebook.com/nicoyasistemas/">
-      <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2">
-    </div>
-    <div class="card- wow fadeInUp" data-wow-delay="0.1s">
-       <a href="https://www.instagram.com/jose_venegas_photography/">
-      <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3">
-    </div>
-  </div>
-
-<!-- colaboradores end -->
+    <!-- colaboradores end -->
 
 
 
-<!-- EQUIPO DESARROLLADOR-->
-<br>
-<br>
-<br>
+    <!-- EQUIPO DESARROLLADOR-->
+    <br>
+    <br>
+    <br>
 
-<center>
-    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-        <h4 class="fw-bold text-primary text-uppercase">Conoce al</h4>
-        <h1 class="mb-0">Equipo Desarrollador</h1>
-    </div>
-<div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 1">
-  <div class="card-text-Desarrolladores">
-    <h2>Melany Lawson Méndez</h2>
-    <p>Front End Developer</p>
-  </div>
-</div>
+    <center>
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto wow fadeInUp" data-wow-delay="0.1s"
+            style="max-width: 600px;">
+            <h4 class="fw-bold text-primary text-uppercase">Conoce al</h4>
+            <h1 class="mb-0">Equipo Desarrollador</h1>
+        </div>
 
-<div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-  <img src="../zoofari/img/SobreNosotros/Mar.jpeg"  alt="Imagen 2">
-  <div class="card-text-Desarrolladores">
-    <h2>Título de la tarjeta 2</h2>
-    <p>Texto de la tarjeta 2</p>
-  </div>
-</div>
+        <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
+            <img src="../zoofari/img/SobreNosotros/Geiner_EquipoD.jpg" alt="Imagen 5">
+            <a href=""> 
+                <div class="card-text-Desarrolladores">
+                    <h2>Geiner Zúñiga Flores</h2>
+                    <p>Desarrollador Full Stack</p>
+                </div>
+            </a>
+        </div>
 
-<div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-  <img src="../zoofari/img/SobreNosotros/Geiner.jpg" alt="Imagen 3">
-  <div class="card-text-Desarrolladores">
-    <h2>Título de la tarjeta 3</h2>
-    <p>Texto de la tarjeta 3</p>
-  </div>
-</div>
+        <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
+            <img src="../zoofari/img/SobreNosotros/Melany_EquipoD.jpg" alt="Imagen 2">
+            <a href=""> 
+                <div class="card-text-Desarrolladores">
+                    <h2>Melany Lawson Méndez</h2>
+                    <p>Desarolladora Front-End</p>
+                </div>
+            </a>
+        </div>
 
-<div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 4">
-  <div class="card-text-Desarrolladores">
-    <h2>Título de la tarjeta 4</h2>
-    <p>Texto de la tarjeta 4</p>
-  </div>
-</div>
+        <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
+            <img src="../zoofari/img/SobreNosotros/Mar_EquipoD.jpg" alt="Imagen 3">
+            <a href=""> </a>
+                <div class="card-text-Desarrolladores">
+                    <h2>María del Mar Acón Vargas</h2>
+                    <p>Desarolladora Front-End</p>
+                </div>
+            </a>
+        </div>
 
-<div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-  <img src="../zoofari/img/SobreNosotros/Melany.jpeg" alt="Imagen 5">
-  <div class="card-text-Desarrolladores">
-    <h2>Título de la tarjeta 5</h2>
-    <p>Texto de la tarjeta 5</p>
-  </div>
-</div>
-</center>
+        <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
+            <img src="../zoofari/img/SobreNosotros/Kris_EquipoD.jpg" alt="Imagen 4">
+            <a href="https://www.linkedin.com/in/kriscia-campos-c%C3%A1rdenas-46b937276/"> 
+                <div class="card-text-Desarrolladores">
+                    <h2>Kriscia Campos Cárdenas</h2>
+                    <p>Diseñadora Full Stack</p>
+                </div>
+            </a>
+        </div>
 
-<!-- EQUIPO DESARROLLADOR END-->
+        <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
+            <img src="../zoofari/img/SobreNosotros/Alfieri_EquipoD.jpg" alt="Imagen 1">
+            <a href="https://www.linkedin.com/in/alfieri-mora-2bb34625a/"> 
+                <div class="card-text-Desarrolladores">
+                    <h2>Alfieri Mora Jiménez</h2>
+                    <p>DevOps y Desarrollador Front-End</p>
+                </div>
+            </a>
+        </div>
+    </center>
 
-            @endsection
+    <!-- EQUIPO DESARROLLADOR END-->
+
+@endsection

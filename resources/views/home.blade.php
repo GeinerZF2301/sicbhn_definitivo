@@ -14,12 +14,16 @@
                     {{ __('messages.TituloHero') }} Hojancha-Nandayure
                 </h1>
                 <div class="d-flex align-items-center pt-4 animated slideInDown">
-                    <a href="" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">{{
+                    <a href="/sobrenosotros" class="btn btn-primary py-sm-3 px-3 px-sm-5 me-5">{{
                         __('messages.TextoBotonMasInformacion') }}</a>
-                    <button type="button" class="btn-play" data-bs-toggle="modal"
-                        data-src="https://youtu.be/JcxND65b0QI" data-bs-target="#videoModal">
-                        <span></span>
-                    </button>
+                <button type="button" class="btn-play" data-bs-toggle="modal" data-bs-target="#videoModal">
+                    <span></span>
+                </button>
+                
+          
+              
+                
+                    
                     <h6 class="text-white m-0 ms-4 d-none d-sm-block">{{ __('messages.TextoBotonVerVideo') }}</h6>
                 </div>
             </div>
@@ -48,19 +52,16 @@
 <!-- Header End -->
 
 <!-- Video Modal Start -->
-<div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content rounded-0">
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title" id="exampleModalLabel">Conoce el Corredor Biológico</h3>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <h3 class="modal-title" id="exampleModalLabel">Conoce el Corredor Biológico
+                    <span class="text-primary">Hojancha-Nandayure</span></h3>
             </div>
             <div class="modal-body">
-                <!-- 16:9 aspect ratio -->
-                <div class="ratio ratio-16x9">
-                    <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                        allow="autoplay"></iframe>
+                <div class="embed-responsive" style="height: 0; padding-bottom: 56.25%; position: relative;">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/32WfcSD8J1Q" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
                 </div>
             </div>
         </div>

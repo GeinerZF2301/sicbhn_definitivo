@@ -20,7 +20,7 @@
                     </button>
                     @endcan
                     @include('admin.donacionMonetaria.createModal')
-                    <a href="ReporteDonacionMonetaria" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    <a href="/PDF-DonacionMonetaria" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
                 </div>
             </div>
 

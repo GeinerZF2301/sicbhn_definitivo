@@ -17,9 +17,9 @@
 
              <div class="row ms-3   d-lg-none ">
                 <div class="col  ">
-                    <a class="m-2 " href="/locale/en"> <img src="zoofari/img/USA.png" alt=""></a>
-                    <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.png" alt=""></a>
-                    <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.png" alt=""></a>
+                    <a class="m-2 " href="/locale/en"> <img src="zoofari/img/USA.webp" alt=""></a>
+                    <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.webp" alt=""></a>
+                    <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.webp" alt=""></a>
                 </div>
               
             </div> 

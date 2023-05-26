@@ -58,9 +58,9 @@
                 <div class="h-100 d-inline-flex align-items-center py-3">
                    
                     <div class="banderas .d-none .d-lg-block .d-xl-none">
-                        <a class="m-2" href="/locale/en"> <img src="zoofari/img/USA.png" alt=""></a>
-                        <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.png" alt=""></a>
-                        <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.png" alt=""></a>
+                        <a class="m-2" href="/locale/en"> <img src="zoofari/img/USA.webp" alt=""></a>
+                        <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.webp" alt=""></a>
+                        <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.webp" alt=""></a>
                      </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                     <a class="btn btn-sm-square bg-white text-primary me-1"
                         href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"><i
                             class="fab fa-instagram"></i></a>
-                    <a class="btn btn-sm-square bg-white text-primary me-0" href=""><i
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="https://www.youtube.com/channel/UC0Ll35d5h7h9JjJYDKyyvKA"><i
                             class="fab fa-youtube"></i></a>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                         <a class="btn btn-outline-light btn-social"
                             href="https://www.instagram.com/corredor_bio_hojancha_nandayur/?igshid=YmMyMTA2M2Y%3D"><i
                                 class="fab fa-instagram"></i></a>
-                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UC0Ll35d5h7h9JjJYDKyyvKA"><i class="fab fa-youtube"></i></a>
 
                     </div>
                 </div>

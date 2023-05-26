@@ -24,27 +24,31 @@ use App\Http\Middleware\LocaleCookieMiddleware;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
-use App\Http\Controllers\PdfController;
+
+use App\Http\Controllers\PDFDOMController;
 
 
 
 //AQUI VAN LAS RUTAS DE VISTAS
+Route::get('/PDF-DonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
+Route::get('/DPF-Talleres', [PDFDOMController::class, 'ReporteTalleres']);
+Route::get('/PDF-Usuarios', [PDFDOMController::class, 'ReporteUsuarios']);
+Route::get('/PDF-Voluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
+Route::get('/PDF-Campañas', [PDFDOMController::class, 'ReporteCampañas']);
+Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
+
 
 Route::get('/', function () {
     return view('home');
 });
 
-Route::get('ReportePersonas', [PdfController::class, 'ReportePersonas']);
 
-Route::get('ReporteCampañas', [PdfController::class, 'ReporteCampañas']);
 
-Route::get('ReporteVoluntarios', [PdfController::class, 'ReporteVoluntarios']);
 
-Route::get('ReporteUsuarios', [PdfController::class, 'ReporteUsuarios']);
 
-Route::get('ReporteTalleres', [PdfController::class, 'ReporteTalleres']);
 
-Route::get('ReporteDonacionMonetaria', [PdfController::class, 'ReporteMonetario']);
+
+
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);

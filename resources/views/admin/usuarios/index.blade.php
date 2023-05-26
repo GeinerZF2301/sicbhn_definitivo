@@ -17,7 +17,7 @@
                         @can('crear-usuario') 
                         <a style="margin-bottom: 1rem;"  href="{{ route('usuarios.create') }}" class=  "btn btn-success"> <i class="fas fa-plus"></i>  Crear usuario</a>
                         @endcan
-                        <a style="margin-bottom: 1rem;" href="ReporteUsuarios" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                        <a style="margin-bottom: 1rem;" href="/PDF-Usuarios" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
                     
                     
                 </div>
