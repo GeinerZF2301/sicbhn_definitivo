@@ -57,7 +57,6 @@
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
                    
-
                     <div class="banderas .d-none .d-lg-block .d-xl-none">
                         <a class="m-2" href="/locale/en"> <img src="zoofari/img/USA.png" alt=""></a>
                         <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.png" alt=""></a>
