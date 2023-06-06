@@ -6,6 +6,7 @@ return[
 'NavBarVoluntariados'=> 'Volunteering',
 'NavBarCampaña'=> 'Campaigns',
 'NavBarTalleres'=> 'Workshops',
+'NavBarActividades'=> 'Activities',
 'NavBarDonaciones'=> 'Donations',
 'NavBarSobreNosotros'=> 'About Us',
 'NavBarRegister'=> 'Register',

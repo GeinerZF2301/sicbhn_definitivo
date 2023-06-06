@@ -5,6 +5,7 @@ return[
 'NavBarInicio'=> 'Startseite',
 'NavBarVoluntariados'=> 'Freiwilligenarbeit',
 'NavBarCampaña'=> 'Kampagnen',
+'NavBarActividades'=> 'Aktivitäten',
 'NavBarTalleres'=> 'Workshops',
 'NavBarDonaciones'=> 'Spenden',
 'NavBarSobreNosotros'=> 'Über uns',

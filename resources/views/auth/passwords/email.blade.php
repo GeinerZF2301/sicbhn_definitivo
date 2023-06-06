@@ -5,52 +5,6 @@
 
   <!-- Navbar Start -->
   @include('componentes.NavbarLogin')
-  <!-- Page Header Start -->
-  {{--
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Restablecer contraseña') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    <form method="POST" action="{{ route('password.email') }}">
-                        @csrf
-
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Correo electrónico') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-success">
-                                    {{ __('Enviar enlace para restablecer') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>--}}
-
 
 <section class="vh-100" style=" 
         background: rgb(23,112,30);
@@ -66,23 +20,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
                     <div class="carddd d-flex">
                         <div class="col-lg-6  d-none d-md-block">
                             <div class="imagen">
-                                <img src="zoofari/img/Login/ooo.jpg" alt="">
+                                <img src="/zoofari/img/Login/DSC_0071-5.webp" alt="">
                             </div>
                         </div>
                         <div class="col-lg-6 col-sm-7">
                             <div class="carddd-body text-black me-3">
 
                                 
-                                <div class="d-flex align-items-center  ms-3 mt-3 mb-3 pb-1">
+                                <div class="d-flex align-items-center  ms-5 mt-5 mb-5 pb-1">
                                     <span class="h2 fw-bold   mb-0">Corredor Biológico Hojancha
                                         Nandayure</span>
                                 </div>
 
-                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Reestablecer Contraseña </h5>
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Solicitud cambiar contraseña </h5>
 
                                             @if (session('status'))
                                                 <div class="alert alert-success" role="alert">
-                                                    {{ session('status') }}
+                                                    {{ __('Solicitud enviada') }}
                                                 </div>
                                             @endif
         
@@ -103,7 +57,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
                                 
                                                                 @error('email')
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        <strong>{{ $message }}</strong>
+                                                                        {{ __('Correo electrónico inválido ') }}
                                                                     </span>
                                                                 @enderror
                                                             </div>

@@ -56,12 +56,12 @@
                     <small>Guanacaste, Costa Rica</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center py-3">
-                    <small class="far fa-clock text-primary me-2"></small>
-                    <small>{{ __('messages.NavBarHorario') }}: 08:00 AM - 12:00 PM</small>
-                    <a class="m-2" href="/locale/en"> <img src="zoofari/img/USA.webp" alt=""></a>
-                    <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.webp" alt=""></a>
-                    <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.webp" alt=""></a>
-             
+                   
+                    <div class="banderas .d-none .d-lg-block .d-xl-none">
+                        <a class="m-2" href="/locale/en"> <img src="zoofari/img/USA.webp" alt=""></a>
+                        <a class="m-2" href="/locale/ger"> <img src="zoofari/img/GER.webp" alt=""></a>
+                        <a class="m-2" href="/locale/es"><img src="zoofari/img/CR.webp" alt=""></a>
+                     </div>
                 </div>
             </div>
             <div class="col-lg-5 px-5 text-end">
