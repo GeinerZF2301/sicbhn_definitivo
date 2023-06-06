@@ -16,8 +16,7 @@ class TablaPermisoSeeder extends Seeder
     public function run()
     {
         $permisos = [
-            //Permiso Administracion 
-            'ver-administracion',
+            
             //Permisos Roles
             'ver-rol',
             'crear-rol',
@@ -83,6 +82,9 @@ class TablaPermisoSeeder extends Seeder
             'crear- Taller',
             'editar-Taller',
             'borrar-Taller',
+
+            //Permiso Administracion 
+            'ver-administracion',
         ];
 
         foreach($permisos as $permiso){

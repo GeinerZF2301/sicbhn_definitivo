@@ -29,7 +29,7 @@
                         <table id="dataTable" class="table table-hover  align-items-center">
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
-                                    <th scope="col">ID</th>
+                                    
                                     <th scope="col">Nombre</th>
                                     <th scope="col">E-mail</th>
                                     <th scope="col">Rol</th>
@@ -40,9 +40,7 @@
                             @foreach ($usuarios as $usuario)
 
                             <tr class="">
-                                        <td class="id" name="id" class="budget">
-                                            {{$usuario->id}}
-                                        </td>
+                                        
                                         <td name="Nombre" class="budget">
                                             {{$usuario->name}}
                                         </td>
@@ -73,7 +71,7 @@
                 </tbody>
             </table>
                 <div class="pagination justify-content-end">
-                    {{ $usuarios->links() }}  
+
                 </div>
             </div>
         </div>
