@@ -1,5 +1,6 @@
 @extends('layouts.admin')
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 @section('content')
     <section>
@@ -14,14 +15,15 @@
             <div class="row">
                 <div class="d-flex justify-content mt-2 ">
                     @can('crear-Taller')
-                        <button id="create-button" type="button"  class="btn btn-success mx-2" data-bs-toggle="modal"
+                        <button id="create-button" type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
                             data-bs-target="#createModal">
                             Crear taller
                         </button>
                     @endcan
-                    <a href="/DPF-Talleres" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    <a href="/DPF-Talleres" target="_blank" class="btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i>
+                        Generar reporte</a>
                     @include('admin.talleres.createModal')
-                    
+
                 </div>
             </div>
 
@@ -31,7 +33,7 @@
                         <table id="dataTable" class="table table-hover  align-items-center">
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
-                                    <th scope="col">ID</th>
+
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Descripcion</th>
                                     <th scope="col">acciones</th>
@@ -40,9 +42,7 @@
                             <tbody>
                                 @foreach ($talleres as $taller)
                                     <tr class="text-center">
-                                        <td class="id" name="id" class="budget">
-                                            {{ $taller->id }}
-                                        </td>
+
                                         <td name="tipo_persona" class="budget">
                                             {{ $taller->nombre }}
                                         </td>

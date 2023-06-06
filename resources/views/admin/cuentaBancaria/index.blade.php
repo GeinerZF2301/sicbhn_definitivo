@@ -30,7 +30,7 @@
                         <table id="dataTable" class="table table-hover  align-items-center">
                             <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                 <tr>
-                                    <th scope="col">ID</th>
+                                    
                                     <th scope="col">Entidad Bancaria</th>
                                     <th scope="col">Número de Cuenta</th>
                                     <th scope="col">Estado </th>
@@ -41,7 +41,7 @@
                                 @foreach ($articulos as $articulo)
                                 <tr>
                                     {{-- <tr class="text-center"> --}}
-                                        <td class="id" name="id" class="budget">{{ $articulo->id }}</td>
+                                        
                                         <td name="tipo_persona" class="budget">{{ $articulo->entidad_bancaria }}</td>
                                         <td name="descripcion" class="budget">{{ $articulo->numero_cuenta }}</td>
                                         <td name="descripcion" class="budget">{{ $articulo->estado }}</td>

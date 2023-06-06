@@ -27,7 +27,7 @@ class UsuarioController extends Controller
      */
     public function index(Request $request)
     {
-        $usuarios = User::paginate(5);
+        $usuarios = User::all();
         return view('admin.usuarios.index', compact('usuarios'));
     }
 
