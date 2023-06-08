@@ -27,49 +27,48 @@
                 <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                     <div class="">
                         <div class="table-responsive">
-                        <table id="dataTable" class="table table-hover  align-items-center">
-                            <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
-                                <tr>
-                                    
-                                    <th scope="col">Entidad Bancaria</th>
-                                    <th scope="col">Número de Cuenta</th>
-                                    <th scope="col">Estado </th>
-                                    <th scope="col">acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($articulos as $articulo)
-                                <tr>
-                                    {{-- <tr class="text-center"> --}}
-                                        
-                                        <td name="tipo_persona" class="budget">{{ $articulo->entidad_bancaria }}</td>
-                                        <td name="descripcion" class="budget">{{ $articulo->numero_cuenta }}</td>
-                                        <td name="descripcion" class="budget">{{ $articulo->estado }}</td>
-                                       
-
-                                        <div class="d-flex shadow-lg justify-content-between">
-                                            {{-- <td class=""> --}}
-                                                <td>
-                                                    <div class="d-flex justify-content-center">
-
-                                                @can('editar-CuentasBancarias') 
-                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
-                                                    class="editBtn rounded btn btn-warning me-2">Editar</button>
-                                                @endcan
-                                                <button class="showBtn shadow btn btn-info rounded me-2" data-bs-toggle="modal"
-                                                    data-bs-target="#showModal">Ver más</button>
-                                                @can('borrar-CuentasBancarias')
-                                                    <button type="submit"
-                                                        class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
-                                                @endcan
-                                            </div>
-                                            </td>
-                                        
+                            <table id="dataTable" class="table table-hover  align-items-center">
+                                <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
+                                    <tr>
+                                        <th scope="col">ID</th>
+                                        <th scope="col">Entidad Bancaria</th>
+                                        <th scope="col">Número de Cuenta</th>
+                                        <th scope="col">Estado </th>
+                                        <th scope="col">acciones</th>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
+                                </thead>
+                                <tbody>
+                                    @foreach ($articulos as $articulo)
+                                    <tr>
+                                        {{-- <tr class="text-center"> --}}
+                                            <td class="id" name="id" class="budget">{{ $articulo->id }}</td>
+                                            <td name="tipo_persona" class="budget">{{ $articulo->entidad_bancaria }}</td>
+                                            <td name="descripcion" class="budget">{{ $articulo->numero_cuenta }}</td>
+                                            <td name="descripcion" class="budget">{{ $articulo->estado }}</td>
+
+                                            <div class="d-flex shadow-lg justify-content-between">
+                                                {{-- <td class=""> --}}
+                                                    <td>
+                                                        <div class="d-flex justify-content-center">
+    
+                                                    @can('editar-CuentasBancarias') 
+                                                    <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                        class="editBtn rounded btn btn-warning me-2">Editar</button>
+                                                    @endcan
+                                                    <button class="showBtn shadow btn btn-info rounded me-2" data-bs-toggle="modal"
+                                                        data-bs-target="#showModal">Ver más</button>
+                                                    @can('borrar-CuentasBancarias')
+                                                        <button type="submit"
+                                                            class=" deleteBtn  shadow rounded btn btn-danger">Eliminar</button>
+                                                    @endcan
+                                                </div>
+                                                </td>
+                                            
+                                        </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 @include('admin.cuentaBancaria.editModal')

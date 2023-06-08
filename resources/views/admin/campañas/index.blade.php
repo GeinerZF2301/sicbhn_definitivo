@@ -39,7 +39,7 @@
                                 <thead
                                     class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6   ">
                                     <tr>
-
+                                        <th scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Descripcion</th>
                                         <th scope="col">acciones</th>
@@ -49,7 +49,7 @@
                                     @foreach ($campañas as $campaña)
                                         <tr>
                                             {{-- <tr class="text-center"> --}}
-
+                                            <td class="id" name="id" class="budget">{{ $campaña->id }}</td>
                                             <td name="tipo_persona" class="budget">{{ $campaña->nombre }}</td>
                                             <td name="descripcion" class="budget">{{ $campaña->descripcion }}</td>
                                             <div class="d-flex shadow-lg justify-content-between">

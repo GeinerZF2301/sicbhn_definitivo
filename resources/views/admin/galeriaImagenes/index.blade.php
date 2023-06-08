@@ -28,10 +28,9 @@
                     <div class="">
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover  align-items-center">
-                                <thead
-                                    class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
+                                <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
-
+                                        <th scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Estado</th>
                                         <th scope="col">Categoria Imagen</th>
@@ -41,52 +40,48 @@
                                 </thead>
                                 <tbody>
                                     @foreach ($imagenes as $imagen)
-                                        <tr>
-                                            {{-- <tr class=""> --}}
-
-                                            <td name="documento" class="budget">
-                                                {{ $imagen->nombre }}
+                                    <tr>
+                                    {{-- <tr class=""> --}}
+                                        <td class="id" name="id" class="budget">
+                                            {{ $imagen->id }}
+                                        </td>
+                                        <td name="documento" class="budget">
+                                            {{ $imagen->nombre }}
+                                        </td>
+                                        
+                                        @if ($imagen->estado == 1)
+                                            <td name="estado" class="budget">
+                                                Visible
                                             </td>
-
-                                            @if ($imagen->estado == 1)
-                                                <td name="estado" class="budget">
-                                                    Visible
-                                                </td>
-                                            @else
-                                                <td name="estado" class="budget">
-                                                    No Visible
-                                                </td>
-                                            @endif
-                                            <td name="documento" class="budget">
-                                                {{ $imagen->categoria_imagen }}
+                                        @else
+                                            <td name="estado" class="budget">
+                                                No Visible
                                             </td>
-                                            <td name="imagen" class="budget">
-                                                <img class="rounded-circle" style="max-width: 100px;"
-                                                    src="{{ asset('storage/imagenes/' . $imagen->file) }}">
-                                            </td>
-                                            {{-- <div class="d-flex shadow-lg justify-content-between"> --}}
+                                        @endif
+                                        <td name="documento" class="budget">
+                                            {{ $imagen->categoria_imagen }}
+                                        </td>
+                                        <td name="imagen" class="budget">
+                                           <img class="rounded-circle" style="max-width: 100px;" src="{{ asset('storage/imagenes/'.$imagen->file ) }}" >
+                                        </td>
+                                        {{-- <div class="d-flex shadow-lg justify-content-between"> --}}
                                             <td class="">
-
+        
                                                 <div class="d-flex justify-content-center">
-
-                                                    @can('editar-Galeria')
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#editModal"
-                                                            class="editBtn rounded btn btn-warning me-2"><i
-                                                                class="bi bi-pencil-square"></i> Editar</button>
-                                                        <a href="{{ asset('storage/imagenes/' . $imagen->file) }}" target="_blank"
-                                                            class="showBtn shadow btn btn-info rounded me-2"><i
-                                                                class="bi bi-eye"></i> Ver Imagen</a>
-                                                    @endcan
-                                                    @can('borrar-Galeria')
-                                                        <button type="submit"
-                                                            class=" deleteBtn  shadow rounded btn btn-danger"><i
-                                                                class="bi bi-trash3-fill"></i> Eliminar </button>
-                                                    @endcan
-                                                </div>
+        
+                                            @can('editar-Galeria')
+                                                <button type="button" data-bs-toggle="modal" data-bs-target="#editModal"
+                                                    class="editBtn rounded btn btn-warning me-2"><i class="bi bi-pencil-square"></i>  Editar</button>
+                                                <a href="{{ asset('storage/imagenes/'.$imagen->file) }}" target="_blank"  class="showBtn shadow btn btn-info rounded me-2" ><i class="bi bi-eye"></i> Ver Imagen</a>
+                                            @endcan    
+                                            @can('borrar-Galeria')    
+                                                <button type="submit"
+                                                    class=" deleteBtn  shadow rounded btn btn-danger"><i class="bi bi-trash3-fill"></i> Eliminar  </button>
+                                            @endcan
+                                        </div>
                                             </td>
-
-                                        </tr>
+                                       
+                                    </tr>
                                     @endforeach
                                 </tbody>
                             </table>

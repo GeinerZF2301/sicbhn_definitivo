@@ -29,26 +29,12 @@ use App\Http\Controllers\PDFDOMController;
 
 
 
-//AQUI VAN LAS RUTAS DE VISTAS
-Route::get('/PDF-DonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
-Route::get('/DPF-Talleres', [PDFDOMController::class, 'ReporteTalleres']);
-Route::get('/PDF-Usuarios', [PDFDOMController::class, 'ReporteUsuarios']);
-Route::get('/PDF-Voluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
-Route::get('/PDF-Campañas', [PDFDOMController::class, 'ReporteCampañas']);
-Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
+
 
 
 Route::get('/', function () {
     return view('home');
 });
-
-
-
-
-
-
-
-
 
 Route::get('/locale/{locale}', function($locale){
     return redirect()->back()->withCookie('locale', $locale);
@@ -57,7 +43,10 @@ Route::get('/locale/{locale}', function($locale){
 
 Route::get('/contactos', [ContactController::class, 'index'])->name('contact.index');
     
-Route::post('/contactos', [ContactController::class, 'store'])->name('contact.store');
+Route::post('/contactos', [ContactController::class, 'store'])
+    ->middleware(['auth', 'verified'])
+    ->name('contact.store');
+
 
 Auth::routes(['verify' => true]);
 
@@ -99,11 +88,12 @@ Route::get('/campannas',[CampañaClienteController::class, 'index'])->name('camp
 Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
 // Route::post('/storepersonacliente',[CampañaClienteController::class, 'storePersonaCliente'])->name('campannacliente');
 
-Route::group(['middleware' => ['auth']], function() {
+Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::resource('roles', RolController::class);
     Route::resource('usuarios', UsuarioController::class);
     Route::resource('admin', AdminController::class);
-    
+
+
     // Rutas para el modulo de Donacion Especie
     Route::get('/donacionEspecie',[DonacionEspecieController::class,'index'])->name('donacionEspecie');
     Route::post('/donacionEspecie/store',[DonacionEspecieController::class,'store'])->name('donacionEspecie.store');
@@ -193,7 +183,8 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
     Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
     Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
-    Route::post('/solicitud/nuevovoluntario',[VoluntariadoClienteController::class,'storeRequest'])->name('voluntarios.storeRequest');
+    Route::post('/solicitud/nuevovoluntario', [VoluntariadoClienteController::class, 'storeRequest'])->name('voluntarios.storeRequest');
+
 //rutas para formulario de talleres
     Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
     Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
@@ -208,4 +199,12 @@ Route::group(['middleware' => ['auth']], function() {
     Route::post('/articulos/update/{id}',[ArticuloController::class,'update'])->name('articulos.update');
     Route::delete('/articulos/delete/{id}',[ArticuloController::class,'delete'])->name('articulos.delete');
     Route::get('/articulos/{id}/show',[ArticuloController::class,'show'])->name('articulos.show');
+
+    //AQUI VAN LAS RUTAS DE VISTAS
+    Route::get('/PDF-DonacionMonetaria', [PDFDOMController::class, 'ReporteMonetario']);
+    Route::get('/DPF-Talleres', [PDFDOMController::class, 'ReporteTalleres']);
+    Route::get('/PDF-Usuarios', [PDFDOMController::class, 'ReporteUsuarios']);
+    Route::get('/PDF-Voluntarios', [PDFDOMController::class, 'ReporteVoluntarios']);
+    Route::get('/PDF-Campañas', [PDFDOMController::class, 'ReporteCampañas']);
+    Route::get('/PDF-Personas', [PDFDOMController::class, 'ReportePersonas']);
 });

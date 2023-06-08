@@ -31,7 +31,7 @@
                                 <thead
                                     class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
-
+                                        <th scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Descripción</th>
                                         <th scope="col">acciones</th>
@@ -42,7 +42,7 @@
                                     @foreach ($articulos as $articulo)
                                         <tr>
                                             {{-- <tr class="text-center"> --}}
-
+                                            <td class="id" name="id" class="budget">{{ $articulo->id }}</td>
                                             <td name="nombre" class="budget">{{ $articulo->nombre }}</td>
                                             <td name="descripcion" class="budget">{{ $articulo->descripcion }}</td>
 
