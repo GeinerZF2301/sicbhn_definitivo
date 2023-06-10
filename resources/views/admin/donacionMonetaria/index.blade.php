@@ -46,7 +46,7 @@
                                             <td name="fecha_donacion" class="budget">{{ $donacion->fecha_donacion }}</td>
                                             <td name="fecha_recibido" class="budget">{{ $donacion->fecha_recibido }}</td>
                                             <td name="monto" class="budget">{{ $donacion->monto }}</td>
-                                            <td name="persona_donante_id" class="budget">{{ $donacion->persona_donante_id }}</td>
+                                            
                                             <div class="d-flex shadow-lg justify-content-between">
                                                 {{-- <td class=""> --}}
                                                     <td>
