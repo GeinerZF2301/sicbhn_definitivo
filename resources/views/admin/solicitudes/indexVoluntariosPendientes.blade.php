@@ -67,6 +67,7 @@
                                 </tbody>
                             </table>
 
+
                         </div>
                     </div>
                     @include('admin.solicitudes.showModal')

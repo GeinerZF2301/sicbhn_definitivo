@@ -82,8 +82,7 @@
                         <div class="cardv-title mt-2">
                             <input id="id" class="id" name="id" type="hidden"
                                 value="{{ $voluntariadosDisponible->id }}">
-                            <h5 class="text-center"> ¡ <span style=" color:#028A0F "
-                                    class="nombreVoluntariado">
+                            <h5 class="text-center"> ¡ <span style=" color:#028A0F " class="nombreVoluntariado">
                                     {{ $voluntariadosDisponible->nombre }}</span>!
                             </h5>
                         </div>
@@ -161,8 +160,9 @@
 
                             <p class="featured-block-text">Experiencia <strong> Ambiental</strong></p>
                             <p class="mb-41">
-                                Ser voluntario junto a otras personas nos brinda una valiosa experiencia al participar en 
-                                actividades que nos ayuden a conectar con la naturaleza, y contribuir de manera significativa.
+                                Ser voluntario junto a otras personas nos brinda una valiosa experiencia al participar en
+                                actividades que nos ayuden a conectar con la naturaleza, y contribuir de
+                                manera significativa.
                             </p>
                         </a>
                     </div>
@@ -176,7 +176,7 @@
                                 alt="">
                             <p class="featured-block-text"><strong>Genera</strong> Impacto</p>
                             <p class="mb-41">
-                                El voluntariado genera impacto y promueve el cambio positivo en la sociedad, 
+                                El voluntariado genera impacto y promueve el cambio positivo en la sociedad,
                                 permitiéndonos contribuir activamente a mejorar la vida de quienes más lo necesitan.
                             </p>
                         </a>
@@ -206,7 +206,7 @@
                                 alt="">
                             <p class="featured-block-text"><strong>Ayudar al</strong> Entorno</p>
                             <p class="mb-41">
-                                Ser voluntario permite ayudar en proyectos de conservación ambiental, limpieza y 
+                                Ser voluntario permite ayudar en proyectos de conservación ambiental, limpieza y
                                 prácticas sostenibles, contribuyendo a preservar y mejorar el medio ambiente.
                             </p>
                         </a>
@@ -229,7 +229,7 @@
                     </div>
 
                     <div class="col-lg-6 col-12">
-                        
+
 
                         <div id="seccion-formulario" class="col-12">
                             <div class="custom-text-box">
@@ -349,25 +349,40 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <span id="voluntariado_id_error" class="text-danger fw-bolder error-messages"></span>
+                                                    <span id="voluntariado_id_error"
+                                                        class="text-danger fw-bolder error-messages"></span>
                                                     <span class="text-danger fs-5 ">*</span>
                                                     <div class="form-floating">
-                                                        <select id="voluntariado_id" name="voluntariado_id" class="form-select bg-light mb-3" aria-label="Voluntariado a inscribirse">
+                                                        <select id="voluntariado_id" name="voluntariado_id"
+                                                            class="form-select bg-light mb-3"
+                                                            aria-label="Voluntariado a inscribirse">
                                                             <option selected>Selecciona una opcion</option>
                                                             @foreach ($voluntariadosDisponibles as $voluntariadoDisponible)
-                                                                <option value="{{ $voluntariadoDisponible->id }}">{{ $voluntariadoDisponible->nombre }}</option>
+                                                                <option value="{{ $voluntariadoDisponible->id }}">
+                                                                    {{ $voluntariadoDisponible->nombre }}</option>
                                                             @endforeach
                                                         </select>
                                                         <label for="voluntariado_id">Voluntariado a inscribirse</label>
                                                     </div>
                                                 </div>
                                             </div>
-                                           
+
                                             <input type="hidden" id="estado" name="estado" />
                                             <input type="hidden" id="tipo_persona_id" value="{{ $tipoVoluntario->id }}"
                                                 name="tipo_persona_id" />
 
-                                            <div class=" mt-2 col-12">
+                                            @if (!auth()->user()->hasVerifiedEmail())
+                                                <div class="alert alert-warning mt-2 col-12">
+                                                    Debes verificar tu correo electrónico antes de enviar el formulario.
+                                                </div>
+                                                <div class="mt-2 col-12">
+                                                    <a href="{{ route('verification.notice') }}"
+                                                        class="btn btn-primary w-100 py-3">Verificar correo electrónico</a>
+                                                </div>
+                                            @endif
+
+                                            <div
+                                                class="mt-2 col-12"{{ auth()->user()->hasVerifiedEmail()? '': ' style=display:none;' }}>
                                                 <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
                                                     Enviar
                                                 </button>

@@ -4,8 +4,7 @@
 <div class="row mx-auto py-4 d-flex justify-content-center">
             <span class="mb-4 col-20">
                 <h1 class="py-2 text-center text-dark mt-4 fs-2 rounded fw-bold text-uppercase">Registro de roles del
-                    Corredor
-                    Biológico</h1>
+                    Corredor Biológico</h1>
             </span>
             <div class="row mb-2">
                 <span class="fw-light fs-6">Gestión de los usuarios</span>

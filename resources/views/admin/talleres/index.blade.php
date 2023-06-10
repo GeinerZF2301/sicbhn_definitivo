@@ -1,5 +1,6 @@
 @extends('layouts.admin')
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 @section('content')
     <section>
@@ -14,14 +15,15 @@
             <div class="row">
                 <div class="d-flex justify-content mt-2 ">
                     @can('crear-Taller')
-                        <button id="create-button" type="button"  class="btn btn-success mx-2" data-bs-toggle="modal"
+                        <button id="create-button" type="button" class="btn btn-success mx-2" data-bs-toggle="modal"
                             data-bs-target="#createModal">
                             Crear taller
                         </button>
                     @endcan
-                    <a href="/DPF-Talleres" target="_blank" class= "btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i> Generar reporte</a>
+                    <a href="/DPF-Talleres" target="_blank" class="btn btn-primary mx-2"> <i class="fas fa-file-pdf"></i>
+                        Generar reporte</a>
                     @include('admin.talleres.createModal')
-                    
+
                 </div>
             </div>
 

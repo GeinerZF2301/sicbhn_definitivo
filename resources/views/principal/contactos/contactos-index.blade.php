@@ -115,7 +115,7 @@
                                 @guest
                                     {{-- // The user is not authenticated... --}}
                                     <a href="{{ route('login') }}?redirect={{ url()->current() }}"
-                                        class="btn btn-primary w-100 py-3">Registrate ahora</a>
+                                        class="btn btn-primary w-100 py-3">Inciar sesión</a>
                                 @endguest
                             </div>
                         </div>
