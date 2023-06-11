@@ -179,17 +179,17 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     Route::delete('/galeriaimagenes/delete/{id}',[GaleriaController::class,'delete'])->name('galeria.delete');
 
     //Rutas para la solicitud de un voluntario (Formulario de voluntariados)
-    Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
+    Route::get('/solicitudesvoluntarios',[PersonaController::class,'PendingRequestsVolunteer'])->name('solicitudesVoluntariados.show');
     Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
     Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
     Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
     Route::post('/solicitud/nuevovoluntario', [VoluntariadoClienteController::class, 'storeRequest'])->name('voluntarios.storeRequest');
 
-//rutas para formulario de talleres
-    Route::get('/solicitudesvoluntarios',[PersonaController::class,'VolunteerRequestPendings'])->name('solicitudesVoluntariados.show');
+    //rutas para formulario de talleres
+    Route::get('/solicitudestalleres',[PersonaController::class,'PendingRequestsfromWorkshopParticipants'])->name('solicitudesParticipantes.show');
     Route::post('/personas/updatearejectstatus/{id}',[PersonaController::class,'updateRejectStatus'])->name('personas.updateStatus');
     Route::post('/personas/updateapprovedstatus/{id}',[PersonaController::class,'updateApprovedStatus'])->name('personas.updateStatus');
-    Route::get('/historialvoluntarios',[PersonaController::class,'VolunteerRejectedandApproved'])->name('historialvoluntarios.index');
+    Route::get('/historialtalleres',[PersonaController::class,'WorkshopParticipantsRejectedandApproved'])->name('historialvoluntarios.index');
     Route::post('/solicitud/nuevoparticipantetaller',[TallerClienteController::class,'storeRequest'])->name('talleres.storeRequest');
 
 

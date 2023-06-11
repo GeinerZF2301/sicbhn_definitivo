@@ -10,26 +10,27 @@ $(document).ready(function () {
     $(".showBtn").click(function(e) {
         let id = $(this).closest('tr').find('td.id').text();
         e.preventDefault();
-        $('#show-modal-title').html('Información de la Persona Solicitante');
+        $('#show-modal-title').html('Información del Participante Solicitante');
         $('#show-modal').modal('show');
         console.log(id);
-        obtenerRegistroPorId(id);
+        //obtenerRegistroPorId(id);
     });
 
-
+    
     $(".approveBtn").click(function(e) {
         let url = '/personas/updateapprovedstatus/{id}';
         let id = $(this).closest('tr').find('td.id').text();
         e.preventDefault();
+        console.log(id);
         actualizarEstadoAprobadoPersona(id, url);
     });
     $(".rejectBtn").click(function(e) {
         let url = '/personas/updatearejectstatus/{id}';
         let id = $(this).closest('tr').find('td.id').text();
+        let tallerId = $(this).closest('tr').find('td.tallerId').text();
         e.preventDefault();
-        actualizarEstadoRechazadoPersona(id, url);
+        actualizarEstadoRechazadoPersona(id, tallerId, url);
     });
-
 
     function obtenerTiposPersona(){
         $.ajax({
@@ -47,7 +48,6 @@ $(document).ready(function () {
             }
         });
     }
-
     function obtenerRegistroPorId(id){
         $.ajax({
             type: 'GET',
@@ -68,10 +68,12 @@ $(document).ready(function () {
                 $('#show_pais').val(response.pais);
                 $('#show_ciudad').val(response.ciudad);
                 if(!response.calle){
-                    $('#show_calle').val('(Dato no proporcionado por la Persona)'); 
+                    $('#show_calle').val('(Dato no proporcionado por la Persona)');
                 }else{
                     $('#show_calle').val(response.calle);
                 }
+                
+               
                 $('#show_tipo_persona_id').val(response.tipo_persona_id);
             },
             error: function(error){
@@ -79,7 +81,6 @@ $(document).ready(function () {
             }
         });
     }
-    
 
     function actualizarEstadoAprobadoPersona(id, url){
         $.ajax({
@@ -108,7 +109,7 @@ $(document).ready(function () {
         });
     }
 
-    function actualizarEstadoRechazadoPersona(id, url){
+    function actualizarEstadoRechazadoPersona(id, tallerId, url){
         Swal.fire({
             title: '¿Seguro que deseas rechazar esta solicitud?',
             text: "No se podrá revertir esta acción!",
@@ -124,7 +125,8 @@ $(document).ready(function () {
                     type: 'POST',
                     url: url,
                     data: {
-                        id: id, 
+                        id: id,
+                        tallerId: tallerId 
                     },
                     success: function (response) {
                         console.log(response);

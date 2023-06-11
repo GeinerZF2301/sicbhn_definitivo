@@ -10,15 +10,17 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StorePersonaRequest;
 use App\Repositories\Interfaces\PersonaRepositorioInterface;
 use App\Repositories\PersonaRepositorio;
+use App\Repositories\Interfaces\TallerRepositorioInterface;
+use App\Repositories\TallerRepositorio;
 
 class PersonaController extends Controller
 {
     private $personaRepositorio;
     /*Constructor encargado de inicializar y desacoplar la logica de negocio con con la
     capa de acceso a datos*/
-    public function __construct(PersonaRepositorioInterface $personaRepositorio){
+    public function __construct(PersonaRepositorioInterface $personaRepositorio, TallerRepositorioInterface $tallerRepositorio){
         $this->personaRepositorio = $personaRepositorio;
-
+        $this->tallerRepositorio = $tallerRepositorio;
         $this->middleware('permission:ver-Persona/Solicitudes|crear-Persona|editar-Persona|borrar-Persona',['only' => ['index']]);
         $this->middleware('permission:crear-Persona' , ['only' => ['create', 'store']]);
         $this->middleware('permission:editar-Persona' , ['only' => ['edit', 'update']]);
@@ -31,19 +33,30 @@ class PersonaController extends Controller
         return view('admin.personas.index', compact('personas'));
     }
 
-    public function VolunteerRequestPendings() 
+    public function PendingRequestsVolunteer() 
     {
         //$personasPendientes = $this->personaRepositorio->allPendingPersons();
         $personasPendientes = $this->QueryRequestVolunteer();
         return view('admin.solicitudes.indexVoluntariosPendientes', compact('personasPendientes'));
     }
-    public function VolunteerRejectedandApproved() 
+    public function PendingRequestsfromWorkshopParticipants() 
     {
-        $historialVoluntarios= $this->personaRepositorio->allRejectedandApprovedPersons();
-        return view('admin.historialSolicitudes.voluntarios.index', compact('historialVoluntarios'));
+        //$personasPendientes = $this->personaRepositorio->allPendingPersons();
+        $participantesPendientes = $this->PendingParticipantInquiry();
+        return view('admin.solicitudes.indexParticipantesPendientes', compact('participantesPendientes'));
     }
 
-
+    //Funcion para obtener todas las solcitudes de voluntarios rechazados y aprobados
+    public function VolunteerRejectedandApproved() 
+    {
+        $historialVoluntarios= $this->personaRepositorio->allRejectedandApprovedVolunteers();
+        return view('admin.historialSolicitudes.voluntarios.index', compact('historialVoluntarios'));
+    }
+    public function WorkshopParticipantsRejectedandApproved() 
+    {
+        $historialParticipantes = $this->personaRepositorio->allRejectedandApprovedParticipants();
+        return view('admin.historialSolicitudes.participantes.index', compact('historialParticipantes'));
+    }
     public function create() 
     {
         try{
@@ -132,14 +145,25 @@ class PersonaController extends Controller
         ], 200);
     }
     public function updateRejectStatus(Request $request){
-        $estado = 'Rechazado';
-        $id = intval($request->id);
-        $persona = $this->personaRepositorio->findPerson($id);
-        $persona->estado = $estado;
-        $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
-        return response()->json([
-            'success' => 'Solicitud rechazada de manera exitosa'
-        ], 200);
+        try{
+            $estado = 'Rechazado';
+            $id = intval($request->id);
+            $tallerId = intval($request->tallerId);
+            $persona = $this->personaRepositorio->findPerson($id);
+            $persona->estado = $estado;
+            $personaStatus = $this->personaRepositorio->updatePerson($persona, $id);
+            if($tallerId){
+                $taller = $this->tallerRepositorio->IncreaseWorkshopQuota($tallerId);
+            }
+            return response()->json([
+                'success' => 'Solicitud rechazada de manera exitosa'
+            ], 200);
+        }catch(Exception $e){
+            return response()->json([
+                'error' => 'Ha ocurrido un error: ' . $e->getMessage()
+            ], 400);
+        }
+        
     }
     public function QueryRequestVolunteer(){
         $resultados = DB::table('personas_voluntariados')->join('personas', 'personas_voluntariados.persona_id', '=', 'personas.id')
@@ -150,6 +174,16 @@ class PersonaController extends Controller
         ->where('tipo_personas.tipo_persona', 'Voluntario')->orWhere('tipo_personas.tipo_persona', 'voluntario')
         ->where('voluntariados.estado', 'activo')->get();
         
+        return $resultados;
+    }
+    public function PendingParticipantInquiry(){
+        $resultados = DB::table('personas_talleres')->join('personas', 'personas_talleres.persona_id', '=', 'personas.id')
+        ->join('tallers', 'personas_talleres.taller_id', '=', 'tallers.id') 
+        ->join('tipo_personas', 'personas.tipo_persona_id', '=', 'tipo_personas.id')
+        ->select('personas.id', 'personas.nombre', 'personas.apellidos', 'personas.estado', 'tallers.id as taller_id',
+         'tallers.nombre as taller_nombre')->where('personas.estado', 'Pendiente')
+        ->where('tipo_personas.tipo_persona', 'Participante de Taller')->orWhere('tipo_personas.tipo_persona', 'participante de taller')
+        ->where('tallers.estado', 'activo')->get();
         return $resultados;
     }
 }

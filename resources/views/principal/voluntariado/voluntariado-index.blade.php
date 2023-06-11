@@ -278,9 +278,9 @@
                                                             class="form-select bg-light form-select mb-3 "
                                                             name="tipo_identificacion" aria-label=".form-select example"">
                                                             <option selected>Selecciona una opcion</option>
-                                                            <option value=" Cedula Nacional">Cedula Nacional</option>
+                                                            <option value="Cédula Nacional">Cedula Nacional</option>
                                                             <option value="Pasaporte">Pasaporte</option>
-                                                            <option value="Cedula de Residencia">Cedula de Residencia</option>
+                                                            <option value="Cédula de Residencia">Cedula de Residencia</option>
                                                         </select>
                                                         <label for="tipoidentificacion">Tipo de Identificacion</label>
                                                     </div>
