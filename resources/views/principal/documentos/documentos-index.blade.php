@@ -67,37 +67,33 @@
   </div>
 </div>
 
-@foreach ($documentosPublicos as $documentoPublico)
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <div class="cardd mb-5">
-        <div class="cardd-body ">
-          <div class="row">
-            <div class="col- d-flex justify-content-center">
+ 
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="row">
+      @foreach ($documentosPublicos as $documentoPublico)
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="cardd mb-5">
+          <div class="cardd-body">
+            <div class="d-flex justify-content-center">
               <div class="icono mt-2 mb-2">
-                <img src="zoofari/img/DocumentosPublicos/docs.png" alt="" weight="50px" height="50px">
+                <img src="zoofari/img/DocumentosPublicos/docs.png" alt="" width="50px" height="50px">
               </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="cardd-title d-flex justify-content-center">
-                <h4>{{$documentoPublico->nombre}}</h4>
-              </div>
-              <p class="text-center mt-2 mb-3"> {{$documentoPublico->descripcion}}.
-              </p>
-              <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
-                <a class="btn btn-Descarga text-decoration-none"
-                  href="{{ asset('storage/documentos/'.$documentoPublico->file) }}" target="_blank"> Ver </a>
-              </div>
+            <div class="text-center mt-3">
+              <h4>{{$documentoPublico->nombre}}</h4>
+            </div>
+            <p class="text-center mt-2 mb-3">{{$documentoPublico->descripcion}}</p>
+            <div class="d-flex justify-content-center align-items-center mt-2 mb-3">
+              <a class="btn btn-Descarga text-decoration-none"
+                href="{{ asset('storage/documentos/'.$documentoPublico->file) }}" target="_blank">Ver</a>
             </div>
           </div>
         </div>
       </div>
+      @endforeach
     </div>
   </div>
- 
 </div>
-@endforeach
-@endsection
+ 
+@endsection 
