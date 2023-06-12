@@ -50,7 +50,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/voluntariado/Voluntariados6.png" alt="" />
+                        <img class="img-fluid" src="zoofari/img/voluntariado/Voluntariados6.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -89,20 +89,20 @@
                         <div class="cardv-body">
                             <div class="row ">
                                 <div class="col d-flex ">
-                                    <img src="zoofari/img/Campannas/maps.png" alt="" width="34px" height="34PX">
+                                    <img src="zoofari/img/Campannas/maps.webp" alt="" width="34px" height="34PX">
                                     <p> {{ $voluntariadosDisponible->ubicacion }}.</p>
 
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="zoofari/img/Campannas/calendario.png" alt="">
+                                    <img src="zoofari/img/Campannas/calendario.webp" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img src="zoofari/img/Campannas/reloj.png" alt="">
+                                    <img src="zoofari/img/Campannas/reloj.webp" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img src="zoofari/img/voluntariado/altavoz.png" alt="">
+                                    <img src="zoofari/img/voluntariado/altavoz.webp" alt="">
                                 </div>
                             </div>
                             <div class="row">
@@ -155,7 +155,7 @@
                     <div class="featured-block d-flex justify-content-center align-items-center wow fadeInUp"
                         data-wow-delay="0.5s"">
                         <a class=" d-block">
-                            <img src="zoofari/img/voluntariado/ambientalismo.png" class="featured-block-image img-fluid"
+                            <img src="zoofari/img/voluntariado/ambientalismo.webp" class="featured-block-image img-fluid"
                                 alt="">
 
                             <p class="featured-block-text">Experiencia <strong> Ambiental</strong></p>
@@ -172,7 +172,7 @@
                     <div class="featured-block d-flex justify-content-center align-items-center wow fadeInUp"
                         data-wow-delay="0.5s"">
                         <a class=" d-block">
-                            <img src="zoofari/img/voluntariado/sociologia.png" class="featured-block-image img-fluid"
+                            <img src="zoofari/img/voluntariado/sociologia.webp" class="featured-block-image img-fluid"
                                 alt="">
                             <p class="featured-block-text"><strong>Genera</strong> Impacto</p>
                             <p class="mb-41">
@@ -186,7 +186,7 @@
                     <div class="featured-block d-flex justify-content-center align-items-center wow fadeInUp"
                         data-wow-delay="0.5s"">
                         <a class=" d-block">
-                            <img src="zoofari/img/voluntariado/crecimiento.png" class="featured-block-image img-fluid"
+                            <img src="zoofari/img/voluntariado/crecimiento.webp" class="featured-block-image img-fluid"
                                 alt="">
 
                             <p class="featured-block-text">Desarrollo <strong> Personal</strong></p>
@@ -202,7 +202,7 @@
                     <div class="featured-block d-flex justify-content-center align-items-center wow fadeInUp"
                         data-wow-delay="0.5s"">
                         <a class="d-block">
-                            <img src="zoofari/img/voluntariado/caridad.png" class="featured-block-image img-fluid"
+                            <img src="zoofari/img/voluntariado/caridad.webp" class="featured-block-image img-fluid"
                                 alt="">
                             <p class="featured-block-text"><strong>Ayudar al</strong> Entorno</p>
                             <p class="mb-41">
@@ -224,7 +224,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
 
-                        <img src="zoofari/img/voluntariado/Voluntariados9.jpg" class="custom-text-box-image img-fluid"
+                        <img src="zoofari/img/voluntariado/Voluntariados9.webp" class="custom-text-box-image img-fluid"
                             alt="">
                     </div>
 
