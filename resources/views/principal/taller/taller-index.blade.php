@@ -182,8 +182,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-
-                        <img src="/zoofari/img/taller/Voluntariados9.webp" class="custom-text-box-image img-fluid"
+                       
+                        <img src="/zoofari/img/talleres/Voluntariados9.webp" class="custom-text-box-image img-fluid"
                             alt="">
                     </div>
 
