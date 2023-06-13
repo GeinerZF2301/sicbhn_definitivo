@@ -4,6 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use App\Models\Persona;
+
 class StorePersonaRequest extends FormRequest
 {
     /**
@@ -24,16 +25,16 @@ class StorePersonaRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre' => 'required|alpha|max:100',
-            'apellidos' => 'required|alpha|max:150',
-            'tipo_identificacion' => 'required|alpha|max:50',
+            'nombre' => 'required|alpha_spaces|max:100',
+            'apellidos' => 'required|alpha_spaces|max:150',
+            'tipo_identificacion' => 'required|alpha_spaces|max:50',
             'numero_identificacion' => 'required|integer',
             'fecha_de_nacimiento' => 'required|date|',
             'edad' => 'required |integer|min:1|max:99',
-            'pais' => 'required|alpha|max:50',
-            'ciudad' => 'required|alpha|max:75',
-            'calle' => 'required|alpha|max:75',
-            'estado' => 'required|alpha|max:75',
+            'pais' => 'required|alpha_spaces|max:50',
+            'ciudad' => 'required|alpha_spaces|max:75',
+            'calle' => 'required|alpha_spaces|max:75',
+            'estado' => 'required|alpha_spaces|max:75',
             'tipo_persona_id' => 'required|int' 
         ];
     }

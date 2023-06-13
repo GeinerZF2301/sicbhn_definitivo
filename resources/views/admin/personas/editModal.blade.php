@@ -11,7 +11,7 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="int" class="form-control" name="id" id="edit_id">
+                                <input type="hidden" class="form-control" name="id" id="edit_id">
                                 <input type="hidden" class="form-control" value="Aprobado" name="estado" id="estado">
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>

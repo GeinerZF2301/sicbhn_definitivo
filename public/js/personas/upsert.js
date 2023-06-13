@@ -128,6 +128,7 @@ $(document).ready(function() {
         $('.error-messages').html('');
         let formEdit = new FormData(editform);
         var idRequest = formEdit.get('id');
+        console.log(idRequest);
         $.ajax({
             type: "POST",
             url: "/personas/update/" + idRequest,
