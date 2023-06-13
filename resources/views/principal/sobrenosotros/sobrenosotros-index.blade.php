@@ -161,7 +161,7 @@
                             <a class="animal-item" href="https://www.sinac.go.cr/ES/Paginas/default.aspx">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/LogoSinac.webp" href=" "
+                                        src="zoofari/git /Miembros/LogoSinac.webp" href=" "
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">SINAC</p>
@@ -306,7 +306,7 @@
                             <a class="animal-item" href="https://cacnandayure.com/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.WEBP"
+                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.webp"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Centro Agrícola Nandayure</p>
