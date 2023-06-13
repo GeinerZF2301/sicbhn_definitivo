@@ -8,12 +8,12 @@ $(document).ready(function () {
 
     obtenerTiposPersona();
     $(".showBtn").click(function(e) {
-        let id = $(this).closest('tr').find('td.id').text();
         e.preventDefault();
         $('#show-modal-title').html('Información del Participante Solicitante');
         $('#show-modal').modal('show');
+        var id = $(this).closest('tr').find('td.id').text();
         console.log(id);
-        //obtenerRegistroPorId(id);
+        obtenerRegistroPorId(id);
     });
 
     
