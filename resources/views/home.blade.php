@@ -31,19 +31,19 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal1.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal1.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal4.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal4.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal5.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal5.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal2.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal2.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal7.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal7.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.png" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -173,46 +173,46 @@
             </div>
             <div class="row gy-5 gx-4">
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.webp" alt="Icon" />
                     <h5 class="mb-3">Monitoreo por cámaras trampa</h5>
                     <span>Algunos actores de nuestro comité local como MTF Teca, Panamerican Woods,
                         Monte Alto realizan monitoreo de fauna silvestre.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.webp" alt="Icon" />
                     <h5 class="mb-3">Incidencia en la gestión integral de residuos</h5>
                     <span>La municipalidad de Hojancha y Nandayure nos hacen partícipes del proceso de gestión
                         para propiciar ambientes saludables.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.webp" alt="Icon" />
                     <h5 class="mb-3">Control y prevención de delitos ambientales</h5>
                     <span>Mediante los esfuerzos por la educación ambiental.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.webp" alt="Icon" />
                     <h5 class="mb-3">Fortalecimiento de la conectividad estructural</h5>
                     <span>Promoviendo sistemas productivos que generen conectividad y restaurar áreas deforestadas.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.webp" alt="Icon" />
                     <h5 class="mb-3">Conservación</h5>
                     <span>Sensibilización de la importancia de los servicios ecosistémicos que provee el CBHN
                         del sector productivo y civil.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.webp" alt="Icon" />
                     <h5 class="mb-3">Reducir los factores de riesgo y vulnerabilidad</h5>
                     <span>De los elementos focales de manejo: bosque, fauna, ecosistema marino costero,
                         hídrico y suelos.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.webp" alt="Icon" />
                     <h5 class="mb-3">Trabajo en comunidades</h5>
                     <span>Campañas de limpieza de ríos, calles, resforestaciones, educación ambiental.</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.webp" alt="Icon" />
                     <h5 class="mb-3">Promoción de sistemas agropecuarios sustentables</h5>
                     <span>Y con mayor capacidad de resilencia a los cambios climáticos.
                         El sector agropecuario fomra parte de nuestras alianzas: MAG, cámara de ganaderos, centros
@@ -236,7 +236,7 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">Taller de abonos orgánicos</h5>
                         <p>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">Taller de abonos orgánicos</h5>
                         <p>
@@ -259,7 +259,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">Taller de observación de aves</h5>
                         <p>
@@ -270,7 +270,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">Taller de correcto uso de agroquímicos para la salud</h5>
                         <p>

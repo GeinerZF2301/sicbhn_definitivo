@@ -22,7 +22,8 @@
     <!-- Page Header End -->
 
     <!-- Meta Description -->
-    <meta name="description" content="Muestra el contenido del Modulo de Campañas,ademas de mostrar las campañas disponibles de la base de datos.">
+    <meta name="description"
+        content="Muestra el contenido del Modulo de Campañas,ademas de mostrar las campañas disponibles de la base de datos.">
 
 
     <!-- About Start -->
@@ -83,21 +84,20 @@
                         <div class="card-body">
                             <div class="row ">
                                 <div class="col d-flex ">
-                                    <img src="zoofari/img/Campannas/maps.png" alt="" width="34px"
-                                        height="34px">
+                                    <img src="zoofari/img/Campannas/maps.webp" alt="" width="34px" height="34px">
                                     <p> {{ $campannaDisponible->ubicacion }}.</p>
 
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-4">
-                                    <img src="zoofari/img/Campannas/calendario.png" alt="">
+                                    <img src="zoofari/img/Campannas/calendario.webp" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img src="zoofari/img/Campannas/reloj.png" alt="">
+                                    <img src="zoofari/img/Campannas/reloj.webp" alt="">
                                 </div>
                                 <div class="col-4">
-                                    <img src="zoofari/img/Campannas/usuario.png" alt="">
+                                    <img src="zoofari/img/Campannas/usuario.webp" alt="">
                                 </div>
                             </div>
                             <div class="row">
