@@ -143,25 +143,25 @@
 
 /*** Header ***/
 .header-bg {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/inicio/iniciocorredor2.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/inicio/iniciocorredor2.webp) center center no-repeat;
     background-size: cover;
 }
 /*Header de documentos*/
 .header-bgDP {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/DocumentosPublicos/DocumentosPrincipal.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/DocumentosPublicos/DocumentosPrincipal.webp) center center no-repeat;
     background-size: cover;
 }
 /*Header de Donaciones*/
 .header-bgD {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.webp) center center no-repeat;
     background-size: cover;
 }
 .header-bgHV {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/Encabezado.jpeg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/Encabezado.webp) center center no-repeat;
     background-size: cover;
 }
 .header-bgG {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/galeria/EncabezadoGaleria3.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/galeria/EncabezadoGaleria3.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -172,24 +172,24 @@
 }
 /*Header de Voluntariados*/
 .header-bgV {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/voluntariado/Voluntariados3.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/voluntariado/Voluntariados3.webp) center center no-repeat;
   background-size: cover;
 }
 /*Header de Talleres*/
 .header-bgT {
-  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/talleres/Taller2.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/talleres/Taller2.webp) center center no-repeat;
   background-size: cover;
 }
 
 /*Header de Sobre Nosotros*/
 .header-bgSN {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/SobreNosotros/SNprincipal.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/SobreNosotros/SNprincipal.webp) center center no-repeat;
     background-size: cover;
 }
 
 /*** Header Contactos***/
 .header-bgCO {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Contactos/inicioCo.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Contactos/inicioCo.webp) center center no-repeat;
     background-size: cover;
 }
 
@@ -388,12 +388,12 @@
 
 /*** Facts & Visiting Hours ***/
 .facts {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/Donaciones/DEncabezadoPrincipal.webp) center center no-repeat;
     background-size: cover;
 }
 
 .visiting-hours {
-    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/FotoTucan.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/horasvisita/FotoTucan.webp) center center no-repeat;
     background-size: cover;
 }
 
