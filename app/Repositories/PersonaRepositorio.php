@@ -11,9 +11,19 @@
         public function allPendingPersons(){
             return Persona::all()->where('estado', 'Pendiente');
         }
-        public function allRejectedandApprovedPersons(){
-            return Persona::where('estado', 'Rechazado')
-            ->orWhere('estado', 'Aprobado')->get();;
+        public function allRejectedandApprovedParticipants(){
+            return Persona::select('personas.id','nombre', 'apellidos', 'tipo_identificacion'
+            ,'numero_identificacion', 'fecha_de_nacimiento', 'edad', 'pais', 'ciudad', 'estado')
+            ->join('personas_talleres', 'personas_talleres.persona_id', '=', 'personas.id')
+            ->where('estado', 'Rechazado')
+            ->orWhere('estado', 'Aprobado')->get();
+        }
+        public function allRejectedandApprovedVolunteers(){
+            return Persona::select('personas.id','nombre', 'apellidos', 'tipo_identificacion'
+            ,'numero_identificacion', 'fecha_de_nacimiento', 'edad', 'pais', 'ciudad', 'estado')
+            ->join('personas_voluntariados', 'personas_voluntariados.persona_id', '=', 'personas.id')
+            ->where('estado', 'Rechazado')
+            ->orWhere('estado', 'Aprobado')->get();
         }
         public function storePerson($data){
             return Persona::create($data);

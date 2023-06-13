@@ -67,7 +67,11 @@ $(document).ready(function () {
                 $('#show_edad').val(response.edad);
                 $('#show_pais').val(response.pais);
                 $('#show_ciudad').val(response.ciudad);
-                $('#show_calle').val(response.calle);
+                if(!response.calle){
+                    $('#show_calle').val('(Dato no proporcionado por la Persona)'); 
+                }else{
+                    $('#show_calle').val(response.calle);
+                }
                 $('#show_tipo_persona_id').val(response.tipo_persona_id);
             },
             error: function(error){

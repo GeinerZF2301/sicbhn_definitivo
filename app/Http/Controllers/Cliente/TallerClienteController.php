@@ -27,41 +27,25 @@ class TallerClienteController extends Controller
         $sectionId = 'seccion-formulario';
         $tipoParticipante = TipoPersona::select('id')->where('tipo_persona', 'Participante de Taller')->orWhere('tipo_persona', 'participante de taller')->first();
         $talleres = Taller::select('id','nombre', 'descripcion','ubicacion','fecha','hora', 'cupo','tipo_taller')->
-        where('estado', 1)->get();
-        $cantidadTalleres = Taller::count();
+        where('estado', 1)->where('cupo', '>', 0)->get();
+        $cantidadTalleres = Taller::where('estado', '=', '1')->where('cupo', '>', 0)->count();
         return view('principal.taller.taller-index', compact('talleres', 'tipoParticipante', 'sectionId', 'cantidadTalleres'));
     }
 
-    public function storeRequest(StoreTallerPersonaRequest  $request){
-        $contador = 0;
-        $contadorAux = 0;
-        $taller = $request->taller_id;
-        $tallerExistente = Taller::all()->where('id', $taller )->get();
-
-            if($tallerExistente){
-                $contador = $tallerExistente->cupo;
-                $contador--;
-                $contadorAux = $contador;
-                $tallerExistente->cupo = $contadorAux;
-                $this->tallerRepositorio->updateWorkshop($tallerExistente, $taller);
-            }
-        
-        try{
-            $estado = 'Pendiente';
+    public function storeRequest(StoreTallerPersonaRequest $request){
+        try {
             $validatedData = $request->validated();
-            $validatedData['estado'] = $estado;
+            $tallerId = $request->taller_id;
             $personaParticipanteTaller = $this->personaRepositorio->storePerson($validatedData);
-            $personaVoluntario->talleres()->attach($taller);
+            $personaParticipanteTaller->talleres()->attach($tallerId, ['created_at' => now(), 'updated_at' => now()]);
+            $this->tallerRepositorio->DecreaseWorkshopQuota($tallerId);
             return response()->json([
                 'success' => '¡Solicitud enviada correctamente!'
-                 
-            ], 201);
-        }catch(Exception $e){
+            ], 200);
+        } catch (Exception $e) {
             return response()->json([
-                'error' => 'Ha ocurrido un error' . $e->getMessage()
+                'error' => 'Ha ocurrido un error: ' . $e->getMessage()
             ], 400);
         }
     }
-
-    
 }
