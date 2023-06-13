@@ -19,6 +19,7 @@ use App\Http\Controllers\Admin\TallerController;
 use App\Http\Controllers\Cliente\GaleriaClienteController;
 use App\Http\Controllers\Cliente\VoluntariadoClienteController;
 use App\Http\Controllers\Cliente\TallerClienteController;
+use App\Http\Controllers\Cliente\DonacionesClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
 use App\Mail\ContactMail;
@@ -65,6 +66,7 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/donaciones', function () {
         return view('principal/donaciones.donaciones-index');
     });
+    Route::get('/donaciones',[DonacionesClienteController::class, 'index'])->name('donacioncliente');
     
     Route::get('/galeria',[GaleriaClienteController::class, 'index'])->name('galeria');
        
