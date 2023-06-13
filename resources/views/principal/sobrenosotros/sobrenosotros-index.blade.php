@@ -104,7 +104,7 @@
 
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/SobreNosotros/SBNII.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/SobreNosotros/SBNII.webp" alt="" />
                     </div>
                 </div>
 
@@ -161,7 +161,7 @@
                             <a class="animal-item" href="https://www.sinac.go.cr/ES/Paginas/default.aspx">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/LogoSinac.jpg" href=" "
+                                        src="zoofari/img/SobreNosotros/Miembros/LogoSinac.webp" href=" "
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">SINAC</p>
@@ -178,7 +178,7 @@
                                 href="https://www.facebook.com/people/Gesti%C3%B3n-Ambiental-Municipalidad-de-Hojancha/100064327226544/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/GestionAmbientalHojancha.jpg"
+                                        src="zoofari/img/SobreNosotros/Miembros/GestionAmbientalHojancha.webp"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Gestión Ambiental de Hojancha</p>
@@ -192,7 +192,7 @@
                             <a class="animal-item" href="https://www.panamericanwoods.net/about-us">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/panamericanWoods.jpeg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/panamericanWoods.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Panamerican WOODS</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -205,7 +205,7 @@
                             <a class="animal-item">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/AsadaMorote.jpg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/AsadaMorote.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Asada Morote de Nandayure</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -224,7 +224,7 @@
                             <a class="animal-item" href="https://fundecodes.org/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/fundecodes.jpeg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/fundecodes.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Fundecodes</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -236,7 +236,7 @@
                             <a class="animal-item" href="https://www.facebook.com/MTFTeca/?locale=es_LA">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/Logo Final MTF.jpg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/Logo Final MTF.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">MTF Teca</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -249,7 +249,7 @@
                             <a class="animal-item" href="https://www.offbeattravel.us/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.jpeg" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/logo offbeattravel.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">OffBeat Travel</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -266,7 +266,7 @@
                             <a class="animal-item">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/monteAlto.png" alt="" />
+                                        src="zoofari/img/SobreNosotros/Miembros/monteAlto.webp" alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Reserva Monte Alto</p>
                                         <h5 class="text-white mb-0">Miembro local</h5>
@@ -278,7 +278,7 @@
                             <a class="animal-item" href="https://www.ministeriodesalud.go.cr/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/LogoMinisterioSalud2.png"
+                                        src="zoofari/img/SobreNosotros/Miembros/LogoMinisterioSalud2.webp"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Ministerio de Salud</p>
@@ -293,7 +293,7 @@
                                 href="https://www.nandayure.go.cr/index.php/mn-gestionmunicipal/mn-areaadministrativa/mn-gestion-ambiental">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.jpeg"
+                                        src="zoofari/img/SobreNosotros/Miembros/Logo gestion ambiental Muni Nandayure.webp"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Gestión Ambiental Nandayure</p>
@@ -306,7 +306,7 @@
                             <a class="animal-item" href="https://cacnandayure.com/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
-                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.png"
+                                        src="zoofari/img/SobreNosotros/Miembros/CentroAgrícolaNandayure.WEBP"
                                         alt="" />
                                     <div class="animal-text p-4">
                                         <p class="text-white small text-uppercase mb-0">Centro Agrícola Nandayure</p>
@@ -340,15 +340,15 @@
     <div class="cards-container- wow fadeInUp" data-wow-delay="0.1s">
         <div class="card-" data-wow-delay="0.1s">
             <a href="https://www.chorotega.una.ac.cr">
-                <img src="../zoofari/img/SobreNosotros/logosede.png" alt="Image 1"> </a>
+                <img src="../zoofari/img/SobreNosotros/logosede.webp" alt="Image 1"> </a>
         </div>
         <div class="card- wow fadeInUp" data-wow-delay="0.1s">
             <a href="https://www.facebook.com/nicoyasistemas/">
-                <img src="../zoofari/img/SobreNosotros/logocarrera.png" alt="Image 2"> </a>
+                <img src="../zoofari/img/SobreNosotros/logocarrera.webp" alt="Image 2"> </a>
         </div>
         <div class="card- wow fadeInUp" data-wow-delay="0.1s">
             <a href="https://www.instagram.com/jose_venegas_photography/">
-                <img src="../zoofari/img/SobreNosotros/jose-venegas.png"alt="Image 3"> </a>
+                <img src="../zoofari/img/SobreNosotros/jose-venegas.webp"alt="Image 3"> </a>
         </div>
     </div>
 
@@ -369,8 +369,8 @@
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-            <img src="../zoofari/img/SobreNosotros/Geiner_EquipoD.jpg" alt="Imagen 5">
-            <a href=""> 
+            <img src="../zoofari/img/SobreNosotros/Geiner_EquipoD.webp" alt="Imagen 5">
+            <a href="">
                 <div class="card-text-Desarrolladores">
                     <h2>Geiner Zúñiga Flores</h2>
                     <p>Desarrollador Full Stack</p>
@@ -379,8 +379,8 @@
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-            <img src="../zoofari/img/SobreNosotros/Melany_EquipoD.jpg" alt="Imagen 2">
-            <a href=""> 
+            <img src="../zoofari/img/SobreNosotros/Melany_EquipoD.webp" alt="Imagen 2">
+            <a href="">
                 <div class="card-text-Desarrolladores">
                     <h2>Melany Lawson Méndez</h2>
                     <p>Desarolladora Front-End</p>
@@ -389,18 +389,18 @@
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-            <img src="../zoofari/img/SobreNosotros/Mar_EquipoD.jpg" alt="Imagen 3">
+            <img src="../zoofari/img/SobreNosotros/Mar_EquipoD.webp" alt="Imagen 3">
             <a href=""> </a>
-                <div class="card-text-Desarrolladores">
-                    <h2>María del Mar Acón Vargas</h2>
-                    <p>Desarolladora Front-End</p>
-                </div>
+            <div class="card-text-Desarrolladores">
+                <h2>María del Mar Acón Vargas</h2>
+                <p>Desarolladora Front-End</p>
+            </div>
             </a>
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-            <img src="../zoofari/img/SobreNosotros/Kris_EquipoD.jpg" alt="Imagen 4">
-            <a href="https://www.linkedin.com/in/kriscia-campos-c%C3%A1rdenas-46b937276/"> 
+            <img src="../zoofari/img/SobreNosotros/Kris_EquipoD.webp" alt="Imagen 4">
+            <a href="https://www.linkedin.com/in/kriscia-campos-c%C3%A1rdenas-46b937276/">
                 <div class="card-text-Desarrolladores">
                     <h2>Kriscia Campos Cárdenas</h2>
                     <p>Diseñadora Full Stack</p>
@@ -409,8 +409,8 @@
         </div>
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
-            <img src="../zoofari/img/SobreNosotros/Alfieri_EquipoD.jpg" alt="Imagen 1">
-            <a href="https://www.linkedin.com/in/alfieri-mora-2bb34625a/"> 
+            <img src="../zoofari/img/SobreNosotros/Alfieri_EquipoD.webp" alt="Imagen 1">
+            <a href="https://www.linkedin.com/in/alfieri-mora-2bb34625a/">
                 <div class="card-text-Desarrolladores">
                     <h2>Alfieri Mora Jiménez</h2>
                     <p>DevOps y Desarrollador Front-End</p>
@@ -420,5 +420,4 @@
     </center>
 
     <!-- EQUIPO DESARROLLADOR END-->
-
 @endsection

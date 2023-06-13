@@ -222,7 +222,7 @@
           </button>
           <div class="navbar-brand-wrapper">
             <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"/></a> -->
-            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="zoofari/img/LogoCorredor.png"
+            <a class="navbar-brand brand-logo-mini" href="index.html"><img src="zoofari/img/LogoCorredor.webp"
                 alt="logo" /></a>
           </div>
           <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">¡Bienvenido!</h4>

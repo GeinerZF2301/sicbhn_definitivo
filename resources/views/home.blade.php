@@ -31,19 +31,19 @@
             <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                 <div class="owl-carousel header-carousel">
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal1.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal1.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal4.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal4.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal5.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal5.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal2.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal2.webp" alt="" />
                     </div>
                     <div class="owl-carousel-item">
-                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal7.jpg" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/FotoPrincipal7.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.png" alt="" />
+                        <img class="img-fluid" src="zoofari/img/inicio/MapaPrincipal2.webp" alt="" />
                     </div>
                 </div>
             </div>
@@ -162,42 +162,42 @@
             </div>
             <div class="row gy-5 gx-4">
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon1.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosCamarasTrampa') }}</h5>
                     <span>{{ __('messages.TextoServiciosCamarasTrampa') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon2.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosGestionResiduos') }}</h5>
                     <span>{{ __('messages.TextoServiciosGestionResiduos') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon3.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosControlDelitos') }}</h5>
                     <span>{{ __('messages.TextoServiciosControlDelitos') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon4.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosConectividadEstructural') }}</h5>
                     <span>{{ __('messages.TextoServiciosConectividadEstructural') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon5.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosConservacion') }}</h5>
                     <span>{{ __('messages.TextoServiciosConservacion') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon6.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosReducirFactores') }}</h5>
                     <span>{{ __('messages.TextoServiciosReducirFactores') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon7.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosTrabajoComunidades') }}</h5>
                     <span>{{ __('messages.TextoServiciosTrabajoComunidades') }}</span>
                 </div>
                 <div class="col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.png" alt="Icon" />
+                    <img class="img-fluid mb-3" src="zoofari/img/icon/icon8.webp" alt="Icon" />
                     <h5 class="mb-3">{{ __('messages.TituloServiciosPromocionSistemasAgropecuarios') }}</h5>
                     <span>{{ __('messages.TextoServiciosPromocionSistemasAgropecuarios') }}
                     </span>
@@ -219,7 +219,7 @@
             <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">{{ __('messages.TituloPrimerTallerAbonoOrganico') }}</h5>
                         <p>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">{{ __('messages.TituloSegundoTallerAbonoOrganico') }}</h5>
                         <p>
@@ -239,7 +239,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">{{ __('messages.TituloTallerObservacionAves') }}</h5>
                         <p>
@@ -249,7 +249,7 @@
                 </div>
                 <div class="testimonial-item text-center">
                     <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4"
-                        src="zoofari/img/inicio/Persona.png" style="width: 100px; height: 100px" />
+                        src="zoofari/img/inicio/Persona.webp" style="width: 100px; height: 100px" />
                     <div class="testimonial-text rounded text-center p-4">
                         <h5 class="mb-1">{{ __('messages.TituloTallerUsoAgroquimicos') }}</h5>
                         <p>

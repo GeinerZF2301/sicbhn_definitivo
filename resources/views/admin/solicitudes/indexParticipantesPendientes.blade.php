@@ -15,7 +15,7 @@
             <div class="row mb-2">
                 <span class="fw-light fs-6">Gestión de las solicitudes de los participantes de talleres</span>
             </div>
-                <div class="table-container ">
+                <div class="table-container">
                     <div class="card mt-4 rounded shadow-lg bg-white bg-body">
                         <div class="">
                             <table id="dataTable" class="table table-hover  align-items-center">
