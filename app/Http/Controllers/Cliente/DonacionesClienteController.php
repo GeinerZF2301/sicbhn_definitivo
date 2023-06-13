@@ -12,7 +12,7 @@ class DonacionesClienteController extends Controller
         $cuentasBancarias = CuentaBancaria::select('id', 'entidad_bancaria','numero_cuenta','estado')
         ->where('estado', '=', 1)->get();
         $alimentos = Articulo::select('id', 'nombre')->where('tipo_articulo', '=', 'Alimentos')->get();
-        $herramientas = Articulo::select('id', 'nombre')->where('tipo_articulo', '=', 'Herramientas')->get();
-        return view('principal.donaciones.donaciones-index', compact('cuentasBancarias, alimentos', 'herramientas'));
+        $herramientas = Articulo::select('id', 'nombre')->where('tipo_articulo', '=', 'Herramienta')->get();
+        return view('principal.donaciones.donaciones-index', compact('cuentasBancarias', 'alimentos', 'herramientas'));
     }
 }

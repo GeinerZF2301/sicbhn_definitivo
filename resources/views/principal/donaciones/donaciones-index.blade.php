@@ -203,16 +203,17 @@
                                         </div>
                                     </div>
 
-                                    <div class="row d-felx justify-content-end">
+                                    <div class="row d-flex justify-content-end">
                                         <div class="col-lg-8 col-sm-12">
-                                            <span class="fw-bold">Banco Nacional-IBAN :</span>
-                                            <span>CR-90015108310026000086</span>
+
+                                            @foreach ($cuentasBancarias as $cuentasBancaria)
+
+                                            <span class="fw-bold">{{ $cuentasBancaria->entidad_bancaria }} :</span>
+                                            <span>{{ $cuentasBancaria->numero_cuenta}} </span>
                                             <br>
-                                            <span class="fw-bold">Banco Nacional:</span>
-                                            <span>100-02-083-600008-7</span>
-                                            <br>
-                                            <span class="fw-bold">Cuenta Cliente:</span>
-                                            <span>15108310026000086</span>
+                                      
+                                                
+                                            @endforeach
                                         </div>
                                     </div>
 
@@ -260,7 +261,17 @@
                                             te dejamos una lista de opciones que te pueden ayudar.
                                         </p>
                                         <hr style="background-color:#028A0F ;">
-                                        <span>hola</span>
+                                        <div class="row d-flex  ">
+                                            <div class="col-lg-4 col-md-4 col-sm-12 m-3 ">
+                                                <ul class="list-group list-group-flush text-center ">
+                                                    @foreach ($alimentos as $alimento)
+                                                        
+                                                   
+                                                    <li class="list-group-item">{{ $alimento->nombre }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -312,16 +323,11 @@
                                     <div class="row d-flex  ">
                                         <div class="col-lg-4 col-md-4 col-sm-12 m-3 ">
                                             <ul class="list-group list-group-flush text-center ">
-                                                <li class="list-group-item">An item</li>
-                                                <li class="list-group-item">A second item</li>
-                                                <li class="list-group-item">A third item</li>
-                                                <li class="list-group-item">A fourth item</li>
-                                                <li class="list-group-item">And a fifth one</li>
-                                                <li class="list-group-item">An item</li>
-                                                <li class="list-group-item">A second item</li>
-                                                <li class="list-group-item">A third item</li>
-                                                <li class="list-group-item">A fourth item</li>
-
+                                                @foreach ($herramientas as $herramienta)
+                                                    
+                                               
+                                                <li class="list-group-item">{{ $herramienta->nombre }}</li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </div>
