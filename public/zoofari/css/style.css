@@ -1562,5 +1562,13 @@ margin-right: 2rem;
       
   }
   
+  /*Galeria*/
+  .img_galeria{
+    width: 100%;
+    height:400px;
+    margin: 5px;
+
+
+  }
 
 
