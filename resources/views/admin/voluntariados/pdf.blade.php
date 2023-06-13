@@ -32,10 +32,10 @@
                 <td style="width: 20%" name="nombre" class="budget">{{ $voluntariado->nombre }}</td>
                 <td style="width: 30%" name="descripcion" class="budget">{{ $voluntariado->descripcion }}</td>
                 <td style="width: 20%" name="ubicacion" class="budget">
-                {{ $voluntariado->ubicacion }}</td>
+                    {{ $voluntariado->ubicacion }}</td>
                 <td style="width: 10%" name="fecha" class="budget">{{ $voluntariado->fecha }}</td>
                 <td style="width: 10%" name="hora" class="budget">
-                {{ $voluntariado->hora }}</td>
+                    {{ $voluntariado->hora }}</td>
 
             </tr>
         @endforeach
