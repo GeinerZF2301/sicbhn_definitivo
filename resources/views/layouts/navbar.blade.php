@@ -91,7 +91,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Más información</h5>
+                    <h5 class="text-light mb-4">{{ __('messages.FooterMasInfoSubtitulo') }}</h5>
                     
                     <p class="mb-2">
                         <i class="fa fa-map-marker-alt me-3"></i>Guanacaste, Costa Rica
@@ -115,21 +115,21 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Enlaces rápidos</h5>
-                    <a class="btn btn-link" href="{{ url('/sobrenosotros') }}">Sobre Nosotros</a>
-                    <a class="btn btn-link" href="{{ url('/contactos') }}">Contactos</a>
-                    <a class="btn btn-link" href="{{ url('/horavisita') }}">Horas de Visita</a>
-                    <a class="btn btn-link" href="{{ url('/documentos') }}">Documentos</a>
+                    <h5 class="text-light mb-4">{{ __('messages.FooterEnlacesRapidosSubtitulo') }}</h5>
+                    <a class="btn btn-link" href="{{ url('/sobrenosotros') }}">{{ __('messages.FooterEnlacesRapidosSobreNosotros') }}</a>
+                    <a class="btn btn-link" href="{{ url('/contactos') }}">{{ __('messages.FooterEnlacesRapidosContactos') }}</a>
+                    <a class="btn btn-link" href="{{ url('/horavisita') }}">{{ __('messages.FooterEnlacesRapidosHorarioOficina') }}</a>
+                    <a class="btn btn-link" href="{{ url('/documentos') }}">{{ __('messages.FooterEnlacesRapidosDocumentos') }}</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4 ">Enlaces populares</h5>
-                    <a class="btn btn-link" href="{{ url('/galeria') }}">Galería</a>
-                    <a class="btn btn-link" href="{{ url('/voluntariado') }}">Voluntariados</a>
-                    <a class="btn btn-link" href="{{ url('/campanna') }}">Campañas</a>
-                    <a class="btn btn-link" href="{{ url('/donaciones') }}">Donaciones</a>
+                    <h5 class="text-light mb-4 ">{{ __('messages.FooterEnlacesPopularesSubtitulo') }}</h5>
+                    <a class="btn btn-link" href="{{ url('/galeria') }}">{{ __('messages.FooterEnlacesGaleria') }}</a>
+                    <a class="btn btn-link" href="{{ url('/voluntariado') }}">{{ __('messages.FooterEnlacesVoluntariados') }}</a>
+                    <a class="btn btn-link" href="{{ url('/campanna') }}">{{ __('messages.FooterEnlacesCampanas') }}</a>
+                    <a class="btn btn-link" href="{{ url('/donaciones') }}">{{ __('messages.FooterEnlacesDonaciones') }}</a>
                 </div>
                 <div class="footCB col-lg-3 col-md-6 ">
-                    <h3 class="text-light mb-4 ">El Corredor Biológico te da la bienvenida</h3>
+                    <h3 class="text-light mb-4 ">{{ __('messages.FraseBienvenidaFooter') }}</h3>
                   
                     </div>
                 </div>
@@ -139,7 +139,7 @@
             <div class="copyright">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">SICBHN</a>, Todos los derechos reservados.
+                        &copy; <a class="border-bottom" href="#">SICBHN</a>, {{ __('messages.FraseDerechos') }}
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

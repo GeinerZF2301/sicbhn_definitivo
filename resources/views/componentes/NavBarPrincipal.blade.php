@@ -34,9 +34,9 @@
                     data-bs-toggle="dropdown">{{ __('messages.NavBarActividades') }}</a>
 
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="{{ url('/voluntariado') }}" class="dropdown-item">{{ __('messages.NavBarVoluntariados') }}</a>
-                    <a href="{{ url('/campañas') }}" class="dropdown-item">{{ __('messages.NavBarCampaña') }}</a>
-                    <a href="{{ url('/talleres') }}" class="dropdown-item">Talleres</a>
+                    <a href="{{ url('/voluntariado') }}" class="dropdown-item">{{ __('messages.NavBarDropDownVoluntariados') }}</a>
+                    <a href="{{ url('/campañas') }}" class="dropdown-item">{{ __('messages.NavBarDropDownCampañas') }}</a>
+                    <a href="{{ url('/talleres') }}" class="dropdown-item">{{ __('messages.NavBarDropDownTalleres') }}</a>
                 </div>
 
             </div>
@@ -53,7 +53,7 @@
                     <a href="{{ url('/galeria') }}"
                         class="dropdown-item">{{ __('messages.NavBarDropDownGaleria') }}</a>
                     <a href="{{ url('/horavisita') }}" class="dropdown-item">
-                        {{ __('messages.NavBarDropDownHorasVisita') }} </a>
+                        {{ __('messages.NavBarDropDownHorarioOficina') }} </a>
                     <a href="{{ url('/documentos') }}"
                         class="dropdown-item">{{ __('messages.NavBarDropDownHorasDocumentacion') }}</a>
                     <a href="{{ url('/contactos') }}"
