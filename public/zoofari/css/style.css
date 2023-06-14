@@ -1443,47 +1443,13 @@ margin-right: 2rem;
       align-items: center;
       
   }
-  
-  .btn-Descarga{
-  display: inline-block;
-  align-items: center;
-  
-  
-  text-decoration: none;
-  color: aliceblue;
-  
-  width: 7rem;
-  height: 2.5rem;
-  border-radius: 3px;
-  
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
-  
-  transition: transform 0.3s ease;
-  }
-  
-  .btn-Descarga:hover{
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-      transform: translateY(-2%);
-  }
-
-
-
-
-
-
-
-
-
-
-  .flexEspecies  {
+    .flexEspecies  {
       width: 100%;
       height:100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
   }
-  
-  
   
   
   .modalEspecies{
@@ -1498,11 +1464,6 @@ margin-right: 2rem;
       background:#0000002f;
   }
 
-
-
-
-
-
   .flex  {
       width: 100%;
       height:100%;
@@ -1511,13 +1472,10 @@ margin-right: 2rem;
       align-items: center;
   }
   
-  
-  
-  
   .modal{
       display: none;
       position: fixed;
-      /* z-index: 1; */
+   /* z-index: 1; */
       overflow: auto;
       left: 0;
       top: 0;
@@ -1534,13 +1492,13 @@ margin-right: 2rem;
    box-shadow: 0 0 6px 0 rgba(0,0, 0, .4) ;
    animation-name: modal;
   animation-duration: 1s;
-  overflow: hidden;
+  overflow: hidden; 
   
   }
-  @keyframes modal{
+ @keyframes modal{
     from{top: -330px; opacity:0;}
     to{top: 0; opacity: 1;}
- }
+ } 
 
   .modal-footer{
       display: flex;
@@ -1604,24 +1562,13 @@ margin-right: 2rem;
       
   }
   
-  .btn-Descarga{
-  display: inline-block;
-  align-items: center;
-  
-  
-  text-decoration: none;
-  color: aliceblue;
-  
-  width: 7rem;
-  height: 2.5rem;
-  border-radius: 3px;
-  
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);;
-  
-  transition: transform 0.3s ease;
+  /*Galeria*/
+  .img_galeria{
+    width: 100%;
+    height:400px;
+    margin: 5px;
+
+
   }
-  
-  .btn-Descarga:hover{
-      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-      transform: translateY(-2%);
-}
+
+

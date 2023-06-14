@@ -50,7 +50,7 @@
                         <a class="animal-item" href="{{ asset('storage/imagenes/' . $imagen->file) }}"
                             data-lightbox="animal">
                             <div class="position-relative">
-                                <img class="img-fluid" src="{{ asset('storage/imagenes/' . $imagen->file) }}"
+                                <img class="img_galeria img-fluid" src="{{ asset('storage/imagenes/' . $imagen->file) }}"
                                     alt="" />
                                 <div class="animal-text p-4">
                                     <p class="text-white small text-uppercase mb-0">{{ $imagen->categoria_imagen }}</p>
