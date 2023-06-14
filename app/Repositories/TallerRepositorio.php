@@ -36,6 +36,30 @@
             $taller->estado = $data['estado'];
             $taller->save();
         }
+        public function DecreaseWorkshopQuota($id){
+            $contador = 0;
+            $tallerExistente = Taller::select()->where('id', $id )->first();
+            if($tallerExistente){
+                $contador = $tallerExistente->cupo;
+                $contador--;
+                $tallerExistente->cupo = $contador;
+                $this->updateWorkshop($tallerExistente, $id);
+            }else{
+                return response()->json(404);
+            }
+        }
+        public function IncreaseWorkshopQuota($id){
+            $contador = 0;
+            $tallerExistente = Taller::select()->where('id', $id )->first();
+            if($tallerExistente){
+                $contador = $tallerExistente->cupo;
+                $contador++;
+                $tallerExistente->cupo = $contador;
+                $this->updateWorkshop($tallerExistente, $id);
+            }else{
+                return response()->json(404);
+            }
+        }
         public function destroyWorkshop($id){
             $taller = Taller::findOrFail($id);
             $taller->delete();

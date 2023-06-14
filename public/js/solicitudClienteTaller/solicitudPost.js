@@ -72,14 +72,11 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("calle")) {
                         $("#calle_error").html(errors.calle[0]);
                     }
-                    if (errors.hasOwnProperty("edad")) {
-                        $("#edad_error").html(errors.apellidos[0]);
-                    }
                     if (errors.hasOwnProperty("tipo_persona_id")) {
                         $("#tipo_persona_id_error").html(errors.tipo_persona_id[0]);
                     }
-                    if (errors.hasOwnProperty("voluntariado_id")) {
-                        $("#voluntariado_id_error").html(errors.voluntariado_id[0]);
+                    if (errors.hasOwnProperty("taller_id")) {
+                        $("#taller_id_error").html(errors.taller_id[0]);
                     }
                     } else {
                         console.error(error);

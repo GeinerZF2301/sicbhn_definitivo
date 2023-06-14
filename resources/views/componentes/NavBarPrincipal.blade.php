@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn "
     data-wow-delay="0.1s">
     <a href="{{ url('/') }}" class="navbar-brand p-0">
-        <img class="img-fluid me-3" src="zoofari/img/LogoCorredor.png" alt="Icon" />
+        <img class="img-fluid me-3" src="zoofari/img/LogoCorredor.webp" alt="Icon" />
         <h1 class="m-0 text-primary">SICBHN</h1>
     </a>
 
@@ -34,9 +34,9 @@
                     data-bs-toggle="dropdown">{{ __('messages.NavBarActividades') }}</a>
 
                 <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                    <a href="{{ url('/voluntariado') }}" class="dropdown-item">{{ __('messages.NavBarVoluntariados') }}</a>
-                    <a href="{{ url('/campañas') }}" class="dropdown-item">{{ __('messages.NavBarCampaña') }}</a>
-                    <a href="{{ url('/talleres') }}" class="dropdown-item">Talleres</a>
+                    <a href="{{ url('/voluntariado') }}" class="dropdown-item">{{ __('messages.NavBarDropDownVoluntariados') }}</a>
+                    <a href="{{ url('/campañas') }}" class="dropdown-item">{{ __('messages.NavBarDropDownCampañas') }}</a>
+                    <a href="{{ url('/talleres') }}" class="dropdown-item">{{ __('messages.NavBarDropDownTalleres') }}</a>
                 </div>
 
             </div>
@@ -53,7 +53,7 @@
                     <a href="{{ url('/galeria') }}"
                         class="dropdown-item">{{ __('messages.NavBarDropDownGaleria') }}</a>
                     <a href="{{ url('/horavisita') }}" class="dropdown-item">
-                        {{ __('messages.NavBarDropDownHorasVisita') }} </a>
+                        {{ __('messages.NavBarDropDownHorarioOficina') }} </a>
                     <a href="{{ url('/documentos') }}"
                         class="dropdown-item">{{ __('messages.NavBarDropDownHorasDocumentacion') }}</a>
                     <a href="{{ url('/contactos') }}"
