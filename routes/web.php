@@ -98,6 +98,8 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
 
     // Rutas para el modulo de Donacion Especie
     Route::get('/donacionEspecie',[DonacionEspecieController::class,'index'])->name('donacionEspecie');
+    Route::get('/getArticles',[DonacionEspecieController::class,'getArticles'])->name('getArticles');
+    Route::get('/getArticleById',[DonacionEspecieController::class,'getArticleById'])->name('getArticleById');
     Route::post('/donacionEspecie/store',[DonacionEspecieController::class,'store'])->name('donacionEspecie.store');
     Route::get('/donacionEspecie/{id}/edit',[DonacionEspecieController::class,'edit'])->name('donacionEspecie.edit');
     Route::post('/donacionEspecie/update/{id}',[DonacionEspecieController::class,'update'])->name('donacionEspecie.update');

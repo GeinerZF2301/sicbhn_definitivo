@@ -101,7 +101,6 @@ $(document).ready(function() {
 //Logica del cliente que realiza una peticion POST al servidor para realizar un Update del registro
     var editform = $('#editForm')[0]
     $('.updateBtn').click(function(e){
-        $('#edit_edad').attr('disabled', false);
         e.preventDefault();
         $('.error-messages').html('');
         let formEdit = new FormData(editform);

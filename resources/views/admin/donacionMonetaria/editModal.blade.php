@@ -1,7 +1,7 @@
 <div class="contenedor">
     <div class="modal fade edit-modal" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <form id="createForm">
+        <form id="editForm">
             @csrf
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -19,7 +19,7 @@
 
                         <div class="row">
 
-                                <input type="hidden" class="form-control" name="id" id="id">
+                            <input type="hidden" class="form-control" name="id" id="edit_id">
 
                                 <div class="d-flex-justify-content-center">
                                     <div class="mb-3">

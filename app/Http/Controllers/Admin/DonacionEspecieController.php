@@ -9,14 +9,16 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreDonacionEspecieRequest;
 use App\Repositories\Interfaces\DonacionEspecieRepositorioInterface;
 use App\Repositories\DonacionEspecieRepositorio;
-
+use App\Repositories\Interfaces\ArticuloRepositorioInterface;
+use App\Repositories\ArticuloRepositorio;
 class DonacionEspecieController extends Controller
 {
     private $donacionEspecie;
     /*Constructor encargado de inicializar y desacoplar la logica de negocio con con la
     capa de acceso a datos*/
-    public function __construct(DonacionEspecieRepositorioInterface $donacionEspecie){
+    public function __construct(DonacionEspecieRepositorioInterface $donacionEspecie, ArticuloRepositorio $articuloRepositorio){
         $this->donacionEspecie = $donacionEspecie;
+        $this->articuloRepositorio = $articuloRepositorio;
         $this->middleware('permission:ver-DonacionEspecies|crear-DonacionEspecies|editar-DonacionEspecies|borrar-DonacionEspecies',['only' => ['index']]);
         $this->middleware('permission:crear-DonacionEspecies' , ['only' => ['create', 'store']]);
         $this->middleware('permission:editar-DonacionEspecies' , ['only' => ['edit', 'update']]);
@@ -33,7 +35,7 @@ class DonacionEspecieController extends Controller
     public function create() 
     {
         try{
-            $personasDonantes =  DB::table('personas as p')->select('p.id', 'p.nombre', 'p.apellidos', 
+            $personasDonantes =  DB::table('personas as p')->select('p.id as donanted' , 'p.nombre', 'p.apellidos', 
             'tp.id as tipo_persona_id', 'tp.tipo_persona')
             ->join('tipos_personas as tp', 'p.tipo_persona_id', '=', 'tp.id')
             ->where(function ($query) {
@@ -41,9 +43,7 @@ class DonacionEspecieController extends Controller
                 ->orWhere('tp.tipo_persona', '=', 'donante');
             })->get();
 
-            $articulos = DB::table('articulos')->select('id', 'nombre')->get();
-
-            return response()->json($personasDonantes,$articulos, 200);
+            return response()->json($personasDonantes, 200);
 
         }catch(Exception $e){
             return response()->json([
@@ -51,7 +51,10 @@ class DonacionEspecieController extends Controller
             ], 400);
         }
     }
-
+    public function getArticles(){
+        $articulos = DB::table('articulos')->select('id', 'nombre')->get();
+        return response()->json($articulos, 200);
+    }
     public function store(StoreDonacionEspecieRequest $request) 
     {
         try{

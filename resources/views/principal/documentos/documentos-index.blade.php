@@ -34,16 +34,19 @@
 
                     </h1>
                     <p class="mb-4">
-                        En este apartado se encuentran una serie de documentos de carácter oficial que sirven
+                        En este apartado se encuentran una serie de documentos de carácter oficial que 
+sirven
                         para identificar información acerca del Corredor Biológico Hojancha-Nandayure.
                         <br>
-                        La documentación publicada cuenta con información recopilada puntual y actualizada.
+                        La documentación publicada cuenta con información recopilada puntual y 
+actualizada.
                     </p>
 
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="img-border">
-                        <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documentos.webp" alt="" />
+                        <img class="img-fluid" src="zoofari/img/DocumentosPublicos/documentos.webp" alt="" 
+/>
                     </div>
                 </div>
             </div>
@@ -76,7 +79,8 @@
                             <div class="row">
                                 <div class="col- d-flex justify-content-center">
                                     <div class="icono mt-2 mb-2">
-                                        <img src="zoofari/img/DocumentosPublicos/docs.webp" alt="" weight="50px"
+                                        <img src="zoofari/img/DocumentosPublicos/docs.webp" alt="" 
+weight="50px"
                                             height="50px">
                                     </div>
                                 </div>
@@ -86,11 +90,14 @@
                                     <div class="cardd-title d-flex justify-content-center">
                                         <h4>{{ $documentoPublico->nombre }}</h4>
                                     </div>
-                                    <p class="text-center mt-2 mb-3"> {{ $documentoPublico->descripcion }}.
+                                    <p class="text-center mt-2 mb-3"> {{ $documentoPublico->descripcion 
+}}.
                                     </p>
-                                    <div class="buttons d-flex justify-content-center aligh-items-center mt-2 mb-3">
+                                    <div class="buttons d-flex justify-content-center aligh-items-center 
+mt-2 mb-3">
                                         <a class="btn btn-Descarga text-decoration-none"
-                                            href="{{ asset('storage/documentos/' . $documentoPublico->file) }}"
+                                            href="{{ asset('storage/documentos/' . 
+$documentoPublico->file) }}"
                                             target="_blank"> Ver </a>
                                     </div>
                                 </div>
@@ -103,3 +110,4 @@
         </div>
     @endforeach
 @endsection
+
