@@ -79,7 +79,7 @@ class TablaPermisoSeeder extends Seeder
             'borrar-CuentasBancarias',
             //Permisos Taller
             'ver-Taller/Historial',
-            'crear- Taller',
+            'crear-Taller',
             'editar-Taller',
             'borrar-Taller',
 

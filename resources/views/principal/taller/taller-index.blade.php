@@ -149,6 +149,10 @@
                                     <p>{{ $talleresDisponible->descripcion }}</p>
                                 </div>
                             </div>
+
+
+
+
                             @auth
                                 {{-- The user is authenticated... --}}
                                 <button class="my-button btn-scroll btn-select-taller" data-id="{{ $talleresDisponible->id }}"
@@ -182,7 +186,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                       
+
                         <img src="/zoofari/img/talleres/Voluntariados9.webp" class="custom-text-box-image img-fluid"
                             alt="">
                     </div>
@@ -330,11 +334,21 @@
                                             <input type="hidden" id="tipo_persona_id" value="{{ $tipoParticipante->id }}"
                                                 name="tipo_persona_id" />
 
-                                            <div class=" mt-2 col-12">
-                                                <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
-                                                    Enviar
-                                                </button>
-                                            </div>
+                                            @if (!auth()->user()->hasVerifiedEmail())
+                                                <div class="alert alert-warning mt-2 col-12">
+                                                    Debes verificar tu correo electrónico antes de enviar el formulario.
+                                                </div>
+                                                <div class="mt-2 col-12">
+                                                    <a href="{{ route('verification.notice') }}"
+                                                        class="btn btn-primary w-100 py-3">Verificar correo electrónico</a>
+                                                </div>
+                                            @endif
+                                            <div
+                                            class="mt-2 col-12"{{ auth()->user()->hasVerifiedEmail()? '': ' style=display:none;' }}>
+                                            <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
+                                                Enviar
+                                            </button>
+                                        </div>
                                         </form>
                                     </div>
                                 </div>

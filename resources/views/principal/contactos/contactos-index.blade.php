@@ -107,16 +107,21 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                @auth
-                                    {{-- // The user is authenticated... --}}
-                                    <button id="btn-scroll" class="btn btn-primary w-100 py-3" type="submit">Enviar</button>
-                                @endauth
-
-                                @guest
-                                    {{-- // The user is not authenticated... --}}
-                                    <a href="{{ route('login') }}?redirect={{ url()->current() }}"
-                                        class="btn btn-primary w-100 py-3">Inciar sesión</a>
-                                @endguest
+                                @if (!auth()->user()->hasVerifiedEmail())
+                                                <div class="alert alert-warning mt-2 col-12">
+                                                    Debes verificar tu correo electrónico antes de ponenerte en contacto.
+                                                </div>
+                                                <div class="mt-2 col-12">
+                                                    <a href="{{ route('verification.notice') }}"
+                                                        class="btn btn-primary w-100 py-3">Verificar correo electrónico</a>
+                                                </div>
+                                            @endif
+                                            <div
+                                            class="mt-2 col-12"{{ auth()->user()->hasVerifiedEmail()? '': ' style=display:none;' }}>
+                                            <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
+                                                Enviar
+                                            </button>
+                                        </div>
                             </div>
                         </div>
                         

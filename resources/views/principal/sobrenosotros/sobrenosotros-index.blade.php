@@ -380,7 +380,7 @@
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Melany_EquipoD.webp" alt="Imagen 2">
-            <a href="">
+            <a href="http://linkedin.com/in/melany-lawson-méndez-00a48027b">
                 <div class="card-text-Desarrolladores">
                     <h2>Melany Lawson Méndez</h2>
                     <p>Desarolladora Front-End</p>
@@ -390,7 +390,7 @@
 
         <div class="card-Desarrolladores wow fadeInUp" data-wow-delay="0.1s"">
             <img src="../zoofari/img/SobreNosotros/Mar_EquipoD.webp" alt="Imagen 3">
-            <a href=""> </a>
+            <a href="">
             <div class="card-text-Desarrolladores">
                 <h2>María del Mar Acón Vargas</h2>
                 <p>Desarolladora Front-End</p>
