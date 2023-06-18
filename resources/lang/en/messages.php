@@ -347,7 +347,7 @@ Ministry of Health, Ministry of Agriculture, Monte Alto, Chamber of Ranchers, Ag
 //Navbar Login
 'NavBarLoginInicio'=> 'Home',
 'NavBarBotonLogin'=> 'Log in',
-'NavBarBotonRegister'=> 'Check in',
+'NavBarBotonRegister'=> 'Register',
 
 
 
