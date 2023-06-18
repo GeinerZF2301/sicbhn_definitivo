@@ -7,14 +7,14 @@
 <!-- Page Header Start -->
 <div class="container-fluid header-bgDP py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
   <div class="container py-5">
-    <h1 class="display-4 text-white mb-3 animated slideInDown">Documentación</h1>
+    <h1 class="display-4 text-white mb-3 animated slideInDown">{{ __('messages.PrimerTituloHeaderDocumentacion') }}</h1>
     <nav aria-label="breadcrumb animated slideInDown">
       <ol class="breadcrumb mb-0">
         <li class="breadcrumb-item">
-          <a class="text-white" href="{{ url('/') }}">Inicio</a>
+          <a class="text-white" href="{{ url('/') }}">{{ __('messages.SegundoTituloHeaderDocumentacion') }}</a>
         </li>
         <li class="breadcrumb-item text-primary active" aria-current="page">
-          Documentos
+          {{ __('messages.TercerotextoHeaderDocumentacion') }}
         </li>
       </ol>
     </nav>
@@ -29,15 +29,14 @@
     <div class="row g-5">
       <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
         <h1 class="display-5 mb-4">
-          Sobre Nuestra
-          <font color="#028A0F">Documentación</font>
+          {{ __('messages.CuartotextoHeaderDocumentacion') }}
+          <font color="#028A0F">{{ __('messages.QuintoTextoHeaderDocumentacion') }}</font>
 
         </h1>
         <p class="mb-4">
-          En este apartado se encuentran una serie de documentos de carácter oficial que sirven
-          para identificar información acerca del Corredor Biológico Hojancha-Nandayure.
+          {{ __('messages.PrimerTextoHeaderInicio') }}
           <br>
-          La documentación publicada cuenta con información recopilada puntual y actualizada.
+          {{ __('messages.SegundoTextoHeaderInicio') }}
         </p>
 
       </div>
@@ -59,7 +58,7 @@
 
         <h1 class="display-5 mb-4 text-center">
 
-          ¡Documentos Públicos!
+          {{ __('messages.PrimerTituloDocumentacion') }}
         </h1>
 
       </div>
@@ -86,7 +85,7 @@
             <p class="text-center mt-2 mb-3">{{$documentoPublico->descripcion}}</p>
             <div class="d-flex justify-content-center align-items-center mt-2 mb-3">
               <a class="btn btn-Descarga text-decoration-none"
-                href="{{ asset('storage/documentos/'.$documentoPublico->file) }}" target="_blank">Ver</a>
+                href="{{ asset('storage/documentos/'.$documentoPublico->file) }}" target="_blank">{{ __('messages.PrimerbotonDocumentacion') }}</a>
             </div>
           </div>
         </div>

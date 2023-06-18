@@ -1,5 +1,6 @@
 @extends('layouts.navbar')
 @section('content')
+
     <!-- Navbar Start -->
     @include('componentes.NavBarPrincipal')
     <!-- Navbar End -->
@@ -8,15 +9,15 @@
     <div class="container-fluid header-bgCO py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
             <h1 class="display-4 text-white mb-3 animated slideInDown">
-                Nuestros contactos
+                {{ __('messages.PrimerTituloHeaderContactos') }}
             </h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
-                        <a class="text-white" href="{{ url('/') }}">Inicio</a>
+                        <a class="text-white" href="{{ url('/') }}">{{ __('messages.SegundoTituloHeaderContactos') }}</a>
                     </li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">
-                        Contactos
+                        {{ __('messages.TerceroTituloHeaderContactos') }}
                     </li>
                 </ol>
             </nav>
@@ -35,9 +36,9 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">
-                                <span class="text-primary me-2">#</span>Dirección
+                                <span class="text-primary me-2">#</span>{{ __('messages.1TituloContactos') }}
                             </p>
-                            <h5 class="mb-0">Barrio Alto del Cementerio, en Hojancha-Guanacaste, Costa Rica</h5>
+                            <h5 class="mb-0">{{ __('messages.1TextoTituloContactos') }}</h5>
                         </div>
                     </div>
                 </div>
@@ -48,9 +49,9 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">
-                                <span class="text-primary me-2">#</span>Número telefónico
+                                <span class="text-primary me-2">#</span>{{ __('messages.2TituloContactos') }}
                             </p>
-                            <h5 class="mb-0">+(506) 8670-3535</h5>
+                            <h5 class="mb-0">{{ __('messages.2TextoTituloContactos') }}</h5>
                         </div>
                     </div>
                 </div>
@@ -61,67 +62,67 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">
-                                <span class="text-primary me-2">#</span>Correo Electrónico
+                                <span class="text-primary me-2">#</span>{{ __('messages.3TituloContactos') }}
                             </p>
-                            <h5 class="mb-0">info.cbhn@gmail.com</h5>
+                            <h5 class="mb-0">{{ __('messages.3TextoTituloContactos') }}</h5>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Contáctanos</p>
-                    <h1 class="display-5 mb-4">¿Tienes alguna duda? ¡Escríbenos!</h1>
+                    <p><span class="text-primary me-2">#</span>{{ __('messages.CuartoTituloHeaderContactos') }}</p>
+                    <h1 class="display-5 mb-4">{{ __('messages.QuintoTituloHeaderContactos') }}</h1>
                     <p class="mb-4">
                         
                     </p>
-                    <form action="{{route('contact.store')}}" method="POST">
+                    <form action="{{ route('contact.store') }}" method="POST" id="contact-form">
                         @csrf
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-light border-0" name="name"
                                         placeholder="Escriba su nombre"required>
-                                    <label for="name">Nombre</label>
+                                    <label for="name">{{ __('messages.PrimeroCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control bg-light border-0" name="email"
                                         placeholder="Your Email"required>
-                                    <label for="email">Correo Electrónico</label>
+                                    <label for="email">{{ __('messages.SegundoCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-light border-0" name="subject"
                                         placeholder="Subject" required>
-                                    <label for="subject">Asunto</label>
+                                    <label for="subject">{{ __('messages.TercerCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message"
                                         style="height: 100px"required></textarea>
-                                    <label for="message">Mensaje</label>
+                                    <label for="message">{{ __('messages.CuartoCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                @if (!auth()->user()->hasVerifiedEmail())
-                                                <div class="alert alert-warning mt-2 col-12">
-                                                    Debes verificar tu correo electrónico antes de ponenerte en contacto.
-                                                </div>
-                                                <div class="mt-2 col-12">
-                                                    <a href="{{ route('verification.notice') }}"
-                                                        class="btn btn-primary w-100 py-3">Verificar correo electrónico</a>
-                                                </div>
-                                            @endif
-                                            <div
-                                            class="mt-2 col-12"{{ auth()->user()->hasVerifiedEmail()? '': ' style=display:none;' }}>
-                                            <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
-                                                Enviar
-                                            </button>
-                                        </div>
+                                @if (auth()->check() && !auth()->user()->hasVerifiedEmail())
+                                    <div class="alert alert-warning mt-2 col-12">
+                                        {{ __('messages.VerificarFormularios') }}
+                                    </div>
+                                    <div class="mt-2 col-12">
+                                        <a href="{{ route('verification.notice') }}" class="btn btn-primary w-100 py-3">
+                                            {{ __('messages.BotonVerificarFormularios') }}
+                                        </a>
+                                    </div>
+                                @endif
+                                <div class="mt-2 col-12"{{ (auth()->check() && auth()->user()->hasVerifiedEmail()) ? '' : ' style=display:none;' }}>
+                                    <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
+                                        {{ __('messages.BotonEnviarFormularios') }}
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         
@@ -140,4 +141,31 @@
         </div>
     </div>
     <!-- Contact End -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+<script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        axios.post(this.action, new FormData(this))
+            .then(response => {
+                Swal.fire({
+                    icon: 'success',
+                    title: "{{ __('messages.1AlertaFormularioContactos') }}",
+                    text: "{{ __('messages.2AlertaFormularioContactos') }}",
+                    confirmButtonText: "{{ __('messages.3AlertaFormularioContactos') }}"
+                });
+
+                this.reset();
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: "{{ __('messages.4AlertaFormularioContactos') }}",
+                    text: "{{ __('messages.5AlertaFormularioContactos') }}",
+                    confirmButtonText: "{{ __('messages.6AlertaFormularioContactos') }}"
+                });
+            });
+    });
+</script>
 @endsection
