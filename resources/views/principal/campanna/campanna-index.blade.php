@@ -6,14 +6,14 @@
     <!-- Page Header Start -->
     <div class="container-fluid header-bgC py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <h1 class="display-4 text-white mb-3 animated slideInDown">Campañas</h1>
+            <h1 class="display-4 text-white mb-3 animated slideInDown">{{ __('messages.TituloHeaderCampanas') }}</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
-                        <a class="text-white" href="{{ url('/') }}">Inicio</a>
+                        <a class="text-white" href="{{ url('/') }}">{{ __('messages.TextoHeaderInicio') }}</a>
                     </li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">
-                        Campañas
+                        {{ __('messages.TextoHeaderCampanas') }}
                     </li>
                 </ol>
             </nav>
@@ -33,18 +33,12 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
 
                     <h1 class="display-5 mb-4">
-                        ¡Nuestras
-                        <font color="#028A0F">Campañas!</font>
+                        {{ __('messages.PrimerTituloCampanas') }}
+                        <font color="#028A0F">{{ __('messages.PrimerTituloCampanasVerde') }}</font>
 
                     </h1>
                     <p class="lh-lg mb-4 ">
-                        El Corredor Biológico Hojancha-Nandayure se ubica en el área de Conservación Tempisque y fue creado
-                        con
-                        el fin de conservar la vida silvestre entre el Parque Nacional Barra Honda y la zona protectora
-                        Península
-                        de Nicoya, durante el año se realizan diversas campañas que abarcan dicho territorio con el objetivo
-                        de
-                        concienciar sobre temas medioambientales.
+                        {{ __('messages.PrimerParrafoCampanas') }}
                     </p>
 
                 </div>
@@ -64,7 +58,7 @@
                 <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
 
                     <h1 class="display-4 text-center mb-4">
-                        <font color="#028A0F">¡Campañas Disponibles!</font>
+                        <font color="#028A0F">{{ __('messages.SegundoTituloCampanas') }}</font>
 
                     </h1>
 
