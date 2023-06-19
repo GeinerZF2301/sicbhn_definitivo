@@ -1,5 +1,6 @@
 <div class="contenedor">
-    <div class="modal fade edit-modal" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade edit-modal" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <form id="editForm">
             @csrf
             <div class="modal-dialog">
@@ -35,7 +36,7 @@
                                     <label for="formGroupExampleInput2" class="form-label">Fecha de Recepción</label>
                                     <input type="date" class="form-control" name="fecha_recibido"
                                         id="edit_fecha_recibido" placeholder="Escriba la fecha de recepción">
-                                    <span id="edit_fecha_recepcion_error"
+                                    <span id="edit_fecha_recibido_error"
                                         class="text-danger fw-bolder error-messages"></span>
                                 </div>
                             </div>
@@ -50,7 +51,7 @@
                                 <label for="formGroupExampleInput2" class="form-label">Donante </label>
                                 <select class="tipoPersona_id  form-select form-select-sm" name="persona_donante_id"
                                     id="edit_persona_donante_id" aria-label=".form-select-sm example">
-                                    <option selected>Selecciona una opcion</option>
+                                    <option value="" selected>Selecciona una opcion</option>
                                 </select>
                                 <span id="edit_persona_donante_id_error"
                                     class="text-danger fw-bolder error-messages"></span>
@@ -59,7 +60,7 @@
                                 <label for="formGroupExampleInput2" class="form-label">Articulo</label>
                                 <select class="edit_articulo_id  form-select form-select-sm" name="articulo_id"
                                     id="edit_articulo_id" aria-label=".form-select-sm example">
-                                    <option selected>Selecciona una opcion</option>
+                                    <option value="" selected>Selecciona una opcion</option>
                                 </select>
                                 <span id="edit_articulo_id_error" class="text-danger fw-bolder error-messages"></span>
                             </div>

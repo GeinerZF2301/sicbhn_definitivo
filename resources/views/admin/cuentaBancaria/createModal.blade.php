@@ -25,7 +25,7 @@
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Número de Cuenta</label>
                                 <input type="text" class="form-control" name="numero_cuenta" id="numero_cuenta"
-                                    placeholder="Escriba una pequeña descripción">
+                                    placeholder="Escriba el Número de Cuenta">
                                 <span id="numero_cuenta_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">

@@ -31,7 +31,7 @@
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Ubicacion</label>
                                 <input type="text" class="form-control" name="ubicacion" id="ubicacion"
-                                    placeholder="Escriba una pequeña descripción">
+                                    placeholder="Escriba una Ubicacion">
                                 <span id="ubicacion_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
 
@@ -39,7 +39,7 @@
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">fecha</label>
                                     <input type="date" class="form-control" name="fecha" id="fecha"
-                                        placeholder="Escriba una pequeña fecha">
+                                        placeholder="Ingrese una  fecha">
                                     <span id="fecha_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                             </div>

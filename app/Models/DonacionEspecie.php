@@ -14,6 +14,6 @@ class DonacionEspecie extends Model
         'fecha_recibido',
         'descripcion',
         'persona_donante_id',
-        'articulo_id',
+        'articulo_id'
     ];
 }

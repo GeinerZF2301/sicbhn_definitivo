@@ -134,15 +134,33 @@ $(document).ready(function() {
                 if (error.status === 422) {
                     var errors = error.responseJSON.errors;
                     console.log(errors);
-                    if (errors.hasOwnProperty("entidad_bancaria")) {
-                        $("#edit_entidad_bancaria_error").html(errors.entidad_bancaria[0]);
+                    if (errors.hasOwnProperty("fecha_donacion")) {
+                        $("#edit_fecha_donacion_error").html(errors.fecha_donacion[0]);
+                    }
+                    if (errors.hasOwnProperty("fecha_recibido")) {
+                        $("#edit_fecha_recibido_error").html(errors.fecha_recibido[0]);
                     }
                     if (errors.hasOwnProperty("descripcion")) {
                         $("#edit_descripcion_error").html(errors.descripcion[0]);
                     }
+                    if (errors.hasOwnProperty("numero_identificacion")) {
+                        $("#edit_numero_identificacion_error").html(errors.numero_identificacion[0]);
+                    }
+                   
+                    if (errors.hasOwnProperty("fecha_de_nacimiento")) {
+                        $("#edit_fecha_de_nacimiento_error").html(errors.fecha_de_nacimiento[0]);
+                    }
+                    if (errors.hasOwnProperty("monto")) {
+                        $("#edit_monto_error").html(errors.monto[0]);
+                    }
+                    if (errors.hasOwnProperty("persona_donante_id")) {
+                        $("#edit_persona_donante_id_error").html(errors.persona_donante_id[0]);
+                    }  
+
                 } else {
                     console.error(error);
                 }
+                console.log(error);
             }
         });
     });

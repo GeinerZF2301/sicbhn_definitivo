@@ -33,38 +33,42 @@ class StorePersonaRequest extends FormRequest
             'edad' => 'required |integer|min:1|max:99',
             'pais' => 'required|alpha_spaces|max:50',
             'ciudad' => 'required|alpha_spaces|max:75',
-            'calle' => 'required|alpha_spaces|max:75',
+            'calle' => 'nullable|alpha_spaces|max:75',
             'estado' => 'required|alpha_spaces|max:75',
-            'tipo_persona_id' => 'required|int' 
+            'tipo_persona_id' => 'required|integer' ,
         ];
     }
-    public function messages()
-    {
+    public function messages(){
         return [
-            'nombre.required' => 'El nombre de la persona es obligatorio.',
-            'nombre.max' => 'El nombre no puede exceder los 100 caracteres.',
-            'apellidos.required' => 'Los apellidos de la persona son obligatorios.',
-            'apellidos.max' => 'Los apellidos no pueden exceder los 150 caracteres.',
+            'nombre.required' => 'El nombre es obligatorio.',
+            'nombre.alpha_spaces' => 'El nombre debe ser escrito en formato de texto.',
+            'nombre.max' => 'El nombre no debe exceder los :max caracteres.',
+            'apellidos.required' => 'Los apellidos son obligatorios.',
+            'apellidos.alpha_spaces' => 'Los apellidos deben ser escrito en formato de texto.',
+            'apellidos.max' => 'Los apellidos no deben exceder los :max caracteres.',
             'tipo_identificacion.required' => 'El tipo de identificación es obligatorio.',
-            'tipo_identificacion.max' => 'El tipo de identificación no puede exceder los 50 caracteres.',
+            'tipo_identificacion.alpha_spaces' => 'El tipo de identificación debe ser escrito en formato de texto.',
+            'tipo_identificacion.max' => 'El tipo de identificación no debe exceder los :max caracteres.',
+            'pais.required' => 'El país es obligatorio.',
+            'pais.alpha_spaces' => 'El país debe ser escrito en formato de texto.',
+            'pais.max' => 'El país no debe exceder los :max caracteres.',
+            'ciudad.required' => 'La ciudad es obligatoria.',
+            'ciudad.alpha_spaces' => 'La ciudad debe ser escrito en formato de texto.',
+            'ciudad.max' => 'La ciudad no debe exceder los :max caracteres.',
+            'calle.alpha_spaces' => 'La calle o el distrito debe ser escrito en formato de texto.',
+            'calle.max' => 'La calle o el distrito no debe exceder los :max caracteres.',
+            'estado.required' => 'El estado es obligatorio.',
+            'estado.alpha_spaces' => 'El estado debe ser escrito en formato de texto.',
+            'estado.max' => 'El estado no debe exceder los :max caracteres.',
             'numero_identificacion.required' => 'El número de identificación es obligatorio.',
-            'numero_identificacion.integer' => 'El número de identificación debe ser un valor entero.',
+            'numero_identificacion.integer' => 'El número de identificación debe ser proporcionado en valores numéricos.',
             'fecha_de_nacimiento.required' => 'La fecha de nacimiento es obligatoria.',
             'fecha_de_nacimiento.date' => 'La fecha de nacimiento debe tener un formato válido.',
             'edad.required' => 'La edad es obligatoria.',
-            'edad.integer' => 'La edad debe ser un valor entero.',
+            'edad.integer' => 'La edad debe ser un número entero.',
             'edad.min' => 'La edad no puede ser menor a 1.',
             'edad.max' => 'La edad no puede ser mayor a 99.',
-            'pais.required' => 'El país es obligatorio.',
-            'pais.max' => 'El país no puede exceder los 50 caracteres.',
-            'ciudad.required' => 'La ciudad es obligatoria.',
-            'ciudad.max' => 'La ciudad no puede exceder los 75 caracteres.',
-            'calle.required' => 'La calle es obligatoria.',
-            'calle.max' => 'La calle no puede exceder los 75 caracteres.',
-            'estado.required' => 'El estado es obligatorio.',
-            'estado.max' => 'El estado no puede exceder los 75 caracteres.',
-            'tipo_persona_id.required' => 'El tipo de persona es obligatorio.',
-            'tipo_persona_id.integer' => 'El tipo de persona debe ser un valor entero.'
+            'tipo_persona_id.required' => 'El tipo de persona es obligatorio.'
         ];
-    }
+}
 }

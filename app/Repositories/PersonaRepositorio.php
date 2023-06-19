@@ -41,10 +41,9 @@
             $persona->edad = $data['edad'];
             $persona->pais = $data['pais'];
             $persona->ciudad = $data['ciudad'];
-            $persona->calle = $data['calle'];
+            $persona->calle = isset($data['calle']) ? $data['calle'] : null;
             $persona->estado = $data['estado'];
             $persona->tipo_persona_id = $data['tipo_persona_id'];
-            
             $persona->save();
         }
         public function destroyPerson($id){

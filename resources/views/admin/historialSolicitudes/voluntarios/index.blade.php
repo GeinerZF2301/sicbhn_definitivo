@@ -25,7 +25,7 @@
                                     @foreach ($historialVoluntarios as $voluntario)
                                         <tr class="text-center">
                                             <td style="display: none" name="id" id="id" class="budget id">
-                                                {{ $participante->id }}
+                                                {{ $voluntario->id }}
                                             </td>
                                             <td name="tipo_persona" class="budget">
                                                 {{ $voluntario->nombre }}

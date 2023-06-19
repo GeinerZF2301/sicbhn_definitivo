@@ -15,7 +15,7 @@
                             <label for="formGroupExampleInput" class="form-label">Entidad Bancaria</label>
                             <input type="text" class="form-control" name="entidad_bancaria" id="edit_entidad_bancaria"
                                 placeholder="Escriba el nombre de la entidad bancaria">
-                            <span id="edit_entidad_bancaria_error" class="text-danger error-messages"></span>
+                            <span id="edit_entidad_bancaria_error" class="text-danger fw-bolder error-messages"></span>
                         </div>
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Número de Cuenta</label>
@@ -27,11 +27,11 @@
                             <label for="formGroupExampleInput2" class="form-label">Estado</label>
                             <select class="tipoPersona_id form-select form-select-sm" name="estado"
                                 id="edit_estado" aria-label=".form-select-sm example">
-                                <option selected>Selecciona una opcion</option>
+                                <option value="" selected>Selecciona una opcion</option>
                                 <option value="1">Activo</option>
                                 <option value="0">Inactivo</option>
                             </select>
-                            <span id="edit_estado_error" class="text-danger error-messages"></span>
+                            <span id="edit_estado_error" class="text-danger fw-bolder error-messages"></span>
                         </div>
                     </div>
                     <div class="modal-footer">
