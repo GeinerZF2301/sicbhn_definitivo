@@ -28,15 +28,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
 
                                 
                                 <div class="d-flex align-items-center  ms-5 mt-5 mb-5 pb-1">
-                                    <span class="h2 fw-bold   mb-0">Corredor Biológico Hojancha
-                                        Nandayure</span>
+                                    <span class="h2 fw-bold   mb-0">{{ __('messages.1SolicitudContraseñaInicio') }}</span>
                                 </div>
 
-                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Solicitud cambiar contraseña </h5>
+                                <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">{{ __('messages.2SolicitudContraseñaInicio') }}</h5>
 
                                             @if (session('status'))
                                                 <div class="alert alert-success" role="alert">
-                                                    {{ __('Solicitud enviada') }}
+                                                    {{ __('messages.6SolicitudContraseñaInicio') }}
                                                 </div>
                                             @endif
         
@@ -49,7 +48,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
                             
                                                             <div class="col-md-10 col-sm-6  ms-4">
                                                             
-                                                                <input id="email" type="email" placeholder="Correo Electrónico"
+                                                                <input id="email" type="email" placeholder="{{ __('messages.3SolicitudContraseñaInicio') }}"
                                                                 class="form-control form-control-md @error('email') is-invalid @enderror"
                                                                 name="email" value="{{ old('email') }}" required
                                                                 autocomplete="email" autofocus>
@@ -57,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
                                 
                                                                 @error('email')
                                                                     <span class="invalid-feedback" role="alert">
-                                                                        {{ __('Correo electrónico inválido ') }}
+                                                                        {{ __('messages.4SolicitudContraseñaInicio') }}
                                                                     </span>
                                                                 @enderror
                                                             </div>
@@ -70,7 +69,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=" #17701e",endC
                                                         <center>
                                                             <div class="col-md-6 d-flex justify-content-center">
                                                                 <button class="btn btn-dark  btn-lg btn-block"type="submit" class="btn btn-success">
-                                                                    {{ __('Continuar') }}
+                                                                    {{ __('messages.5SolicitudContraseñaInicio') }}
                                                                 </button>
                                                             </div>
                                                         </center>

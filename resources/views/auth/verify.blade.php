@@ -25,31 +25,30 @@
                                 <div class="carddd-body text-black ">
 
 
-                                    <h1 class="text-uppercase text-center me-4 ms-4 mt-4 mb-4  h1 fw-bold  mb-0">
-                                        Verificación de Correo Electrónico</h1>
+                                    <h1 class="text-uppercase text-center me-4 ms-4 mt-4 mb-4  h1 fw-bold  mb-0">{{ __('messages.1VereificacionInicio') }}</h1>
                                     <div class="card-body">
                                         @if (session('resent'))
                                             <div class="alert alert-success" role="alert">
-                                                {{ __('Se ha enviado un nuevo enlace de verificación a su dirección de correo electrónico.') }}
+                                                {{ __('messages.2VereificacionInicio') }}
                                             </div>
                                         @endif
-                                        {{ __('Antes de continuar, verifique su correo electrónico para obtener un enlace de verificación. También revise la carpeta de no correos deseados.') }}
-                                        {{ __('Si usted no recibió el correo electrónico') }},
+                                        {{ __('messages.3VereificacionInicio') }}
+                                        {{ __('messages.4VereificacionInicio') }},
                                         <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
                                             @csrf
                                             <button type="submit"
-                                                class="btn btn-link p-0 m-0 align-baseline">{{ __('solicite aquí otro enlace seguro') }}</button>.
+                                                class="btn btn-link p-0 m-0 align-baseline">{{ __('messages.5VereificacionInicio') }}</button>.
                                         </form>
                                         <br>
                                         <br>
-                                        {{ __('Atentamente, ') }}
+                                        {{ __('messages.6VereificacionInicio') }}
                                         <br>
                                         <br>
-                                        {{ __('Administración del SICBHN') }}
+                                        {{ __('messages.7VereificacionInicio') }}
 
                                     </div>
                                     <div class="text-center mt-4">
-                                        <a href="{{ url('/') }}" class="btn btn-primary">Volver al inicio</a>
+                                        <a href="{{ url('/') }}" class="btn btn-primary">{{ __('messages.8VereificacionInicio') }}</a>
                                     </div>
                                 </div>
                             </div>

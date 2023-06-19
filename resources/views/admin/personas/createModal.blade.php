@@ -66,19 +66,19 @@
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Pais</label>
                                     <input type="text" class="form-control" name="pais" id="pais"
-                                        placeholder="Escriba el tipo de persona">
+                                        placeholder="Escriba el pais">
                                     <span id="pais_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Provincia o Ciudad</label>
                                     <input type="text" class="form-control" name="ciudad" id="ciudad"
-                                        placeholder="Escriba el tipo de persona">
+                                    placeholder="Escriba la Provincia o Ciudad">
                                     <span id="ciudad_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Distrito o Calle </label>
                                     <input type="text" class="form-control" name="calle" id="calle"
-                                        placeholder="Calle">
+                                        placeholder="Calle (opcional)">
                                     <span id="calle_error" class="text-danger fw-bolder error-messages"></span>
                                 </div>
                                 <div class="mb-3">

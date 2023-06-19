@@ -60,7 +60,15 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/register', function () {
         return view('auth.register');
     })->name('register');
+   
+    Route::get('/password/reset', function () {
+        return view('auth.passwords.email');
+    })->name('password.request');
 
+    Route::get('/email/verify', function () {
+        return view('auth.verify');
+    })->name('verification.notice');
+   
     Route::get('/campañas',[CampañaClienteController::class, 'index'])->name('campannacliente');
 
     Route::get('/documentos',[DocumentosClienteController::class, 'index'])->name('documentoscliente');
@@ -68,8 +76,11 @@ Route::middleware(LocaleCookieMiddleware::class)->group(function () {
     Route::get('/contactos', function () {
         return view('principal/contactos.contactos-index');
     });
-    
-    
+
+    Route::get('/password/reset/{token}', function ($token) {
+        return view('auth.passwords.reset', ['token' => $token]);
+    })->name('password.reset');
+
     Route::get('/donaciones', function () {
         return view('principal/donaciones.donaciones-index');
     });

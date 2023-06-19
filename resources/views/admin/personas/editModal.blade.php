@@ -58,25 +58,25 @@
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Edad</label>
                                     <input type="int" class="form-control" name="edad" id="edit_edad"
-                                        placeholder="Escriba el tipo de persona" disabled>
+                                        placeholder="Edad de la persona" disabled>
                                     <span id="edit_edad_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Pais</label>
                                     <input type="text" class="form-control" name="pais" id="edit_pais"
-                                        placeholder="Escriba el tipo de persona">
+                                        placeholder="Escriba el pais">
                                     <span id="edit_pais_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Provincia o Ciudad</label>
                                     <input type="text" class="form-control" name="ciudad" id="edit_ciudad"
-                                        placeholder="Escriba el tipo de persona">
+                                        placeholder="Escriba la provincia o Ciudad">
                                     <span id="edit_ciudad_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Distrito o Calle </label>
                                     <input type="text" class="form-control" name="calle" id="edit_calle"
-                                        placeholder="Calle">
+                                        placeholder="Calle (opcional)">
                                     <span id="edit_calle_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">

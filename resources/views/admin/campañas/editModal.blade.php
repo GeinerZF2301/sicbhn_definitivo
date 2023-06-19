@@ -30,7 +30,7 @@
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">ubicacion</label>
                                 <input type="text" class="form-control" name="ubicacion" id="edit_ubicacion"
-                                    placeholder="Escriba una pequeña descripción">
+                                    placeholder="Escriba una Ubicacion">
                                 <span id="edit_ubicacion_error" class="text-danger error-messages"></span>
                             </div>
                             <div class="d-flex-justify-content-center">
