@@ -15,11 +15,11 @@
                             <span id="validacion_error" class="text-danger fw-bolder rounded p-2 error-messages"></span>
                         </div>
                         <div class="row">
-                            <input type="hidden" class="form-control" name="id" id="id" >
+                            <input type="hidden" class="form-control" name="id" id="id">
                             <div class="mb-3 mt-2">
                                 <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre"
-                                    placeholder="Escriba el nombre del Taller" >
+                                    placeholder="Escriba el nombre del Taller">
                                 <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
@@ -68,14 +68,14 @@
                             </div>
                             <div id="otroInput" style="display:none;">
                                 <input type="text" class="form-control" id="otro_tipo"
-                                    placeholder="Escriba el tipo de campaña al que pertenece" >
+                                    placeholder="Escriba el tipo de campaña al que pertenece">
                                 <button class="btn-dark rounded mt-2 mb-3" id="otroBtn">Guardar</button>
                                 <span id="tipo_campaña_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Estado</label>
-                                <select class="tipoPersona_id form-select form-select-sm" name="estado" id="estado"
-                                    aria-label=".form-select-sm example">
+                                <select class="tipoPersona_id form-select form-select-sm" name="estado"
+                                    id="estado" aria-label=".form-select-sm example">
                                     <option value="" selected>Selecciona una opcion</option>
                                     <option value="1">Activo</option>
                                     <option value="0">Inactivo</option>
