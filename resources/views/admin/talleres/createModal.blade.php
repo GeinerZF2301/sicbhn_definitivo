@@ -19,7 +19,7 @@
                             <div class="mb-3 mt-2">
                                 <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre"
-                                    placeholder="Escriba el nombre de la campaña">
+                                    placeholder="Escriba el nombre del Taller" >
                                 <span id="nombre_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
@@ -31,7 +31,7 @@
                             <div class="mb-3">
                                 <label for="formGroupExampleInput2" class="form-label">Ubicacion</label>
                                 <input type="text" class="form-control" name="ubicacion" id="ubicacion"
-                                    placeholder="Escriba una pequeña descripción">
+                                    placeholder="Escriba una ubicacion">
                                 <span id="ubicacion_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
 

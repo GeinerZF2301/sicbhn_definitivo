@@ -13,7 +13,7 @@
                         <div class="mb-3">
                             <label for="formGroupExampleInput" class="form-label">Nombre</label>
                             <input type="text" class="form-control" name="nombre" id="edit_nombre"
-                                placeholder="Escriba el nombre del documento">
+                                placeholder="Escriba el nombre de la Imagen">
                             <span id="edit_nombre_error" class="text-danger fw-bolder error-messages"></span>
                         </div>
                         <div class="mb-3">
