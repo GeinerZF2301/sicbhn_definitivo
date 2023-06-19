@@ -69,17 +69,17 @@
     <div class="container mt-5">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             @foreach ($campannasDisponibles as $campannaDisponible)
-                <div class="col">
-                    <div class="cards">
-                        <div class="card-title text-center mt-4">
-                            <h4> ¡Campaña de <font color="#028A0F">{{ $campannaDisponible->nombre }}!</font>
+                <div class="col-sm-12 col-md-6  col-lg-4">
+                    <div class="cardv">
+                        <div class="card-title text-center  mt-4 ps-3 pe-3">
+                            <h4> <font color="#028A0F">{{ $campannaDisponible->nombre }}!</font>
                             </h4>
                         </div>
                         <div class="card-body">
                             <div class="row ">
-                                <div class="col d-flex ">
+                                <div class="col d-flex justify-content-center ">
                                     <img src="zoofari/img/Campannas/maps.webp" alt="" width="34px" height="34px">
-                                    <p> {{ $campannaDisponible->ubicacion }}.</p>
+                                    <p class="pt-2"> {{ $campannaDisponible->ubicacion }}.</p>
 
                                 </div>
                             </div>
@@ -87,10 +87,10 @@
                                 <div class="col-4">
                                     <img src="zoofari/img/Campannas/calendario.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <img src="zoofari/img/Campannas/reloj.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <img src="zoofari/img/Campannas/usuario.webp" alt="">
                                 </div>
                             </div>
@@ -98,15 +98,15 @@
                                 <div class="col-4">
                                     <p class="fw-bold">{{ $campannaDisponible->fecha }}</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <p class="fw-bold">{{ $campannaDisponible->hora }}</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <p class="fw-bold">{{ $campannaDisponible->tipo_campaña }}</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 ps-3 pe-3">
                                     <p>{{ $campannaDisponible->descripcion }}</p>
                                 </div>
                             </div>

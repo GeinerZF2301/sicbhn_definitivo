@@ -99,19 +99,19 @@
                 <div class="col-sm-12 col-md-6  col-lg-4">
 
                     <div class="cardv">
-                        <div class="cardv-title mt-2">
+                        <div class="cardv-title mt-4 ps-3 pe-3">
                             <input id="id" class="id" name="id" type="hidden"
                                 value="{{ $talleresDisponible->id }}">
-                            <h5 class="text-center"> ¡Taller en <span style="color:#028A0F " class="nombreTaller">
+                            <h5 class="text-center"> <span style="color:#028A0F " class="nombreTaller">
                                     {{ $talleresDisponible->nombre }}</span>
                             </h5>
                         </div>
                         <div class="cardv-body">
                             <div class="row ">
-                                <div class="col d-flex ">
-                                    <img src="/zoofari/img/Campannas/maps.webp" alt="" width="34px"
+                                <div class="col d-flex justify-content-center ">
+                                    <img  src="/zoofari/img/Campannas/maps.webp" alt="" width="34px"
                                         height="34PX">
-                                    <p> {{ $talleresDisponible->ubicacion }}.</p>
+                                    <p class="pt-2" > {{ $talleresDisponible->ubicacion }}.</p>
 
                                 </div>
                             </div>
@@ -119,30 +119,30 @@
                                 <div class="col-4">
                                     <img src="/zoofari/img/Campannas/calendario.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <img src="/zoofari/img/Campannas/reloj.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <img src="/zoofari/img/voluntariado/altavoz.webp" alt="">
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-4">
+                            <div class="row ">
+                                <div class="col-4 ps-3">
                                     <p>{{ $talleresDisponible->fecha }}</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <p>{{ $talleresDisponible->hora }} </p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <p>{{ $talleresDisponible->tipo_taller }}</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-12">
                                     <p class="fw-bold">{{ $talleresDisponible->cupo }} Lugares disponibles</p>
                                 </div>
 
                             </div>
                             <div class="row">
-                                <div class="col-12">
+                                <div class="col-12 ps-3 pe-3">
                                     <p>{{ $talleresDisponible->descripcion }}</p>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
 
                             @auth
                                 {{-- The user is authenticated... --}}
-                                <button class="my-button btn-scroll btn-select-taller" data-id="{{ $talleresDisponible->id }}"
+                                <button class=" my-button btn-scroll btn-select-taller mb-3" data-id="{{ $talleresDisponible->id }}"
                                     data-nombre="{{ $talleresDisponible->nombre }}">{{ __('messages.PrimerBotonTalleres') }}</button>
                             @endauth
 

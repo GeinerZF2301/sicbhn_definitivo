@@ -77,7 +77,7 @@
                 <div class="col-sm-12 col-md-8  col-lg-4">
 
                     <div class="cardv">
-                        <div class="cardv-title mt-2">
+                        <div class="cardv-title mt-4 ps-3 pe-3">
                             <input id="id" class="id" name="id" type="hidden"
                                 value="{{ $voluntariadosDisponible->id }}">
                             <h5 class="text-center"> ¡ <span style=" color:#028A0F " class="nombreVoluntariado">
@@ -86,9 +86,9 @@
                         </div>
                         <div class="cardv-body">
                             <div class="row ">
-                                <div class="col d-flex ">
+                                <div class="col d-flex justify-content-center">
                                     <img src="zoofari/img/Campannas/maps.webp" alt="" width="34px" height="34PX">
-                                    <p> {{ $voluntariadosDisponible->ubicacion }}.</p>
+                                    <p class="pt-2"> {{ $voluntariadosDisponible->ubicacion }}.</p>
 
                                 </div>
                             </div>
@@ -96,10 +96,10 @@
                                 <div class="col-4">
                                     <img src="zoofari/img/Campannas/calendario.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <img src="zoofari/img/Campannas/reloj.webp" alt="">
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <img src="zoofari/img/voluntariado/altavoz.webp" alt="">
                                 </div>
                             </div>
@@ -107,21 +107,21 @@
                                 <div class="col-4">
                                     <p>{{ $voluntariadosDisponible->fecha }}</p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-3">
                                     <p>{{ $voluntariadosDisponible->hora }} </p>
                                 </div>
-                                <div class="col-4">
+                                <div class="col-5">
                                     <p>{{ $voluntariadosDisponible->tipo_voluntariado }}</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 me-2px ms-2px">
+                                <div class="col-12 me-2px ms-2px ps-3 pe-3">
                                     <p class="descripcion ">{{ $voluntariadosDisponible->descripcion }}</p>
                                 </div>
                             </div>
                             @auth
                                 {{-- // The user is authenticated... --}}
-                                <button class="my-button btn-scroll btn-select-voluntariado"
+                                <button class=" mb-3 my-button btn-scroll btn-select-voluntariado"
                                     data-id="{{ $voluntariadosDisponible->id }}"
                                     data-nombre="{{ $voluntariadosDisponible->nombre }}">{{ __('messages.BotonInscribeteCard') }}</button>
                             @endauth
