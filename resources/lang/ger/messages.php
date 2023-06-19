@@ -349,5 +349,59 @@ Landwirtschaftszentrum, Panamerican Woods, OffBeat Travel, ASADA Morote, Coopece
 'NavBarBotonLogin'=> 'Anmeldung',
 'NavBarBotonRegister'=> 'Registrieren',
 
+//Login
+'LoginInicio'=> 'Anmeldung',
+'1LoginInicio'=> 'E-mail',
+'2LoginInicio'=> 'Passwort',
+'1AlertaLogin'=> 'Falsche E-mail',
+'2AlertaLogin'=> 'oder',
+'3AlertaLogin'=> 'Falsches Passwort',
+'4AlertaLogin'=> 'Bitte versuche es erneut.',
+'5AlertaLogin'=> 'Anmeldung',
+'6AlertaLogin'=> 'Haben Sie Ihr Passwort vergessen?',
+'7AlertaLogin'=> 'Sie haben noch kein Konto? Jetzt registrieren',
+
+//Registrarse
+'1RegisterInicio'=> 'Ein Konto erstellen',
+'2RegisterInicio'=> 'Nutzername',
+'3RegisterInicio'=> 'Der Name muss 15 Zeichen lang sein',
+'4RegisterInicio'=> 'E-Mail',
+'5RegisterInicio'=> 'Ungültige E-Mail',
+'6RegisterInicio'=> 'Passwort',
+'7RegisterInicio'=> 'Das Passwort muss mehr als 8 Ziffern haben',
+'8RegisterInicio'=> 'Bestätige das Passwort',
+'9RegisterInicio'=> 'Das Passwort muss mehr als 8 Ziffern haben',
+'10RegisterInicio'=> 'Registrieren',
+
+//Verificacion
+'1VereificacionInicio'=> 'E-Mail-Verifizierung',
+'2VereificacionInicio'=> 'Ein neuer Bestätigungslink wurde an Ihre E-Mail-Adresse gesendet.',
+'3VereificacionInicio'=> 'Bevor Sie fortfahren, überprüfen Sie Ihre E-Mail auf einen Bestätigungslink. ',
+'4VereificacionInicio'=> 'Wenn Sie die E-Mail nicht erhalten haben',
+'5VereificacionInicio'=> 'Fordern Sie hier einen weiteren sicheren Link an',
+'6VereificacionInicio'=> 'Aufrichtig',
+'7VereificacionInicio'=> 'SICBHN-Verwaltung',
+'8VereificacionInicio'=> 'Zurück nach oben',
+
+//Solicitud Contraseña
+'1SolicitudContraseñaInicio'=> 'Biologischer Korridor Hojancha Nandayure',
+'2SolicitudContraseñaInicio'=> 'Request change password',
+'3SolicitudContraseñaInicio'=> 'E-Mail',
+'4SolicitudContraseñaInicio'=> 'Ungültige E-Mail',
+'5SolicitudContraseñaInicio'=> 'Weitermachen',
+'6SolicitudContraseñaInicio'=> 'Anfrage geschickt',
+
+//Cambiar Contraseña
+'1CambiarContraseñaInicio'=> 'Biologischer Korridor Hojancha Nandayure',
+'2CambiarContraseñaInicio'=> 'Passwort zurücksetzen Neu',
+'3CambiarContraseñaInicio'=> 'E-Mail',
+'4CambiarContraseñaInicio'=> 'E-Mail',
+'5CambiarContraseñaInicio'=> 'Ungültige E-Mail',
+'6CambiarContraseñaInicio'=> 'Neues Kennwort',
+'7CambiarContraseñaInicio'=> '8 Ziffern oder mehr',
+'8CambiarContraseñaInicio'=> 'Das Passwort muss mehr als 8 Ziffern haben',
+'9CambiarContraseñaInicio'=> 'Bestätige das Passwort',
+'10CambiarContraseñaInicio'=> '8 Ziffern oder mehr',
+'11CambiarContraseñaInicio'=> 'Weitermachen',
 
 ];
