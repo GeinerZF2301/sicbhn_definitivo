@@ -33,8 +33,7 @@
                                         <th scope="col">ID</th>
                                         <th scope="col">Fecha de Donación</th>
                                         <th scope="col">Fecha de Recepción </th>
-                                        <th scope="col">Artículo </th>
-                                        <th scope="col">Donante</th>
+                                        <th scope="col">Descripcion </th>
                                         <th scope="col">acciones</th>
                                     </tr>
                                 </thead>
@@ -45,8 +44,8 @@
                                             <td class="id" name="id" class="budget">{{ $donacion->id }} </td>
                                             <td name="tipo_persona" class="budget">{{ $donacion->fecha_donacion }}</td>
                                             <td name="descripcion" class="budget">{{ $donacion->fecha_recibido }}</td>
-                                            <td name="descripcion" class="budget">{{ $donacion->articulo_id }} </td>
-                                            <td name="descripcion" class="budget">{{ $donacion->persona_donante_id }}</td>
+                                            <td name="descripcion" class="budget">{{ $donacion->descripcion }} </td>
+                                            
     
                                             <div class="d-flex shadow-lg justify-content-between">
                                                 {{-- <td class=""> --}}
@@ -83,4 +82,5 @@
 
 @section('js')
     <script src="js/utilities/dataTable.js"></script>
+    <script src="js/donacion_especie/upsert.js"></script>
 @endsection

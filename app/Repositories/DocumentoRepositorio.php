@@ -21,7 +21,7 @@
             $documento->estado = $data['estado'];
             $documento->path = $data['path'];
             $documento->file = $data['file'];
-            $documento->tipo_documento = $data['tipo_documento'];
+            $documento->tipo_documento = isset($data['tipo_documento']) ? $data['tipo_documento'] : 'Privado';
             $documento->save();
         }
         public function destroyDocument($id){

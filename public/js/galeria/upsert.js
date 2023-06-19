@@ -76,6 +76,9 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("estado")) {
                         $("#estado_error").html(errors.estado[0]);
                     }
+                    if (errors.hasOwnProperty("descripcion")) {
+                        $("#descripcion_error").html(errors.descripcion[0]);
+                    }
                     if (errors.hasOwnProperty("categoria_imagen")) {
                         $("#categoria_imagen_error").html(errors.categoria_imagen[0]);
                     }
@@ -151,6 +154,9 @@ $(document).ready(function () {
                     }
                     if (errors.hasOwnProperty("estado")) {
                         $("#edit_estado_error").html(errors.estado[0]);
+                    }
+                    if (errors.hasOwnProperty("descripcion")) {
+                        $("#edit_descripcion_error").html(errors.descripcion[0]);
                     }
                     if (errors.hasOwnProperty("categoria_imagen")) {
                         $("#edit_categoria_imagen_error").html(errors.categoria_imagen[0]);

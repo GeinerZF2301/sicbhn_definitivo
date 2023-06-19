@@ -8,9 +8,10 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
+        
         <div class="navbar-nav ms-auto">
-            <a href="{{ url('/') }}" class="nav-item nav-link">{{ __('messages.NavBarInicio') }}</a>
-            <a href="{{ url('/register') }}" class="nav-item nav-link">{{ __('messages.NavBarRegister') }}</a>
+            <a href="{{ url('/') }}" class="nav-item nav-link">{{ __('messages.NavBarLoginInicio') }}</a>
+            <a href="{{ url('/register') }}" class="nav-item nav-link">{{ __('messages.NavBarBotonRegister') }}</a>
             <a href="{{ url('login') }}" class="nav-item nav-link">{{ __('messages.NavBarBotonLogin') }}</a>
            
                   

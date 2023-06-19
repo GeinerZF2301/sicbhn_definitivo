@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->date('fecha_donacion');
             $table->date('fecha_recibido');
-            $table->date('descripcion');
+            $table->string('descripcion');
 
             $table->unsignedBigInteger('persona_donante_id',);
             $table->foreign('persona_donante_id')->references('id')->on('personas');

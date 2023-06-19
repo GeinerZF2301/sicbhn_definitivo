@@ -69,6 +69,9 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("nombre")) {
                         $("#nombre_error").html(errors.nombre[0]);
                     }
+                    if (errors.hasOwnProperty("descripcion")) {
+                        $("#descripcion_error").html(errors.descripcion[0]);
+                    }
                     if (errors.hasOwnProperty("estado")) {
                         $("#estado_error").html(errors.estado[0]);
                     }
@@ -145,6 +148,9 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("nombre")) {
                         $("#edit_nombre_error").html(errors.nombre[0]);
                     }
+                    if (errors.hasOwnProperty("descripcion")) {
+                        $("#edit_descripcion_error").html(errors.descripcion[0]);
+                    }
                     if (errors.hasOwnProperty("estado")) {
                         $("#edit_estado_error").html(errors.estado[0]);
                     }
@@ -152,7 +158,7 @@ $(document).ready(function () {
                         $("#edit_tipo_documento_error").html(errors.tipo_documento[0]);
                     }
                     if (errors.hasOwnProperty("file")) {
-                        $("#edit_file_error").html(errors.file[0]);
+                        $("#file_error").html(errors.file[0]);
                     }
                     } else {
                         console.log(error.responseJSON.error);

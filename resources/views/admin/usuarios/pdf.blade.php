@@ -18,21 +18,24 @@
         <thead class="prueba">
             <tr>
                 <th style="width: 10%">N°</th>
-                <th style="width: 40%">Nombre</th>
-                <th style="width: 50%">Correo Electrónico</th>
+                <th style="width: 25%">Nombre</th>
+                <th style="width: 40%">Correo Electrónico</th>
+                <th style="width: 25%">Rol</th>
               
             </tr>
         </thead>
-        @foreach ($usuarios as $usuarios)
-            <tr>
-
-                <td style="width: 10%" class="id" name="id" class="budget">{{ $usuarios->id }}</td>
-                <td style="width: 40%" name="name" class="budget">{{ $usuarios->name }}</td>
-                <td style="width: 50%" name="email" class="budget">{{ $usuarios->email }}</td>
-               
-
-            </tr>
-        @endforeach
+        @foreach ($usuarios as $usuario)
+    <tr>
+        <td style="width: 10%" class="id" name="id" class="budget">{{ $usuario->id }}</td>
+        <td style="width: 25%" name="name" class="budget">{{ $usuario->name }}</td>
+        <td style="width: 40%" name="email" class="budget">{{ $usuario->email }}</td>
+        <td style="width: 25%" name="email" class="budget">
+            @foreach ($usuario->roles as $rol)
+                {{ $rol->name }}
+            @endforeach
+        </td>
+    </tr>
+@endforeach
     </table>
     <div class="footer">
         <p>Página <span class="pagenum"></span></p>

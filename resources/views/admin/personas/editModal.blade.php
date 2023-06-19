@@ -11,19 +11,19 @@
                     <div class="modal-body">
                         <div class="row">
                             <div class="col-md-6">
-                                <input type="int" class="form-control" name="id" id="edit_id">
+                                <input type="hidden" class="form-control" name="id" id="edit_id">
                                 <input type="hidden" class="form-control" value="Aprobado" name="estado" id="estado">
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput" class="form-label">Nombre</label>
                                     <input type="text" class="form-control" name="nombre" id="edit_nombre"
                                         placeholder="Escriba el nombre de la persona">
-                                    <span id="nombre_error" class="text-danger error-messages"></span>
+                                    <span id="edit_nombre_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Apellidos</label>
                                     <input type="text" class="form-control" name="apellidos" id="edit_apellidos"
                                         placeholder="Escriba los apellidos de la persona">
-                                    <span id="apellidos_error" class="text-danger error-messages"></span>
+                                    <span id="edit_apellidos_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Tipo de
@@ -35,7 +35,7 @@
                                         <option value="Cédula de Residencia">Cédula de Residencia</option>
                                         <option value="Pasaporte">Pasaporte</option>
                                     </select>
-                                    <span id="tipo_identificacion_error" class="text-danger error-messages"></span>
+                                    <span id="edit_tipo_identificacion_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Número de
@@ -43,7 +43,7 @@
                                     <input type="int" class="form-control" name="numero_identificacion"
                                         id="edit_numero_identificacion"
                                         placeholder="Escriba el numero de identificacion de la persona">
-                                    <span id="numero_identificacion_error" class="text-danger error-messages"></span>
+                                    <span id="edit_numero_identificacion_error" class="text-danger error-messages"></span>
                                 </div>
                                 <div class="mb-3">
                                     <label for="formGroupExampleInput2" class="form-label">Fecha de

@@ -13,6 +13,7 @@
                             <table id="dataTable" class="table table-hover  align-items-center">
                                 <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
+                                        <th style="display: none"  scope="col">ID</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Apellidos</th>
                                         <th scope="col">Número de identificación</th>
@@ -23,7 +24,9 @@
                                 <tbody>
                                     @foreach ($historialVoluntarios as $voluntario)
                                         <tr class="text-center">
-                                        <input value="{{$voluntario->id}}" name="id" id="id" type="hidden">
+                                            <td style="display: none" name="id" id="id" class="budget id">
+                                                {{ $voluntario->id }}
+                                            </td>
                                             <td name="tipo_persona" class="budget">
                                                 {{ $voluntario->nombre }}
                                             </td>
