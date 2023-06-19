@@ -290,7 +290,7 @@
                     <div class="row  ">
                         <div class="col-12  d-flex justify-content-center aligh-items-center mt-2 ">
                             <div class="imagen">
-                                <img src="img/hoja.png" alt="">
+                                <img src="zoofari/img/Donaciones/hoja.webp" alt="">
                             </div>
                             <div class="titulo ">
                                 <h2>
