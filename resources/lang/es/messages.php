@@ -13,6 +13,8 @@ return[
 'NavBarDropDownHorasDocumentacion'=> 'Documentación',
 'NavBarContactos'=> 'Contactos',
 'NavBarBotonLogin'=> 'Iniciar Sesión',
+'1NavBarBotonLogin'=> 'Cerrar sesión',
+
 
 //footer
 'FooterMasInfoSubtitulo'=>'Más información',
@@ -343,6 +345,7 @@ Ministerio de Salud, Ministerio de Agricultura, Monte Alto, Cámara de Ganaderos
 '4AlertaFormularioContactos'=>'Error',
 '5AlertaFormularioContactos'=>'Ha ocurrido un error al enviar las Dudas del SICBHN Por favor, intenta nuevamente.',
 '6AlertaFormularioContactos'=>'Aceptar',
+'7AlertaFormularioContactos'=>'Debes registrarte o iniciar sesión para poder enviar tus consultas',
 
 //Navbar Login
 'NavBarLoginInicio'=> 'Inicio',

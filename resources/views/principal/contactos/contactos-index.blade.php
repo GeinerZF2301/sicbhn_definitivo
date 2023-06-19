@@ -82,34 +82,34 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-light border-0" name="name"
-                                        placeholder="Escriba su nombre"required>
+                                        placeholder=""required>
                                     <label for="name">{{ __('messages.PrimeroCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control bg-light border-0" name="email"
-                                        placeholder="Your Email"required>
+                                        placeholder=""required>
                                     <label for="email">{{ __('messages.SegundoCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-light border-0" name="subject"
-                                        placeholder="Subject" required>
+                                        placeholder="" required>
                                     <label for="subject">{{ __('messages.TercerCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="Leave a message here" name="message"
+                                    <textarea class="form-control bg-light border-0" placeholder="" name="message"
                                         style="height: 100px"required></textarea>
                                     <label for="message">{{ __('messages.CuartoCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 @if (auth()->check() && !auth()->user()->hasVerifiedEmail())
-                                    <div class="alert alert-warning mt-2 col-12">
+                                    <div class="alert alert-warning mt-2 text-center col-12">
                                         {{ __('messages.VerificarFormularios') }}
                                     </div>
                                     <div class="mt-2 col-12">
@@ -122,6 +122,14 @@
                                     <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
                                         {{ __('messages.BotonEnviarFormularios') }}
                                     </button>
+                                </div>
+                                <div class="col-12">
+                                    @guest
+                                        <div class="alert alert-success  mt-2 text-center col-12">
+                                            {{ __('messages.7AlertaFormularioContactos') }}
+                                        </div>
+                                        
+                                    @endguest
                                 </div>
                             </div>
                         </div>
