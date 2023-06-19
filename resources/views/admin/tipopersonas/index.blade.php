@@ -44,17 +44,21 @@
                                             <td name="descripcion" class="budget">{{ $tipo_persona->descripcion }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
-                                                    @can('editar-TipoPersona')
-                                                        <button type="button" data-bs-toggle="modal"
-                                                            data-bs-target="#editModal"
-                                                            class="editBtn rounded btn btn-warning me-2">Editar</button>
-                                                    @endcan
                                                     <button class="showBtn shadow btn btn-info rounded me-2"
-                                                        data-bs-toggle="modal" data-bs-target="#showModal">Ver más</button>
-                                                    @can('borrar-TipoPersona')
-                                                        <button type="submit"
-                                                            class="deleteBtn shadow rounded btn btn-danger">Eliminar</button>
-                                                    @endcan
+                                                    data-bs-toggle="modal" data-bs-target="#showModal">Ver
+                                                    más</button>
+                                                    @if ($tipo_persona->id > 3)
+                                                        @can('editar-TipoPersona')
+                                                            <button type="button" data-bs-toggle="modal"
+                                                                data-bs-target="#editModal"
+                                                                class="editBtn rounded btn btn-warning me-2">Editar</button>
+                                                        @endcan
+                                                        
+                                                        @can('borrar-TipoPersona')
+                                                            <button type="submit"
+                                                                class="deleteBtn shadow rounded btn btn-danger">Eliminar</button>
+                                                        @endcan
+                                                    @endif
                                                 </div>
                                             </td>
                                         </tr>

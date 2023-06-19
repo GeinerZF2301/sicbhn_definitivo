@@ -22,6 +22,7 @@ use App\Http\Controllers\Cliente\TallerClienteController;
 use App\Http\Controllers\Cliente\DonacionesClienteController;
 use App\Http\Controllers\HomeController;
 use App\Http\Middleware\LocaleCookieMiddleware;
+use App\Http\Middleware\EnsureParamIsValid;
 use App\Mail\ContactMail;
 use Illuminate\Support\Facades\Mail;
 use App\Http\Controllers\ContactController;
@@ -153,14 +154,16 @@ Route::group(['middleware' => ['auth', 'verified']], function() {
     //Ruta para validar que no se pueda crear una campaña si ya existe una previamente con una misma fecha y hora
     Route::post('/validartaller', [TallerController::class,'validarTaller']); 
 
-
-   
     // Rutas para el modulo de Tipos de Persona
     Route::get('/tipospersonas',[TipoPersonaController::class,'index'])->name('tipospersonas');
     Route::post('/tipospersonas/store',[TipoPersonaController::class,'store'])->name('tipospersonas.store');
     Route::get('/tipospersonas/{id}/edit',[TipoPersonaController::class,'edit'])->name('tipospersonas.edit');
-    Route::post('/tipospersonas/update/{id}',[TipoPersonaController::class,'update'])->name('tipospersonas.update');
-    Route::delete('/tipospersonas/delete/{id}',[TipoPersonaController::class,'delete'])->name('tipospersonas.delete');
+    //Middleware para proteger las rutas de los tipos de persona necesario para el funcionamiento del sistema
+    Route::middleware(EnsureParamIsValid::class)->group(function () {
+        Route::delete('/tipospersonas/delete/{id}',[TipoPersonaController::class,'delete'])->name('tipospersonas.delete');
+        Route::post('/tipospersonas/update/{id}',[TipoPersonaController::class,'update'])->name('tipospersonas.update');
+    });
+    
     Route::get('/tipospersonas/{id}/show',[TipoPersonaController::class,'show'])->name('tipospersonas.show');
 
     //Rutas para el modulo de Personas
