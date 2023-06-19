@@ -348,4 +348,62 @@ Ministerio de Salud, Ministerio de Agricultura, Monte Alto, Cámara de Ganaderos
 'NavBarLoginInicio'=> 'Inicio',
 'NavBarBotonLogin'=> 'Iniciar Sesión',
 'NavBarBotonRegister'=> 'Registrarse',
+
+//Login
+'LoginInicio'=> 'Iniciar sesión',
+'1LoginInicio'=> 'Correo Electrónico',
+'2LoginInicio'=> 'Contraseña',
+'1AlertaLogin'=> 'Correo electrónico incorrecto',
+'2AlertaLogin'=> 'o',
+'3AlertaLogin'=> 'Contraseña incorrecta',
+'4AlertaLogin'=> 'Por favor, inténtalo de nuevo.',
+'5AlertaLogin'=> 'Iniciar Sesión',
+'6AlertaLogin'=> '¿Olvidó su contraseña?',
+'7AlertaLogin'=> '¿Aún no tienes una cuenta? Regístrate Ahora',
+
+//Registrarse
+'1RegisterInicio'=> 'Crear una cuenta',
+'2RegisterInicio'=> 'Nombre de Usuario',
+'3RegisterInicio'=> 'El nombre debe ser de 15 caracteres',
+'4RegisterInicio'=> 'Correo Electrónico',
+'5RegisterInicio'=> 'Correo electrónico inválido',
+'6RegisterInicio'=> 'Contraseña',
+'7RegisterInicio'=> 'La contraseña debe tener más de 8 dígitos',
+'8RegisterInicio'=> 'Confirmar contraseña',
+'9RegisterInicio'=> 'La contraseña debe tener más de 8 dígitos',
+'10RegisterInicio'=> 'Registrarse',
+
+//Verificacion
+'1VereificacionInicio'=> 'Verificación de Correo Electrónico',
+'2VereificacionInicio'=> 'Se ha enviado un nuevo enlace de verificación a su dirección de correo electrónico.',
+'3VereificacionInicio'=> 'Antes de continuar, verifique su correo electrónico para obtener un enlace de verificación. También revise la carpeta de no correos deseados.',
+'4VereificacionInicio'=> 'Si usted no recibió el correo electrónico',
+'5VereificacionInicio'=> 'solicite aquí otro enlace seguro',
+'6VereificacionInicio'=> 'Atentamente',
+'7VereificacionInicio'=> 'Administración del SICBHN',
+'8VereificacionInicio'=> 'Volver al inicio',
+
+//Solicitud Contraseña
+'1SolicitudContraseñaInicio'=> 'Corredor Biológico Hojancha Nandayure',
+'2SolicitudContraseñaInicio'=> 'Solicitud cambiar contraseña',
+'3SolicitudContraseñaInicio'=> 'Correo Electrónico',
+'4SolicitudContraseñaInicio'=> 'Correo electrónico inválido',
+'5SolicitudContraseñaInicio'=> 'Continuar',
+'6SolicitudContraseñaInicio'=> 'Solicitud enviada',
+
+//Cambiar Contraseña
+'1CambiarContraseñaInicio'=> 'Corredor Biológico Hojancha Nandayure',
+'2CambiarContraseñaInicio'=> 'Restablecer contraseña Nueva',
+'3CambiarContraseñaInicio'=> 'Correo Electrónico',
+'4CambiarContraseñaInicio'=> 'Correo Electrónico',
+'5CambiarContraseñaInicio'=> 'Correo electrónico inválido',
+'6CambiarContraseñaInicio'=> 'Contraseña Nueva',
+'7CambiarContraseñaInicio'=> '8 dígitos o más',
+'8CambiarContraseñaInicio'=> 'La contraseña debe tener más de 8 dígitos',
+'9CambiarContraseñaInicio'=> 'Confirmar contraseña',
+'10CambiarContraseñaInicio'=> '8 dígitos o más',
+'11CambiarContraseñaInicio'=> 'Continuar',
+
+
+
 ];

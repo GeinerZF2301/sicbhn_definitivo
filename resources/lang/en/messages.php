@@ -349,6 +349,59 @@ Ministry of Health, Ministry of Agriculture, Monte Alto, Chamber of Ranchers, Ag
 'NavBarBotonLogin'=> 'Log in',
 'NavBarBotonRegister'=> 'Register',
 
+//Login
+'LoginInicio'=> 'Log in',
+'1LoginInicio'=> 'E-mail',
+'2LoginInicio'=> 'Password',
+'1AlertaLogin'=> 'Incorrect email',
+'2AlertaLogin'=> 'or',
+'3AlertaLogin'=> 'Incorrect password',
+'4AlertaLogin'=> 'Please try again.',
+'5AlertaLogin'=> 'Log in',
+'6AlertaLogin'=> 'Forgot your password?',
+'7AlertaLogin'=> 'Do not you have an account yet? Register now',
 
+//Registrarse
+'1RegisterInicio'=> 'Create an account',
+'2RegisterInicio'=> 'Username',
+'3RegisterInicio'=> 'The name must be 15 characters',
+'4RegisterInicio'=> 'E-mail',
+'5RegisterInicio'=> 'Invalid email',
+'6RegisterInicio'=> 'Password',
+'7RegisterInicio'=> 'Password must have more than 8 digits',
+'8RegisterInicio'=> 'Confirm Password',
+'9RegisterInicio'=> 'Password must have more than 8 digits',
+'10RegisterInicio'=> 'Register',
+
+//Verificacion 
+'1VereificacionInicio'=> 'Email Verification',
+'2VereificacionInicio'=> 'A new verification link has been sent to your email address.',
+'3VereificacionInicio'=> 'Before proceeding, please check your email for a verification link. Also check your spam folder.',
+'4VereificacionInicio'=> 'If you did not receive the email',
+'5VereificacionInicio'=> 'Request another secure link here',
+'6VereificacionInicio'=> 'Sincerely',
+'7VereificacionInicio'=> 'SICBHN Administration',
+'8VereificacionInicio'=> 'Back to top',
+
+//Solicitud Contraseña
+'1SolicitudContraseñaInicio'=> 'Hojancha Nandayure Biological Corridor',
+'2SolicitudContraseñaInicio'=> 'Fordern Sie eine Passwortänderung an',
+'3SolicitudContraseñaInicio'=> 'E-mail',
+'4SolicitudContraseñaInicio'=> 'Invalid email',
+'5SolicitudContraseñaInicio'=> 'Continue',
+'6SolicitudContraseñaInicio'=> 'Request sent',
+
+//Cambiar Contraseña
+'1CambiarContraseñaInicio'=> 'Hojancha Nandayure Biological Corridor',
+'2CambiarContraseñaInicio'=> 'Reset password New',
+'3CambiarContraseñaInicio'=> 'E-mail',
+'4CambiarContraseñaInicio'=> 'E-mail',
+'5CambiarContraseñaInicio'=> 'Invalid email',
+'6CambiarContraseñaInicio'=> 'New password',
+'7CambiarContraseñaInicio'=> '8 digits or more',
+'8CambiarContraseñaInicio'=> 'Password must have more than 8 digits',
+'9CambiarContraseñaInicio'=> 'Confirm Password',
+'10CambiarContraseñaInicio'=> '8 digits or more',
+'11CambiarContraseñaInicio'=> 'Continue',
 
 ];
