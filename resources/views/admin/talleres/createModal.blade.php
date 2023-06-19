@@ -56,7 +56,7 @@
                                 <span id="hora_error" class="text-danger fw-bolder error-messages"></span>
                             </div>
                             <div class="mb-3">
-                                <label for="formGroupExampleInput2" class="form-label">Tipo de campaña </label>
+                                <label for="formGroupExampleInput2" class="form-label">Tipo de de Taller</label>
                                 <select class="tipo_campanna form-select form-select-sm" name="tipo_taller"
                                     id="tipo_taller" aria-label=".form-select-sm example">
                                     <option selected>Selecciona una opcion</option>
@@ -76,7 +76,7 @@
                                 <label for="formGroupExampleInput2" class="form-label">Estado</label>
                                 <select class="tipoPersona_id form-select form-select-sm" name="estado" id="estado"
                                     aria-label=".form-select-sm example">
-                                    <option selected>Selecciona una opcion</option>
+                                    <option value="" selected>Selecciona una opcion</option>
                                     <option value="1">Activo</option>
                                     <option value="0">Inactivo</option>
                                 </select>

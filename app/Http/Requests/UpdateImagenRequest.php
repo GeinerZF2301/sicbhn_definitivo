@@ -25,22 +25,35 @@ class UpdateImagenRequest extends FormRequest
     {
         return [
             'nombre' => 'required|string|max:50',
-            'descripcion' => 'string|max:100',
+            'descripcion' => 'required|string|max:200',
             'estado' => 'required|boolean',
             'path' => 'string|max:100',
-            'file' => 'nullable|mimes:png,jpg,jpeg|max:5048',
+            'file' => 'mimes:png,jpg,jpeg|max:5048',
             'categoria_imagen' => 'required|string'
         ];
     }
-
     public function messages()
-    {
-        return [
-            'nombre.required' => 'El nombre es obligatorio',
-            'estado.required' => 'El estado es obligatorio',
-            'file.mimes' => 'Los archivos permitidos son png, jpg, jpeg',
-            'file.max' => 'La imagen que desea cargar excede el limite de 5 megabytes',
-            'categoria_imagen.required' => 'La categoria de la imagen es obligatoria',
-        ];
-    }
+{
+    return [
+        'nombre.required' => 'El campo nombre es obligatorio.',
+        'nombre.string' => 'El campo nombre debe ser un texto.',
+        'nombre.max' => 'El campo nombre no debe exceder los 50 caracteres.',
+        
+        'descripcion.required' => 'El campo descripción es obligatorio.',
+        'descripcion.string' => 'El campo descripción debe ser un texto.',
+        'descripcion.max' => 'El campo descripción no debe exceder los 200 caracteres.',
+        
+        'estado.required' => 'El campo estado es obligatorio.',
+        'estado.boolean' => 'El campo estado debe ser verdadero o falso.',
+        
+        'path.string' => 'El campo path debe ser un texto.',
+        'path.max' => 'El campo path no debe exceder los 100 caracteres.',
+        
+        'file.mimes' => 'El archivo debe tener un formato válido (png, jpg, jpeg).',
+        'file.max' => 'El tamaño del archivo no debe exceder los 5 MB.',
+        
+        'categoria_imagen.required' => 'Debe seleccionar una categoría de imagen.',
+        'categoria_imagen.string' => 'El campo categoría de imagen debe ser un texto.'
+    ];
+}
 }

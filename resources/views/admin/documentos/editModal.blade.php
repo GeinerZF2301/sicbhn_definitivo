@@ -20,7 +20,7 @@
                         <div class="mb-3">
                             <label for="formGroupExampleInput2" class="form-label">Descripcion</label>
                             <input type="text" class="form-control" name="descripcion" id="edit_descripcion"
-                                placeholder="Escriba una pequeña descripción (Opcional)">
+                                placeholder="Escriba una pequeña descripción">
                             <span id="edit_descripcion_error" class="text-danger fw-bolder error-messages"></span>
                         </div>
                         <div class="mb-3">

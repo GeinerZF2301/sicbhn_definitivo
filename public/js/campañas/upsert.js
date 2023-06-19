@@ -196,7 +196,7 @@ $(document).ready(function () {
                         $("#edit_hora_error").html(errors.hora[0]);
                     }
                     if (errors.hasOwnProperty("tipo_campaña")) {
-                        $("#edit_tipo_campaña_error").html(errors.tipo_campaña[0]);
+                        $("#edit_tipo_campana_error").html(errors.tipo_campaña[0]);
                     }
                     if (errors.hasOwnProperty("estado")) {
                         $("#edit_estado_error").html(errors.estado[0]);
