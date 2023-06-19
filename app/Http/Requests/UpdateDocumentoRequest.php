@@ -3,7 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
-
+use App\Models\Documento;
 class UpdateDocumentoRequest extends FormRequest
 {
     /**
@@ -24,21 +24,32 @@ class UpdateDocumentoRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre' => 'required|string|max:50',
-            'descripcion' => 'string|max:100',
+            'nombre' => 'required|alpha_spaces|max:50',
+            'descripcion' => 'required|alpha_spaces|max:100',
             'estado' => 'required|boolean',
-            'path' => 'string|max:100',
+            'path' => 'alpha_spaces|max:100',
             'file' => 'nullable|mimes:pdf,doc,docx|max:2048',
-            'tipo_documento' => 'required|string'
+            'tipo_documento' => 'required|alpha_spaces|max:50'
         ];
     }
+    
     public function messages()
     {
         return [
-            'nombre.required' => 'El nombre del documento es obligatorio',
-            'estado.required' => 'El estado es obligatorio',
-            'file.type' => 'Los tipos de archivos permitidos son pdf, doc y docx',
-            'tipo_documento.required' => 'El tipo de documento es obligatorio',
+            'nombre.required' => 'El nombre es obligatorio.',
+            'nombre.alpha_spaces' => 'El nombre solo debe contener letras y espacios.',
+            'nombre.max' => 'El nombre no debe exceder los 50 caracteres.',
+            'descripcion.required' => 'La descripcion es obligatoria.',
+            'descripcion.alpha_spaces' => 'La descripción solo debe contener letras y espacios.',
+            'descripcion.max' => 'La descripción no debe exceder los 100 caracteres.',
+            'estado.required' => 'El estado es obligatorio.',
+            'estado.boolean' => 'El estado es obligatorio.',
+            'path.alpha_spaces' => 'La ruta solo debe contener letras y espacios.',
+            'path.max' => 'La ruta no debe exceder los 100 caracteres.',
+            'file.mimes' => 'El archivo debe ser un PDF, DOC o DOCX.',
+            'file.max' => 'El archivo no debe exceder los 2048 KB.',
+            'tipo_documento.required' => 'El tipo de documento es obligatorio.',
+            'tipo_documento.alpha_spaces' => 'El tipo de documento solo debe contener letras y espacios.'
         ];
     }
 }

@@ -24,8 +24,17 @@ class StoreTipoPersonaRequest extends FormRequest
     public function rules()
     {
         return [
-            'tipo_persona' => 'required|string|max:50',
-            'descripcion' => 'required|string|max:100',
+            'tipo_persona' => 'required|alpha_spaces|max:50',
+            'descripcion' => 'required|alpha_spaces|max:100',
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'tipo_persona' => 'El nombre de la campaña es obligatorio',
+            'descripcion.required' => 'La descripcion es obligatoria',
+            'tipo_persona.alpha_spaces' => 'El tipo de persona debe ser escrito en formato de texto',
+            'descripcion.alpha_spaces' => 'La descripcion debe ser escrita en formato de texto',
         ];
     }
 }

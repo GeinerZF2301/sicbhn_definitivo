@@ -27,8 +27,8 @@ class StoreDonacionEspecieRequest extends FormRequest
             'fecha_donacion' => 'required|date',
             'fecha_recibido' => 'required|date',
             'descripcion' => 'required|string',
-            'articulo_id' => 'required',
-            'persona_donante_id' => 'required'
+            'persona_donante_id' => 'required',
+            'articulo_id' => 'required|integer'
         ];
     }
     public function messages()
@@ -39,6 +39,7 @@ class StoreDonacionEspecieRequest extends FormRequest
             'descripcion.required' => 'La descripcion es obligatoria',
             'persona_donante_id.required' => 'La persona donante es obligatoria',
             'articulo_id.required' => 'El articulo es obligatorio',
+            'articulo_id.integer' => 'El articulo es obligatorio'
         ];
     }
 }

@@ -148,12 +148,12 @@ $(document).ready(function() {
                     if (errors.hasOwnProperty("descripcion")) {
                         $("#edit_descripcion_error").html(errors.descripcion[0]);
                     }
-                    if (errors.hasOwnProperty("articulo_id")) {
-                        $("#edit_articulo_id_error").html(errors.articulo_id[0]);
-                    }
                     if (errors.hasOwnProperty("persona_donante_id")) {
                         $("#edit_persona_donante_id_error").html(errors.persona_donante_id[0]);
                     }  
+                    if (errors.hasOwnProperty("articulo_id")) {
+                        $("#edit_articulo_id_error").html(errors.articulo_id[0]);
+                    }
                 } else {
                     console.error(error);
                 }

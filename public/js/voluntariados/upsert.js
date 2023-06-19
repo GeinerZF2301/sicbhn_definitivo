@@ -174,8 +174,8 @@ $(document).ready(function () {
                     if (errors.hasOwnProperty("hora")) {
                         $("#edit_hora_error").html(errors.hora[0]);
                     }
-                    if (errors.hasOwnProperty("tipo_voluntariados")) {
-                        $("#edit_tipo_voluntariados_error").html(errors.tipo_voluntariados[0]);
+                    if (errors.hasOwnProperty("tipo_voluntariado")) {
+                        $("#edit_tipo_voluntariado_error").html(errors.tipo_voluntariado[0]);
                     }
                     if (errors.hasOwnProperty("estado")) {
                         $("#edit_estado_error").html(errors.estado[0]);

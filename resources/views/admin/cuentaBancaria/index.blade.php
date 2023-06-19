@@ -44,8 +44,12 @@
                                             <td class="id" name="id" class="budget">{{ $articulo->id }}</td>
                                             <td name="tipo_persona" class="budget">{{ $articulo->entidad_bancaria }}</td>
                                             <td name="descripcion" class="budget">{{ $articulo->numero_cuenta }}</td>
-                                            <td name="descripcion" class="budget">{{ $articulo->estado }}</td>
-
+                                            @if ($articulo->estado != 1)
+                                            <td name="descripcion" class="budget">Inactivo</td>
+                                            @else
+                                            <td name="descripcion" class="budget">Activo</td> 
+                                            @endif
+                                            
                                             <div class="d-flex shadow-lg justify-content-between">
                                                 {{-- <td class=""> --}}
                                                     <td>
