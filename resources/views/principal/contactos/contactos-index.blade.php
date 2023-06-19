@@ -1,6 +1,5 @@
 @extends('layouts.navbar')
 @section('content')
-
     <!-- Navbar Start -->
     @include('componentes.NavBarPrincipal')
     <!-- Navbar End -->
@@ -74,7 +73,7 @@
                     <p><span class="text-primary me-2">#</span>{{ __('messages.CuartoTituloHeaderContactos') }}</p>
                     <h1 class="display-5 mb-4">{{ __('messages.QuintoTituloHeaderContactos') }}</h1>
                     <p class="mb-4">
-                        
+
                     </p>
                     <form action="{{ route('contact.store') }}" method="POST" id="contact-form">
                         @csrf
@@ -102,13 +101,13 @@
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control bg-light border-0" placeholder="" name="message"
-                                        style="height: 100px"required></textarea>
+                                    <textarea class="form-control bg-light border-0" placeholder="" name="message" style="height: 100px"required></textarea>
                                     <label for="message">{{ __('messages.CuartoCampoFormularioContactos') }}</label>
                                 </div>
                             </div>
                             <div class="col-12">
-                                @if (auth()->check() && !auth()->user()->hasVerifiedEmail())
+                                @if (auth()->check() &&
+                                        !auth()->user()->hasVerifiedEmail())
                                     <div class="alert alert-warning mt-2 text-center col-12">
                                         {{ __('messages.VerificarFormularios') }}
                                     </div>
@@ -118,7 +117,8 @@
                                         </a>
                                     </div>
                                 @endif
-                                <div class="mt-2 col-12"{{ (auth()->check() && auth()->user()->hasVerifiedEmail()) ? '' : ' style=display:none;' }}>
+                                <div
+                                    class="mt-2 col-12"{{ auth()->check() &&auth()->user()->hasVerifiedEmail()? '': ' style=display:none;' }}>
                                     <button class="btn btn-primary w-100 py-3" id="Enviar" type="submit">
                                         {{ __('messages.BotonEnviarFormularios') }}
                                     </button>
@@ -128,12 +128,12 @@
                                         <div class="alert alert-success  mt-2 text-center col-12">
                                             {{ __('messages.7AlertaFormularioContactos') }}
                                         </div>
-                                        
+
                                     @endguest
                                 </div>
                             </div>
                         </div>
-                        
+
                     </form>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
@@ -150,30 +150,30 @@
     </div>
     <!-- Contact End -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
-<script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-        event.preventDefault();
+    <script src="https://cdn.jsdelivr.net/npm/axios@0.24.0/dist/axios.min.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-        axios.post(this.action, new FormData(this))
-            .then(response => {
-                Swal.fire({
-                    icon: 'success',
-                    title: "{{ __('messages.1AlertaFormularioContactos') }}",
-                    text: "{{ __('messages.2AlertaFormularioContactos') }}",
-                    confirmButtonText: "{{ __('messages.3AlertaFormularioContactos') }}"
-                });
+            axios.post(this.action, new FormData(this))
+                .then(response => {
+                    Swal.fire({
+                        icon: 'success',
+                        title: "{{ __('messages.1AlertaFormularioContactos') }}",
+                        text: "{{ __('messages.2AlertaFormularioContactos') }}",
+                        confirmButtonText: "{{ __('messages.3AlertaFormularioContactos') }}"
+                    });
 
-                this.reset();
-            })
-            .catch(error => {
-                Swal.fire({
-                    icon: 'error',
-                    title: "{{ __('messages.4AlertaFormularioContactos') }}",
-                    text: "{{ __('messages.5AlertaFormularioContactos') }}",
-                    confirmButtonText: "{{ __('messages.6AlertaFormularioContactos') }}"
+                    this.reset();
+                })
+                .catch(error => {
+                    Swal.fire({
+                        icon: 'error',
+                        title: "{{ __('messages.4AlertaFormularioContactos') }}",
+                        text: "{{ __('messages.5AlertaFormularioContactos') }}",
+                        confirmButtonText: "{{ __('messages.6AlertaFormularioContactos') }}"
+                    });
                 });
-            });
-    });
-</script>
+        });
+    </script>
 @endsection
