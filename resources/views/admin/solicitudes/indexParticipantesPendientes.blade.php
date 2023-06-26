@@ -21,13 +21,13 @@
                             <table id="dataTable" class="table table-hover  align-items-center">
                                 <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
-                                        <th style="display: none" scope="col">ID</th>
-                                        <th style="display: none" scope="col">TallerID</th>
+                                        <th style="display: none" scope="col">Código</th>
+                                        <th style="display: none" scope="col">CódigoTaller</th>
                                         <th scope="col">Nombre</th>
                                         <th scope="col">Apellidos</th>
                                         <th scope="col">Taller a Inscribirse</th>
                                         <th scope="col">Estado</th>
-                                        <th scope="col">acciones</th>
+                                        <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>
