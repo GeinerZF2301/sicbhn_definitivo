@@ -24,7 +24,7 @@ class UpdateDocumentoRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre' => 'required|alpha_spaces|max:50',
+            'nombre' => 'required|string|max:50',
             'descripcion' => 'required|alpha_spaces|max:100',
             'estado' => 'required|boolean',
             'path' => 'alpha_spaces|max:100',
