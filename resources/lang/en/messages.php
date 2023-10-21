@@ -13,6 +13,8 @@ return[
 'NavBarDropDownHorasDocumentacion'=> 'Documentation',
 'NavBarContactos'=> 'Contacts',
 'NavBarBotonLogin'=> 'Login',
+'1NavBarBotonLogin'=> 'Log out',
+
 
 //footer
 'FooterMasInfoSubtitulo'=>'More information',
@@ -343,6 +345,7 @@ Ministry of Health, Ministry of Agriculture, Monte Alto, Chamber of Ranchers, Ag
 '4AlertaFormularioContactos'=>'Error',
 '5AlertaFormularioContactos'=>'An error has occurred while sending the SICBHN Questions Please try again.',
 '6AlertaFormularioContactos'=>'Accept',
+'7AlertaFormularioContactos'=>'You must register or log in to send your queries',
 
 //Navbar Login
 'NavBarLoginInicio'=> 'Home',

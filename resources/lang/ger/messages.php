@@ -13,6 +13,7 @@ return[
 'NavBarDropDownHorasDocumentacion'=> 'Dokumentation',
 'NavBarContactos'=> 'Kontakte',
 'NavBarBotonLogin'=> 'Einloggen',
+'1NavBarBotonLogin'=> 'Ausloggen',
 
 //footer
 'FooterMasInfoSubtitulo'=>'Weitere Informationen',
@@ -318,6 +319,7 @@ Landwirtschaftszentrum, Panamerican Woods, OffBeat Travel, ASADA Morote, Coopece
 'PrimerTituloDocumentacion'=>'¡Öffentliche Dokumente!',
 'PrimerbotonDocumentacion'=>'Sehen',
 
+
 //Vista Contactos
 'PrimerTituloHeaderContactos'=>'Unsere Kontakte',
 'SegundoTituloHeaderContactos'=>'Startseite ',
@@ -343,6 +345,7 @@ Landwirtschaftszentrum, Panamerican Woods, OffBeat Travel, ASADA Morote, Coopece
 '4AlertaFormularioContactos'=>'Fehler',
 '5AlertaFormularioContactos'=>'Beim Senden von SICHN-Zweifeln ist ein Fehler aufgetreten Bitte versuchen Sie es erneut.',
 '6AlertaFormularioContactos'=>'Annehmen',
+'7AlertaFormularioContactos'=>'Sie müssen sich registrieren oder einloggen, um Ihre Anfragen senden zu können',
 
 //Navbar Login
 'NavBarLoginInicio'=> 'Startseite ',

@@ -30,11 +30,11 @@
                             <table id="dataTable" class="table table-hover  align-items-center">
                                 <thead class="table-container bg-dark text-white text-center text-uppercase fw-light fs-6  ">
                                     <tr>
-                                        <th scope="col">ID</th>
+                                        <th scope="col">Código</th>
                                         <th scope="col">Fecha de Donación</th>
                                         <th scope="col">Fecha de Recepción </th>
-                                        <th scope="col">Descripcion </th>
-                                        <th scope="col">acciones</th>
+                                        <th scope="col">Descripción </th>
+                                        <th scope="col">Acciones</th>
                                     </tr>
                                 </thead>
                                 <tbody>

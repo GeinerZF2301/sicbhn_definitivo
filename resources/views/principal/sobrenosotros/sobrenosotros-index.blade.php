@@ -251,7 +251,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-4">
                         <div class="col-12">
-                            <a class="animal-item">
+                            <a class="animal-item"  href="https://www.instagram.com/reservamontealto/">
                                 <div class="position-relative">
                                     <img class="img-fluid miembros-img"
                                         src="zoofari/img/SobreNosotros/Miembros/monteAlto.webp" alt="" />
